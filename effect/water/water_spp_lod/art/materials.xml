@@ -1,0 +1,142 @@
+<library>
+  <textures>
+    <texture name="t_630.jpg">
+      <file>/art/textures/t_630.jpg</file>
+    </texture>
+    <texture name="t_580.jpg">
+      <file>/art/textures/t_580.jpg</file>
+    </texture>
+    <texture name="t_629.jpg">
+      <file>/art/textures/t_629.jpg</file>
+    </texture>
+    <texture name="t_626.jpg">
+      <file>/art/textures/t_626.jpg</file>
+    </texture>
+    <texture name="t_627.jpg">
+      <file>/art/textures/t_627.jpg</file>
+    </texture>
+    <texture name="t_628.jpg">
+      <file>/art/textures/t_628.jpg</file>
+    </texture>
+    <texture name="t_574.jpg">
+      <file>/art/textures/t_574.jpg</file>
+    </texture>
+    <texture name="t_586.jpg">
+      <file>/art/textures/t_586.jpg</file>
+    </texture>
+    <texture name="t_578.jpg">
+      <file>/art/textures/t_578.jpg</file>
+    </texture>
+    <texture name="t_631.jpg">
+      <file>/art/textures/t_631.jpg</file>
+    </texture>
+    <texture name="t_632.jpg">
+      <file>/art/textures/t_632.jpg</file>
+    </texture>
+    <texture name="t_571.jpg">
+      <file>/art/textures/t_571.jpg</file>
+    </texture>
+    <texture name="t_634.jpg">
+      <file>/art/textures/t_634.jpg</file>
+    </texture>
+    <texture name="t_633.jpg">
+      <file>/art/textures/t_633.jpg</file>
+    </texture>
+    <texture name="t_635.jpg">
+      <file>/art/textures/t_635.jpg</file>
+    </texture>
+    <texture name="t_636.jpg">
+      <file>/art/textures/t_636.jpg</file>
+    </texture>
+    <texture name="t_588.jpg">
+      <file>/art/textures/t_588.jpg</file>
+    </texture>
+    <texture name="sky02.jpg">
+      <file>/art/textures/sky02.jpg</file>
+    </texture>
+    <texture name="s001.jpg">
+      <file>/art/textures/s001.jpg</file>
+    </texture>
+    <texture name="generic_water_001_ani">
+      <file>/art/textures/effectextures/generic_water_001_ani</file>
+    </texture>
+    <texture name="effectsky.dds">
+      <file>/art/textures/effectextures/effectsky.dds</file>
+    </texture>
+  </textures>
+  <materials>
+    <material name="m0_ms7Sub6">
+      <texture>t_630.jpg</texture>
+    </material>
+    <material name="m0_ms1Sub0">
+      <texture>t_580.jpg</texture>
+    </material>
+    <material name="m0_ms6Sub5">
+      <texture>t_629.jpg</texture>
+    </material>
+    <material name="m0_ms2Sub1">
+      <texture>t_626.jpg</texture>
+    </material>
+    <material name="m0_ms3Sub2">
+      <texture>t_627.jpg</texture>
+    </material>
+    <material name="m0_ms5Sub4">
+      <texture>t_628.jpg</texture>
+    </material>
+    <material name="m0_ms4Sub3">
+      <texture>t_574.jpg</texture>
+    </material>
+    <material name="m0_ms8Sub7">
+      <texture>t_586.jpg</texture>
+    </material>
+    <material name="m0_ms9Sub8">
+      <texture>t_578.jpg</texture>
+    </material>
+    <material name="m0_ms10Sub9">
+      <texture>t_631.jpg</texture>
+    </material>
+    <material name="m0_ms11Sub10">
+      <texture>t_632.jpg</texture>
+    </material>
+    <material name="m0_ms12Sub11">
+      <texture>t_571.jpg</texture>
+    </material>
+    <material name="m0_ms14Sub13">
+      <texture>t_634.jpg</texture>
+    </material>
+    <material name="m0_ms13Sub12">
+      <texture>t_633.jpg</texture>
+    </material>
+    <material name="m0_ms15Sub14">
+      <texture>t_635.jpg</texture>
+    </material>
+    <material name="m0_ms16Sub15">
+      <texture>t_636.jpg</texture>
+    </material>
+    <material name="m0_ms17Sub16">
+      <texture>t_588.jpg</texture>
+    </material>
+    <material name="m18">
+      <texture>sky02.jpg</texture>
+    </material>
+    <material name="m20">
+      <texture>s001.jpg</texture>
+    </material>
+    <material name="m19">
+      <texture>s001.jpg</texture>
+      <shader type="base">reflect_water_plane</shader>
+      <shader type="diffuse">reflect_water_plane</shader>
+      <shadervar name="tex normal" type="texture">generic_water_001_ani</shadervar>
+      <shadervar name="tex environment" type="texture">effectsky.dds</shadervar>
+      <shadervar name="water fog color" type="vector4">0.4,0.7,0.9,1</shadervar>
+      <shadervar name="water perturb scale" type="vector4">10,10,0,0</shadervar>
+      <shadervar name="water perturb fade" type="float">0.1</shadervar>
+      <shadervar name="specular" type="vector4">0.4,0.7,0.9,1</shadervar>
+    </material>
+    <material name="sky_001">
+      <texture>effectsky.dds</texture>
+      <shader type="base">lighting_fullbright_fixed</shader>
+      <shader type="diffuse">*null</shader>
+    </material>
+  </materials>
+</library>

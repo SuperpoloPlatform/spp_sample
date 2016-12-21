@@ -1,0 +1,16 @@
+<library>
+  <library>/art/factories/o08.xml</library>
+  <library>/art/factories/o16.xml</library>
+  <library>/art/factories/o25.xml</library>
+  <library>/art/factories/o31.xml</library>
+  <library>/art/factories/gnd4.xml</library>
+  <library>/art/factories/gnd9.xml</library>
+  <library>/art/factories/gnd7.xml</library>
+  <library>/art/factories/gnd3.xml</library>
+  <library>/art/factories/gnd6.xml</library>
+  <library>/art/factories/gnd8.xml</library>
+  <library>/art/factories/gnd5.xml</library>
+  <library>/art/factories/gnd2.xml</library>
+  <library>/art/factories/gnd1.xml</library>
+  <library>/art/factories/o555.xml</library>
+</library>

@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+	<plugins>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+	</plugins>
+	<addon>
+		<plugin>crystalspace.renderloop.loop.loader</plugin>
+		<paramsfile>/shader/std_rloop_shadowmap.xml</paramsfile>
+	</addon>
+	<settings>
+		<clearzbuf>yes</clearzbuf>
+		<clearscreen>yes</clearscreen>
+		<lightmapcellsize>8</lightmapcellsize>
+		<!-- 暂时去掉阴影，这样就能添加好多特效。 -->
+		<!--<renderloop>std_rloop_shadowmap</renderloop>-->
+	</settings>
+	<shaders>
+		<shader>
+			<file>/shader/ambient.xml</file>
+		</shader>
+		<shader>
+			<file>/shader/light.xml</file>
+		</shader>
+		<shader>
+			<file>/shader/light_bumpmap.xml</file>
+		</shader>
+		<shader>
+			<file>/shader/parallax/parallax.xml</file>
+		</shader>
+	</shaders>
+	<sounds/>
+	<triggers/>
+	<!-- 玩家角色的模型工厂 -->
+	<library>art/models/cube/cube.xml</library>
+	<library>art/models/plane/plane.xml</library>
+	<library>art/models/tree/tree.xml</library>
+	<library>art/models/tree/materials.xml</library>
+	
+	<sector name='Scene'>
+		<ambient blue='0.5' green='0.5' red='0.5'/>
+		<cullerp plugin='crystalspace.culling.frustvis'/>
+		<light name="Lamp">
+			<center y="2" x="2" z="0" />
+			<radius brightness="10000">24.9999828339</radius>
+			<attenuation>linear</attenuation>
+			<type>point</type>
+			<shadervar name="light 0 diffuse" type="vector4">1.6, 1.8, 2, 1</shadervar>
+		</light>
+		
+		<!-- 摄像机跟随这个盒子 -->
+		<meshobj name='Cube'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>no</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='10' x='3' z='3'/>
+			</move>
+		</meshobj>
+		
+		<meshobj name="tree">
+		  <plugin>crystalspace.mesh.loader.genmesh</plugin>
+		  <params>
+			<factory>tree</factory>
+		  </params>
+		  <move>
+			<v y='10' x='3' z='13'/>
+			<matrix>
+			  <scale x="1" y="1" z="1" />
+			  <rotx>0</rotx>
+			  <roty>0</roty>
+			  <rotz>0</rotz>
+			</matrix>
+		  </move>
+		</meshobj>
+		
+
+	</sector>
+		
+	<sequences>
+		<sequence name="movemesh">
+			<move mesh="Cube" duration="20000" x="-20" y="18" z="-2"/>
+			<rotate mesh="Cube" duration="20000">
+					<roty>10</roty>
+			</rotate>
+		</sequence>
+	</sequences>
+	
+	
+<!--	注释掉的	
+		<sequence name="turn_on_light">
+			<setlight light="roomlight" red="1" green="1" blue="1" />
+			<delay time="500" />
+			<setlight light="roomlight" red="0" green="0" blue="0" />
+			<delay time="800" />
+			<setlight light="roomlight" red="0" green="1" blue="0" />
+		</sequence>
+	
+		<sequence name="movemesh1">
+				<rotate mesh="Cube" duration="200">
+						<roty>1</roty>
+						<v y="-0.5" x="0" z="0" />
+				</rotate>
+				
+				<delay time="1000" />
+				<rotate mesh="Cube" duration="200">
+					<rotz>1</rotz>
+					<v y="-0.5" x="0" z="0" />
+				</rotate>
+		</sequence>	
+	</sequences>
+	<triggers>
+        <trigger name="rotmesh">
+            <sectorvis sector="Scene" />
+            <fire delay="0" sequence="movemesh" />
+        </trigger>
+		
+		<trigger name="rotmesh1">
+            <sectorvis sector="Scene" />
+            <fire delay="0" sequence="movemesh1" />
+        </trigger>
+    </triggers>
+-->
+	<start name='Camera'>
+		<sector>Scene</sector>
+		<position y='5.3437' x='7.4811' z='-6.5076'/>
+		<up y='0.8953' x='-0.3307' z='0.2984'/>
+		<forward y='-0.4452' x='-0.6549' z='0.6107'/>
+	</start>
+</world>

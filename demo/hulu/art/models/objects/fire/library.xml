@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<plugins>
+		<plugin name="particles">crystalspace.mesh.loader.particles</plugin>
+		<plugin name="particlesfact">crystalspace.mesh.loader.factory.particles</plugin>
+	</plugins>
+	<!-- 这里添加shader
+	<shaders>
+		<shader>
+			<file>/shader/character/character_bump2.xml</file>
+		</shader>
+		<shader>
+			<file>/shader/character/character2.xml</file>
+		</shader>
+	</shaders>
+	-->
+	<textures>
+		<texture name="fire1.png">
+			<file>/art/models/objects/fire/textures/fire.png</file>
+			<alpha>
+				<binary/>
+			</alpha>
+		</texture>
+		<texture name="fire2.png">
+			<file>/art/models/objects/fire/textures/fire.png</file>
+		</texture>
+	</textures>
+	<materials>
+		<material name="light_fire">
+			<texture>fire1.png</texture>
+		</material>
+		<material name="light_fire2">
+			<texture>fire2.png</texture>
+		</material>
+	</materials>
+	<library>factories/genFire.xml</library>
+</library>

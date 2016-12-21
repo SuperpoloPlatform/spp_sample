@@ -1,0 +1,180 @@
+<library>
+	<plugins>
+		<plugin name='gensprite2d'>crystalspace.mesh.loader.sprite.2d</plugin>
+		<plugin name='gensprite2dfact'>crystalspace.mesh.loader.factory.sprite.2d</plugin>
+	</plugins>
+	<textures>
+		<texture name="fountain.png">
+			<file>textures/fountain.png</file>
+		</texture>
+		<texture name="fountain.jpg">
+			<file>textures/fountain.jpg</file>
+		</texture>
+	</textures>
+	<materials>	
+		<material name="fountain.png">
+			<texture>fountain.png</texture>
+		</material>
+		<material name="fountain.jpg">
+			<texture>fountain.jpg</texture>
+		</material>
+	</materials>	
+	<meshfact name="Explosion">
+		<plugin>gensprite2dfact</plugin>
+		<params>
+			<material>fountain.png</material>
+			<uvanimation name="boom">
+				<frame name="f1">
+					<duration>50</duration>
+					<v u="0" v="0.75" />
+					<v u="0.2" v="0.75" />
+					<v u="0.2" v="1" />
+					<v u="0" v="1" />
+				</frame>
+				<frame name="f2">
+					<duration>50</duration>
+					<v u="0.2" v="0.75" />
+					<v u="0.4" v="0.75" />
+					<v u="0.4" v="1" />
+					<v u="0.2" v="1" />
+				</frame>
+				<frame name="f3">
+					<duration>50</duration>
+					<v u="0.4" v="0.75" />
+					<v u="0.6" v="0.75" />
+					<v u="0.6" v="1" />
+					<v u="0.4" v="1" />
+				</frame>
+				<frame name="f4">
+					<duration>50</duration>
+					<v u="0.6" v="0.75" />
+					<v u="0.8" v="0.75" />
+					<v u="0.8" v="1" />
+					<v u="0.6" v="1" />
+				</frame>
+				<frame name="f5">
+					<duration>50</duration>
+					<v u="0.8" v="0.75" />
+					<v u="1.0" v="0.75" />
+					<v u="1.0" v="1" />
+					<v u="0.8" v="1" />
+				</frame>
+				<frame name="f6">
+					<duration>50</duration>
+					<v u="0.0" v="0.50" />
+					<v u="0.2" v="0.50" />
+					<v u="0.2" v="0.75" />
+					<v u="0.0" v="0.75" />
+				</frame>
+				<frame name="f7">
+					<duration>50</duration>
+					<v u="0.2" v="0.50" />
+					<v u="0.4" v="0.50" />
+					<v u="0.4" v="0.75" />
+					<v u="0.2" v="0.75" />
+				</frame>
+				<frame name="f8">
+					<duration>50</duration>
+					<v u="0.4" v="0.50" />
+					<v u="0.6" v="0.50" />
+					<v u="0.6" v="0.75" />
+					<v u="0.4" v="0.75" />
+				</frame>
+				<frame name="f9">
+					<duration>50</duration>
+					<v u="0.6" v="0.50" />
+					<v u="0.8" v="0.50" />
+					<v u="0.8" v="0.75" />
+					<v u="0.6" v="0.75" />
+				</frame>
+				<frame name="f10">
+					<duration>50</duration>
+					<v u="0.8" v="0.50" />
+					<v u="1.0" v="0.50" />
+					<v u="1.0" v="0.75" />
+					<v u="0.8" v="0.75" />
+				</frame>
+				<frame name="f11">
+					<duration>50</duration>
+					<v u="0.0" v="0.25" />
+					<v u="0.2" v="0.25" />
+					<v u="0.2" v="0.50" />
+					<v u="0.0" v="0.50" />
+				</frame>
+				<frame name="f12">
+					<duration>50</duration>
+					<v u="0.2" v="0.25" />
+					<v u="0.4" v="0.25" />
+					<v u="0.4" v="0.50" />
+					<v u="0.2" v="0.50" />
+				</frame>
+				<frame name="f13">
+					<duration>50</duration>
+					<v u="0.4" v="0.25" />
+					<v u="0.6" v="0.25" />
+					<v u="0.6" v="0.50" />
+					<v u="0.4" v="0.50" />
+				</frame>
+				<frame name="f14">
+					<duration>50</duration>
+					<v u="0.6" v="0.25" />
+					<v u="0.8" v="0.25" />
+					<v u="0.8" v="0.50" />
+					<v u="0.6" v="0.50" />
+				</frame>
+				<frame name="f15">
+					<duration>50</duration>
+					<v u="0.8" v="0.25" />
+					<v u="1.0" v="0.25" />
+					<v u="1.0" v="0.50" />
+					<v u="0.8" v="0.50" />
+				</frame>
+				<frame name="f16">
+					<duration>50</duration>
+					<v u="0.0" v="0.00" />
+					<v u="0.2" v="0.00" />
+					<v u="0.2" v="0.25" />
+					<v u="0.0" v="0.25" />
+				</frame>
+				<frame name="f17">
+					<duration>50</duration>
+					<v u="0.2" v="0.00" />
+					<v u="0.4" v="0.00" />
+					<v u="0.4" v="0.25" />
+					<v u="0.2" v="0.25" />
+				</frame>
+				<frame name="f18">
+					<duration>50</duration>
+					<v u="0.4" v="0.00" />
+					<v u="0.6" v="0.00" />
+					<v u="0.6" v="0.25" />
+					<v u="0.4" v="0.25" />
+				</frame>
+				<frame name="f19">
+					<duration>50</duration>
+					<v u="0.6" v="0.00" />
+					<v u="0.8" v="0.00" />
+					<v u="0.8" v="0.25" />
+					<v u="0.6" v="0.25" />
+				</frame>
+				<frame name="f20">
+					<duration>50</duration>
+					<v u="0.8" v="0.00" />
+					<v u="1.0" v="0.00" />
+					<v u="1.0" v="0.25" />
+					<v u="0.8" v="0.25" />
+				</frame>
+			</uvanimation>
+			
+				<v x="-2" y="2" />
+				<v x="2" y="2" />
+				<v x="2" y="-2" />
+				<v x="-2" y="-2" />
+				<uv u="0" v="1" />
+				<uv u="1" v="1" />
+				<uv u="1" v="0" />
+				<uv u="0" v="0" />
+				
+		</params>
+  </meshfact>
+  </library>

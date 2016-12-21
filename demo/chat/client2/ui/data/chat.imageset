@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Imageset Name="chat" Imagefile="chat.png">
+<Image Name="zhu_middlemiddle" XPos="0" YPos="0" Width="301" Height="395" />
+<Image Name="mouse_jian" XPos="347" YPos="11" Width="27" Height="26" />
+<Image Name="ok_btn" XPos="310" YPos="58" Width="119" Height="37" />
+</Imageset>

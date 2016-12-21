@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library>
+  <textures>
+    <texture name="fz_d_05.jpg">
+      <file>/art/textures/house/fz_d_05.jpg</file>
+    </texture>
+	<texture name="nfz_d_05.jpg">
+      <file>/art/textures/house/nfz_d_05.jpg</file>
+    </texture>
+	<texture name="sfz_d_05.jpg">
+      <file>/art/textures/house/sfz_d_05.jpg</file>
+    </texture>
+    <texture name="fz_f.tga">
+      <file>/art/textures/house/fz_f.tga</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+	<texture name="nfz_f.jpg">
+      <file>/art/textures/house/nfz_f.jpg</file>
+    </texture>
+	<texture name="sfz_f.jpg">
+      <file>/art/textures/house/sfz_f.jpg</file>
+    </texture>
+    <texture name="fz_s_01.tga">
+      <file>/art/textures/house/fz_s_01.tga</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+	<texture name="nfz_s_01.tga">
+      <file>/art/textures/house/nfz_s_01.tga</file>
+      <class>normalmap</class>
+    </texture>
+	<texture name="sfz_s_01.tga">
+      <file>/art/textures/house/sfz_s_01.tga</file>
+      <class>specularmap</class>
+    </texture>
+    <texture name="fz_s_02.jpg">
+      <file>/art/textures/house/fz_s_02.jpg</file>
+    </texture>
+  </textures>
+</library>

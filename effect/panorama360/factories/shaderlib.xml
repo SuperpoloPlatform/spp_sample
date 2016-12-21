@@ -1,0 +1,19 @@
+<library>
+    <shaders>
+        <shader>
+            <file>/shader/sky/basic_cubemap.xml</file>
+        </shader>
+        <shader>
+            <file>/shader/terrain/splatbase.xml</file>
+        </shader>
+        <shader>
+            <file>/shader/terrain/splat.xml</file>
+        </shader>
+        <shader>
+            <file>/shader/terrain/splat-detail.xml</file>
+        </shader>
+        <shader>
+            <file>/shader/lighting/fullbright.xml</file>
+        </shader>
+    </shaders>
+</library>

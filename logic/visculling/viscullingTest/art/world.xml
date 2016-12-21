@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<world>
+	<plugins>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+	</plugins>
+	<addon>
+		<plugin>crystalspace.renderloop.loop.loader</plugin>
+	</addon>
+  <library>/art/shaderlib.xml</library>
+  <library>/art/factorylib.xml</library>
+  <library>/art/materials.xml</library>
+  <library>art/models/nvzhanshi/nvzhanshi.xml</library>
+  <start name="Camera">
+    <sector>Scene</sector>
+    <position x="8.6592" y="5.1716" z="-4.595" />
+    <up x="-0.3307" y="0.8953" z="0.2984" />
+    <forward x="-0.6549" y="-0.4452" z="0.6107" />
+  </start>
+  <sector name="Scene">
+    <cullerp plugin="crystalspace.culling.dynavis" />
+	<light name="Lamp">
+		<center y="30" x="2" z="0" />
+		<radius brightness="10000">240.9999828339</radius>
+		<attenuation>linear</attenuation>
+		<type>point</type>
+		<shadervar name="light 0 diffuse" type="vector4">1.6, 1.8, 2, 1</shadervar>
+	</light>
+	<meshobj name="woman">
+		<priority>object</priority>
+		<plugin>cal3d</plugin>
+		<params>
+		<factory>nvzhanshi</factory>
+		</params>
+		<zuse />
+		<move>
+			<v y='10' x='-13' z='-36'/>
+		</move>
+	</meshobj>
+    <meshobj name="Plane01_1">
+      <plugin>crystalspace.mesh.loader.genmesh</plugin>
+      <params>
+        <factory>Plane01</factory>
+      </params>
+      <move>
+        <v x="-5" y="0" z="0" />
+        <matrix>
+          <scale x="1" y="1" z="1" />
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+    </meshobj>
+
+    <meshobj name="Line01_1">
+      <plugin>crystalspace.mesh.loader.genmesh</plugin>
+      <params>
+        <factory>Line01</factory>
+      </params>
+	  <trimesh>
+		<mesh>
+		  <!--与Z轴垂直,对应为Plane1和Plane2-->
+		  <v x="-150" y="-150" z="0" />
+		  <v x="150" y="-150" z="0" />
+		  <v x="150" y="150" z="0" />
+		  <v x="-150" y="150" z="0" />
+		  <t v1="2" v2="1" v3="0" />
+		  <t v1="3" v2="2" v3="0" />
+		  <!--与X轴垂直,对应为Plane3和Plane4-->
+		  <v x="0" y="-150" z="-150" />
+		  <v x="0" y="-150" z="150" />
+		  <v x="0" y="150" z="150" />
+		  <v x="0" y="150" z="-150" />
+		  <t v1="4" v2="5" v3="6" />
+		  <t v1="4" v2="6" v3="7" />
+		</mesh>
+		<id>viscull</id>
+	  </trimesh>
+      <move>
+        <v x="0" y="15" z="-21" />
+        <matrix>
+          <scale x="1" y="1" z="1" />
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+    </meshobj>
+    <meshobj name="Box02_2">
+      <plugin>crystalspace.mesh.loader.genmesh</plugin>
+      <params>
+        <factory>Box02</factory>
+      </params>
+	  <trimesh>
+		<mesh>
+		  <!--与Z轴垂直,对应为Plane1和Plane2-->
+		  <v x="-7" y="-2" z="0" />
+		  <v x="7" y="-2" z="0" />
+		  <v x="7" y="2" z="0" />
+		  <v x="-7" y="2" z="0" />
+		  <t v1="0" v2="1" v3="2" />
+		  <t v1="0" v2="2" v3="3" />
+		  <!--与X轴垂直,对应为Plane3和Plane4-->
+		  <v x="0" y="-2" z="-3" />
+		  <v x="0" y="-2" z="3" />
+		  <v x="0" y="2" z="3" />
+		  <v x="0" y="2" z="-3" />
+		  <t v1="4" v2="5" v3="6" />
+		  <t v1="4" v2="6" v3="7" />
+		</mesh>
+		<id>viscull</id>
+	  </trimesh>
+      <move>
+        <v x="-0.08209099620580673" y="0" z="2.6195220947265625" />
+        <matrix>
+          <scale x="1" y="1" z="1" />
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+    </meshobj>
+  </sector>
+</world>

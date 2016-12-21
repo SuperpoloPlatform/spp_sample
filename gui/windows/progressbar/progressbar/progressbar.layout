@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="root">
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+		<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}"/>
+		<Property Name="MousePassThroughEnabled" Value="True"/>
+		<Window Type="Demo/FrameWindow" Name="Demo/Window1">
+		    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.01,0},{0.1,0},{0.5,0},{0.5,0}}"/>
+		<Window Type="Demo/Progressbar" Name="Demo/Window1/progressbar">
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.04,0},{0.1,0},{0.98,0},{0.15,0}}"/>
+		</Window>
+		</Window>
+		<Window Type="Demo/FrameWindow" Name="Demo/Window2">
+			<Property Name="Text" Value="Demo - Window 2：设置1窗口控件属性"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.57,0},{0.1,0},{0.98,0},{0.53,0}}"/>
+			<Window Type="Demo/Combobox" Name="Demo/Window2/Combobox">
+				<Property Name="ReadOnly" Value="True"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.01,0},{0,0},{0.52,0},{0.5,0}}"/>
+			</Window>
+			<Window Type="Demo/FrameWindow" Name="Demo/Window2/FrameWindow3">
+				<Property Name="Visible" Value="False"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.01,0},{0.62,0},{0.9,0},{0.92,0}}"/>
+				<Window Type="Demo/ComboEditbox" Name="Demo/Window2/FrameWindow3/Editbox">
+					<Property Name="Text" Value=""/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,0},{0.0,0},{0.8,0},{1,0}}"/>
+				</Window>
+				<Window Type="Demo/OKButton" Name="Demo/Window2/FrameWindow3/OKButton">
+					<Property Name="Text" Value="确认修改"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.8,0},{0.0,0},{1,0},{1,0}}"/>
+				</Window>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="F:\enviroment\depends\CEGUI-0.7.5\datafiles\xml_schemas\Animation.xsd">
+	    <AnimationDefinition name="test1" duration="0.3" replayMode="once">
+        <Affector property="Alpha" interpolator="float">
+            <KeyFrame position="0" value="1" />
+            <KeyFrame position="0.3" value="0..0" progression="quadratic decelerating" />
+        </Affector>
+    </AnimationDefinition>
+    <AnimationDefinition name="test2" duration="0.3" replayMode="once">
+        <Affector property="Alpha" interpolator="float">
+            <KeyFrame position="0" value="0.0" />
+            <KeyFrame position="0.3" value="1" progression="quadratic accelerating" />
+        </Affector>
+    </AnimationDefinition>
+    <AnimationDefinition name="test3" duration="0.6" replayMode="once">
+        <Affector property="YRotation" interpolator="float">
+            <KeyFrame position="0.0" value="0.0" />
+            <KeyFrame position="0.6" value="30.0" progression="quadratic accelerating" />
+        </Affector>
+    </AnimationDefinition>
+</Animations>

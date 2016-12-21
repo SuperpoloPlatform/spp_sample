@@ -1,0 +1,731 @@
+<library>
+  <textures>
+    <texture name="c_001.jpg">
+      <file>/art/textures/c_001.jpg</file>
+    </texture>
+    <texture name="nc_001.jpg">
+      <file>/art/textures/nc_001.jpg</file>
+    </texture>
+    <texture name="sc_001.jpg">
+      <file>/art/textures/sc_001.jpg</file>
+    </texture>
+    <texture name="hc_001.jpg">
+      <file>/art/textures/hc_001.jpg</file>
+    </texture>
+    <texture name="c_005.jpg">
+      <file>/art/textures/c_005.jpg</file>
+    </texture>
+    <texture name="nc_005.jpg">
+      <file>/art/textures/nc_005.jpg</file>
+    </texture>
+    <texture name="sc_005.jpg">
+      <file>/art/textures/sc_005.jpg</file>
+    </texture>
+    <texture name="hc_005.jpg">
+      <file>/art/textures/hc_005.jpg</file>
+    </texture>
+    <texture name="c_008.jpg">
+      <file>/art/textures/c_008.jpg</file>
+    </texture>
+    <texture name="nc_008.jpg">
+      <file>/art/textures/nc_008.jpg</file>
+    </texture>
+    <texture name="sc_008.jpg">
+      <file>/art/textures/sc_008.jpg</file>
+    </texture>
+    <texture name="hc_008.jpg">
+      <file>/art/textures/hc_008.jpg</file>
+    </texture>
+    <texture name="c_009.jpg">
+      <file>/art/textures/c_009.jpg</file>
+    </texture>
+    <texture name="nc_009.jpg">
+      <file>/art/textures/nc_009.jpg</file>
+    </texture>
+    <texture name="sc_009.jpg">
+      <file>/art/textures/sc_009.jpg</file>
+    </texture>
+    <texture name="c_010.jpg">
+      <file>/art/textures/c_010.jpg</file>
+    </texture>
+    <texture name="nc_010.jpg">
+      <file>/art/textures/nc_010.jpg</file>
+    </texture>
+    <texture name="sc_010.jpg">
+      <file>/art/textures/sc_010.jpg</file>
+    </texture>
+    <texture name="hc_010.jpg">
+      <file>/art/textures/hc_010.jpg</file>
+    </texture>
+    <texture name="c_012.jpg">
+      <file>/art/textures/c_012.jpg</file>
+    </texture>
+    <texture name="c_013.png">
+      <file>/art/textures/c_013.png</file>
+    </texture>
+    <texture name="c_014.jpg">
+      <file>/art/textures/c_014.jpg</file>
+    </texture>
+    <texture name="nc_014.jpg">
+      <file>/art/textures/nc_014.jpg</file>
+    </texture>
+    <texture name="sc_014.jpg">
+      <file>/art/textures/sc_014.jpg</file>
+    </texture>
+    <texture name="hc_014.jpg">
+      <file>/art/textures/hc_014.jpg</file>
+    </texture>
+    <texture name="k_001.jpg">
+      <file>/art/textures/k_001.jpg</file>
+    </texture>
+    <texture name="nk_001.jpg">
+      <file>/art/textures/nk_001.jpg</file>
+    </texture>
+    <texture name="sk_001.jpg">
+      <file>/art/textures/sk_001.jpg</file>
+    </texture>
+    <texture name="hk_001.jpg">
+      <file>/art/textures/hk_001.jpg</file>
+    </texture>
+    <texture name="k_003.jpg">
+      <file>/art/textures/k_003.jpg</file>
+    </texture>
+    <texture name="nk_003.jpg">
+      <file>/art/textures/nk_003.jpg</file>
+    </texture>
+    <texture name="sk_003.jpg">
+      <file>/art/textures/sk_003.jpg</file>
+    </texture>
+    <texture name="hk_003.jpg">
+      <file>/art/textures/hk_003.jpg</file>
+    </texture>
+    <texture name="k_008.jpg">
+      <file>/art/textures/k_008.jpg</file>
+    </texture>
+    <texture name="k_010.png">
+      <file>/art/textures/k_010.png</file>
+      <alpha>
+        <binary />
+      </alpha>
+    </texture>
+    <texture name="k_011.jpg">
+      <file>/art/textures/k_011.jpg</file>
+    </texture>
+    <texture name="nk_011.jpg">
+      <file>/art/textures/nk_011.jpg</file>
+    </texture>
+    <texture name="sk_011.jpg">
+      <file>/art/textures/sk_011.jpg</file>
+    </texture>
+    <texture name="hk_011.jpg">
+      <file>/art/textures/hk_011.jpg</file>
+    </texture>
+    <texture name="k_012.jpg">
+      <file>/art/textures/k_012.jpg</file>
+    </texture>
+    <texture name="nk_012.jpg">
+      <file>/art/textures/nk_012.jpg</file>
+    </texture>
+    <texture name="sk_012.jpg">
+      <file>/art/textures/sk_012.jpg</file>
+    </texture>
+    <texture name="hk_012.jpg">
+      <file>/art/textures/hk_012.jpg</file>
+    </texture>
+    <texture name="k_013.jpg">
+      <file>/art/textures/k_013.jpg</file>
+    </texture>
+    <texture name="nk_013.jpg">
+      <file>/art/textures/nk_013.jpg</file>
+    </texture>
+    <texture name="sk_013.jpg">
+      <file>/art/textures/sk_013.jpg</file>
+    </texture>
+    <texture name="hk_013.jpg">
+      <file>/art/textures/hk_013.jpg</file>
+    </texture>
+    <texture name="k_014.png">
+      <file>/art/textures/k_014.png</file>
+      <alpha>
+        <binary />
+      </alpha>
+    </texture>
+    <texture name="k_015.png">
+      <file>/art/textures/k_015.png</file>
+      <alpha>
+        <binary />
+      </alpha>
+    </texture>
+    <texture name="k_016.jpg">
+      <file>/art/textures/k_016.jpg</file>
+    </texture>
+    <texture name="nk_016.jpg">
+      <file>/art/textures/nk_016.jpg</file>
+    </texture>
+    <texture name="sk_016.jpg">
+      <file>/art/textures/sk_016.jpg</file>
+    </texture>
+    <texture name="hk_016.jpg">
+      <file>/art/textures/hk_016.jpg</file>
+    </texture>
+    <texture name="k_018.jpg">
+      <file>/art/textures/k_018.jpg</file>
+    </texture>
+    <texture name="q_001.jpg">
+      <file>/art/textures/q_001.jpg</file>
+    </texture>
+    <texture name="nq_001.jpg">
+      <file>/art/textures/nq_001.jpg</file>
+    </texture>
+    <texture name="sq_001.jpg">
+      <file>/art/textures/sq_001.jpg</file>
+    </texture>
+    <texture name="q_002.jpg">
+      <file>/art/textures/q_002.jpg</file>
+    </texture>
+    <texture name="nq_002.jpg">
+      <file>/art/textures/nq_002.jpg</file>
+    </texture>
+    <texture name="sq_002.jpg">
+      <file>/art/textures/sq_002.jpg</file>
+    </texture>
+    <texture name="hq_002.jpg">
+      <file>/art/textures/hq_002.jpg</file>
+    </texture>
+    <texture name="d_001.jpg">
+      <file>/art/textures/d_001.jpg</file>
+    </texture>
+    <texture name="sd_001.jpg">
+      <file>/art/textures/sd_001.jpg</file>
+    </texture>
+    <texture name="r2_002.jpg">
+      <file>/art/textures/r2_002.jpg</file>
+    </texture>
+    <texture name="nr2_002.jpg">
+      <file>/art/textures/nr2_002.jpg</file>
+    </texture>
+    <texture name="sr2_002.jpg">
+      <file>/art/textures/sr2_002.jpg</file>
+    </texture>
+    <texture name="hr2_002.jpg">
+      <file>/art/textures/hr2_002.jpg</file>
+    </texture>
+    <texture name="r2_004.jpg">
+      <file>/art/textures/r2_004.jpg</file>
+    </texture>
+    <texture name="nr2_004.jpg">
+      <file>/art/textures/nr2_004.jpg</file>
+    </texture>
+    <texture name="sr2_004.jpg">
+      <file>/art/textures/sr2_004.jpg</file>
+    </texture>
+    <texture name="hr2_004.jpg">
+      <file>/art/textures/hr2_004.jpg</file>
+    </texture>
+    <texture name="r2_003.jpg">
+      <file>/art/textures/r2_003.jpg</file>
+    </texture>
+    <texture name="nr2_003.jpg">
+      <file>/art/textures/nr2_003.jpg</file>
+    </texture>
+    <texture name="sr2_003.jpg">
+      <file>/art/textures/sr2_003.jpg</file>
+    </texture>
+    <texture name="hr2_003.jpg">
+      <file>/art/textures/hr2_003.jpg</file>
+    </texture>
+    <texture name="r2_001.jpg">
+      <file>/art/textures/r2_001.jpg</file>
+    </texture>
+    <texture name="nr2_001.jpg">
+      <file>/art/textures/nr2_001.jpg</file>
+    </texture>
+    <texture name="sr2_001.jpg">
+      <file>/art/textures/sr2_001.jpg</file>
+    </texture>
+    <texture name="hr2_001.jpg">
+      <file>/art/textures/hr2_001.jpg</file>
+    </texture>
+    <texture name="r5_001.jpg">
+      <file>/art/textures/r5_001.jpg</file>
+    </texture>
+    <texture name="r6_001.jpg">
+      <file>/art/textures/r6_001.jpg</file>
+    </texture>
+    <texture name="w_001.jpg">
+      <file>/art/textures/w_001.jpg</file>
+    </texture>
+    <texture name="nw_001.jpg">
+      <file>/art/textures/nw_001.jpg</file>
+    </texture>
+    <texture name="sw_001.jpg">
+      <file>/art/textures/sw_001.jpg</file>
+    </texture>
+    <texture name="hw_001.jpg">
+      <file>/art/textures/hw_001.jpg</file>
+    </texture>
+    <texture name="w_006.jpg">
+      <file>/art/textures/w_006.jpg</file>
+    </texture>
+    <texture name="nw_006.jpg">
+      <file>/art/textures/nw_006.jpg</file>
+    </texture>
+    <texture name="sw_006.jpg">
+      <file>/art/textures/sw_006.jpg</file>
+    </texture>
+    <texture name="hw_006.jpg">
+      <file>/art/textures/hw_006.jpg</file>
+    </texture>
+    <texture name="w_003.jpg">
+      <file>/art/textures/w_003.jpg</file>
+    </texture>
+    <texture name="nw_003.jpg">
+      <file>/art/textures/nw_003.jpg</file>
+    </texture>
+    <texture name="sw_003.jpg">
+      <file>/art/textures/sw_003.jpg</file>
+    </texture>
+    <texture name="hw_003.jpg">
+      <file>/art/textures/hw_003.jpg</file>
+    </texture>
+    <texture name="w_008.jpg">
+      <file>/art/textures/w_008.jpg</file>
+    </texture>
+    <texture name="nw_008.jpg">
+      <file>/art/textures/nw_008.jpg</file>
+    </texture>
+    <texture name="sw_008.jpg">
+      <file>/art/textures/sw_008.jpg</file>
+    </texture>
+    <texture name="hw_008.jpg">
+      <file>/art/textures/hw_008.jpg</file>
+    </texture>
+    <texture name="w_008b.jpg">
+      <file>/art/textures/w_008b.jpg</file>
+    </texture>
+    <texture name="nw_008b.jpg">
+      <file>/art/textures/nw_008b.jpg</file>
+    </texture>
+    <texture name="sw_008b.jpg">
+      <file>/art/textures/sw_008b.jpg</file>
+    </texture>
+    <texture name="hw_008b.jpg">
+      <file>/art/textures/hw_008b.jpg</file>
+    </texture>
+    <texture name="w_008a.jpg">
+      <file>/art/textures/w_008a.jpg</file>
+    </texture>
+    <texture name="nw_008a.jpg">
+      <file>/art/textures/nw_008a.jpg</file>
+    </texture>
+    <texture name="sw_008a.jpg">
+      <file>/art/textures/sw_008a.jpg</file>
+    </texture>
+    <texture name="hw_008a.jpg">
+      <file>/art/textures/hw_008a.jpg</file>
+    </texture>
+    <texture name="w_009.jpg">
+      <file>/art/textures/w_009.jpg</file>
+    </texture>
+    <texture name="nw_009.jpg">
+      <file>/art/textures/nw_009.jpg</file>
+    </texture>
+    <texture name="sw_009.jpg">
+      <file>/art/textures/sw_009.jpg</file>
+    </texture>
+    <texture name="hw_009.jpg">
+      <file>/art/textures/hw_009.jpg</file>
+    </texture>
+    <texture name="w_010.jpg">
+      <file>/art/textures/w_010.jpg</file>
+    </texture>
+    <texture name="nw_010.jpg">
+      <file>/art/textures/nw_010.jpg</file>
+    </texture>
+    <texture name="sw_010.jpg">
+      <file>/art/textures/sw_010.jpg</file>
+    </texture>
+    <texture name="hw_010.jpg">
+      <file>/art/textures/hw_010.jpg</file>
+    </texture>
+    <texture name="w_011.jpg">
+      <file>/art/textures/w_011.jpg</file>
+    </texture>
+    <texture name="w_012.jpg">
+      <file>/art/textures/w_012.jpg</file>
+    </texture>
+    <texture name="sw_012.jpg">
+      <file>/art/textures/sw_012.jpg</file>
+    </texture>
+    <texture name="x_001.jpg">
+      <file>/art/textures/x_001.jpg</file>
+    </texture>
+    <texture name="nx_001.jpg">
+      <file>/art/textures/nx_001.jpg</file>
+    </texture>
+    <texture name="sx_001.jpg">
+      <file>/art/textures/sx_001.jpg</file>
+    </texture>
+    <texture name="hx_001.jpg">
+      <file>/art/textures/hx_001.jpg</file>
+    </texture>
+    <texture name="x_002.png">
+      <file>/art/textures/x_002.png</file>
+    </texture>
+    <texture name="x_003.jpg">
+      <file>/art/textures/x_003.jpg</file>
+    </texture>
+    <texture name="nx_003.jpg">
+      <file>/art/textures/nx_003.jpg</file>
+    </texture>
+    <texture name="sx_003.jpg">
+      <file>/art/textures/sx_003.jpg</file>
+    </texture>
+    <texture name="hx_003.jpg">
+      <file>/art/textures/hx_003.jpg</file>
+    </texture>
+    <texture name="x_004.jpg">
+      <file>/art/textures/x_004.jpg</file>
+    </texture>
+    <texture name="x_005.jpg">
+      <file>/art/textures/x_005.jpg</file>
+    </texture>
+    <texture name="nx_005.jpg">
+      <file>/art/textures/nx_005.jpg</file>
+    </texture>
+    <texture name="sx_005.jpg">
+      <file>/art/textures/sx_005.jpg</file>
+    </texture>
+    <texture name="hx_005.jpg">
+      <file>/art/textures/hx_005.jpg</file>
+    </texture>
+  </textures>
+  <materials>
+    <material name="cm01">
+      <texture>c_001.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nc_001.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sc_001.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hc_001.jpg</shadervar>
+    </material>
+    <material name="Standard_20">
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nc_001.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sc_001.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hc_001.jpg</shadervar>
+    </material>
+    <material name="cm05">
+      <texture>c_005.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nc_005.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sc_005.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hc_005.jpg</shadervar>
+    </material>
+    <material name="cm08">
+      <texture>c_008.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nc_008.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sc_008.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hc_008.jpg</shadervar>
+    </material>
+    <material name="cm09">
+      <texture>c_009.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nc_009.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sc_009.jpg</shadervar>
+    </material>
+    <material name="cm10">
+      <texture>c_010.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nc_010.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sc_010.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hc_010.jpg</shadervar>
+    </material>
+    <material name="cm12">
+      <texture>c_012.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="Material #1">
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="cm13">
+      <texture>c_013.png</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="cm14">
+      <texture>c_014.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nc_014.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sc_014.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hc_014.jpg</shadervar>
+    </material>
+    <material name="km01">
+      <texture>k_001.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nk_001.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sk_001.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hk_001.jpg</shadervar>
+    </material>
+    <material name="km04">
+      <texture>k_001.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nk_001.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sk_001.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hk_001.jpg</shadervar>
+    </material>
+    <material name="km041">
+      <texture>k_003.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nk_003.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sk_003.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hk_003.jpg</shadervar>
+    </material>
+    <material name="km08">
+      <texture>k_008.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="km10">
+      <texture>k_010.png</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="km11">
+      <texture>k_011.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nk_011.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sk_011.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hk_011.jpg</shadervar>
+    </material>
+    <material name="km12">
+      <texture>k_012.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nk_012.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sk_012.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hk_012.jpg</shadervar>
+    </material>
+    <material name="km13">
+      <texture>k_013.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nk_013.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sk_013.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hk_013.jpg</shadervar>
+    </material>
+    <material name="km14">
+      <texture>k_014.png</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="k_015">
+      <texture>k_015.png</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="km16">
+      <texture>k_016.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nk_016.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sk_016.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hk_016.jpg</shadervar>
+    </material>
+    <material name="Standard_5">
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nk_016.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sk_016.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hk_016.jpg</shadervar>
+    </material>
+    <material name="km01.">
+      <texture>k_001.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nk_001.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sk_001.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hk_001.jpg</shadervar>
+    </material>
+    <material name="blinn1">
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nk_001.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sk_001.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hk_001.jpg</shadervar>
+    </material>
+	<material name="glass_reflect">
+		<!-- <texture>xygyw.tga</texture> -->
+		  <shader type="standard">reflectsphere</shader>
+			<shadervar name="tex reflection" type="texture">xygyw.tga</shadervar>
+			<shadervar name="reflection opacity" type="float">0.9</shadervar>
+		<!-- <shadervar name="tex normal" type="texture">bricks_n.png</shadervar>	 -->
+	</material>
+	<material name="fake_glass_reflect" >
+		<!-- <texture>xygyw.tga</texture> -->
+		  <shader type="standard">glass</shader>
+		  <shadervar name="refraction index" type="float">1.5</shadervar>
+		  <!-- <shadervar name="tex normal" type="texture">bricks_n.png</shadervar> -->
+		  <shadervar name="specular" type="vector4">0.7,0.8,0.9,1</shadervar>
+	</material>
+	
+    <material name="km18">
+      <texture>k_018.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="Material #3675">
+      <texture>q_001.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nq_001.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sq_001.jpg</shadervar>
+    </material>
+    <material name="Material #3687">
+      <texture>q_002.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nq_002.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sq_002.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hq_002.jpg</shadervar>
+    </material>
+    <material name="dm">
+      <texture>d_001.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex specular">sd_001.jpg</shadervar>
+    </material>
+    <material name="Material #3640">
+      <texture>r2_002.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nr2_002.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sr2_002.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hr2_002.jpg</shadervar>
+    </material>
+    <material name="Material #3699">
+      <texture>r2_004.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nr2_004.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sr2_004.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hr2_004.jpg</shadervar>
+    </material>
+    <material name="Material #3663">
+      <texture>r2_003.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nr2_003.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sr2_003.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hr2_003.jpg</shadervar>
+    </material>
+    <material name="Material #3617">
+      <texture>r2_001.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nr2_001.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sr2_001.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hr2_001.jpg</shadervar>
+    </material>
+    <material name="rm4">
+      <texture>k_003.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="rm5">
+      <texture>r5_001.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="rm06">
+      <texture>r6_001.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="Material #5449">
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="rm6">
+      <texture>r6_001.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="Material #5396">
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="Material #7839">
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="wm01">
+      <texture>w_001.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nw_001.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sw_001.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hw_001.jpg</shadervar>
+    </material>
+    <material name="wm06">
+      <texture>w_006.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nw_006.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sw_006.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hw_006.jpg</shadervar>
+    </material>
+    <material name="k_003">
+      <texture>w_003.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nw_003.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sw_003.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hw_003.jpg</shadervar>
+    </material>
+    <material name="w_008">
+      <texture>w_008.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nw_008.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sw_008.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hw_008.jpg</shadervar>
+    </material>
+    <material name="w_0082">
+      <texture>w_008b.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nw_008b.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sw_008b.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hw_008b.jpg</shadervar>
+    </material>
+    <material name="w_0081">
+      <texture>w_008a.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nw_008a.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sw_008a.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hw_008a.jpg</shadervar>
+    </material>
+    <material name="wm09">
+      <texture>w_009.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nw_009.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sw_009.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hw_009.jpg</shadervar>
+    </material>
+    <material name="wm10">
+      <texture>w_010.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nw_010.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sw_010.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hw_010.jpg</shadervar>
+    </material>
+    <material name="wm11">
+      <texture>w_011.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="wm12">
+      <texture>w_012.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex specular">sw_012.jpg</shadervar>
+    </material>
+    <material name="xm01">
+      <texture>x_001.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nx_001.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sx_001.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hx_001.jpg</shadervar>
+    </material>
+    <material name="xm02">
+      <texture>x_002.png</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="xm03">
+      <texture>x_003.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nx_003.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sx_003.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hx_003.jpg</shadervar>
+    </material>
+    <material name="xm04">
+      <texture>x_004.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+    </material>
+    <material name="xm05">
+      <texture>x_005.jpg</texture>
+      <shader type="diffuse">parallaxAtt</shader>
+      <shadervar type="texture" name="tex normal">nx_005.jpg</shadervar>
+      <shadervar type="texture" name="tex specular">sx_005.jpg</shadervar>
+      <shadervar type="texture" name="tex height">hx_005.jpg</shadervar>
+    </material>
+  </materials>
+</library>

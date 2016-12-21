@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="root">
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+		<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}"/>
+		<Property Name="MousePassThroughEnabled" Value="True"/>
+		<Window Type="font/Button" Name="Demo7/Window1/Quit">
+			<Property Name="Text" Value="font Sample"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.1,0},{0.27,0},{0.2,0}}"/>
+		</Window>
+		<Window Type="font/Button" Name="Demo7/Window1/font">
+			<Property Name="Text" Value="font Sample"/>
+			<Property Name="Font" Value="fangsong3"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.22,0},{0.3,0},{0.47,0},{0.47,0}}"/>
+		</Window>
+	</Window>
+</GUILayout>

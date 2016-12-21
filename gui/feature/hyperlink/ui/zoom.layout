@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="root">
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+		<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}"/>
+		<Property Name="MousePassThroughEnabled" Value="False"/>
+		<Window Type="zoom/StaticText" Name="Demo7/Window1/hyperlink">
+			<Window Type="zoom/StaticText" Name="Demo7/Window1/hyperlink/text">
+				<Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF"/>
+				<Property Name="FrameEnabled" Value="False"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0.8,0},{0.15,0}}"/>
+				<Property Name="BackgroundEnabled" Value="False"/>
+				<Property Name="HorzScrollbar" Value="False"/>
+				<Property Name="VertScrollbar" Value="False"/>
+				<Property Name="Text" Value="http://www.cegui.org/"/>
+			</Window>
+			<Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF"/>
+			<Property Name="FrameEnabled" Value="True"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0.5,0},{0.5,0}}"/>
+			<Property Name="BackgroundEnabled" Value="True"/>
+			<Property Name="Text" Value="
+			    hyperlink:  [window='Demo7/Window1/hyperlink/text'] 
+			  "/>
+		</Window>
+	</Window>
+</GUILayout>

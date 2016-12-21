@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library>
+  <library>/art/factories/house/house_01_mesh_Object01.xml</library>
+  <library>/art/factories/house/house_02_mesh_Object02.xml</library>
+  <library>/art/factories/house/house_03_mesh_Object03.xml</library>
+  <library>/art/factories/house/house_04_mesh_Object04.xml</library>
+</library>

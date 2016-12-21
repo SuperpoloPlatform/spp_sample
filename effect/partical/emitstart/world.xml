@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+	<!-- 本world文件来源：`$(CRYSTAL)/scripts/jamtemplate/world` -->
+	<addon/>
+
+	<plugins>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+		<!-- 发射星星需要引入的plugin -->
+		<plugin name="emitFact">crystalspace.mesh.loader.factory.emit</plugin>
+		<plugin name="emit">crystalspace.mesh.loader.emit</plugin>
+	</plugins>
+
+	<shaders/>
+
+	<textures>
+		<!-- 贴图 -->
+		<texture name='spark.png'>
+			<file>textures/spark.png</file>
+		</texture>
+		<texture name='no.png'>
+			<file>textures/no.png</file>
+		</texture>
+  </textures>
+
+	<materials>
+		<!--效果材质-->
+		<material name='spark'>
+			<texture>spark.png</texture>
+		</material>
+		<material name="no">
+			<texture>no.png</texture>
+		</material>
+	</materials>
+	
+	<sounds/>
+
+	<library>factories/genCube</library>
+	<library>factories/genPlane</library>
+	
+	<triggers/>
+
+
+    <meshfact name="emitFact">
+        <plugin>emitFact</plugin>
+        <params />
+    </meshfact>
+
+
+	<sector name='Scene'>
+		<cullerp plugin='crystalspace.culling.frustvis'/>
+		<!-- 给场景添加灯光 -->
+		<light name='Lamp.001'>
+			<center y='3.91767' x='4.52981' z='5.71327'/>
+			<color blue='1.0' green='0.370982319117' red='0.620215713978'/>
+			<radius brightness='1.0'>20.0</radius>
+		</light>
+		<light name='Lamp'>
+			<center y='4.0401' x='-4.97871' z='-5.63165'/>
+			<color blue='0.311641007662' green='0.323509275913' red='0.810107886791'/>
+			<radius brightness='1.0'>20.0</radius>
+		</light>
+		<!-- 创建出一个地面 -->
+		<meshobj name='Plane'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genPlane</factory>
+			<mixmode>
+				<alpha>0.498039</alpha>
+			</mixmode>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<!-- 摄像机跟随这个盒子 -->
+		<meshobj name='Cube'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>red</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+
+		<!--发射星星-->
+        <meshobj name="emitstart">
+            <priority>alpha</priority>
+            <plugin>emit</plugin>
+            <ztest />
+            <move>
+                <v x="0" y="0" z="0" />
+            </move>
+            <params>
+                <factory>emitFact</factory>
+                <mixmode>
+                    <add />
+                </mixmode>
+                <number>50</number>
+                <material>spark</material>
+                <rectparticles w="0.12" h="0.12" />
+                <lighting>no</lighting>
+                <totaltime>5000</totaltime>
+                <startpos>
+                    <emitfixed x="0" y="0" z="0" />
+                </startpos>
+                <startspeed>
+                    <emitfixed x="0" y="0.5" z="0" />
+                </startspeed>
+                <startaccel>
+                    <emitfixed x="0" y="0" z="0" />
+                </startaccel>
+                <aging>
+                    <color red="1" green="1" blue="1" />
+                    <time>0</time>
+                    <alpha>0.3</alpha>
+                    <swirl>1</swirl>
+                    <rotspeed>0</rotspeed>
+                    <scale>0.1</scale>
+                </aging>
+                <aging>
+                    <color red="0" green="1" blue="1" />
+                    <time>1000</time>
+                    <alpha>0.3</alpha>
+                    <swirl>0</swirl>
+                    <rotspeed>1</rotspeed>
+                    <scale>0.4</scale>
+                </aging>
+                <aging>
+                    <color red="0.6" green="0" blue="1" />
+                    <time>2000</time>
+                    <alpha>0.3</alpha>
+                    <swirl>0</swirl>
+                    <rotspeed>20</rotspeed>
+                    <scale>1.5</scale>
+                </aging>
+                <aging>
+                    <color red="0.3" green="0" blue="0.5" />
+                    <time>3000</time>
+                    <alpha>0.3</alpha>
+                    <swirl>0</swirl>
+                    <rotspeed>1</rotspeed>
+                    <scale>1</scale>
+                </aging>
+                <aging>
+                    <color red="0.3" green="0" blue="0.5" />
+                    <time>5000</time>
+                    <alpha>1</alpha>
+                    <swirl>0</swirl>
+                    <rotspeed>0</rotspeed>
+                    <scale>1</scale>
+                </aging>
+            </params>
+        </meshobj>
+
+	</sector>
+
+	<sequences/>
+
+	<!-- Start position are usually created in Blender by adding a 'Camera' -->
+	<start name='Camera'>
+		<sector>Scene</sector>
+		<position y='1' x='0' z='0'/>
+		<up y='1' x='0' z='0'/>
+		<forward y='0' x='-1' z='0'/>
+	</start>
+
+</world>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<!-- nv2的模型工厂 -->
+	<meshfact name="nv2">
+		<plugin>cal3dfact</plugin>
+		<params>
+			<options rotate_x_axis="yes" flip_textures="no" />
+			<animation file="/art/models/nv2/textures/stand.caf" name="stand" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/nv2/textures/run.caf" name="run" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/nv2/textures/walk.caf" name="walk" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/nv2/textures/attack1.caf" name="attack" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/nv2/textures/attack2.caf" name="beizhan" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/nv2/textures/dead.caf" name="die" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<scale value="0.005" />
+			<skeleton file="/art/models/nv2/textures/bone.csf" />
+			<mesh file="/art/models/nv2/textures/dunpai.cmf" name="dunpai" material="nv2_pifeng.jpg" />
+			<mesh file="/art/models/nv2/textures/hujian1.cmf" name="hujian1" material="nv2_pifeng.jpg" />
+			<mesh file="/art/models/nv2/textures/hujian2.cmf" name="hujian2" material="nv2_pifeng.jpg" />
+			<mesh file="/art/models/nv2/textures/huwan.cmf" name="huwan" material="nv2_yifu.jpg" />
+			<mesh file="/art/models/nv2/textures/jian.cmf" name="jian" material="nv2_pifeng.jpg" />
+			<mesh file="/art/models/nv2/textures/kuzi.cmf" name="kuzi" material="nv2_yifu.jpg" />
+			<mesh file="/art/models/nv2/textures/lian.cmf" name="lian" material="nv2_lian.jpg" />
+			<mesh file="/art/models/nv2/textures/pifeng.cmf" name="pifeng" material="nv2_pifeng.jpg" />
+			<mesh file="/art/models/nv2/textures/toukui.cmf" name="toukui" material="nv2_pifeng.jpg" />
+			<mesh file="/art/models/nv2/textures/xie.cmf" name="xie" material="nv2_yifu.jpg" />
+			<mesh file="/art/models/nv2/textures/yaodai.cmf" name="yaodai" material="nv2_yifu.jpg" />
+			<mesh file="/art/models/nv2/textures/yifu.cmf" name="yifu" material="nv2_yifu.jpg" />
+			
+			<socket name="socketR" tri="90" mesh="0" submesh="0" />
+			
+			<hardtransform
+				rot_axis_x="1"
+				rot_axis_y="0"
+				rot_axis_z="0"
+				rot_angle="90" />
+			<hardtransform
+				rot_axis_x="0"
+				rot_axis_y="1"
+				rot_axis_z="0"
+				rot_angle="180" />
+		</params>
+	</meshfact>
+</library>

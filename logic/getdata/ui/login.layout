@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="root">
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+		<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}"/>
+		<Property Name="MousePassThroughEnabled" Value="True"/>
+		<Window Type="interface/StaticText" Name="root/text">
+			<Property Name="UnifiedMaxSize" Value="{{0.138,0},{0.222,0}}"/>
+			<Property Name="UnifiedMinSize" Value="{{0.138,0},{0.222,0}}"/>
+			<Property Name="UnifiedPosition" Value="{{0.6,0},{0.6,0}}"/>
+			<Property Name="UnifiedSize" Value="{{0.138,0},{0.222,0}}"/>
+			<Property Name="bg_image" Value="set:interface image:bag_bg"/>
+			<Property Name="BackgroundEnabled" Value="True"/>
+			<Property Name="FrameEnabled" Value="True"/>
+			<Property Name="Visible" Value="False"/>
+			<Property Name="HorzLabelFormatting" Value="LeftAligned"/>
+			<Property Name="VertLabelFormatting" Value="CentreAligned"/>
+		</Window>
+	</Window>
+</GUILayout>

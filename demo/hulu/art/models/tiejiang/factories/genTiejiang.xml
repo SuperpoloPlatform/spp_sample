@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<!-- 玩家角色的模型工厂 -->
+	<meshfact name="tiejiang">
+		<plugin>cal3dfact</plugin>
+		<params>
+			<options rotate_x_axis="yes" flip_textures="no" />
+			<animation file="/art/models/tiejiang/textures/say.caf" name="say" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/tiejiang/textures/stand1.caf" name="stand1" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/tiejiang/textures/stand2.caf" name="stand2" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<scale value="0.005" />
+			<skeleton file="/art/models/tiejiang/textures/bone.csf" />
+
+			<mesh file="/art/models/tiejiang/textures/bei.cmf" name="bei" material="Material_npc_2_tga" />
+			<mesh file="/art/models/tiejiang/textures/huwan.cmf" name="huwan" material="Material_npc_2_tga" />
+			<mesh file="/art/models/tiejiang/textures/huzi1.cmf" name="huzi1" material="Material_npc_2_tga" />
+			<mesh file="/art/models/tiejiang/textures/huzi2.cmf" name="huzi2" material="Material_npc_2_tga" />
+			<mesh file="/art/models/tiejiang/textures/kuzi.cmf" name="kuzi" material="Material_npc_2_tga" />
+			<mesh file="/art/models/tiejiang/textures/toufa.cmf" name="toufa" material="Material_npc_2_tga" />
+			<mesh file="/art/models/tiejiang/textures/wuqi1.cmf" name="wuqi1" material="Material_npc_2_tga" />
+			<mesh file="/art/models/tiejiang/textures/wuqi2.cmf" name="wuqi2" material="Material_npc_2_tga" />
+			<mesh file="/art/models/tiejiang/textures/xie.cmf" name="xie" material="Material_npc_2_tga" />
+			<mesh file="/art/models/tiejiang/textures/yifu.cmf" name="yifu" material="Material_npc_2_tga" />
+
+			<socket name="socketjian" tri="90" mesh="2" submesh="0" />
+
+			<hardtransform
+				rot_axis_x="1"
+				rot_axis_y="0"
+				rot_axis_z="0"
+				rot_angle="90" />
+			<hardtransform
+				rot_axis_x="0"
+				rot_axis_y="1"
+				rot_axis_z="0"
+				rot_angle="180" />
+		</params>
+	</meshfact>
+</library>

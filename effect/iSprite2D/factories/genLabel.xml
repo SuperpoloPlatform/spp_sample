@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<plugins>
+		<plugin name='spr2d'>crystalspace.mesh.loader.sprite.2d</plugin>
+		<plugin name='spr2dfact'>crystalspace.mesh.loader.factory.sprite.2d</plugin>
+	</plugins>
+	<textures>
+		<texture name='a.png'>
+			<file>/textures/a.png</file>
+			<alpha>
+				<binary/>
+			</alpha>
+		</texture>
+		<texture name='b.png'>
+			<file>/textures/b.png</file>
+			<alpha>
+				<binary/>
+			</alpha>
+		</texture>
+		<texture name='c.png'>
+			<file>/textures/c.png</file>
+			<alpha>
+				<binary/>
+			</alpha>
+		</texture>
+		<texture name='d.png'>
+			<file>/textures/d.png</file>
+			<alpha>
+				<binary/>
+			</alpha>
+		</texture>
+	</textures>
+	<materials>
+		<material name='a.png'>
+			<texture>a.png</texture>
+			<shader type='diffuse'>std_lighting</shader>
+			<!--<shader type='ambient'>ambient</shader>-->
+		</material>
+		<material name='b.png'>
+			<texture>b.png</texture>
+			<shader type='diffuse'>std_lighting</shader>
+			<!--<shader type='ambient'>ambient</shader>-->
+		</material>
+		<material name='c.png'>
+			<texture>c.png</texture>
+			<shader type='diffuse'>std_lighting</shader>
+			<!--<shader type='ambient'>ambient</shader>-->
+		</material>
+		<material name='d.png'>
+			<texture>d.png</texture>
+			<shader type='diffuse'>std_lighting</shader>
+			<!--<shader type='ambient'>ambient</shader>-->
+		</material>
+	</materials>
+  <meshfact name='Tree'>
+    <plugin>spr2dfact</plugin>
+    <params/>
+  </meshfact>
+</library>

@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+	<!-- 本world文件来源：`$(CRYSTAL)/scripts/jamtemplate/world` -->
+	<addon/>
+
+	<plugins>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+		<!-- 粒子球需要引入的plugin -->
+		<plugin name="particlesFact">crystalspace.mesh.loader.factory.particles</plugin>
+        <plugin name="particles">crystalspace.mesh.loader.particles</plugin>
+	</plugins>
+
+	<shaders/>
+
+	<textures>
+		<!-- 贴图 -->
+		<texture name="flare_center">
+            <file>textures/flare_center.jpg</file>
+        </texture>
+		<texture name="red">
+			<color red="1" green="0" blue="0" />
+		</texture>
+		<texture name="green">
+			<color red="0" green="1" blue="0" />
+		</texture>
+		<texture name="blue">
+			<color red="0" green="0" blue="1" />
+		</texture>
+  </textures>
+
+	<materials>
+		<!-- Simple materials based on colors, which don't need textures -->
+		<material name="red">
+			<texture>red</texture>
+		</material>
+		<material name="green">
+			<texture>green</texture>
+		</material>
+		<material name="blue">
+			<texture>blue</texture>
+		</material>
+		<!--效果材质-->
+		<material name="flare_center">
+            <texture>flare_center</texture>
+        </material>
+	</materials>
+
+	<sounds/>
+
+	<library>factories/genCube</library>
+	<library>factories/genPlane</library>
+	
+	<triggers/>
+
+
+    <meshfact name="particlesFactory">
+        <plugin>particlesFact</plugin>
+        <params />
+    </meshfact>
+
+
+	<sector name='Scene'>
+		<cullerp plugin='crystalspace.culling.frustvis'/>
+		<!-- 给场景添加灯光 -->
+		<light name='Lamp.001'>
+			<center y='3.91767' x='4.52981' z='5.71327'/>
+			<color blue='1.0' green='0.370982319117' red='0.620215713978'/>
+			<radius brightness='1.0'>20.0</radius>
+		</light>
+		<light name='Lamp'>
+			<center y='4.0401' x='-4.97871' z='-5.63165'/>
+			<color blue='0.311641007662' green='0.323509275913' red='0.810107886791'/>
+			<radius brightness='1.0'>20.0</radius>
+		</light>
+		<!-- 创建出一个地面 -->
+		<meshobj name='Plane'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genPlane</factory>
+			<mixmode>
+				<alpha>0.498039</alpha>
+			</mixmode>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<!-- 摄像机跟随这个盒子 -->
+		<meshobj name='Cube'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>red</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		
+		<!--粒子横向移动-->
+        <meshobj name="portalzoom">
+			<plugin>particles</plugin>
+			<ztest />
+			<priority>alpha</priority>
+			<move>
+				<v x="0" y="2" z="0" />
+			</move>
+			<params>
+				<factory>particlesFactory</factory>
+				<mixmode>
+					<add />
+				</mixmode>
+				<material>flare_center</material>
+				<particlesize x="0.1" y="0.1" />
+				<emitter type="box">
+					<box>
+						<min x="0" y="-2.5" z="-2.5" />
+						<max x="0" y="2.5" z="2.5" />
+					</box>
+					<initialttl min="1" max="1" />
+					<emissionrate>50</emissionrate>
+					<initialvelocity x="-15" y="0" z="0" />
+					<uniformvelocity />
+					<placement>volume</placement>
+				</emitter>
+				<effector type="lincolor">
+					<color red="0.3" green="0.4" blue="0.5" time="-0.8" />
+					<color red="0.6" green="0.4" blue="1.0" time="0.2" />
+					<color red="0.0" green="1.0" blue="1.0" time="0.5" />
+					<color red="1.0" green="1.0" blue="1.0" time="0.8" />
+					<color red="1.0" green="1.0" blue="1.0" time="1.0" />
+				</effector>
+			</params>
+		</meshobj>
+
+	</sector>
+
+	<sequences/>
+
+	<!-- Start position are usually created in Blender by adding a 'Camera' -->
+	<start name='Camera'>
+		<sector>Scene</sector>
+		<position y='1' x='0' z='0'/>
+		<up y='1' x='0' z='0'/>
+		<forward y='0' x='-1' z='0'/>
+	</start>
+
+</world>

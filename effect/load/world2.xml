@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+	<!-- 本world文件来源：`$(CRYSTAL)/scripts/jamtemplate/world` -->
+	<addon/>
+
+	<plugins>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+	</plugins>
+	
+	<shaders/>
+
+	<textures>
+		<texture name="red">
+			<color red="1" green="0" blue="0" />
+		</texture>
+		<texture name="green">
+			<color red="0" green="1" blue="0" />
+		</texture>
+		<texture name="blue">
+			<color red="0" green="0" blue="1" />
+		</texture>
+		<texture name="yellow">
+			<color red="1" green="1" blue="0" />
+		</texture>
+		<texture name="white">
+			<color red="1" green="1" blue="1" />
+		</texture>
+		<texture name="black">
+			<color red="0" green="0" blue="0" />
+		</texture>
+	</textures>
+	<materials>
+		<material name="red">
+			<texture>red</texture>
+		</material>
+		<material name="green">
+			<texture>green</texture>
+		</material>
+		<material name="blue">
+			<texture>blue</texture>
+		</material>
+		<material name="yellow">
+			<texture>yellow</texture>
+		</material>
+		<material name="white">
+			<texture>white</texture>
+		</material>
+		<material name="black">
+			<texture>black</texture>
+		</material>
+	</materials>
+
+	<sounds/>
+
+	<library>factories/genCube.xml</library>
+	<library>factories/genPlane.xml</library>
+	
+	<triggers/>
+	
+	<sector name='Scene'>
+		<cullerp plugin='crystalspace.culling.frustvis'/>
+
+		<meshobj name='Cube2'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>red</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<meshobj name='Cube1'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>blue</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='5' z='8'/>
+			</move>
+		</meshobj>
+	</sector>
+
+	<sequences/>
+
+</world>

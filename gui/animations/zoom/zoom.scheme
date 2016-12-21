@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<GUIScheme Name="zoom">
+	<Imageset Name="zoom" Filename="zoom.imageset" />
+	<LookNFeel Filename="zoom.looknfeel" />
+	<WindowRendererSet Filename="CEGUIFalagardWRBase" />
+	<FalagardMapping WindowType="zoom/Button"      TargetType="CEGUI/PushButton"  Renderer="Falagard/Button"       LookNFeel="zoom/Button" />
+</GUIScheme>

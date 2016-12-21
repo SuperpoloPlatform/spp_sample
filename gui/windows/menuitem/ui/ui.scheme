@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<GUIScheme Name="DragContainer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xml_schemas/GUIScheme.xsd">
+	<Imageset Name="ice" Filename="/imagedata/ice.imageset"/>
+	<Imageset Name="TaharezLook" Filename="/imagedata/TaharezLook.imageset"/>
+	<LookNFeel Filename="menuitem.looknfeel"/>
+	<WindowRendererSet Filename="CEGUIFalagardWRBase"/>
+	<FalagardMapping WindowType="Demo/Button" TargetType="CEGUI/PushButton" Renderer="Falagard/Button" LookNFeel="Demo/Button"/>
+	<FalagardMapping WindowType="Demo/PopupMenu" TargetType="CEGUI/PopupMenu" Renderer="Falagard/PopupMenu" LookNFeel="Demo/PopupMenu"/>
+	<FalagardMapping WindowType="Demo/Menubar" TargetType="CEGUI/Menubar" Renderer="Falagard/Menubar" LookNFeel="Demo/Menubar"/>
+	<FalagardMapping WindowType="Demo/MenuItem" TargetType="CEGUI/MenuItem" Renderer="Falagard/MenuItem" LookNFeel="Demo/MenuItem"/>
+	<FalagardMapping WindowType="Demo/ImageButton" TargetType="CEGUI/PushButton" Renderer="Falagard/Button" LookNFeel="Demo/ImageButton"/>
+	<FalagardMapping WindowType="Demo/VerticalScrollbar" TargetType="CEGUI/Scrollbar" Renderer="Falagard/Scrollbar" LookNFeel="Demo/VerticalScrollbar"/>
+	<FalagardMapping WindowType="Demo/HorizontalScrollbar" TargetType="CEGUI/Scrollbar" Renderer="Falagard/Scrollbar" LookNFeel="Demo/HorizontalScrollbar"/>
+	<FalagardMapping WindowType="Demo/VerticalScrollbarThumb" TargetType="CEGUI/Thumb" Renderer="Falagard/Button" LookNFeel="Demo/VerticalScrollbarThumb"/>
+	<FalagardMapping WindowType="Demo/HorizontalScrollbarThumb" TargetType="CEGUI/Thumb" Renderer="Falagard/Button" LookNFeel="Demo/HorizontalScrollbarThumb"/>
+	<FalagardMapping WindowType="Demo/ComboEditbox" TargetType="CEGUI/Editbox" Renderer="Falagard/Editbox" LookNFeel="Demo/ComboEditbox"/>
+	<FalagardMapping WindowType="Demo/ComboDropList" TargetType="CEGUI/ComboDropList" Renderer="Falagard/Listbox" LookNFeel="Demo/ComboDropList"/>
+	<FalagardMapping WindowType="Demo/Combobox" TargetType="CEGUI/Combobox" Renderer="Falagard/Default" LookNFeel="Demo/Combobox"/>
+	<FalagardMapping WindowType="Demo/OKButton" TargetType="CEGUI/PushButton" Renderer="Falagard/Button" LookNFeel="Demo/OKButton"/>
+	<FalagardMapping WindowType="Demo/FrameWindow" TargetType="CEGUI/FrameWindow" Renderer="Falagard/FrameWindow" LookNFeel="Demo/FrameWindow"/>
+	<FalagardMapping WindowType="Demo/Titlebar" TargetType="CEGUI/Titlebar" Renderer="Falagard/Titlebar" LookNFeel="Demo/Titlebar"/>
+	<FalagardMapping WindowType="Demo/SystemButton" TargetType="CEGUI/PushButton" Renderer="Falagard/SystemButton" LookNFeel="Demo/SystemButton"/>
+	<FalagardMapping WindowType="checkbox/ToggleButton" TargetType="CEGUI/Checkbox" Renderer="Falagard/ToggleButton" LookNFeel="checkbox/ToggleButton"/>
+	<FalagardMapping WindowType="Demo/StaticText" TargetType="DefaultWindow" Renderer="Falagard/StaticText" LookNFeel="Demo/StaticText"/>
+</GUIScheme>

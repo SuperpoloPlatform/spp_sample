@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+	<plugins>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+	</plugins>
+	<library>genCube.xml</library>
+	<sector name='Scene'>
+		<meshobj name='Cube'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>no</material>
+			</params>
+			<zuse/>
+		</meshobj>
+	</sector>
+	<start name='Camera'>
+		<sector>Scene</sector>
+		<position y='1' x='0' z='0'/>
+		<up y='1' x='0' z='0'/>
+		<forward y='0' x='-1' z='0'/>
+	</start>
+
+</world>

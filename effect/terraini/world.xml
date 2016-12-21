@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<world>
+    <plugins>
+	    <plugin name="genmeshFactory">crystalspace.mesh.loader.factory.genmesh</plugin>
+		<plugin name="genmesh">crystalspace.mesh.loader.genmesh</plugin>
+        <plugin name="terrainFact">crystalspace.mesh.loader.factory.terrain2</plugin>
+        <plugin name="terrain">crystalspace.mesh.loader.terrain2</plugin>
+    </plugins>
+    <textures>
+			<texture name="ScatterSky">
+				<color red="1" green="1" blue="1" />
+			</texture>
+        <texture name="andrew_marble4.jpg">
+            <file>/textures/andrew_marble4.jpg</file>
+        </texture>
+        <texture name="stone4.gif">
+            <file>/textures/stone4.gif</file>
+        </texture>
+        <texture name="grass.png">
+            <file>/textures/grass.png</file>
+        </texture>
+        <texture name="materialmap_base_00.png">
+            <file>/textures/materialmap_base_00.png</file>
+        </texture>
+        <texture name="materialmap_base_01.png">
+            <file>/textures/materialmap_base_01.png</file>
+        </texture>
+        <texture name="materialmap_base_10.png">
+            <file>/textures/materialmap_base_10.png</file>
+        </texture>
+        <texture name="materialmap_base_11.png">
+            <file>/textures/materialmap_base_11.png</file>
+        </texture>
+    </textures>
+    <shaders>
+        <shader>
+            <file>/shader/terrain_fixed_base.xml</file>
+        </shader>
+        <shader>
+            <file>/shader/terrain_fixed_splatting.xml</file>
+        </shader>
+    </shaders>
+    <library>lightmaps.cslib</library>
+    <materials>
+        <material name="ScatterSky">
+            <texture>ScatterSky</texture>
+        </material>
+		
+		
+        <material name="Base00">
+            <texture>materialmap_base_00.png</texture>
+            <shader type="ambient">terrain_fixed_base</shader>
+        </material>
+        <material name="Base01">
+            <texture>materialmap_base_01.png</texture>
+            <shader type="ambient">terrain_fixed_base</shader>
+        </material>
+        <material name="Base10">
+            <texture>materialmap_base_10.png</texture>
+            <shader type="ambient">terrain_fixed_base</shader>
+        </material>
+        <material name="Base11">
+            <texture>materialmap_base_11.png</texture>
+            <shader type="ambient">terrain_fixed_base</shader>
+        </material>
+		
+		
+		
+        <material name="Marble">
+            <texture>andrew_marble4.jpg</texture>
+            <shadervar name="texture scale" type="vector2">32,32</shadervar>
+            <shader type="terrain splat">terrain_fixed_splatting</shader>
+        </material>
+        <material name="Stone">
+            <texture>stone4.gif</texture>
+            <shadervar name="texture scale" type="vector2">128,128</shadervar>
+            <shader type="terrain splat">terrain_fixed_splatting</shader>
+        </material>
+        <material name="Grass">
+            <texture>grass.png</texture>
+            <shadervar name="texture scale" type="vector2">256,256</shadervar>
+            <shader type="terrain splat">terrain_fixed_splatting</shader>
+        </material>
+		
+		
+        <material name="box1">
+            <texture>grass.png</texture>
+        </material>
+        <material name="box2">
+            <texture>andrew_marble4.jpg</texture>
+        </material>
+		<material name="Material">
+			<texture>grass.png</texture>
+		</material>
+    </materials>
+    <library>factories/grass.lib</library>
+    <library>factories/rock.lib</library>
+    <library>factories/tree.lib</library>
+    <library>factories/tree_skimp.lib</library>
+    <library>factories/treebark_bare.lib</library>
+    <library>factories/bush2.lib</library>
+	<library>factories/genCube</library>
+    <addon>
+        <plugin>crystalspace.renderloop.loop.loader</plugin>
+        <paramsfile>/shader/std_rloop_terrainfixed.xml</paramsfile>
+    </addon>
+    <settings>
+        <clearscreen>yes</clearscreen>
+        <clearzbuf>yes</clearzbuf>
+        <renderloop>std_rloop_terrainfixed</renderloop>
+    </settings>
+    <start>
+        <sector>room</sector>
+        <position x="0" y="11" z="-40" />
+        <forward x="0" y="0" z="1" />
+        <up x="0" y="1" z="0" />
+    </start>
+    <meshfact name="TerrainFact">
+        <plugin>terrainFact</plugin>
+        <params>
+            <renderer>crystalspace.mesh.object.terrain2.bruteblockrenderer</renderer>
+            <collider>crystalspace.mesh.object.terrain2.collider</collider>
+            <feeder>crystalspace.mesh.object.terrain2.simpledatafeeder</feeder>
+            <maxloadedcells>20</maxloadedcells>
+            <cells>
+                <celldefault>
+                    <gridsize width="33" height="33" />
+                    <materialmapsize width="32" height="32" />
+                    <size x="256" y="32" z="256" />
+                </celldefault>
+				
+				
+                <cell>
+                    <name>0</name>
+                    <position x="-256" y="-256" />
+                    <basematerial>Base01</basematerial>
+                    <feederproperties>
+                        <param name="heightmap source">textures/heightmap_01.png</param>
+                        <param name="materialmap source">textures/material_01.png</param>
+                    </feederproperties>
+                </cell>
+                <cell>
+                    <name>1</name>
+                    <position x="0" y="-256" />
+                    <basematerial>Base11</basematerial>
+                    <feederproperties>
+                        <param name="heightmap source">textures/heightmap_11.png</param>
+                        <param name="materialmap source">textures/material_11.png</param>
+                    </feederproperties>
+                </cell>
+                <cell>
+                    <name>2</name>
+                    <position x="-256" y="0" />
+                    <basematerial>Base00</basematerial>
+                    <feederproperties>
+                        <param name="heightmap source">textures/heightmap_00.png</param>
+                        <param name="materialmap source">textures/material_00.png</param>
+                    </feederproperties>
+                </cell>
+                <cell>
+                    <name>3</name>
+                    <position x="0" y="0" />
+                    <basematerial>Base10</basematerial>
+                    <feederproperties>
+                        <param name="heightmap source">textures/heightmap_10.png</param>
+                        <param name="materialmap source">textures/material_10.png</param>
+                    </feederproperties>
+                </cell>
+				
+				
+            </cells>
+        </params>
+    </meshfact>
+    <sector name="room">
+	    
+        <light name="sun">
+            <center x="-50000" y="86030" z="0" />
+            <color red="0.85903" green="0.80995" blue="0.70420" />
+            <radius>1000000</radius>
+        </light>
+		
+		
+		<meshobj name='Cube'>
+		  <plugin>genmesh</plugin>
+		  <params>
+			<factory>genCube</factory>
+			<material>Material</material>
+		  </params>
+		  <zuse/>
+		  <move>
+			<v y='12' x='-2.9314' z='-0.3933'/>
+		  </move>
+		</meshobj>
+		
+		<meshobj name='tree'>
+		  <plugin>genmesh</plugin>
+		  <params>
+			<factory>treebark</factory>
+			<material>materialbark</material>
+		  </params>
+		  <zuse/>
+		  <move>
+			<v y='1' x='0.9314' z='-0.3933'/>
+		  </move>
+		</meshobj>
+		
+		
+		<meshobj name='treebark_skimp'>
+		  <plugin>genmesh</plugin>
+		  <params>
+			<factory>treebark_skimp</factory>
+			<material>materialbark</material>
+		  </params>
+		  <zuse/>
+		  <move>
+			<v y='1' x='3.9314' z='-0.3933'/>
+		  </move>
+		</meshobj>
+		
+		
+		
+		<meshobj name='treebark_bare'>
+		  <plugin>genmesh</plugin>
+		  <params>
+			<factory>treebark_bare</factory>
+			<material>materialbark</material>
+		  </params>
+		  <zuse/>
+		  <move>
+			<v y='1' x='6.9314' z='-0.3933'/>
+		  </move>
+		</meshobj>
+		
+		
+		<meshobj name='bush2'>
+		  <plugin>genmesh</plugin>
+		  <params>
+			<factory>bush2</factory>
+			<material>sage2.png</material>
+		  </params>
+		  <zuse/>
+		  <move>
+			<v y='1' x='9.9314' z='-0.3933'/>
+		  </move>
+		</meshobj>
+		
+		
+		<meshobj name='Rock'>
+		  <plugin>genmesh</plugin>
+		  <params>
+			<factory>Rock</factory>
+			<material>rocky_surface.jpg</material>
+		  </params>
+		  <zuse/>
+		  <move>
+			<v y='1' x='12.9314' z='-0.3933'/>
+		  </move>
+		</meshobj>
+		
+		
+		<meshobj name='Grass'>
+		  <plugin>genmesh</plugin>
+		  <params>
+			<factory>Grass</factory>
+			<material>grass.dds</material>
+		  </params>
+		  <zuse/>
+		  <move>
+			<v y='1' x='15.9314' z='-0.3933'/>
+		  </move>
+		</meshobj>
+		
+        <meshobj name="Terrain">
+            <plugin>terrain</plugin>
+            <params>
+                <factory>TerrainFact</factory>
+                <materialpalette>
+                    <material>Grass</material>
+                    <material>Marble</material>
+                    <material>Stone</material>
+                </materialpalette>
+                <cells>
+				
+				
+                    <cell>
+                        <name>0</name>
+                        <renderproperties>
+                            <shadervar name="texture lod distance" type="vector3">200.000000,200.000000,200.000000</shadervar>
+                            <shadervar name="tex lightmap" type="texture">lightmaps_terraini_0_png</shadervar>
+                        </renderproperties>
+                    </cell>
+                    <cell>
+                        <name>1</name>
+                        <renderproperties>
+                            <shadervar name="texture lod distance" type="vector3">200.000000,200.000000,200.000000</shadervar>
+                            <shadervar name="tex lightmap" type="texture">lightmaps_terraini_1_png</shadervar>
+                        </renderproperties>
+                    </cell>
+                    <cell>
+                        <name>2</name>
+                        <renderproperties>
+                            <shadervar name="texture lod distance" type="vector3">200.000000,200.000000,200.000000</shadervar>
+                            <shadervar name="tex lightmap" type="texture">lightmaps_terraini_2_png</shadervar>
+                        </renderproperties>
+                    </cell>
+                    <cell>
+                        <name>3</name>
+                        <renderproperties>
+                            <shadervar name="texture lod distance" type="vector3">200.000000,200.000000,200.000000</shadervar>
+                            <shadervar name="tex lightmap" type="texture">lightmaps_terraini_3_png</shadervar>
+                        </renderproperties>
+                    </cell>
+	
+                </cells>
+            </params>
+            <move>
+                <v x="0" y="0" z="0" />
+            </move>
+            <priority>wall</priority>
+            <staticlit />
+        </meshobj>
+    </sector>
+</world>

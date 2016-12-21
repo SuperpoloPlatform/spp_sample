@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<plugins>
+		<plugin name='null'>crystalspace.mesh.loader.null</plugin>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+		<plugin name="cal3d">crystalspace.mesh.loader.sprite.cal3d</plugin>
+		<plugin name="cal3dfact">crystalspace.mesh.loader.factory.sprite.cal3d</plugin>
+	</plugins>
+	<textures>
+		<texture name="jyg_zcb_js005_face">
+			<file>/textures/jyg_zcb_js005_face.jpg</file>      
+			<alpha>
+				<binary/>
+			</alpha>
+		</texture>
+		<texture name="jyg_zcb_js005_yifu">
+			<file>/textures/jyg_zcb_js005_yifu.jpg</file>      
+			<alpha>
+				<binary/>
+			</alpha>
+		</texture>
+	</textures>
+	<materials>
+		<material name="jyg_zcb_js005_face.jpg">
+			<texture>jyg_zcb_js005_face</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="jyg_zcb_js005_yifu.jpg">
+			<texture>jyg_zcb_js005_yifu</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+	</materials>
+	<!-- 玩家角色的模型工厂 -->
+	<meshfact name="nan">
+		<plugin>cal3dfact</plugin>
+		<params>
+			<options rotate_x_axis="yes" flip_textures="no" />
+			<animation file="/textures/run.caf" name="run" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/textures/stand.caf" name="stand" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/textures/walk.caf" name="walk" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<scale value="0.05" />
+			<skeleton file="/textures/nvhai.csf" />
+			<mesh file="/textures/nvhai_shenti.cmf" name="yifu2" material="jyg_zcb_js005_yifu.jpg" />
+			<mesh file="/textures/nvhai_tou.cmf" name="toufa1" material="jyg_zcb_js005_face.jpg" />
+			<hardtransform
+				rot_axis_x="1"
+				rot_axis_y="0"
+				rot_axis_z="0"
+				rot_angle="90" />
+			<hardtransform
+				rot_axis_x="0"
+				rot_axis_y="1"
+				rot_axis_z="0"
+				rot_angle="180" />
+		</params>
+	</meshfact>
+</library>

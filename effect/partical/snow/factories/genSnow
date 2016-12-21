@@ -1,0 +1,7 @@
+<library>
+	<!-- 下雪工厂-->
+	<meshfact name="particlesFactory">
+		<plugin>particlesFact</plugin>
+		<params />
+	</meshfact>
+</library>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Imageset Name="font" Imagefile="font.png" NativeHorzRes="800" NativeVertRes="600" AutoScaled="false">
+<Image Name="ButtonLeftHighlight" XPos="102" YPos="22" Width="4" Height="16" />
+<Image Name="ButtonMiddleHighlight" XPos="119" YPos="22" Width="14" Height="16" />
+<Image Name="ButtonRightHighlight" XPos="146" YPos="22" Width="4" Height="16" />
+<Image Name="ButtonLeftNormal" XPos="102" YPos="4" Width="4" Height="16" />
+<Image Name="ButtonMiddleNormal" XPos="124" YPos="4" Width="14" Height="16" />
+<Image Name="ButtonRightNormal" XPos="146" YPos="4" Width="4" Height="16" />
+<Image Name="ButtonLeftPushed" XPos="102" YPos="40" Width="4" Height="16" />
+<Image Name="ButtonMiddlePushed" XPos="119" YPos="40" Width="14" Height="16" />
+<Image Name="ButtonRightPushed" XPos="146" YPos="40" Width="4" Height="16" />
+<Image Name="MouseArrow" XPos="179" YPos="1" Width="27" Height="27" />
+</Imageset>

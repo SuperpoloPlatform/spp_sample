@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<!-- 玩家角色的模型工厂 -->
+	<meshfact name="nan">
+		<plugin>cal3dfact</plugin>
+		<params>
+			<options rotate_x_axis="yes" flip_textures="no" />
+			<animation file="/art/models/player/textures/stand.caf" name="stand" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/player/textures/run.caf" name="run" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/player/textures/walk.caf" name="walk" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/player/textures/attack.caf" name="attack" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/player/textures/beizhan.caf" name="beizhan" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/player/textures/die.caf" name="die" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<scale value="0.005" />
+			<skeleton file="/art/models/player/textures/bone.csf" />
+
+			<mesh file="/art/models/player/textures/yifu.cmf" name="yifu2" material="katongnan.png" />
+			<mesh file="/art/models/player/textures/lian.cmf" name="toufa1" material="katonglian.jpg" />
+			<mesh file="/art/models/player/textures/jian.cmf" name="jian" material="jian2.jpg" />
+
+			<socket name="socketjian" tri="90" mesh="2" submesh="0" />
+
+			<hardtransform
+				rot_axis_x="1"
+				rot_axis_y="0"
+				rot_axis_z="0"
+				rot_angle="90" />
+			<hardtransform
+				rot_axis_x="0"
+				rot_axis_y="1"
+				rot_axis_z="0"
+				rot_angle="180" />
+		</params>
+	</meshfact>
+</library>

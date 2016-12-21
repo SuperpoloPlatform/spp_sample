@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="root">
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+		<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}"/>
+		<Property Name="MousePassThroughEnabled" Value="True"/>
+		<Window Type="Demo/FrameWindow" Name="Demo/Window1">
+			<Property Name="Text" Value="Window 1 - ItemListBox "/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.02,0},{0.5,0},{0.53,0}}"/>
+			<Window Type="Demo/ItemListBox" Name="Demo/Window1/Itemlistbox">
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.01,0},{0.01,0},{0.8,0},{0.8,0}}"/>
+			</Window>
+		</Window>
+		<Window Type="Demo/FrameWindow" Name="Demo/Window2">
+			<Property Name="Text" Value="Demo - Window 2：设置1窗口控件属性"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.57,0},{0.1,0},{0.98,0},{0.53,0}}"/>
+			<Window Type="Demo/Combobox" Name="Demo/Window2/Combobox">
+				<Property Name="ReadOnly" Value="True"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.01,0},{0,0},{0.52,0},{0.5,0}}"/>
+			</Window>
+			<Window Type="Demo/FrameWindow" Name="Demo/Window2/FrameWindow2">
+				<Property Name="Visible" Value="False"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.01,0},{0.72,0},{0.52,0},{0.92,0}}"/>
+				<Window Type="checkbox/ToggleButton" Name="Demo/Window2/FrameWindow2/checkbox1">
+					<Property Name="Text" Value="True"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,0},{0.0,0},{0.45,0},{1,0}}"/>
+				</Window>
+				<Window Type="checkbox/ToggleButton" Name="Demo/Window2/FrameWindow2/checkbox2">
+					<Property Name="Text" Value="False"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.55,0},{0.0,0},{1,0},{1,0}}"/>
+				</Window>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

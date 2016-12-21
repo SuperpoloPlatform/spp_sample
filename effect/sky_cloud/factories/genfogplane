@@ -1,0 +1,19 @@
+<library>
+    <meshfact name="genfogplane">
+        <plugin>genmeshfact</plugin>
+        <zfill />
+        <params>
+            <renderbuffer name="position" checkelementcount="no" file="/bindata/genfogplane_v" />
+            <renderbuffer name="normal" file="/bindata/genfogplane_n" />
+            <renderbuffer name="texture coordinate 0" file="/bindata/genfogplane_tc" />
+            <material>fogperlin0.png.001</material>
+            <mixmode>
+                <copy />
+            </mixmode>
+            <submesh name="0">
+                <material>fogperlin0.png.001</material>
+                <indexbuffer file="/bindata/genfogplane_i0" />
+            </submesh>
+        </params>
+    </meshfact>
+</library>

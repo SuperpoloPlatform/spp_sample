@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+  <plugins>
+    <plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+    <plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+  </plugins>
+  
+	<addon>
+		<plugin>crystalspace.renderloop.loop.loader</plugin>
+		<paramsfile>/shader/std_rloop_diffuse.xml</paramsfile>
+	</addon>
+  
+  <settings>
+    <clearscreen>yes</clearscreen>
+    <clearzbuf>yes</clearzbuf>
+	<lightmapcellsize>16</lightmapcellsize>
+	<renderloop>std_rloop_diffuse</renderloop>
+  </settings>
+  
+    <shaders>
+        <shader>
+            <file>/shader/light.xml</file>
+        </shader>
+        <shader>
+            <file>/shader/ambient.xml</file>
+        </shader>	
+		<shader>
+            <file>/shader/std_lighting.xml</file>
+        </shader>
+		<shader>
+            <file>/shader/std_lighting_detail.xml</file>
+        </shader>
+		<shader>
+		  <file>/shader/std_lighting_detail_add.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/std_lighting_detail_alpha.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/std_lighting_detail_alpha_scroll.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/std_lighting_detail_fixed.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/character/character_bump.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/extrudeGlow/extrudeGlow.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/fresnelWater/fresnelWater.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/light_bumpmap.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/light_bumpmap2.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/light_projection_bumpmap.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/specular/light_spec_bumpmap.xml</file>
+		</shader>
+		 <shader>
+            <file>/shader/parallax/parallax.xml</file>
+        </shader>
+		<shader>
+		  <file>/shader/parallaxAtt/parallaxAtt.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/reflect.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/reflectsphere.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/shadowmap/shadowmap.xml</file>
+		</shader>
+		 <shader>
+		  <file>/shader/stat_dyn_reflect.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/sky_scattering.xml</file>
+		</shader>
+		
+    </shaders>
+	
+	<textures>
+		<texture name="wall_wood_hori_color.png">
+			<file>/textures/wall_wood_hori_color.png</file>
+		</texture>
+		<texture name="wall_wood_hori_bump.png">
+			<file>/textures/wall_wood_hori_bump.png</file>
+			<class>normalmap</class>
+		</texture>
+		<texture name="wall_wood_hori_specu.png">
+			<file>/textures/wall_wood_hori_specu.png</file>
+		</texture>
+		
+		<texture name="FZ_01.PNG">
+			<file>/textures/FZ_01.PNG</file>
+		</texture>
+		<texture name="FZ_01_n.PNG">
+			<file>/textures/FZ_01_n.PNG</file>
+		</texture>
+		<texture name="FZ_01_h.PNG">
+			<file>/textures/FZ_01_h.PNG</file>
+		</texture>
+	
+	
+		<texture name="box.jpg">
+            <file>/textures/box.jpg</file>
+        </texture>
+        <texture name="boxn.jpg">
+            <file>/textures/boxn.png</file>
+            <class>normalmap</class>
+        </texture>
+        <texture name="boxh.jpg">
+            <file>/textures/boxh.jpg</file>
+        </texture>
+		<!--<texture name="kwarz_glow.jpg">
+            <file>/textures/kd.jpg</file>
+        </texture>-->
+		
+		<texture name="white.gif">
+            <file>/textures/white.gif</file>
+        </texture>
+		
+		 <texture name='reflect_01.jpg'>
+		  <file>/textures/reflect_01.jpg</file>
+		</texture>
+		
+		 <texture name='floors_1_d1n__128.jpg'>
+		  <file>/textures/floors_1_d1n__128.jpg</file>
+		</texture>
+		
+		<texture name="mosaic-detail">
+            <file>/textures/mosaic-detail.dds</file>
+        </texture>
+		
+		<texture name="reflection">
+			<type>crystalspace.texture.loader.cubemap</type>
+			<params>
+				<north>/textures/box.jpg</north>
+				<south>/textures/box.jpg</south>
+				<east>/textures/box.jpg</east>
+				<west>/textures/box.jpg</west>
+				<top>/textures/box.jpg</top>
+				<bottom>/textures/box.jpg</bottom>
+			</params>
+		</texture>
+		
+		<texture name='kwarz_glow.jpg'>
+		  <file>/textures/kwarz_glow.jpg</file>
+		</texture>
+		
+		<texture name='castle-metal_d.jpg'>
+		  <file>/textures/castle-metal_d.jpg</file>
+		</texture>
+		
+		<texture name='BUMPkwarz_normals.jpg'>
+		  <file>/textures/kwarz_normals.jpg</file>
+		  <class>normalmap</class>
+		</texture>
+		<texture name='BUMPkwartz_height.jpg'>
+		  <file>/textures/kwartz_height.jpg</file>
+		  <class>normalmap</class>
+		</texture>
+		
+		 <texture name="mosholes.gif">
+            <file>/textures/mosholes.png</file>
+            <transparent red="1" green="0" blue="0" />
+        </texture>
+		
+		<texture name="mosaic-detail">
+            <file>/textures/mosaic-detail.dds</file>
+        </texture>
+		
+		<texture name="spark">
+            <file>/textures/spark.png</file>
+        </texture>
+		
+		<texture name="bricks.gif">
+            <file>/textures/bricks.jpg</file>
+        </texture>
+		
+		<texture name="oldmetal.gif">
+            <file>/textures/oldmetal.jpg</file>
+        </texture>
+  </textures>
+  
+	<materials>
+		<material name="wall_wood_hori_color.png">
+			<texture>wall_wood_hori_color.png</texture>
+			<shadervar name="shininess" type="float">30</shadervar>
+			<shadervar name="tex normal" type="texture">wall_wood_hori_bump.png</shadervar>
+			<shadervar name="tex specular" type="texture">wall_wood_hori_specu.png</shadervar>
+		</material>
+		<!-- Ä¾Í·Ð§¹û -->
+		<material name='Material_Wood'>
+			<texture>FZ_01.PNG</texture>
+			<shadervar name="shininess" type="float">30</shadervar>
+			<shadervar type='texture' name='tex normal'>FZ_01_n.PNG</shadervar>
+			<!--<shadervar type='texture' name='tex height'>FZ_01_h.PNG</shadervar>-->
+			<shadervar type='texture' name='tex specular'>FZ_01_s.PNG</shadervar>
+		</material>	
+		 <material name="Material4">
+            <texture>box.jpg</texture>
+			<shadervar type='texture' name='tex normal'>box.jpg</shadervar>
+		</material>
+	</materials>
+ 
+  
+  <library>factories/genPlane</library>
+  <library>factories/genCube</library>
+  <library>factories/genCube1</library>
+  <library>factories/genparallax_spec_glow</library>
+	<meshfact name="genCube">
+		<plugin>genmeshfact</plugin>
+		<params>
+			<factory>\factories\genCube1</factory>
+			<material>Material4</material>
+		</params>
+</meshfact>
+
+  <triggers/>
+  <sector name='Scene'>
+    <cullerp plugin='crystalspace.culling.frustvis'/>
+    <meshobj name='Plane'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genPlane</factory>
+		<material>Material_Wood</material>
+		<mixmode>
+			<alpha>0.498039</alpha>
+		</mixmode>
+      </params>
+      <zuse/>
+      <move>
+        <v y='0' x='0' z='0'/>
+      </move>
+    </meshobj>
+	
+		<meshobj name="WoodCube">
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>wall_wood_hori_color.png</material>
+				<mixmode>
+					<copy />
+				</mixmode>
+				<submesh name="0">
+					<material>wall_wood_hori_color.png</material>
+				</submesh>
+			</params>
+			<zuse />
+			<move>
+				<v x="0" y="2.73355e-006" z="0" />
+			</move>
+		</meshobj>
+	
+	<meshobj name='Cube'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genparallax_spec_glow</factory>
+		<material>Material4</material>
+      </params>
+      <zuse/>
+      <move>
+        <v y='1' x='-2.9314' z='-0.3933'/>
+      </move>
+    </meshobj>
+
+	
+	<meshobj name='Cube1'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genparallax_spec_glow</factory>
+		<material>Material_Wood</material>
+      </params>
+      <zuse/>
+      <move>
+        <v y='1' x='2' z='-4'/>
+      </move>
+    </meshobj>	
+	
+    <light>
+		<center x="2" y="6" z="0" />
+		<radius>50</radius>
+		<color red="1" green="1.2" blue="1.4" />
+		<halo>
+			<type>nova</type>
+			<seed>0</seed>
+			<numspokes>100</numspokes>
+			<roundness>0.5</roundness>
+		</halo>
+	</light>
+	
+  </sector>
+ <sequences>
+		<sequence name="movemesh">
+			<rotate mesh="Cube1" duration="1000">
+				<roty>1</roty>
+				<v y='0.5' x='2' z='-2'/>
+			</rotate>
+			<delay time="1000" />
+			<enable trigger="rotmesh"/>
+		</sequence>
+	</sequences>
+	<triggers>
+        <trigger name="rotmesh">
+            <sectorvis sector="Scene" />
+            <fire delay="0" sequence="movemesh" />
+        </trigger>
+    </triggers>
+  <start name='Camera'>
+    <sector>Scene</sector>
+    <position y='2' x='0' z='-6'/>
+    <up y='1' x='-8.74228e-008' z='-1.19249e-008'/>
+    <forward y='-1.94707e-007' x='-1.74846e-007' z='1'/>
+  </start>
+</world>

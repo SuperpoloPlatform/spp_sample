@@ -1,0 +1,1308 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+  <textures>
+    <texture name='HD_02_T.TGA'>
+      <file>/art/models/haidai/textures/HD_02_T.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPHD_02_N.TGA'>
+      <file>/art/models/haidai/textures/HD_02_N.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='HDZW_02.TGA'>
+      <file>/art/models/haidai/textures/HDZW_02.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPHDZW_02N.TGA'>
+      <file>/art/models/haidai/textures/HDZW_02N.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='HDZW_01.TGA'>
+      <file>/art/models/haidai/textures/HDZW_01.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPHDZW_01N.TGA'>
+      <file>/art/models/haidai/textures/HDZW_01N.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='ZBG_T01T.TGA'>
+      <file>/art/models/haidai/textures/ZBG_T01T.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPZBG_T01N.TGA'>
+      <file>/art/models/haidai/textures/ZBG_T01N.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='ZBG_T02T.TGA'>
+      <file>/art/models/haidai/textures/ZBG_T02T.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPZBG_T02N.TGA'>
+      <file>/art/models/haidai/textures/ZBG_T02N.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='HAIDIHUA.TGA'>
+      <file>/art/models/haidai/textures/HAIDIHUA.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPHAIDIHUN.TGA'>
+      <file>/art/models/haidai/textures/HAIDIHUN.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='DLPZ_T.TGA'>
+      <file>/art/models/haidai/textures/DLPZ_T.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPDLPZ_N.TGA'>
+      <file>/art/models/haidai/textures/DLPZ_N.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='BL_DW02T.TGA'>
+      <file>/art/models/haidai/textures/BL_DW02T.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPBL_DW02N.TGA'>
+      <file>/art/models/haidai/textures/BL_DW02N.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='BL_DW01T.TGA'>
+      <file>/art/models/haidai/textures/BL_DW01T.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPBL_DW01N.TGA'>
+      <file>/art/models/haidai/textures/BL_DW01N.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='BL_DW03T.TGA'>
+      <file>/art/models/haidai/textures/BL_DW03T.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPBL_DW03N.TGA'>
+      <file>/art/models/haidai/textures/BL_DW03N.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='ZZCHONG.TGA'>
+      <file>/art/models/haidai/textures/ZZCHONG.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPZZCHONGN.TGA'>
+      <file>/art/models/haidai/textures/ZZCHONGN.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='DSP_S01T.TGA'>
+      <file>/art/models/haidai/textures/DSP_S01T.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPDSP_S01N.TGA'>
+      <file>/art/models/haidai/textures/DSP_S01N.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='ZBGST01T.TGA'>
+      <file>/art/models/haidai/textures/ZBGST01T.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPZBGST01N.TGA'>
+      <file>/art/models/haidai/textures/ZBGST01N.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='HD_ZB04T.TGA'>
+      <file>/art/models/haidai/textures/HD_ZB04T.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPHD_ZB04N.TGA'>
+      <file>/art/models/haidai/textures/HD_ZB04N.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='HD_ZB02T.TGA'>
+      <file>/art/models/haidai/textures/HD_ZB02T.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPHD_ZB02N.TGA'>
+      <file>/art/models/haidai/textures/HD_ZB02N.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='HD_ZB05T.TGA'>
+      <file>/art/models/haidai/textures/HD_ZB05T.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPHD_ZB05N.TGA'>
+      <file>/art/models/haidai/textures/HD_ZB05N.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='HD_ZB01T.TGA'>
+      <file>/art/models/haidai/textures/HD_ZB01T.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPHD_ZB01N.TGA'>
+      <file>/art/models/haidai/textures/HD_ZB01N.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='HD_ZB03T.TGA'>
+      <file>/art/models/haidai/textures/HD_ZB03T.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPHD_ZB03N.TGA'>
+      <file>/art/models/haidai/textures/HD_ZB03N.TGA</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='HD_ZB06T.TGA'>
+      <file>/art/models/haidai/textures/HD_ZB06T.TGA</file>
+      <alpha>
+        <binary/>
+      </alpha>
+    </texture>
+    <texture name='BUMPHD_ZB06N.TGA'>
+	<file>/art/models/haidai/textures/HD_ZB06N.TGA</file>
+	<class>normalmap</class>
+    </texture>
+	</textures>
+
+	
+	
+	
+  <materials>
+    <material name='Material #3'>
+      <texture>HD_02_T.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPHD_02_N.TGA</shadervar>
+    </material>
+    <material name='Material #1746'>
+      <texture>HDZW_02.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPHDZW_02N.TGA</shadervar>
+    </material>
+    <material name='Material #1745'>
+      <texture>HDZW_01.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPHDZW_01N.TGA</shadervar>
+    </material>
+    <material name='Material #5'>
+      <texture>ZBG_T01T.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPZBG_T01N.TGA</shadervar>
+    </material>
+    <material name='Material #6'>
+      <texture>ZBG_T02T.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPZBG_T02N.TGA</shadervar>
+    </material>
+    <material name='Material #16'>
+      <texture>HAIDIHUA.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPHAIDIHUN.TGA</shadervar>
+    </material>
+    <material name='07 - Default'>
+      <texture>DLPZ_T.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPDLPZ_N.TGA</shadervar>
+    </material>
+    <material name='Material #27'>
+      <texture>BL_DW02T.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPBL_DW02N.TGA</shadervar>
+    </material>
+    <material name='Material #26'>
+      <texture>BL_DW01T.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPBL_DW01N.TGA</shadervar>
+    </material>
+    <material name='Material #39'>
+      <texture>BL_DW03T.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPBL_DW03N.TGA</shadervar>
+    </material>
+    <material name='Material #261'>
+      <texture>ZZCHONG.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPZZCHONGN.TGA</shadervar>
+    </material>
+    <material name='Material #41'>
+      <texture>DSP_S01T.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPDSP_S01N.TGA</shadervar>
+    </material>
+    <material name='Material #21'>
+      <texture>ZBGST01T.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPZBGST01N.TGA</shadervar>
+    </material>
+    <material name='14 - Default'>
+      <texture>HD_ZB04T.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPHD_ZB04N.TGA</shadervar>
+    </material>
+    <material name='13 - Default'>
+      <texture>HD_ZB02T.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPHD_ZB02N.TGA</shadervar>
+    </material>
+    <material name='02 - Default'>
+      <texture>HD_ZB05T.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPHD_ZB05N.TGA</shadervar>
+    </material>
+    <material name='19 - Default'>
+      <texture>HD_ZB01T.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPHD_ZB01N.TGA</shadervar>
+    </material>
+    <material name='07 - Default1'>
+      <texture>HD_ZB03T.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPHD_ZB03N.TGA</shadervar>
+    </material>
+    <material name='20 - Default'>
+      <texture>HD_ZB06T.TGA</texture>
+	  <shader type="ambient">ambient</shader>
+      <shadervar name="specular" type="vector4">1.6, 1.8, 2, 0</shadervar>
+	  <shadervar name="tex normal" type="texture">BUMPHD_ZB06N.TGA</shadervar>
+    </material>
+  </materials>
+	<library>art/models/haidai/factories/genhaidai621_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai620_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai619_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai618_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai617_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai616_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai615_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai614_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai613_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai612_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai611_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai610_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai609_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai608_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai607_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai606_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai605_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai604_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai603_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai602_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai601_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai600_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai599_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai598_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai597_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai596_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai595_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai594_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai593_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai592_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai591_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai590_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai589_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai588_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai587_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai586_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai585_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai584_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai583_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai582_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai581_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai580_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai579_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai578_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai577_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai576_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai575_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai574_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai573_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai572_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai571_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai570_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai569_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai568_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai567_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai566_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai565_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai564_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai563_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai562_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai561_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai560_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai559_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai558_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai557_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai556_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai555_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai554_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai553_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai552_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai551_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai550_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai549_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai548_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai547_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai546_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai545_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai544_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai543_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai542_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai541_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai540_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai539_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai538_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai537_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai536_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai535_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai534_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai533_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai532_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai531_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai530_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai529_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai528_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai527_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai526_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai525_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai524_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai523_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai522_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai521_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai520_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai519_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai518_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai517_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai516_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai515_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai514_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai513_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai512_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai511_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai510_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai509_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai508_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai507_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai506_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai505_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai504_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai503_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai502_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai501_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai500_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai499_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai498_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai497_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai496_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai495_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai494_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai493_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai492_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai491_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai490_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai489_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai488_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai487_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai486_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai485_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai484_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai483_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai482_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai481_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai480_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai479_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai478_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai477_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai476_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai475_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai474_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai473_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai472_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai471_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai470_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai469_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai468_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai467_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai466_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai465_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai464_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai463_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai462_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai461_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai460_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai459_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai458_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai457_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai456_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai455_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai454_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai453_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai452_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai451_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai450_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai449_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai448_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai447_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai446_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai445_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai444_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai443_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai442_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai441_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai440_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai439_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai438_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai437_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai436_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai435_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai434_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai433_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai432_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai431_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai430_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai429_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai428_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai427_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai426_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai425_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai424_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai423_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai422_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai421_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai420_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai419_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai418_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai417_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai416_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai415_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai414_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai413_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai412_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai411_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai410_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai409_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai408_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai407_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai406_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai405_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai404_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai403_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai402_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai401_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai400_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai399_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai398_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai397_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai396_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai395_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai394_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai393_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai392_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai391_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai390_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai389_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai388_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai387_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai386_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai385_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai384_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai383_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai382_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai381_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai380_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai379_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai378_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai377_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai376_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai375_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai374_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai373_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai372_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai371_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai370_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai369_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai368_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai367_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai366_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai365_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai364_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai363_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai362_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai361_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai360_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai359_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai358_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai357_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai356_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai355_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai354_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai353_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai352_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai351_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai350_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai349_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai348_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai347_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai346_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai345_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai344_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai343_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai342_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai341_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizh190_Material #</library>
+	<library>art/models/haidai/factories/genhaidai340_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai339_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai338_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai337_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai336_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai335_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai334_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai333_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizh189_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh188_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh187_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh186_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh185_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh184_Material #</library>
+	<library>art/models/haidai/factories/genflower_47_Material #5</library>
+	<library>art/models/haidai/factories/genflower_47_Material #6</library>
+	<library>art/models/haidai/factories/genflower_46_Material #5</library>
+	<library>art/models/haidai/factories/genflower_46_Material #6</library>
+	<library>art/models/haidai/factories/genhaidai332_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai331_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai330_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai329_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai328_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai327_Material #3</library>
+	<library>art/models/haidai/factories/genflower_45_Material #5</library>
+	<library>art/models/haidai/factories/genflower_45_Material #6</library>
+	<library>art/models/haidai/factories/genhaidihua32_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua31_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh183_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh182_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh181_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh180_Material #</library>
+	<library>art/models/haidai/factories/genflower_44_Material #5</library>
+	<library>art/models/haidai/factories/genflower_44_Material #6</library>
+	<library>art/models/haidai/factories/genhaidizh179_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh178_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh177_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh176_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua30_Material #</library>
+	<library>art/models/haidai/factories/genhaidai326_Material #3</library>
+	<library>art/models/haidai/factories/gendilao10_07 - Default</library>
+	<library>art/models/haidai/factories/genBox13_Material #27</library>
+	<library>art/models/haidai/factories/genBox13_Material #26</library>
+	<library>art/models/haidai/factories/genBox13_Material #39</library>
+	<library>art/models/haidai/factories/genhaidai325_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai324_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai323_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai322_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai321_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai320_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai319_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai318_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai317_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai316_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai315_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai314_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai313_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai312_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai311_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai310_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai309_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizh175_Material #</library>
+	<library>art/models/haidai/factories/genhaidai308_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai307_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai306_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai305_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai304_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai303_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai302_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai301_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizh174_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh173_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh172_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh171_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh170_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh169_Material #</library>
+	<library>art/models/haidai/factories/genflower_43_Material #5</library>
+	<library>art/models/haidai/factories/genflower_43_Material #6</library>
+	<library>art/models/haidai/factories/genflower_42_Material #5</library>
+	<library>art/models/haidai/factories/genflower_42_Material #6</library>
+	<library>art/models/haidai/factories/genhaidai300_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai299_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai298_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai297_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai296_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai295_Material #3</library>
+	<library>art/models/haidai/factories/genflower_41_Material #5</library>
+	<library>art/models/haidai/factories/genflower_41_Material #6</library>
+	<library>art/models/haidai/factories/genhaidihua29_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua28_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh168_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh167_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh166_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh165_Material #</library>
+	<library>art/models/haidai/factories/genflower_40_Material #5</library>
+	<library>art/models/haidai/factories/genflower_40_Material #6</library>
+	<library>art/models/haidai/factories/genhaidizh164_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh163_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh162_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh161_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua27_Material #</library>
+	<library>art/models/haidai/factories/genhaidai294_Material #3</library>
+	<library>art/models/haidai/factories/gendilao09_07 - Default</library>
+	<library>art/models/haidai/factories/genBox12_Material #27</library>
+	<library>art/models/haidai/factories/genBox12_Material #26</library>
+	<library>art/models/haidai/factories/genBox12_Material #39</library>
+	<library>art/models/haidai/factories/genhaidai293_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai292_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai291_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai290_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai289_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai288_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai287_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai286_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai285_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai284_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai283_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai282_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai281_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai280_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai279_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai278_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai277_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizh160_Material #</library>
+	<library>art/models/haidai/factories/genhaidai276_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai275_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai274_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai273_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai272_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai271_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai270_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai269_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizh159_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh158_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh157_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh156_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh155_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh154_Material #</library>
+	<library>art/models/haidai/factories/genflower_39_Material #5</library>
+	<library>art/models/haidai/factories/genflower_39_Material #6</library>
+	<library>art/models/haidai/factories/genflower_38_Material #5</library>
+	<library>art/models/haidai/factories/genflower_38_Material #6</library>
+	<library>art/models/haidai/factories/genhaidai268_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai267_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai266_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai265_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai264_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai263_Material #3</library>
+	<library>art/models/haidai/factories/genflower_37_Material #5</library>
+	<library>art/models/haidai/factories/genflower_37_Material #6</library>
+	<library>art/models/haidai/factories/genhaidihua26_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua25_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh153_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh152_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh151_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh150_Material #</library>
+	<library>art/models/haidai/factories/genflower_36_Material #5</library>
+	<library>art/models/haidai/factories/genflower_36_Material #6</library>
+	<library>art/models/haidai/factories/genhaidizh149_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh148_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh147_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh146_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua24_Material #</library>
+	<library>art/models/haidai/factories/genhaidai262_Material #3</library>
+	<library>art/models/haidai/factories/gendilao08_07 - Default</library>
+	<library>art/models/haidai/factories/genBox11_Material #27</library>
+	<library>art/models/haidai/factories/genBox11_Material #26</library>
+	<library>art/models/haidai/factories/genBox11_Material #39</library>
+	<library>art/models/haidai/factories/genhaidai261_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai260_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai259_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai258_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai257_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai256_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai255_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai254_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai253_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai252_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai251_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai250_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai249_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai248_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai247_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai246_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai245_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizh145_Material #</library>
+	<library>art/models/haidai/factories/genhaidai244_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai243_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai242_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai241_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai240_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai239_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai238_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai237_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizh144_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh143_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh142_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh141_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh140_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh139_Material #</library>
+	<library>art/models/haidai/factories/genflower_35_Material #5</library>
+	<library>art/models/haidai/factories/genflower_35_Material #6</library>
+	<library>art/models/haidai/factories/genflower_34_Material #5</library>
+	<library>art/models/haidai/factories/genflower_34_Material #6</library>
+	<library>art/models/haidai/factories/genhaidai236_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai235_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai234_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai233_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai232_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai231_Material #3</library>
+	<library>art/models/haidai/factories/genflower_33_Material #5</library>
+	<library>art/models/haidai/factories/genflower_33_Material #6</library>
+	<library>art/models/haidai/factories/genhaidihua23_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua22_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh138_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh137_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh136_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh135_Material #</library>
+	<library>art/models/haidai/factories/genflower_32_Material #5</library>
+	<library>art/models/haidai/factories/genflower_32_Material #6</library>
+	<library>art/models/haidai/factories/genhaidizh134_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh133_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh132_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh131_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua21_Material #</library>
+	<library>art/models/haidai/factories/genhaidai230_Material #3</library>
+	<library>art/models/haidai/factories/gendilao07_07 - Default</library>
+	<library>art/models/haidai/factories/genBox10_Material #27</library>
+	<library>art/models/haidai/factories/genBox10_Material #26</library>
+	<library>art/models/haidai/factories/genBox10_Material #39</library>
+	<library>art/models/haidai/factories/genhaidai229_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai228_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai227_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai226_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai225_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai224_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai223_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai222_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai221_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai220_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai219_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai218_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai217_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai216_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai215_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai214_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai213_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizh130_Material #</library>
+	<library>art/models/haidai/factories/genhaidai212_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai211_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai210_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai209_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai208_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai207_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai206_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai205_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizh129_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh128_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh127_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh126_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh125_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh124_Material #</library>
+	<library>art/models/haidai/factories/genflower_31_Material #5</library>
+	<library>art/models/haidai/factories/genflower_31_Material #6</library>
+	<library>art/models/haidai/factories/genflower_30_Material #5</library>
+	<library>art/models/haidai/factories/genflower_30_Material #6</library>
+	<library>art/models/haidai/factories/genhaidai204_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai203_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai202_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai201_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai200_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai199_Material #3</library>
+	<library>art/models/haidai/factories/genflower_29_Material #5</library>
+	<library>art/models/haidai/factories/genflower_29_Material #6</library>
+	<library>art/models/haidai/factories/genhaidihua20_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua19_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh123_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh122_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh121_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh120_Material #</library>
+	<library>art/models/haidai/factories/genflower_28_Material #5</library>
+	<library>art/models/haidai/factories/genflower_28_Material #6</library>
+	<library>art/models/haidai/factories/genhaidizh119_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh118_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh117_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh116_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua18_Material #</library>
+	<library>art/models/haidai/factories/genhaidai198_Material #3</library>
+	<library>art/models/haidai/factories/gendilao06_07 - Default</library>
+	<library>art/models/haidai/factories/genBox09_Material #27</library>
+	<library>art/models/haidai/factories/genBox09_Material #26</library>
+	<library>art/models/haidai/factories/genBox09_Material #39</library>
+	<library>art/models/haidai/factories/genhaidai197_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai196_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai195_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai194_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai193_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai192_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai191_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai190_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai189_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai188_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai187_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai186_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai185_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai184_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai183_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai182_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai181_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizh115_Material #</library>
+	<library>art/models/haidai/factories/genhaidai180_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai179_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai178_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai177_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai176_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai175_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai174_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai173_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizh114_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh113_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh112_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh111_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh110_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh109_Material #</library>
+	<library>art/models/haidai/factories/genflower_27_Material #5</library>
+	<library>art/models/haidai/factories/genflower_27_Material #6</library>
+	<library>art/models/haidai/factories/genflower_26_Material #5</library>
+	<library>art/models/haidai/factories/genflower_26_Material #6</library>
+	<library>art/models/haidai/factories/genhaidai172_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai171_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai170_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai169_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai168_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai167_Material #3</library>
+	<library>art/models/haidai/factories/genflower_25_Material #5</library>
+	<library>art/models/haidai/factories/genflower_25_Material #6</library>
+	<library>art/models/haidai/factories/genhaidihua17_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua16_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh108_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh107_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh106_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh105_Material #</library>
+	<library>art/models/haidai/factories/genflower_24_Material #5</library>
+	<library>art/models/haidai/factories/genflower_24_Material #6</library>
+	<library>art/models/haidai/factories/genhaidizh104_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh103_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh102_Material #</library>
+	<library>art/models/haidai/factories/genhaidizh101_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua15_Material #</library>
+	<library>art/models/haidai/factories/genhaidai166_Material #3</library>
+	<library>art/models/haidai/factories/gendilao05_07 - Default</library>
+	<library>art/models/haidai/factories/genBox08_Material #27</library>
+	<library>art/models/haidai/factories/genBox08_Material #26</library>
+	<library>art/models/haidai/factories/genBox08_Material #39</library>
+	<library>art/models/haidai/factories/genhaidai165_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai164_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai163_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai162_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai161_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai160_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai159_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai158_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai157_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai156_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai155_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai154_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai153_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai152_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai151_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai150_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai149_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizh100_Material #</library>
+	<library>art/models/haidai/factories/genhaidai148_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai147_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai146_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai145_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai144_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai143_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai142_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai141_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizhi99_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi98_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi97_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi96_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi95_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi94_Material #</library>
+	<library>art/models/haidai/factories/genflower_23_Material #5</library>
+	<library>art/models/haidai/factories/genflower_23_Material #6</library>
+	<library>art/models/haidai/factories/genflower_22_Material #5</library>
+	<library>art/models/haidai/factories/genflower_22_Material #6</library>
+	<library>art/models/haidai/factories/genhaidai140_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai139_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai138_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai137_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai136_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai135_Material #3</library>
+	<library>art/models/haidai/factories/genflower_21_Material #5</library>
+	<library>art/models/haidai/factories/genflower_21_Material #6</library>
+	<library>art/models/haidai/factories/genhaidihua14_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua13_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi93_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi92_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi91_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi90_Material #</library>
+	<library>art/models/haidai/factories/genflower_20_Material #5</library>
+	<library>art/models/haidai/factories/genflower_20_Material #6</library>
+	<library>art/models/haidai/factories/genhaidizhi89_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi88_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi87_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi86_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua12_Material #</library>
+	<library>art/models/haidai/factories/genhaidai134_Material #3</library>
+	<library>art/models/haidai/factories/gendilao04_07 - Default</library>
+	<library>art/models/haidai/factories/genBox07_Material #27</library>
+	<library>art/models/haidai/factories/genBox07_Material #26</library>
+	<library>art/models/haidai/factories/genBox07_Material #39</library>
+	<library>art/models/haidai/factories/genhaidai133_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai132_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai131_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai130_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai129_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai128_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai127_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai126_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai125_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai124_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai123_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai122_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai121_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai120_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai119_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai118_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai117_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizhi85_Material #</library>
+	<library>art/models/haidai/factories/genhaidai116_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai115_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai114_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai113_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai112_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai111_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai110_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai109_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizhi84_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi83_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi82_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi81_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi80_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi79_Material #</library>
+	<library>art/models/haidai/factories/genflower_19_Material #5</library>
+	<library>art/models/haidai/factories/genflower_19_Material #6</library>
+	<library>art/models/haidai/factories/genflower_18_Material #5</library>
+	<library>art/models/haidai/factories/genflower_18_Material #6</library>
+	<library>art/models/haidai/factories/genhaidai108_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai107_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai106_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai105_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai104_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai103_Material #3</library>
+	<library>art/models/haidai/factories/genflower_17_Material #5</library>
+	<library>art/models/haidai/factories/genflower_17_Material #6</library>
+	<library>art/models/haidai/factories/genhaidihua11_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua10_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi78_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi77_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi76_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi75_Material #</library>
+	<library>art/models/haidai/factories/genflower_16_Material #5</library>
+	<library>art/models/haidai/factories/genflower_16_Material #6</library>
+	<library>art/models/haidai/factories/genhaidizhi74_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi73_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi72_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi71_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua09_Material #</library>
+	<library>art/models/haidai/factories/genhaidai102_Material #3</library>
+	<library>art/models/haidai/factories/gendilao03_07 - Default</library>
+	<library>art/models/haidai/factories/genBox06_Material #27</library>
+	<library>art/models/haidai/factories/genBox06_Material #26</library>
+	<library>art/models/haidai/factories/genBox06_Material #39</library>
+	<library>art/models/haidai/factories/genhaidizhi70_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi69_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi68_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi67_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi66_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi65_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi64_Material #</library>
+	<library>art/models/haidai/factories/genhaidai101_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai100_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai99_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai98_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai97_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai96_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai95_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai94_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai93_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai92_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai91_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai90_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai89_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai88_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai87_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai86_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai85_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizhi63_Material #</library>
+	<library>art/models/haidai/factories/genhaidai84_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai83_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai82_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai81_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai80_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai79_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai78_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai77_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai76_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai75_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizhi62_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi61_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi60_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi59_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi58_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi57_Material #</library>
+	<library>art/models/haidai/factories/genflower_15_Material #5</library>
+	<library>art/models/haidai/factories/genflower_15_Material #6</library>
+	<library>art/models/haidai/factories/genflower_14_Material #5</library>
+	<library>art/models/haidai/factories/genflower_14_Material #6</library>
+	<library>art/models/haidai/factories/genhaidai74_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai73_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai72_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai71_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai70_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai69_Material #3</library>
+	<library>art/models/haidai/factories/genflower_13_Material #5</library>
+	<library>art/models/haidai/factories/genflower_13_Material #6</library>
+	<library>art/models/haidai/factories/genflower_12_Material #5</library>
+	<library>art/models/haidai/factories/genflower_12_Material #6</library>
+	<library>art/models/haidai/factories/genhaidizhi56_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi55_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua08_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua07_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi54_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi53_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi52_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi51_Material #</library>
+	<library>art/models/haidai/factories/genflower_11_Material #5</library>
+	<library>art/models/haidai/factories/genflower_11_Material #6</library>
+	<library>art/models/haidai/factories/genhaidizhi50_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi49_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi48_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi47_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua06_Material #</library>
+	<library>art/models/haidai/factories/genhaidai68_Material #3</library>
+	<library>art/models/haidai/factories/gendilao02_07 - Default</library>
+	<library>art/models/haidai/factories/genBox05_Material #27</library>
+	<library>art/models/haidai/factories/genBox05_Material #26</library>
+	<library>art/models/haidai/factories/genBox05_Material #39</library>
+	<library>art/models/haidai/factories/genhaidizhi46_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi45_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi44_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi43_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi42_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi41_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi40_Material #</library>
+	<library>art/models/haidai/factories/genhaidai67_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai66_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai65_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai64_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai63_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai62_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai61_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai60_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai59_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai58_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai57_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai56_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai55_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai54_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai53_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai52_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai51_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizhi39_Material #</library>
+	<library>art/models/haidai/factories/genhaidai50_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai49_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai48_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai47_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai46_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai45_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai44_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai43_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai42_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai41_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizhi38_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi37_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi36_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi35_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi34_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi33_Material #</library>
+	<library>art/models/haidai/factories/genflower_10_Material #5</library>
+	<library>art/models/haidai/factories/genflower_10_Material #6</library>
+	<library>art/models/haidai/factories/genflower_09_Material #5</library>
+	<library>art/models/haidai/factories/genflower_09_Material #6</library>
+	<library>art/models/haidai/factories/genhaidai40_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai39_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai38_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai37_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai36_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai35_Material #3</library>
+	<library>art/models/haidai/factories/genflower_08_Material #5</library>
+	<library>art/models/haidai/factories/genflower_08_Material #6</library>
+	<library>art/models/haidai/factories/genflower_07_Material #5</library>
+	<library>art/models/haidai/factories/genflower_07_Material #6</library>
+	<library>art/models/haidai/factories/genhaidizhi32_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi31_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua05_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua04_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi30_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi29_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi28_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi27_Material #</library>
+	<library>art/models/haidai/factories/genflower_06_Material #5</library>
+	<library>art/models/haidai/factories/genflower_06_Material #6</library>
+	<library>art/models/haidai/factories/genhaidizhi26_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi25_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi24_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi23_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua03_Material #</library>
+	<library>art/models/haidai/factories/genhaidai34_Material #3</library>
+	<library>art/models/haidai/factories/gendilao01_07 - Default</library>
+	<library>art/models/haidai/factories/genBox04_Material #27</library>
+	<library>art/models/haidai/factories/genBox04_Material #26</library>
+	<library>art/models/haidai/factories/genBox04_Material #39</library>
+	<library>art/models/haidai/factories/genhaidizhi22_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi21_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi20_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi19_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi18_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi17_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi16_Material #</library>
+	<library>art/models/haidai/factories/genhaidai33_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai32_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai31_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai30_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai29_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai28_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai27_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai26_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai25_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai24_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai23_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai22_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai21_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai20_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai19_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai18_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai17_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizhi15_Material #</library>
+	<library>art/models/haidai/factories/genhaidai16_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai15_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai14_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai13_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai12_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai11_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai10_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai09_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai08_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai07_Material #3</library>
+	<library>art/models/haidai/factories/genhaidizhi14_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi13_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi12_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi11_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhi10_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhiw9_Material #</library>
+	<library>art/models/haidai/factories/genflower_05_Material #5</library>
+	<library>art/models/haidai/factories/genflower_05_Material #6</library>
+	<library>art/models/haidai/factories/genhaidai06_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai05_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai04_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai03_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai02_Material #3</library>
+	<library>art/models/haidai/factories/genhaidai01_Material #3</library>
+	<library>art/models/haidai/factories/genflower_02_Material #5</library>
+	<library>art/models/haidai/factories/genflower_02_Material #6</library>
+	<library>art/models/haidai/factories/genhaidizhiw8_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhiw7_Material #</library>
+	<library>art/models/haidai/factories/genzhenzhuch2_Material #</library>
+	<library>art/models/haidai/factories/genzhenzhuch1_Material #</library>
+	<library>art/models/haidai/factories/genzhenzhuch0_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua02_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua01_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhiw6_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhiw5_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhiw4_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhiw3_Material #</library>
+	<library>art/models/haidai/factories/genzhenzhucho_Material #</library>
+	<library>art/models/haidai/factories/genstone_Material #41</library>
+	<library>art/models/haidai/factories/gentaijie_Material #21</library>
+	<library>art/models/haidai/factories/genflower_03_Material #5</library>
+	<library>art/models/haidai/factories/genflower_03_Material #6</library>
+	<library>art/models/haidai/factories/genroom_14 - Default</library>
+	<library>art/models/haidai/factories/genroom_13 - Default</library>
+	<library>art/models/haidai/factories/genroom_02 - Default</library>
+	<library>art/models/haidai/factories/genroom_19 - Default</library>
+	<library>art/models/haidai/factories/genroom_07 - Default1</library>
+	<library>art/models/haidai/factories/genroom_20 - Default</library>
+	<library>art/models/haidai/factories/genhaidizhiw2_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhiw1_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhiw0_Material #</library>
+	<library>art/models/haidai/factories/genhaidizhiwu_Material #</library>
+	<library>art/models/haidai/factories/genhaidihua_Material #16</library>
+	<library>art/models/haidai/factories/genhaidai_Material #3</library>
+	<library>art/models/haidai/factories/gendilao_07 - Default</library>
+	<library>art/models/haidai/factories/genBox03_Material #27</library>
+	<library>art/models/haidai/factories/genBox03_Material #26</library>
+	<library>art/models/haidai/factories/genBox03_Material #39</library>
+</library>

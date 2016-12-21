@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+	<!-- 本world文件来源：`$(CRYSTAL)/scripts/jamtemplate/world` -->
+	<addon/>
+
+    <shaders>           
+        <shader>
+            <file>/shader/particles/soft-alpha.xml</file>
+        </shader>
+        <shader>
+            <file>/shader/sky/clouds2.xml</file>
+        </shader>
+        <shader>
+            <file>/shader/sky/sky.xml</file>
+        </shader>
+    </shaders>
+	
+	<plugins>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+		<!-- 粒子（火）需要引入的plugin -->
+		<plugin name="particlesFact">crystalspace.mesh.loader.factory.particles</plugin>
+		<plugin name="particles">crystalspace.mesh.loader.particles</plugin>
+	</plugins>
+
+	<shaders/>
+
+	<textures>
+		<!-- 火焰的贴图 -->
+		<texture name='smoke.png.001'>
+			<file>/textures/smoke.png.001</file>
+		</texture>
+		<texture name='shadow_noise.png'>
+			<file>/lib/shadermgr-defaults/shadow_noise.png</file>
+		</texture>
+	</textures>
+
+	<materials>
+		<material name="shadow_noise">
+			<texture>shadow_noise.png</texture>
+		</material>
+		<!--火焰效果材质-->
+		<material name='Materialsmoke.png.001'>
+            <shader type="depthwrite">*null</shader>
+            <shader type="ambient">particles_soft-alpha</shader>
+            <shader type="diffuse">particles_soft-alpha</shader>
+            <shadervar type="texture" name="tex glow">smoke.png.001</shadervar>
+			<texture>smoke.png.001</texture>
+		</material>
+	</materials>
+	
+	<sounds/>
+
+	<library>/factories/genCube</library>
+	<library>/factories/genPlane</library>
+	<library>/factories/genFire</library>
+	
+	<triggers/>
+	
+	<sector name='Scene'>
+		<cullerp plugin='crystalspace.culling.frustvis'/>
+		<!-- 给场景添加灯光 -->
+		<light name='Lamp.001'>
+			<center y='3.91767' x='4.52981' z='5.71327'/>
+			<color blue='1.0' green='0.370982319117' red='0.620215713978'/>
+			<radius brightness='1.0'>20.0</radius>
+		</light>
+		<light name='Lamp'>
+			<center y='4.0401' x='-4.97871' z='-5.63165'/>
+			<color blue='0.311641007662' green='0.323509275913' red='0.810107886791'/>
+			<radius brightness='1.0'>20.0</radius>
+		</light>
+		<!-- 创建出一个地面 -->
+		<meshobj name='Plane'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genPlane</factory>
+				<material>shadow_noise</material>
+				<mixmode>
+					<alpha>0.498039</alpha>
+				</mixmode>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<!-- 摄像机跟随这个盒子 -->
+		<meshobj name='Cube'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>shadow_noise</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<!--火焰效果-->
+		<meshobj name='fire'>
+			<plugin>particles</plugin>
+			<priority>alpha</priority>
+			<params>
+			<factory>firefactory</factory>
+			<material>Materialsmoke.png.001</material>
+			<mixmode>
+				<add/>
+			</mixmode>
+			</params>
+			<ztest/>
+			<move>
+			<v y='0' x='0' z='-5'/>
+			</move>
+			<key name='particles_outerradius' value='1.0'/>
+			<key name='particles_time' value='1000'/>
+			<key name='particles_direction' value='0.000000,1.000000,0.000000'/>
+			<key name='particles_colorheat' value='198.000061035'/>
+		</meshobj>
+	</sector>
+
+	<sequences/>
+
+	<!-- Start position are usually created in Blender by adding a 'Camera' -->
+	<start name='Camera'>
+		<sector>Scene</sector>
+		<position y='1' x='0' z='0'/>
+		<up y='1' x='0' z='0'/>
+		<forward y='0' x='-1' z='0'/>
+	</start>
+
+</world>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<world>
+
+<plugins>
+	<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+	<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+</plugins>
+
+  <library>/art/shaderlib.xml</library>
+  <library>/art/factorylib.xml</library>
+  <library>/art/materials.xml</library>
+  <!--library>/art/loddedFactory.meshfact</library-->
+  
+  <start name="Camera">
+    <sector>Scene</sector>
+    <position x="8.6592" y="5.1716" z="-4.595" />
+    <up x="-0.3307" y="0.8953" z="0.2984" />
+    <forward x="-0.6549" y="-0.4452" z="0.6107" />
+  </start>
+  <sector name="Scene">
+    <ambient blue="0.2" green="0.2" red="0.2" />
+    <cullerp plugin="crystalspace.culling.frustvis" />
+    <meshobj name="o159#1">
+      <plugin>crystalspace.mesh.loader.genmesh</plugin>
+      <params>
+        <factory>o159</factory>
+      </params>
+      <move>
+        <v x="20.161378860473633" y="0" z="14.146714210510254" />
+        <matrix>
+          <scale x="1" y="1" z="1" />
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+    </meshobj>
+
+	<meshref name="loddedObject">
+		<factory>loddedFactory</factory>
+		<move>
+			<v x="0" y="0" z="0" />
+			<matrix>
+				<rotx>0.0</rotx>
+				<roty>0.0</roty>
+				<rotz>0.0</rotz>
+			</matrix>
+		</move>
+	</meshref>
+  </sector>
+</world>

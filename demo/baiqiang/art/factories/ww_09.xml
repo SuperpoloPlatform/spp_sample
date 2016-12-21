@@ -1,0 +1,25 @@
+<library>
+  <meshfact name="ww_09">
+    <plugin>genmeshfact</plugin>
+    <params>
+      <renderbuffer name="position" checkelementcount="no" file="/art/bindata/ww_09_v" />
+      <renderbuffer name="normal" file="/art/bindata/ww_09_n" />
+      <renderbuffer name="texture coordinate 0" file="/art/bindata/ww_09_tc" />
+      <renderbuffer name="lit color" components="4" type="float">
+        <e c0="0" c1="0" c2="0" c3="1" />
+        <e c0="0" c1="0" c2="0" c3="1" />
+        <e c0="0" c1="0" c2="0" c3="1" />
+        <e c0="0" c1="0" c2="0" c3="1" />
+      </renderbuffer>
+      <material>wm09</material>
+      <mixmode>
+        <copy />
+      </mixmode>
+      <submesh name="">
+        <material>wm09</material>
+        <indexbuffer file="/art/bindata/ww_09_i0" />
+      </submesh>
+    </params>
+    <zuse />
+  </meshfact>
+</library>

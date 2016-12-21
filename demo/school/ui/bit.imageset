@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by nAcer (Stu) -->
+<Imageset Name="Bit" Imagefile="bit.png">
+	<Image Name="select"  XPos="199" YPos="24" Width="2" Height="17"/>
+	<Image Name="input2"  XPos="38" YPos="61" Width="162" Height="24"/>
+	<Image Name="cursorW"  XPos="220" YPos="24" Width="2" Height="17"/>
+	<Image Name="input1"  XPos="28" YPos="18" Width="127" Height="28"/>
+	<Image Name="cursorB"  XPos="180" YPos="24" Width="2" Height="17"/>
+	<Image Name="thumb"  XPos="51" YPos="122" Width="18" Height="34"/>
+	<Image Name="scrollbarbg"  XPos="28" YPos="108" Width="12" Height="62"/>
+	<Image Name="titleClose"  XPos="51" YPos="171" Width="20" Height="20"/>
+	<Image Name="titleClosed"  XPos="20" YPos="197" Width="29" Height="29"/>
+	<Image Name="titleleft"  XPos="77" YPos="92" Width="24" Height="25"/>
+	<Image Name="titlemiddle"  XPos="137" YPos="92" Width="43" Height="25"/>
+	<Image Name="titleright"  XPos="210" YPos="92" Width="28" Height="25"/>
+	<Image Name="wintopleft"  XPos="77" YPos="128" Width="24" Height="35"/>
+	<Image Name="wintopmiddle"  XPos="137" YPos="128" Width="43" Height="35"/>
+	<Image Name="wintopright"  XPos="210" YPos="128" Width="28" Height="35"/>
+	<Image Name="winmiddleleft"  XPos="77" YPos="171" Width="24" Height="34"/>
+	<Image Name="winmiddlemiddle" XPos="137" YPos="171" Width="43" Height="34"/>
+	<Image Name="winmiddleright"  XPos="210" YPos="171" Width="28" Height="34"/>
+	<Image Name="winfootleft"  XPos="77" YPos="212" Width="24" Height="20"/>
+	<Image Name="winfootmiddle"  XPos="137" YPos="212" Width="43" Height="20"/>
+	<Image Name="winfootright"  XPos="210" YPos="212" Width="28" Height="20"/>
+</Imageset>

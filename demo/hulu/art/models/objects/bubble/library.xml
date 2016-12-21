@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<plugins>
+		<plugin name="emitFact">crystalspace.mesh.loader.factory.emit</plugin>
+		<plugin name="emit">crystalspace.mesh.loader.emit</plugin>
+	</plugins>
+	<!-- 这里添加shader
+	<shaders>
+		<shader>
+			<file>/shader/character/character_bump2.xml</file>
+		</shader>
+		<shader>
+			<file>/shader/character/character2.xml</file>
+		</shader>
+	</shaders>
+	-->
+	<textures>
+		<!-- 气泡的贴图 -->
+		<texture name="bubble.png">
+			<file>/art/models/objects/bubble/textures/bubble.png</file>
+		</texture>
+	</textures>
+	<materials>
+		<!-- 气泡材质 -->
+		<material name="bubble.png">
+			<texture>bubble.png</texture>
+			<shader type="ambient">particles_soft-alpha</shader>
+		</material>
+	</materials>
+	<library>factories/genBubble.xml</library>
+</library>

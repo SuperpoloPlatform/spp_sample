@@ -1,0 +1,189 @@
+<?xml ?>
+<world>
+    <plugins>
+        <plugin name="null">crystalspace.mesh.loader.null</plugin>
+        <plugin name="genmesh">crystalspace.mesh.loader.genmesh</plugin>
+        <plugin name="genmeshfact">crystalspace.mesh.loader.factory.genmesh</plugin>
+        <plugin name="particles">crystalspace.mesh.loader.particles</plugin>
+        <plugin name="particlesfact">crystalspace.mesh.loader.factory.particles</plugin>
+    </plugins>
+    <library>/textures.xml</library>
+	<library>/materials.xml</library>
+	<library>/factorylib.xml</library>
+
+	
+	
+	
+	
+    <sector name="interior">
+
+
+        <portals name="portal_throne-room">
+            <portal>
+                <v y="-2.91753530502" x="4.76837158203e-007" z="0.897789001465" />
+                <v y="-2.91753530502" x="4.76837158203e-007" z="-0.897789001465" />
+                <v y="2.91753530502" x="-4.76837158203e-007" z="-0.897800445557" />
+                <v y="2.91753530502" x="-4.76837158203e-007" z="0.897800445557" />
+                <sector>throne-room</sector>
+                <float />
+                <zfill />
+            </portal>
+            <priority>portal</priority>
+            <hardmove>
+                <v y="5.15" x="17.0446" z="17.6419" />
+                <matrix>
+                    <scale y="10" x="10" z="10" />
+                </matrix>
+            </hardmove>
+        </portals>
+        <ambient blue="0.9" green="0.9" red="0.9" />
+		<!-- 创建出一个地面 -->
+		<meshobj name='Plane'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genPlane</factory>
+				<material>no</material>
+				<mixmode>
+					<alpha>0.498039</alpha>
+				</mixmode>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<!-- 创建巨大的包围盒 -->
+		<meshobj name='BigBox'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>o555</factory>
+				<material>no</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<!-- 摄像机跟随这个盒子 -->
+		<meshobj name='Player'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genPlayer</factory>
+				<material>no</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y="3.57855" x="27.5196" z="16.9281" />
+			</move>
+		</meshobj>
+		<meshref name='Player1'>
+			<factory>genPlayer</factory>
+			<move>
+				<v y="3.57855" x="27.5196" z="16.9281" />
+			</move>
+		</meshref>
+
+
+
+
+        
+
+        <meshobj name="basement-walls">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genbasement-walls.003</factory>
+                <material>parallaxAtt_barrel2-parallaxwood_barrel2_d.jpg</material>
+            </params>
+            <zuse />
+            <move>
+                <v y="3.21558" x="28.9932" z="17.0086" />
+            </move>
+            <key name="particles_initialttl" value="9,2" />
+        </meshobj>
+
+
+    </sector>
+	
+	
+	
+	
+	
+	
+	
+    
+    <sector name="throne-room">
+        <portals name="portal_throne-int">
+            <portal>
+                <v y="2.78492164612" x="-4.76837158203e-007" z="-0.872377634048" />
+                <v y="-2.78492116928" x="4.76837158203e-007" z="-0.87236726284" />
+                <v y="-2.78492164612" x="4.76837158203e-007" z="0.87236726284" />
+                <v y="2.78492164612" x="-4.76837158203e-007" z="0.872377634048" />
+                <sector>interior</sector>
+                <float />
+                <zfill />
+            </portal>
+            <priority>portal</priority>
+            <hardmove>
+                <v y="5.2" x="17.0446" z="17.6419" />
+                <matrix>
+                    <scale y="1" x="1" z="1" />
+                </matrix>
+            </hardmove>
+        </portals>
+        <ambient blue="0.9" green="0.9" red="0.9" />
+        
+		<meshref name='Player1'>
+			<factory>genPlayer</factory>
+			<move>
+				<v y="4.57855" x="27.5196" z="16.9281" />
+			</move>
+		</meshref>
+
+        <meshobj name="castle_front_wall.003">
+            <plugin>genmesh</plugin>
+            <priority>object</priority>
+            <params>
+                <factory>gencastle_front_wall.003</factory>
+                <material>parallaxAtt_brick1-parallaxbrick1_d.jpg</material>
+            </params>
+            <zuse />
+            <move>
+                <v y="2.67941" x="-1.25662" z="17.63" />
+            </move>
+        </meshobj>
+        <meshobj name="Cylinder">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genCylinder.001</factory>
+                <material>parallaxAtt_marble-parallaxmarble_blue.jpg</material>
+            </params>
+            <zuse />
+            <move>
+                <v y="4.885" x="6.34221" z="17.6419" />
+            </move>
+        </meshobj>
+
+        
+        <meshobj name="Cylinder.010">
+            <plugin>genmesh</plugin>
+            <priority>object</priority>
+            <params>
+                <factory>genCylinder.009</factory>
+                <material>parallaxAtt_brick3-parallaxcastle-brick3_d.jpg</material>
+            </params>
+            <zuse />
+            <move>
+                <v y="4.45" x="6.86605" z="17.6419" />
+            </move>
+        </meshobj>
+    </sector>
+
+	
+	
+    <start name="Camera">
+        <sector>interior</sector>
+        <position y="4.41512" x="28.7505" z="3.6565" />
+        <up y="1" x="-8.74228e-008" z="-1.19249e-008" />
+        <forward y="-1.94707e-007" x="-1.74846e-007" z="1" />
+    </start>
+</world>

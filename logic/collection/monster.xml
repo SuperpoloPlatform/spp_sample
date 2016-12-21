@@ -1,0 +1,11 @@
+<meshobj name='monster'>
+	<plugin>crystalspace.mesh.loader.genmesh</plugin>
+	<params>
+		<factory>genMonster</factory>
+		<material>no</material>
+	</params>
+	<zuse/>
+	<move>
+		<v y='0' x='-5' z='0'/>
+	</move>
+</meshobj>

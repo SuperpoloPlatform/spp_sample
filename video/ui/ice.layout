@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="root" >
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Property Name="MousePassThroughEnabled" Value="True" />
+        <Window Type="ice/FrameWindow" Name="Demo7/Window1" >
+            <Property Name="Text" Value="VIDEO1" />
+            <Property Name="UnifiedMaxSize" Value="{{1.0,0},{1.0,0}}" />
+            <Property Name="UnifiedMinSize" Value="{{0.2,0},{0.2,0}}" />
+            <Property Name="TitlebarEnabled" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0.7274,0},{0.5,0}}" />
+            <Property Name="CloseButtonEnabled" Value="False" />
+        </Window>
+		<Window Type="ice/FrameWindow" Name="Demo7/Window2" >
+            <Property Name="Text" Value="VIDEO2" />
+            <Property Name="UnifiedMaxSize" Value="{{1.0,0},{1.0,0}}" />
+            <Property Name="UnifiedMinSize" Value="{{0.2,0},{0.2,0}}" />
+            <Property Name="TitlebarEnabled" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0.5,0},{0.7274,0},{1.0,0}}" />
+            <Property Name="CloseButtonEnabled" Value="False" />
+        </Window>
+		<Window Type="ice/FrameWindow" Name="Demo7/video_info" >
+			<Property Name="frame_text" Value="Video Info" />
+            <Property Name="UnifiedMaxSize" Value="{{1.0,0},{1.0,0}}" />
+            <Property Name="UnifiedMinSize" Value="{{0.2,0},{0.2,0}}" />
+            <Property Name="TitlebarEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.704007,0},{0,0},{1.0,0},{0.268888,0}}" />
+            <Property Name="CloseButtonEnabled" Value="False" />
+        </Window>
+		<Window Type="ice/Button" Name="Demo7/stop_button" >
+			<Property Name="Text" Value="Stop" />
+            <Property Name="UnifiedMaxSize" Value="{{1.0,0},{1.0,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.754007,0},{0.288888,0},{0.8574,0},{0.325127,0}}" />
+        </Window>
+		<Window Type="ice/Button" Name="Demo7/play_button" >
+			<Property Name="Text" Value="play" />
+            <Property Name="UnifiedMaxSize" Value="{{1.0,0},{1.0,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.754007,0},{0.348888,0},{0.8574,0},{0.385127,0}}" />
+        </Window>
+		<Window Type="ice/Button" Name="Demo7/pause_button" >
+			<Property Name="Text" Value="pause" />
+            <Property Name="UnifiedMaxSize" Value="{{1.0,0},{1.0,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.754007,0},{0.408888,0},{0.8574,0},{0.445127,0}}" />
+        </Window>
+		<Window Type="ice/Button" Name="Demo7/show_info_button" >
+			<Property Name="Text" Value="video info" />
+            <Property Name="UnifiedMaxSize" Value="{{1.0,0},{1.0,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.754007,0},{0.468888,0},{0.8574,0},{0.505127,0}}" />
+        </Window>
+		<Window Type="ice/Button" Name="Demo7/speed_button" >
+			<Property Name="Text" Value="快进" />
+            <Property Name="UnifiedMaxSize" Value="{{1.0,0},{1.0,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.754007,0},{0.528888,0},{0.8574,0},{0.565127,0}}" />
+        </Window>
+		<Window Type="ice/Button" Name="Demo7/fast_backward_button" >
+			<Property Name="Text" Value="快退" />
+            <Property Name="UnifiedMaxSize" Value="{{1.0,0},{1.0,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.754007,0},{0.588888,0},{0.8574,0},{0.625127,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

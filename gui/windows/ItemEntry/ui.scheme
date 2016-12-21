@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<GUIScheme Name="ice">
+	<Imageset Name="ice" Filename="/imagedata/ice.imageset" />
+	<LookNFeel Filename="ItemEntry.looknfeel" />
+	<WindowRendererSet Filename="CEGUIFalagardWRBase" />
+	<FalagardMapping WindowType="Demo/ItemEntry"  TargetType="CEGUI/ItemEntry" Renderer="Falagard/ItemEntry"  LookNFeel="Demo/ItemEntry" />
+	</GUIScheme>

@@ -1,0 +1,11 @@
+<meshobj name='cube'>
+	<plugin>crystalspace.mesh.loader.genmesh</plugin>
+	<params>
+		<factory>genCube</factory>
+		<material>no</material>
+	</params>
+	<zuse/>
+	<move>
+		<v y='0' x='-5' z='0'/>
+	</move>
+</meshobj>

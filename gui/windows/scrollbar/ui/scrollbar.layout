@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+    <Window Type="DefaultWindow" Name="root">
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Property Name="MousePassThroughEnabled" Value="True" />
+        <Window Type="ice/FrameWindow" Name="Demo7/Window1" >
+            <Property Name="Text" Value="Demo 7 - Window 1" />
+            <Property Name="UnifiedMaxSize" Value="{{0.8,0},{0.8,0}}" />
+            <Property Name="UnifiedMinSize" Value="{{0.2,0},{0.2,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.2,0},{0.7,0},{0.7,0}}" />
+            <Property Name="CloseButtonEnabled" Value="False" />
+            <Window Type="ice/ScrollablePane" Name="Demo7/Window1/ScrollablePane">
+				<Property Name="image" Value="set:interface image:wupin_more_info"/>				
+				<Property Name="ForceVertScrollbar" Value="True"/>
+				<Property Name="UnifiedMaxSize" Value="{{0.4,0},{0.4,0}}" />
+                <Property Name="UnifiedMinSize" Value="{{0.1,0},{0.1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0.2,0},{0.7,0},{0.6,0}}" />
+                <Window Type="ice/ImageButton" Name="Demo7/Window1/ScrollablePane/Child1">
+					<Property Name="NormalImage" Value="set:interface image:dialog_content" />
+					<Property Name="HoverImage" Value="set:interface image:dialog_content" />
+					<Property Name="PushedImage" Value="set:interface image:dialog_content" />
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+					<Property Name="UnifiedAreaRect" Value="{{0,-20},{0,-20},{1,20},{1,20}}" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

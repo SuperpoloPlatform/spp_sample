@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<plugins>
+		<plugin name='null'>crystalspace.mesh.loader.null</plugin>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+		<plugin name="cal3d">crystalspace.mesh.loader.sprite.cal3d</plugin>
+		<plugin name="cal3dfact">crystalspace.mesh.loader.factory.sprite.cal3d</plugin>
+	</plugins>
+	<textures>
+		<texture name="jyg_zcb_js005_face">
+			<file>/art/models/girl/textures/jyg_zcb_js005_face.jpg</file>
+			<!--<alpha>
+				<binary/>
+			</alpha>-->
+		</texture>
+		<texture name="jyg_zcb_js005_face_n.jpg">
+			<file>/art/models/girl/textures/jyg_zcb_js005_face_n.jpg</file>
+		</texture>
+		<texture name="jyg_zcb_js005_face_s.jpg">
+			<file>/art/models/girl/textures/jyg_zcb_js005_face_s.jpg</file>
+		</texture>
+		<texture name="jyg_zcb_js005_yifu">
+			<file>/art/models/girl/textures/jyg_zcb_js005_yifu.jpg</file>
+			<!--<alpha>
+				<binary/>
+			</alpha>-->
+		</texture>
+		<texture name="jyg_zcb_js005_yifu_n.jpg">
+			<file>/art/models/girl/textures/jyg_zcb_js005_yifu_n.jpg</file>
+		</texture>
+		<texture name="jyg_zcb_js005_yifu_s.jpg">
+			<file>/art/models/girl/textures/jyg_zcb_js005_yifu_s.jpg</file>
+		</texture>
+	</textures>
+	<materials>
+		<material name="jyg_zcb_js005_face.jpg">
+			<texture>jyg_zcb_js005_face</texture>
+			<!--<shader type="diffuse">light</shader>-->
+			<shadervar name="tex normal" type="texture">jyg_zcb_js005_face_n.jpg</shadervar>
+			<shadervar name="tex specular" type="texture">jyg_zcb_js005_face_s.jpg</shadervar>
+			<!--<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>-->
+		</material>
+		<material name="jyg_zcb_js005_yifu.jpg">
+			<texture>jyg_zcb_js005_yifu</texture>
+			<!--<shader type="diffuse">light</shader>-->
+			<shadervar name="tex normal" type="texture">jyg_zcb_js005_yifu_n.jpg</shadervar>
+			<shadervar name="tex specular" type="texture">jyg_zcb_js005_yifu_s.jpg</shadervar>
+			<!--<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>-->
+		</material>
+	</materials>
+	<library>/art/models/girl/factories/genGirl.xml</library>
+</library>

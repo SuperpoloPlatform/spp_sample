@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    interface imageset
+-->
+<Imageset Name="interface" Imagefile="interface.png"  NativeHorzRes="2048" NativeVertRes="2048" AutoScaled="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Imageset.xsd">
+	<!-- 顶部导航栏 -->
+	<!--<Image Name="nv_bar" XPos="0" YPos="0" Width="1082" Height="114" />-->
+	<!-- 旧版的导航按钮 -->
+	<!--<Image Name="nv_btn_up" XPos="0" YPos="150" Width="25" Height="33" />
+	<Image Name="nv_btn_left" XPos="30" YPos="150" Width="34" Height="26" />
+	<Image Name="nv_btn_right" XPos="70" YPos="150" Width="32" Height="26" />
+	<Image Name="nv_btn_center" XPos="110" YPos="150" Width="12" Height="11" />
+	<Image Name="nv_btn_down" XPos="130" YPos="150" Width="25" Height="32" />-->
+	<!-- 新版的导航按钮 -->
+	<Image Name="nv_btn_up" XPos="500" YPos="200" Width="105" Height="46" />
+	<Image Name="nv_btn_left" XPos="800" YPos="200" Width="91" Height="77" />
+	<Image Name="nv_btn_right" XPos="900" YPos="200" Width="91" Height="74" />
+	<Image Name="nv_btn_center" XPos="1000" YPos="200" Width="47" Height="30" />
+	<Image Name="nv_btn_down" XPos="650" YPos="200" Width="128" Height="76" />
+	
+	<!-- 最新的导航栏 -->
+	<Image Name="nv_bar" XPos="0" YPos="500" Width="1300" Height="200" />
+	
+	<Image Name="empty" XPos="0" YPos="0" Width="0" Height="0"/>
+	
+	
+	<!--
+		toolbar
+	-->
+	<Image Name="tool_all" XPos="6" YPos="324" Width="600" Height="48"/>
+	<!--
+		common image
+	-->
+
+	<Image Name="window_base" XPos="734" YPos="553" Width="285" Height="360"/>
+	<Image Name="titlebar" XPos="3" YPos="176" Width="307" Height="24"/>
+
+	<!--
+		role status bar
+	-->
+	<Image Name="HeadFrame" XPos="234" YPos="93" Width="76" Height="76"/>
+	<Image Name="BlackHeadBg" XPos="4" YPos="93" Width="72" Height="72"/>
+	
+	
+</Imageset>

@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+	<plugins>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+	</plugins>
+	<addon>
+		<plugin>crystalspace.renderloop.loop.loader</plugin>
+		<paramsfile>/shader/std_rloop_shadowmap.xml</paramsfile>
+	</addon>
+	<settings>
+		<clearzbuf>yes</clearzbuf>
+		<clearscreen>yes</clearscreen>
+		<lightmapcellsize>8</lightmapcellsize>
+		<!-- 暂时去掉阴影，这样就能添加好多特效。 -->
+		<!--<renderloop>std_rloop_shadowmap</renderloop>-->
+	</settings>
+	<shaders>
+		<shader>
+			<file>/shader/ambient.xml</file>
+		</shader>
+		<shader>
+			<file>/shader/light.xml</file>
+		</shader>
+		<shader>
+			<file>/shader/light_bumpmap.xml</file>
+		</shader>
+		<shader>
+			<file>/shader/parallax/parallax.xml</file>
+		</shader>
+	</shaders>
+	<sounds/>
+	<textures>
+		<texture name='no.png'>
+			<file>/textures/no.png</file>
+		</texture>
+		<texture name="black">
+			<color red="0" green="0" blue="0" />
+		</texture>
+		<texture name="red">
+			<color red="1" green="0" blue="0" />
+		</texture>
+		<texture name="green">
+			<color red="0" green="1" blue="0" />
+		</texture>
+		<texture name="blue">
+			<color red="0" green="0" blue="1" />
+		</texture>
+		<texture name="yellow">
+			<color red="1" green="1" blue="0" />
+		</texture>
+		<texture name="green_blue">
+			<color red="0" green="1" blue="1" />
+		</texture>
+		<texture name="red_green">
+			<color red="1" green="1" blue="0" />
+		</texture>
+		<texture name="white">
+			<color red="1" green="1" blue="1" />
+		</texture>
+	</textures>
+	<materials>
+		<material name="no">
+			<texture>no.png</texture>
+		</material>
+		<material name="black">
+			<texture>black</texture>
+		</material>
+		<material name="white">
+			<texture>white</texture>
+		</material>
+		<material name="red">
+			<texture>red</texture>
+		</material>
+		<material name="green">
+			<texture>green</texture>
+		</material>
+		<material name="blue">
+			<texture>blue</texture>
+		</material>
+		<material name="yellow">
+			<texture>yellow</texture>
+		</material>
+		<material name="green_blue">
+			<texture>green_blue</texture>
+		</material>
+		<material name="red_green">
+			<texture>red_green</texture>
+		</material>
+	</materials>
+	<triggers/>
+	<!-- 玩家角色的模型工厂 -->
+	<library>art/models/cube/cube.xml</library>
+
+	<sector name='Scene'>
+		<ambient blue='0.5' green='0.5' red='0.5'/>
+		<cullerp plugin='crystalspace.culling.frustvis'/>
+		<light name="Lamp">
+			<center y="2" x="2" z="0" />
+			<radius brightness="10000">24.9999828339</radius>
+			<attenuation>linear</attenuation>
+			<type>point</type>
+			<shadervar name="light 0 diffuse" type="vector4">1.6, 1.8, 2, 1</shadervar>
+		</light>
+
+		<!-- 摄像机跟随这个盒子 -->
+		<meshobj name='Cube'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>red</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='10' x='3' z='3'/>
+			</move>
+		</meshobj>
+		<meshobj name='Cube1'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>red</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='3' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<meshobj name='Cube2'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>green</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='3' x='0' z='5'/>
+			</move>
+		</meshobj>
+		<meshobj name='Cube3'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>blue</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='3' x='0' z='10'/>
+			</move>
+		</meshobj>
+		<meshobj name='Cube4'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>white</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='3' x='0' z='15'/>
+			</move>
+		</meshobj>
+		<meshobj name='Cube5'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>green_blue</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='3' x='5' z='0'/>
+			</move>
+		</meshobj>
+		<meshobj name='Cube6'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>red_green</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y="3" x="5" z="5" />
+			</move>
+		</meshobj>
+		<meshobj name='Cube7'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>green</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='3' x='5' z='10'/>
+			</move>
+		</meshobj>
+		<meshobj name='Cube8'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>red</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='3' x='5' z='15'/>
+			</move>
+		</meshobj>
+		<meshobj name='Cube9'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>yellow</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='3' x='10' z='0'/>
+			</move>
+		</meshobj>
+		<meshobj name='Cube10'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>white</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='3' x='10' z='5'/>
+			</move>
+		</meshobj>
+		<meshobj name='Cube11'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>red</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='3' x='10' z='10'/>
+			</move>
+		</meshobj>
+		<meshobj name='Cube12'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>red_green</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='3' x='10' z='15'/>
+			</move>
+		</meshobj>
+		<meshobj name='Cube13'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>blue</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='3' x='15' z='0'/>
+			</move>
+		</meshobj>
+		<meshobj name='Cube14'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>yellow</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='3' x='15' z='5'/>
+			</move>
+		</meshobj>
+		<meshobj name='Cube15'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>white</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='3' x='15' z='10'/>
+			</move>
+		</meshobj>
+		<meshobj name='Cube16'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>red</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='3' x='15' z='15'/>
+			</move>
+		</meshobj>
+		
+
+	</sector>
+	<sequences/>
+	<start name='Camera'>
+		<sector>Scene</sector>
+		<position y='5.3437' x='7.4811' z='-6.5076'/>
+		<up y='0.8953' x='-0.3307' z='0.2984'/>
+		<forward y='-0.4452' x='-0.6549' z='0.6107'/>
+	</start>
+</world>

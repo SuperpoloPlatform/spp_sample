@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<world>
+    <plugins>
+        <plugin name="genmesh">crystalspace.mesh.loader.genmesh</plugin>
+        <plugin name="genmeshfact">crystalspace.mesh.loader.factory.genmesh</plugin>
+        <plugin name="particles">crystalspace.mesh.loader.particles</plugin>
+        <plugin name="particlesfact">crystalspace.mesh.loader.factory.particles</plugin>
+    </plugins>
+    <shaders>
+        <shader>
+            <file>/shader/sky/clouds2.xml</file>
+        </shader>
+        <shader>
+            <file>/shader/sky/sky.xml</file>
+        </shader>
+    </shaders>
+    <textures>
+		<!-- 盒子和地面 -->
+		<texture name="red">
+			<color red="1" green="0" blue="0" />
+		</texture>
+		<texture name="green">
+			<color red="0" green="1" blue="0" />
+		</texture>
+		<texture name="blue">
+			<color red="0" green="0" blue="1" />
+		</texture>
+		<texture name="yellow">
+			<color red="1" green="1" blue="0" />
+		</texture>
+		<texture name="white">
+			<color red="1" green="1" blue="1" />
+		</texture>
+		<texture name="black">
+			<color red="0" green="0" blue="0" />
+		</texture>
+		<!-- 天空 -->
+        <texture name="perlin0.png">
+            <file>/lib/sky/perlin0.png</file>
+        </texture>
+        <texture name="perlin1.png">
+            <file>/lib/sky/perlin1.png</file>
+        </texture>
+        <texture name="perlin2.png">
+            <file>/lib/sky/perlin2.png</file>
+        </texture>
+        <texture name="perlin3.png">
+            <file>/lib/sky/perlin3.png</file>
+        </texture>
+    </textures>
+    <library>lightmaps.cslib</library>
+	
+	
+    <materials>
+        <material name="skyno">
+            <texture>no</texture>
+            <shader type="diffuse">*null</shader>
+            <shader type="ambient">sky</shader>
+			<shadervar type="vector3" name="skycol">0.11,0.11,0.11</shadervar>
+        </material>
+		<!--高层-->
+        <material name="cloudsperlin0.png">
+            <texture>perlin0.png</texture>
+            <shader type="depthwrite">*null</shader>
+            <shader type="ambient">clouds2</shader>
+            <shader type="diffuse">*null</shader>
+            <shadervar type="texture" name="noise1">perlin1.png</shadervar>
+            <shadervar type="texture" name="noise2">perlin2.png</shadervar>
+            <shadervar type="texture" name="noise3">perlin3.png</shadervar>
+            <shadervar type="vector2" name="windvec">0.0,0.5</shadervar>
+            <shadervar type="float" name="timeOfDay">1</shadervar>
+			<!-- <shadervar type="vector3" name="skycol">0.11,0.11,0.11</shadervar> -->
+			<shadervar type="vector3" name="cloudcol">11,11,11</shadervar>
+        </material>
+		<!--低层-->
+        <material name="clouds.001perlin0.png.001">
+            <texture>perlin0.png</texture>
+            <shader type="depthwrite">*null</shader>
+            <shader type="ambient">clouds2</shader>
+            <shader type="diffuse">*null</shader>
+            <shadervar type="texture" name="noise1">perlin1.png</shadervar>
+            <shadervar type="texture" name="noise2">perlin2.png</shadervar>
+            <shadervar type="texture" name="noise3">perlin3.png</shadervar>
+            <shadervar type="vector2" name="windvec">0.0,0.5</shadervar>
+            <shadervar type="float" name="timeOfDay">1</shadervar>
+			<!-- <shadervar type="vector3" name="skycol">0.11,0.11,0.11</shadervar> -->
+			<shadervar type="vector3" name="cloudcol">12,12,12</shadervar>
+        </material>
+		
+		<!--雾气-->
+        <material name="fogperlin0.png.001">
+            <texture>perlin0.png</texture>
+            <shader type="depthwrite">*null</shader>
+            <shader type="ambient">clouds2</shader>
+            <shader type="diffuse">*null</shader>
+            <shadervar type="texture" name="noise1">perlin1.png</shadervar>
+            <shadervar type="texture" name="noise2">perlin2.png</shadervar>
+            <shadervar type="texture" name="noise3">perlin3.png</shadervar>
+            <shadervar type="vector2" name="mnvars">2.8,1.0</shadervar>
+            <shadervar type="float" name="timeOfDay">1</shadervar>
+			<!-- <shadervar type="vector3" name="skycol">0.11,0.11,0.11</shadervar> -->
+			<shadervar type="vector3" name="cloudcol">11,11,11</shadervar>	
+        </material>
+		<!-- 盒子和地面 -->
+		<material name="red">
+			<texture>red</texture>
+		</material>
+		<material name="green">
+			<texture>green</texture>
+		</material>
+		<material name="blue">
+			<texture>blue</texture>
+		</material>
+		<material name="yellow">
+			<texture>yellow</texture>
+		</material>
+		<material name="white">
+			<texture>white</texture>
+		</material>
+		<material name="black">
+			<texture>black</texture>
+		</material>
+    </materials>
+    <sounds />
+	<!-- 盒子和平地 -->
+	<library>factories/genCube.xml</library>
+	<library>factories/genPlane.xml</library>
+	<!-- 从cs中转移过来的 -->
+    <library>factories/genclouds</library>
+    <library>factories/gensky</library>
+	<library>factories/genfogplane</library>
+    <library>factories/gencloudplane.001</library>
+    <library>factories/gencloudplane</library>
+	
+    <triggers />
+
+    <start name="Camera">
+        <sector>outside</sector>
+        <position y="1.71018" x="0.10518" z="0.154117" />
+        <up y="1" x="-8.74228e-008" z="-1.19249e-008" />
+        <forward y="-1.94707e-007" x="-1.74846e-007" z="1" />
+    </start>
+
+    <sector name="outside">
+        <!-- <cullerp plugin="crystalspace.culling.frustvis" /> -->
+		<!-- 创建出一个地面 -->
+		<meshobj name='Plane'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genPlane</factory>
+				<material>green</material>
+			<mixmode>
+				<alpha>0.498039</alpha>
+			</mixmode>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<!-- 摄像机跟随这个盒子 -->
+		<meshobj name='Cube'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>white</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<!-- 产生一层薄薄的雾气 -->
+        <meshobj name="Plane.318">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genfogplane</factory>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>fogperlin0.png.001</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <submesh name="0">
+                    <material>fogperlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_17_png</shadervar>
+                </submesh>
+                <renderbuffer name="texture coordinate lightmap" file="/bindata/Plane_318_lm" />
+            </params>
+            <zfill />
+            <move>
+                <v y="-2.81139" x="-31.6347" z="-150" />
+            </move>
+            <staticlit />
+        </meshobj>
+		<!-- 高空的云彩 -->
+        <meshobj name="clouds">
+            <plugin>genmesh</plugin>
+            <priority>transp</priority>
+            <params>
+                <factory>genclouds</factory>
+                <color red="0" green="0" blue="0" />
+                <material>cloudsperlin0.png</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <submesh name="0">
+                    <material>cloudsperlin0.png</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_8_png</shadervar>
+                </submesh>
+                <submesh name="0_0">
+                    <material>cloudsperlin0.png</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_14_png</shadervar>
+                </submesh>
+                <submesh name="0_1">
+                    <material>cloudsperlin0.png</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_16_png</shadervar>
+                </submesh>
+                <submesh name="0_2">
+                    <material>cloudsperlin0.png</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_26_png</shadervar>
+                </submesh>
+                <submesh name="0_3">
+                    <material>cloudsperlin0.png</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_27_png</shadervar>
+                </submesh>
+                <renderbuffer name="texture coordinate lightmap" file="/bindata/clouds_lm" />
+            </params>
+            <trimesh>
+                <id>shadows</id>
+            </trimesh>
+            <camera />
+            <ztest />
+            <noshadows />
+            <move>
+                <v y="-15.7" x="-47.9" z="-122.302" />
+            </move>
+            <staticlit />
+        </meshobj>
+		<!-- 蓝天 -->
+        <meshobj name="sky">
+            <plugin>genmesh</plugin>
+            <priority>sky</priority>
+            <params>
+                <factory>gensky</factory>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>skyno</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <submesh name="0">
+                    <material>skyno</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_9_png</shadervar>
+                </submesh>
+                <submesh name="0_0">
+                    <material>skyno</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_11_png</shadervar>
+                </submesh>
+                <submesh name="0_1">
+                    <material>skyno</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_5_png</shadervar>
+                </submesh>
+                <submesh name="0_10">
+                    <material>skyno</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+                </submesh>
+                <submesh name="0_11">
+                    <material>skyno</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_20_png</shadervar>
+                </submesh>
+                <submesh name="0_2">
+                    <material>skyno</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_10_png</shadervar>
+                </submesh>
+                <submesh name="0_3">
+                    <material>skyno</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_6_png</shadervar>
+                </submesh>
+                <submesh name="0_4">
+                    <material>skyno</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_13_png</shadervar>
+                </submesh>
+                <submesh name="0_5">
+                    <material>skyno</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_2_png</shadervar>
+                </submesh>
+                <submesh name="0_6">
+                    <material>skyno</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_3_png</shadervar>
+                </submesh>
+                <submesh name="0_7">
+                    <material>skyno</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_4_png</shadervar>
+                </submesh>
+                <submesh name="0_8">
+                    <material>skyno</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_1_png</shadervar>
+                </submesh>
+                <submesh name="0_9">
+                    <material>skyno</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_15_png</shadervar>
+                </submesh>
+                <renderbuffer name="texture coordinate lightmap" file="/bindata/sky_lm" />
+            </params>
+            <trimesh>
+                <id>shadows</id>
+            </trimesh>
+            <camera />
+            <zfill />
+            <noshadows />
+            <move>
+                <v y="-15.7" x="-47.9" z="-122.302" />
+            </move>
+            <staticlit />
+        </meshobj>
+		<!-- 低空流动的云 -->
+        <meshobj name="Plane.017">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>gencloudplane.001</factory>
+                <color red="1" green="1" blue="1" />
+                <manualcolors />
+                <material>clouds.001perlin0.png.001</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <submesh name="0">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_20_png</shadervar>
+                </submesh>
+                <submesh name="0_0">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_41_png</shadervar>
+                </submesh>
+                <submesh name="0_1">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_42_png</shadervar>
+                </submesh>
+                <submesh name="0_10">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_51_png</shadervar>
+                </submesh>
+                <submesh name="0_11">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_52_png</shadervar>
+                </submesh>
+                <submesh name="0_12">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_53_png</shadervar>
+                </submesh>
+                <submesh name="0_13">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_54_png</shadervar>
+                </submesh>
+                <submesh name="0_14">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_55_png</shadervar>
+                </submesh>
+                <submesh name="0_15">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_56_png</shadervar>
+                </submesh>
+                <submesh name="0_16">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_57_png</shadervar>
+                </submesh>
+                <submesh name="0_17">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_58_png</shadervar>
+                </submesh>
+                <submesh name="0_18">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_59_png</shadervar>
+                </submesh>
+                <submesh name="0_19">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_60_png</shadervar>
+                </submesh>
+                <submesh name="0_2">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_43_png</shadervar>
+                </submesh>
+                <submesh name="0_20">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_61_png</shadervar>
+                </submesh>
+                <submesh name="0_21">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_62_png</shadervar>
+                </submesh>
+                <submesh name="0_22">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_22_png</shadervar>
+                </submesh>
+                <submesh name="0_3">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_44_png</shadervar>
+                </submesh>
+                <submesh name="0_4">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_45_png</shadervar>
+                </submesh>
+                <submesh name="0_5">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_67_png</shadervar>
+                </submesh>
+                <submesh name="0_6">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_47_png</shadervar>
+                </submesh>
+                <submesh name="0_7">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_48_png</shadervar>
+                </submesh>
+                <submesh name="0_8">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_49_png</shadervar>
+                </submesh>
+                <submesh name="0_9">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_50_png</shadervar>
+                </submesh>
+                <renderbuffer name="texture coordinate lightmap" file="/bindata/Plane_017_lm" />
+            </params>
+            <trimesh>
+                <id>shadows</id>
+            </trimesh>
+            <ztest />
+            <noshadows />
+            <move>
+                <v y="81.3886" x="14.9666" z="-181.279" />
+            </move>
+            <staticlit />
+        </meshobj>
+        <meshobj name="Plane.031">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>gencloudplane</factory>
+                <color red="1" green="1" blue="1" />
+                <manualcolors />
+                <material>clouds.001perlin0.png.001</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <submesh name="0">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_24_png</shadervar>
+                </submesh>
+                <submesh name="0_0">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_66_png</shadervar>
+                </submesh>
+                <submesh name="0_1">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_65_png</shadervar>
+                </submesh>
+                <submesh name="0_10">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_18_png</shadervar>
+                </submesh>
+                <submesh name="0_2">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_64_png</shadervar>
+                </submesh>
+                <submesh name="0_3">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_19_png</shadervar>
+                </submesh>
+                <submesh name="0_4">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_63_png</shadervar>
+                </submesh>
+                <submesh name="0_5">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_40_png</shadervar>
+                </submesh>
+                <submesh name="0_6">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_39_png</shadervar>
+                </submesh>
+                <submesh name="0_7">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_38_png</shadervar>
+                </submesh>
+                <submesh name="0_8">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_37_png</shadervar>
+                </submesh>
+                <submesh name="0_9">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_36_png</shadervar>
+                </submesh>
+                <renderbuffer name="texture coordinate lightmap" file="/bindata/Plane_031_lm" />
+            </params>
+            <trimesh>
+                <id>shadows</id>
+            </trimesh>
+            <ztest />
+            <noshadows />
+            <move>
+                <v y="11.3886" x="-61.5347" z="-110" />
+            </move>
+            <staticlit />
+        </meshobj>
+        <meshobj name="Plane.317">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>gencloudplane</factory>
+                <color red="1" green="1" blue="1" />
+                <manualcolors />
+                <material>clouds.001perlin0.png.001</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <submesh name="0">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_23_png</shadervar>
+                </submesh>
+                <submesh name="0_0">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_35_png</shadervar>
+                </submesh>
+                <submesh name="0_1">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_34_png</shadervar>
+                </submesh>
+                <submesh name="0_10">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_25_png</shadervar>
+                </submesh>
+                <submesh name="0_2">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_33_png</shadervar>
+                </submesh>
+                <submesh name="0_3">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_32_png</shadervar>
+                </submesh>
+                <submesh name="0_4">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_31_png</shadervar>
+                </submesh>
+                <submesh name="0_5">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_30_png</shadervar>
+                </submesh>
+                <submesh name="0_6">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_29_png</shadervar>
+                </submesh>
+                <submesh name="0_7">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_28_png</shadervar>
+                </submesh>
+                <submesh name="0_8">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_46_png</shadervar>
+                </submesh>
+                <submesh name="0_9">
+                    <material>clouds.001perlin0.png.001</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_68_png</shadervar>
+                </submesh>
+                <renderbuffer name="texture coordinate lightmap" file="/bindata/Plane_317_lm" />
+            </params>
+            <trimesh>
+                <id>shadows</id>
+            </trimesh>
+            <ztest />
+            <noshadows />
+            <move>
+                <v y="15.3886" x="-31.5347" z="-150" />
+            </move>
+            <staticlit />
+        </meshobj>
+    </sector>
+    <sequences />
+</world>

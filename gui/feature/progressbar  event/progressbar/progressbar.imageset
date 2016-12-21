@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Imageset Name="progressbar" Imagefile="progressbar.png" NativeHorzRes="800" NativeVertRes="600" AutoScaled="false">
+	<Image Name="pbleft" XPos="108" YPos="28" Width="3" Height="18"/>
+	<Image Name="pbright" XPos="108" YPos="28" Width="3" Height="18"/>
+	<Image Name="pbmiddle" XPos="112" YPos="125" Width="8" Height="18" />
+	<Image Name="MouseArrow" XPos="179" YPos="1" Width="27" Height="27" />
+	<Image Name="tiledrcet" XPos="138" YPos="127" Width="14" Height="13" />
+</Imageset>

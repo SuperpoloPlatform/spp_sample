@@ -1,0 +1,10 @@
+<library>
+	<meshfact name="sky">
+        <plugin>crystalspace.mesh.loader.factory.genmesh</plugin>
+        <params>
+            <sphere rimvertices="6" reversed="true">
+                <radius x="1000" y="1000" z="1000" />
+            </sphere>
+        </params>
+    </meshfact>
+</library>

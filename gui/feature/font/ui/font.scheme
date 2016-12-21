@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<GUIScheme Name="font">
+	<Imageset Name="font" Filename="font.imageset" />
+	<LookNFeel Filename="font.looknfeel" />
+	<WindowRendererSet Filename="CEGUIFalagardWRBase" />
+	<FalagardMapping WindowType="font/Button"      TargetType="CEGUI/PushButton"  Renderer="Falagard/Button"       LookNFeel="font/Button" />
+</GUIScheme>

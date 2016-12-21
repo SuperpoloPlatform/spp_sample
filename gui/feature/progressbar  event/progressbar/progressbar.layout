@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="root">
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+		<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}"/>
+		<Property Name="MousePassThroughEnabled" Value="True"/>
+		<Window Type="progressbar/ProgBar" Name="Demo7/Window1/progressbar">
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+	         <Property Name="UnifiedAreaRect" Value="{{0.04,0},{0.1,0},{0.98,0},{0.15,0}}"/>
+			</Window>
+			</Window>
+			</GUILayout>
+			

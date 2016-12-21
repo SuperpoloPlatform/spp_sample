@@ -1,0 +1,39 @@
+<library>
+  <textures>
+    <texture name="sky02.jpg">
+      <file>/art/textures/sky02.jpg</file>
+    </texture>
+    <texture name="generic_water_001_ani">
+      <file>/art/textures/effectextures/generic_water_001_ani</file>
+    </texture>
+    <texture name="effectsky.dds">
+      <file>/art/textures/effectextures/effectsky.dds</file>
+    </texture>
+    <texture name="b659630.png">
+      <file>/art/textures/b659630.png</file>
+      <alpha>
+        <binary />
+      </alpha>
+    </texture>
+  </textures>
+  <materials>
+    <material name="m0">
+      <texture>sky02.jpg</texture>
+    </material>
+    <material name="m1">
+      <texture>b659630.png</texture>
+      <shader type="base">reflect_water_plane</shader>
+      <shader type="diffuse">reflect_water_plane</shader>
+      <shadervar name="tex normal" type="texture">generic_water_001_ani</shadervar>
+      <shadervar name="tex environment" type="texture">effectsky.dds</shadervar>
+      <shadervar name="water fog color" type="vector4">0.4,0.7,0.9,1</shadervar>
+      <shadervar name="water perturb scale" type="vector4">10,10,0,0</shadervar>
+      <shadervar name="water perturb fade" type="float">0.1</shadervar>
+      <shadervar name="specular" type="vector4">0.4,0.7,0.9,1</shadervar>
+      <shader type="ambient">ambient</shader>
+    </material>
+	<material name="m2">
+      <texture>b659630.png</texture>
+    </material>
+  </materials>
+</library>

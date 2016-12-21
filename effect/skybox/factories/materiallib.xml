@@ -1,0 +1,48 @@
+<library>
+    <textures>
+		<texture name="white">
+			<color red="1" green="1" blue="1" />
+		</texture>
+        <texture name="black">
+            <color red="0" green="0" blue="0" />
+        </texture>
+        <texture name="sky">
+            <type>crystalspace.texture.loader.cubemap</type>
+            <params>
+                <north>/textures/skybox_f.jpg</north>
+                <south>/textures/skybox_b.jpg</south>
+                <east>/textures/skybox_r.jpg</east>
+                <west>/textures/skybox_l.jpg</west>
+                <top>/textures/skybox_u.jpg</top>
+                <bottom>/textures/skybox_d.jpg</bottom>
+            </params>
+        </texture>
+		<texture name="Box01">
+			<type>crystalspace.texture.loader.cubemap</type>
+			<params>
+				<north>/textures/t1.jpg</north>
+				<south>/textures/t2.jpg</south>
+				<east>/textures/t3.jpg</east>
+				<west>/textures/t4.jpg</west>
+				<top>/textures/t5.jpg</top>
+				<bottom>/textures/t6.jpg</bottom>
+			</params>
+		</texture>
+    </textures>
+
+    <materials>
+		<material name="white">
+			<texture>white</texture>
+		</material>
+        <material name="sky">
+            <shader type="base">sky_basic_cubemap</shader>
+            <shader type="diffuse">sky_basic_cubemap</shader>
+            <shadervar type="texture" name="tex sky">sky</shadervar>
+        </material>
+		<material name="Box01">
+			<shader type="base">sky_basic_cubemap</shader>
+			<shader type="diffuse">sky_basic_cubemap</shader>
+			<shadervar type="texture" name="tex sky">Box01</shadervar>
+		</material>
+    </materials>
+</library>

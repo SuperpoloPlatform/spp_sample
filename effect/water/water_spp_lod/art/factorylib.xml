@@ -1,0 +1,7 @@
+<library>
+  <library>/art/factories/gnd7.xml</library>
+  <library>/art/factories/o159.xml</library>
+  <library>/art/factories/nolod.xml</library>
+  <library>/art/factories/lod.xml</library>
+  <library>/art/factories/skydome_frankieisland_SkyDome.xml</library>
+</library>

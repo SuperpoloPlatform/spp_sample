@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="root">
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+		<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}"/>
+		<Property Name="MousePassThroughEnabled" Value="True"/>
+		<Window Type="Demo/FrameWindow" Name="Demo/Window1">
+			<Property Name="Text" Value="Window 1 - DragContainer "/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.1,0},{0.56,0},{0.53,0}}"/>
+			<Window Type="Demo/DragContainer" Name="Demo/Window1/DragContainer">
+				<Property Name="Text" Value="我是可以拖动的！"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.25,0},{0.5,0},{0.5,0}}"/>
+			</Window>
+		</Window>
+		<Window Type="Demo/FrameWindow" Name="Demo/Window2">
+			<Property Name="Text" Value="Demo - Window 2：设置1窗口控件属性"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.57,0},{0.1,0},{0.98,0},{0.53,0}}"/>
+			<Window Type="Demo/Combobox" Name="Demo/Window2/Combobox">
+				<Property Name="ReadOnly" Value="True"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.01,0},{0,0},{0.52,0},{0.5,0}}"/>
+			</Window>
+			<Window Type="Demo/FrameWindow" Name="Demo/Window2/FrameWindow2">
+				<Property Name="Visible" Value="False"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.01,0},{0.72,0},{0.52,0},{0.92,0}}"/>
+				<Window Type="checkbox/ToggleButton" Name="Demo/Window2/FrameWindow2/checkbox1">
+					<Property Name="Text" Value="True"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,0},{0.0,0},{0.45,0},{1,0}}"/>
+				</Window>
+				<Window Type="checkbox/ToggleButton" Name="Demo/Window2/FrameWindow2/checkbox2">
+					<Property Name="Text" Value="False"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.55,0},{0.0,0},{1,0},{1,0}}"/>
+				</Window>
+			</Window>
+			<Window Type="Demo/FrameWindow" Name="Demo/Window2/FrameWindow3">
+				<Property Name="Visible" Value="False"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.01,0},{0.62,0},{0.9,0},{0.92,0}}"/>
+				<Window Type="Demo/ComboEditbox" Name="Demo/Window2/FrameWindow3/Editbox">
+					<Property Name="Text" Value=""/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,0},{0.0,0},{0.8,0},{1,0}}"/>
+				</Window>
+				<Window Type="Demo/OKButton" Name="Demo/Window2/FrameWindow3/OKButton">
+					<Property Name="Text" Value="确认修改"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.8,0},{0.0,0},{1,0},{1,0}}"/>
+				</Window>
+			</Window>
+			<Window Type="Demo/FrameWindow" Name="Demo/Window2/FrameWindow1">
+				<Property Name="Visible" Value="False"/>
+				<Property Name="Text" Value="左侧选择imagesetname，右侧选择imagename"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.01,0},{0.45,0},{1,0},{1,0}}"/>
+				<Window Type="Demo/Combobox" Name="Demo/Window2/FrameWindow1/Combobox1">
+					<Property Name="ReadOnly" Value="True"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.01,0},{0,0},{0.50,0},{1,0}}"/>
+				</Window>
+				<Window Type="Demo/Combobox" Name="Demo/Window2/FrameWindow1/Combobox2">
+					<Property Name="ReadOnly" Value="True"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.51,0},{0,0},{1.0,0},{1,0}}"/>
+				</Window>
+			</Window>
+		</Window>
+		<Window Type="Demo/FrameWindow" Name="Demo/Window2/FrameWindow4">
+			<Property Name="Visible" Value="False"/>
+			<Property Name="Text" Value="Demo/Window2/FrameWindow4 设置window1控件的属性"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.53,0},{0.55,0},{1,0},{0.97,0}}"/>
+			<Window Type="Demo/StaticText" Name="Demo/Window2/FrameWindow4/StaticText">
+				<Property Name="CustomText" Value="[colour='FFFF0000']					
+					赋值前请了解统一坐标系的概念：http://dev.masols.com/trac/spp/wiki/Doc/art/windows/sample
+					右侧输入框X_Scale处填写X坐标的缩放，值大于0小于1
+					右侧输入框X_Scale处填写X坐标的偏移量，值为float
+					右侧输入框Y_Scale处填写Y坐标的缩放，值大于0小于1
+					右侧输入框Y_Scale处填写Y坐标的偏移量，值为float
+					填写完请点击“确定”"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,0},{0.01,0},{0.49,0},{1,0}}"/>
+			</Window>
+			<Window Type="Demo/OKButton" Name="Demo/Window2/FrameWindow4/OKButton">
+				<Property Name="Text" Value="确认"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.65,0},{0.63,0},{0.85,0},{1,0}}"/>
+			</Window>
+			<Window Type="Demo/ComboEditbox" Name="Demo/Window2/FrameWindow4/XS">
+				<Property Name="Text" Value="X_scale"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.55,0},{0.01,0},{0.75,0},{0.3,0}}"/>
+			</Window>
+			<Window Type="Demo/ComboEditbox" Name="Demo/Window2/FrameWindow4/YS">
+				<Property Name="Text" Value="Y_scale"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.8,0},{0.01,0},{1,0},{0.3,0}}"/>
+			</Window>
+			<Window Type="Demo/ComboEditbox" Name="Demo/Window2/FrameWindow4/XO">
+				<Property Name="Text" Value="X_offset"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.55,0},{0.31,0},{0.75,0},{0.61,0}}"/>
+			</Window>
+			<Window Type="Demo/ComboEditbox" Name="Demo/Window2/FrameWindow4/YO">
+				<Property Name="Text" Value="X_offset"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.8,0},{0.31,0},{1,0},{0.61,0}}"/>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

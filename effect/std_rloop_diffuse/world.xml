@@ -1,0 +1,646 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+  <plugins>
+    <plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+    <plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+  </plugins>
+  
+	<addon>
+		<plugin>crystalspace.renderloop.loop.loader</plugin>
+		<paramsfile>/shader/std_rloop_diffuse.xml</paramsfile>
+	</addon>
+  
+  <settings>
+    <clearscreen>yes</clearscreen>
+    <clearzbuf>yes</clearzbuf>
+	<lightmapcellsize>16</lightmapcellsize>
+	<renderloop>std_rloop_diffuse</renderloop>
+  </settings>
+  
+    <shaders>
+        <shader>
+            <file>/shader/light.xml</file>
+        </shader>
+        <shader>
+            <file>/shader/ambient.xml</file>
+        </shader>	
+		<shader>
+            <file>/shader/std_lighting.xml</file>
+        </shader>
+		<shader>
+            <file>/shader/std_lighting_detail.xml</file>
+        </shader>
+		<shader>
+		  <file>/shader/std_lighting_detail_add.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/std_lighting_detail_alpha.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/std_lighting_detail_alpha_scroll.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/std_lighting_detail_fixed.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/character/character_bump.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/extrudeGlow/extrudeGlow.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/fresnelWater/fresnelWater.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/light_bumpmap.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/light_bumpmap2.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/light_projection_bumpmap.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/specular/light_spec_bumpmap.xml</file>
+		</shader>
+		 <shader>
+            <file>/shader/parallax/parallax.xml</file>
+        </shader>
+		<shader>
+		  <file>/shader/parallaxAtt/parallaxAtt.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/reflect.xml</file>
+		</shader>
+		<shader>
+		<file>/shader/reflect/reflectsphere.xml</file>
+		  <!-- <file>/shader/reflectsphere.xml</file> -->
+		</shader>
+		<shader>
+		  <file>/shader/reflect/reflect_environment.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/shadowmap/shadowmap.xml</file>
+		</shader>
+		 <shader>
+		  <file>/shader/stat_dyn_reflect.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/sky_scattering.xml</file>
+		</shader>
+		
+    </shaders>
+	
+	<textures>
+		<texture name="box.jpg">
+            <file>/textures/diban.png</file>
+        </texture>
+        <texture name="boxn.jpg">
+            <file>/textures/boxn.png</file>
+            <class>normalmap</class>
+        </texture>
+		<texture name="floor_metaltiles_n.png">
+            <file>/textures/floor_metaltiles_n.png</file>
+        </texture>
+        <texture name="boxh.jpg">
+            <file>/textures/boxh.jpg</file>
+        </texture>
+		<!--<texture name="kwarz_glow.jpg">
+            <file>/textures/kd.jpg</file>
+        </texture>-->
+		
+		<texture name="white.gif">
+            <file>/textures/white.gif</file>
+        </texture>
+		
+		 <texture name='reflect_01.jpg'>
+		  <file>/textures/reflect_01.jpg</file>
+		</texture>
+		
+		 <texture name='floors_1_d1n__128.jpg'>
+		  <file>/textures/floors_1_d1n__128.jpg</file>
+		</texture>
+		
+		<texture name="mosaic-detail">
+            <file>/textures/mosaic-detail.dds</file>
+        </texture>
+		
+		<texture name="reflection">
+			<type>crystalspace.texture.loader.cubemap</type>
+			<params>
+				<north>/textures/box.jpg</north>
+				<south>/textures/box.jpg</south>
+				<east>/textures/box.jpg</east>
+				<west>/textures/box.jpg</west>
+				<top>/textures/box.jpg</top>
+				<bottom>/textures/box.jpg</bottom>
+			</params>
+		</texture>
+		
+		<texture name='kwarz_glow.jpg'>
+		  <file>/textures/kwarz_glow.jpg</file>
+		</texture>
+		
+		<texture name='castle-metal_d.jpg'>
+		  <file>/textures/castle-metal_d.jpg</file>
+		</texture>
+		
+		<texture name='BUMPkwarz_normals.jpg'>
+		  <file>/textures/kwarz_normals.jpg</file>
+		  <class>normalmap</class>
+		</texture>
+		<texture name='BUMPkwartz_height.jpg'>
+		  <file>/textures/kwartz_height.jpg</file>
+		  <class>normalmap</class>
+		</texture>
+		
+		 <texture name="mosholes.gif">
+            <file>/textures/mosholes.png</file>
+            <transparent red="1" green="0" blue="0" />
+        </texture>
+		
+		<texture name="mosaic-detail">
+            <file>/textures/mosaic-detail.dds</file>
+        </texture>
+		
+		<texture name="spark">
+            <file>/textures/spark.png</file>
+        </texture>
+		
+		<texture name="bricks.gif">
+            <file>/textures/bricks.jpg</file>
+        </texture>
+		<texture name="metal1.png">
+            <file>/textures/metal1.png</file>
+        </texture>
+		
+		<texture name="oldmetal.gif">
+            <file>/textures/oldmetal.jpg</file>
+        </texture>
+		
+			<texture name="metal1.jpg">
+            <file>/textures/metal1.png</file>
+        </texture>
+			<texture name="back.jpg">
+            <file>/textures/back.png</file>
+        </texture>
+		<texture name="gang.jpg">
+            <file>/textures/gang.png</file>
+        </texture>	
+		<texture name="raindrop.jpg">
+            <file>/textures/raindrop.png</file>
+        </texture>	
+		<texture name="reflection.jpg">
+            <file>/textures/reflection.jpg</file>
+        </texture>	
+		<texture name="w_normalmap.jpg">
+            <file>/textures/w_normalmap.png</file>
+        </texture>
+		<texture name="water_n.mng">
+            <file>/textures/water_n.mng</file>
+        </texture>
+		<texture name="diban.png">
+            <file>/textures/diban.png</file>
+        </texture>
+		<texture name='floor_metaltiles_2_d.png'>
+		  <file>/textures/floor_metaltiles_2_d.png</file>
+		</texture>
+		<texture name='lantern.png'>
+		  <file>/textures/lantern.png</file>
+		</texture>
+		<texture name='xygyw.tga'>
+		  <file>/textures/xygyw.png</file>
+		</texture>
+		<texture name="jing.jpg">
+            <file>/textures/jing.jpg</file>
+        </texture>
+  </textures>
+  
+	<materials>
+		<material name='Material2'>
+			<texture>floors_1_d1n__128.jpg</texture>
+			<shader type="ambient">light</shader> 
+		</material>
+		
+		<!-- parallax_spec_glow -->
+		<material name='Material0'>
+		  <texture>castle-metal_d.jpg</texture>
+		  <shader type='diffuse'>parallaxAtt</shader>
+		  <shadervar type='texture' name='tex normal'>BUMPkwarz_normals.jpg</shadervar>
+		  <shadervar type='texture' name='tex glow'>kwarz_glow.jpg</shadervar>
+		  <shadervar type='texture' name='tex height'>BUMPkwartz_height.jpg</shadervar>
+		  <shadervar type='texture' name='tex specular'>white.gif</shadervar>
+		  <!--<shadervar type='vector4' name='specular'>1,1,1,1</shadervar>-->
+		</material>
+		
+		<!-- std_rloop_diffuse -->
+		<!-- parallax_spec_glow -->
+		<material name="Material5">
+            <texture>castle-metal_d.jpg</texture>
+		    <shadervar type='texture' name='tex normal'>BUMPkwarz_normals.jpg</shadervar>
+		    <shadervar type='texture' name='tex glow'>kwarz_glow.jpg</shadervar>
+		    <shadervar type='texture' name='tex height'>BUMPkwartz_height.jpg</shadervar>
+		    <shadervar type='texture' name='tex specular'>white.gif</shadervar>
+			<!--<shadervar type='vector4' name='specular'>1,1,1,1</shadervar>-->
+            <shader type="diffuse">parallax</shader>
+        </material>
+		
+		<!-- bumpmap_spec_glow -->
+		<material name='Material6'>
+		  <texture>castle-metal_d.jpg</texture>
+		  <shader type='diffuse'>light_spec_bumpmap</shader>
+		  <shadervar type='texture' name='tex normal'>BUMPkwarz_normals.jpg</shadervar>
+		  <shadervar type='texture' name='tex glow'>kwarz_glow.jpg</shadervar>
+		  <!--<shadervar type='texture' name='tex specular'>white.gif</shadervar>-->
+		  <shadervar type='vector4' name='specular'>1,1,1,1</shadervar>
+		</material>
+		
+		
+		<!-- diffuse_glow -->
+		<material name="Material11">
+		  <texture>castle-metal_d.jpg</texture>
+		  <shader type='diffuse'>light</shader>
+		  <shadervar type='texture' name='tex glow'>kwarz_glow.jpg</shadervar>
+		</material>
+		
+		<!-- reflect 镜面效果-->
+		<material name='Material7'>
+		  <texture>castle-metal_d.jpg</texture>
+		  <shader type='standard'>reflect</shader>
+		  <shadervar type='texture' name='tex reflection'>box.jpg</shadervar>
+		  <shadervar type='vector4' name='reflection opacity'>1.0,1.0,1.0,0.0</shadervar>
+		</material>
+		
+		<material name="oldmetal">
+			<texture>oldmetal.gif</texture>
+			<shader type="standard">std_lighting_detail</shader>
+			<shadervar name="tex detail" type="texture">oldmetal.gif</shadervar>
+			<shadervar name="detail texture scale" type="vector2">10,10</shadervar>
+		</material>
+		
+		<material name='gold'>
+        <shader type="base">reflectsphere</shader>
+		<shader type="diffuse">reflectsphere</shader>
+            
+			<texture>oldmetal.gif</texture> -->
+		 <!-- <shadervar type='texture' name='tex normal'>floors_1_d1n__128.jpg</shadervar>  -->
+		 <shadervar type='texture' name='tex normal'>mosaic-detail</shadervar> 
+		 <shadervar type='texture' name='tex reflection'>oldmetal.gif</shadervar>
+		  <shadervar type='float' name='reflection opacity'>0.9</shadervar>
+		  <shadervar name="specular" type="vector4">1.0,1.0,1.0,1</shadervar> 
+		  
+		<!--    <shader type="diffuse">reflectsphere</shader>
+            <shader type="base">reflectsphere</shader>
+            <texture>whiteaaaa</texture>
+             <shadervar type="texture" name="tex normal">BUMPwooddoor_n.png</shadervar>
+             <shadervar type="texture" name="tex reflection">wooddoor.png</shadervar>
+			  <shadervar type="float" name="reflection opacity">1.0</shadervar>
+             <shadervar type="vector4" name="specular">1,1,1,1</shadervar> -->
+		  
+		</material>
+		
+		<material name='gold2'>
+		  <texture>oldmetal.gif</texture> 
+		   <shader type='standard'>reflectsphere</shader> 
+		  <!--   <shader type="diffuse">reflectsphere</shader>
+            <shader type="base">reflectsphere</shader>
+			<texture>oldmetal.gif</texture> -->
+		  <!-- <shadervar type='texture' name='tex normal'>floors_1_d1n__128.jpg</shadervar> -->
+		 <shadervar type='texture' name='tex reflection'>raindrop.jpg</shadervar>
+		  <shadervar type='float' name='reflection opacity'>1.0</shadervar>
+		  <shadervar name="specular" type="vector4">1.0,0.7,0.9,1</shadervar> 
+		  
+		<!--    <shader type="diffuse">reflectsphere</shader>
+            <shader type="base">reflectsphere</shader>
+            <texture>whiteaaaa</texture>
+             <shadervar type="texture" name="tex normal">BUMPwooddoor_n.png</shadervar>
+             <shadervar type="texture" name="tex reflection">wooddoor.png</shadervar>
+			  <shadervar type="float" name="reflection opacity">1.0</shadervar>
+             <shadervar type="vector4" name="specular">1,1,1,1</shadervar> -->
+		  
+		</material>
+		<material name='gang'>
+		  <texture>reflect_01.jpg</texture>
+		  <shader type='standard'>reflectsphere</shader>
+		 <!--  <shadervar type='texture' name='tex reflection'>gang.jpg</shadervar> -->
+		  <shadervar type='vector4' name='reflection opacity'>0.0,1.0,1.0,0.7</shadervar>
+		</material>
+		
+		
+		
+		<!-- reflectsphere 镜面效果-->
+		<material name='Material92'>
+		  <texture>reflect_01.jpg</texture>
+		  <shader type='standard'>reflectsphere</shader>
+		  <shadervar type='texture' name='tex reflection'>raindrop.jpg</shadervar> 
+		  <!-- <shadervar type='vector4' name='reflection opacity'>1.0,1.0,1.0,0.7</shadervar> -->
+          <shadervar name="reflection opacity" type="float">0.5</shadervar>
+		  <shadervar name="tex normal" type="texture">water_n.mng</shadervar>   		
+		</material>
+		<material name='Material9'>
+			<texture>oldmetal.gif </texture> 
+            <!-- <shader type="standard">reflectsphere</shader> -->
+			  <shader type="base">reflectsphere</shader>
+		<shader type="diffuse">reflectsphere</shader>
+             <shadervar name="tex reflection" type="texture"> xygyw.tga</shadervar> 
+            <shadervar name="reflection opacity" type="float">0.5</shadervar>
+			 <shadervar name="tex normal" type="texture">diban.png</shadervar>
+			 <shadervar name="specular" type="vector4">1.0,1,1,1</shadervar> 
+			<!--  <shader type="standard">reflectsphere</shader>
+			<shadervar name="tex reflection" type="texture">xygyw.tga</shadervar>
+			<shadervar name="reflection opacity" type="float">0.9</shadervar> -->
+			 <!-- <shadervar name="tex normal" type="texture">floor_metaltiles_n.png</shadervar> --> 
+			<!--  <shadervar name="tex normal" type="texture">floor_metaltiles_n.png</shadervar>  -->
+		</material>
+		
+		<material name='Material10'>
+		  <texture>castle-metal_d.jpg</texture>
+		  <shader type='diffuse'>light_bumpmap</shader>
+		  <shadervar type='texture' name='tex normal'>BUMPkwarz_normals.jpg</shadervar>
+		  <shadervar type='texture' name='tex glow'>kwarz_glow.jpg</shadervar>
+		</material>
+		
+		
+		<material name="mosholes">
+            <texture>mosholes.gif</texture>
+            <shader type="standard">std_lighting_detail</shader>
+            <shadervar name="tex detail" type="texture">mosaic-detail</shadervar>
+            <shadervar name="tex detail scale" type="vector2">10,10</shadervar>
+        </material>
+		
+		
+		<material name="bricks">
+            <texture>bricks.gif</texture>
+            <shader type="standard">std_lighting_detail_alpha_scroll</shader>
+            <shadervar name="tex detail" type="texture">spark</shadervar>
+            <shadervar name="tex detail scale" type="vector2">10,10</shadervar>
+            <shadervar name="tex detail color" type="vector4">1,1,1,0.25</shadervar>
+        </material>
+		
+		<material name="robotMulti">
+            <texture>oldmetal.gif</texture>
+            <shader type="standard">std_lighting_detail_add</shader>
+            <shadervar name="tex detail" type="texture">spark</shadervar>
+            <shadervar name="tex detail scale" type="vector2">20,20</shadervar>
+        </material>
+		
+		<!-- cube13 -->
+		<material name="bricks2">
+            <texture>bricks.gif</texture>
+            <shader type="standard">std_lighting_detail_alpha</shader>
+            <shadervar name="tex detail" type="texture">spark</shadervar>
+            <shadervar name="tex detail scale" type="expression">
+                <make-vector>
+                    <add>
+                        <atom type="num">6</atom>
+                        <mul>
+                            <sin>
+                                <atom type="var">standard time</atom>
+                            </sin>
+                            <atom type="num">4</atom>
+                        </mul>
+                    </add>
+                    <atom type="num">10</atom>
+                </make-vector>
+            </shadervar>
+            <shadervar name="tex detail color" type="vector4">1,1,1,0.25</shadervar>
+        </material>
+
+	
+		
+		<material name="Material4">
+            <texture>box.jpg</texture>
+        </material>
+		
+	</materials>
+  
+  
+  <sounds/>
+  <library>factories/genPlane</library>
+  <library>factories/genCube</library>
+  <library>factories/genCube1</library>
+  <library>factories/genCube2</library>
+  <library>factories/genCube3</library>
+  <library>factories/genCube4</library>
+  <library>factories/genCube5</library>
+  <library>factories/genCube6</library>
+  <library>factories/genCube7</library>
+  <library>factories/genCube8</library>
+  <library>factories/genCube9</library>
+  <library>factories/genparallax_spec_glow</library>
+  <triggers/>
+  <sector name='Scene'>
+    <cullerp plugin='crystalspace.culling.frustvis'/>
+    <meshobj name='Plane'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genPlane</factory>
+		<material>Material2</material>
+		<mixmode>
+			<alpha>0.498039</alpha>
+		</mixmode>
+      </params>
+      <zuse/>
+      <move>
+        <v y='0' x='0' z='0'/>
+      </move>
+    </meshobj>
+	
+	
+	<meshobj name='Cube'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genparallax_spec_glow</factory>
+		<material>Material4</material>
+      </params>
+      <zuse/>
+      <move>
+        <v y='1' x='-2.9314' z='-0.3933'/>
+      </move>
+    </meshobj>
+
+	
+	<meshobj name='Cube1'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genparallax_spec_glow</factory>
+		<material>Material5</material>
+      </params>
+      <zuse/>
+      <move>
+        <v y='1' x='2' z='-4'/>
+      </move>
+    </meshobj>
+	
+	<meshobj name='Cube2'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genparallax_spec_glow</factory>
+		<material>Material6</material>
+      </params>
+      <zuse/>
+      <move>
+        <v y='1' x='2' z='-2'/>
+      </move>
+    </meshobj>
+	
+	
+	<meshobj name='Cube3'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genparallax_spec_glow</factory>
+		<material>Material7</material>
+      </params>
+      <zuse/>
+      <move>
+        <v y='1' x='2' z='0'/>
+      </move>
+    </meshobj>
+	
+	
+	<meshobj name='Cube4'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genparallax_spec_glow</factory>
+		<lighting>no</lighting>
+                <color red="1" green="1" blue="1" />
+                <manualcolors />
+		<material>Material9</material>
+      </params>
+      <zuse/>
+      <move>
+        <v y='1' x='2' z='2'/>
+      </move>
+    </meshobj>
+	
+	<meshobj name='Cube5'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genparallax_spec_glow</factory>
+		<material>Material10</material>
+      </params>
+      <zuse/>
+      <move>
+        <v y='1' x='2' z='6'/>
+      </move>
+    </meshobj>
+	
+	
+	<meshobj name='Cube7'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genparallax_spec_glow</factory>
+		<material>Material11</material>
+      </params>
+      <zuse/>
+      <move>
+        <v y='1' x='0' z='-4'/>
+      </move>
+    </meshobj>
+	
+	
+	<meshobj name='Cube10'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genparallax_spec_glow</factory>
+		<material>Material0</material>
+      </params>
+      <zuse/>
+      <move>
+        <v y='1' x='0' z='-2'/>
+      </move>
+    </meshobj>
+	
+	
+	<meshobj name='Cube11'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genCube</factory>
+		<!-- <material>mosholes</material> -->
+		<material>Material7</material>
+      </params>
+      <zuse/>
+      <move>
+        <v y='0.8' x='0' z='0'/>
+      </move>
+    </meshobj>
+	
+	
+	<meshobj name='Cube12'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genCube</factory>
+		<!-- <material>bricks</material> -->
+		<material>Material9</material>
+		 <mixmode>
+		<alpha>0.5</alpha>
+		</mixmode> 
+      </params>
+      <zuse/>
+      <move>
+        <v y='0.8' x='0' z='2'/>
+      </move>
+    </meshobj>
+	
+	<meshobj name='Cube13'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genCube</factory>
+		<material>gold<!-- bricks2 --></material>
+      </params>
+      <zuse/>
+      <move>
+        <v y='0.8' x='0' z='4'/>
+      </move>
+    </meshobj>
+	
+	
+	<meshobj name='Cube14'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genparallax_spec_glow</factory>
+		<material>robotMulti</material>
+      </params>
+      <zuse/>
+      <move>
+        <v y='1' x='0' z='6'/>
+      </move>
+    </meshobj>
+	
+	
+    <light>
+		<center x="2" y="6" z="0" />
+		<radius>50</radius>
+		<color red="1" green="1.2" blue="1.4" />
+		<halo>
+			<type>nova</type>
+			<seed>0</seed>
+			<numspokes>100</numspokes>
+			<roundness>0.5</roundness>
+		</halo>
+	</light>
+	
+  </sector>
+  <!--<sequences>
+		<sequence name="movemesh">
+			<rotate mesh="Cube1" duration="1000">
+				<roty>1</roty>
+				<v y='0.5' x='2' z='-2'/>
+			</rotate>
+			<delay time="1000" />
+			<enable trigger="rotmesh"/>
+		</sequence>
+	</sequences>
+	<triggers>
+        <trigger name="rotmesh">
+            <sectorvis sector="Scene" />
+            <fire delay="0" sequence="movemesh" />
+        </trigger>
+    </triggers>-->
+  <start name='Camera'>
+    <sector>Scene</sector>
+    <position y='2' x='0' z='-6'/>
+    <up y='1' x='-8.74228e-008' z='-1.19249e-008'/>
+    <forward y='-1.94707e-007' x='-1.74846e-007' z='1'/>
+  </start>
+</world>

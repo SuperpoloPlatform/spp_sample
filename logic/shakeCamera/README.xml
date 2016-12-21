@@ -1,0 +1,34 @@
+注释：摄像机震颤效果，这里不加说明，详情请见simple 路径：...\sample\tutorial\logic\shakeCamera\
+
+简介：
+	该Demo实现了摄像机左右震颤效果。
+
+详细介绍：
+	1、动态添加sequence，快捷键 'up'；
+	2、用xml标签方式，快捷键 'down'.
+	
+展示简介：
+	1、利用sequence让box左右移动
+	
+功能展示：
+	1、通过脚本或者DOS命令，用spp.exe引擎运行start.js文件
+	2、待程序运行起来后，用'up' and 'down'控制
+	
+重点实现代码：
+	1、start.js中的场景加载，以及对象创建
+	2、effect.js中的摄像机操作详细实现，64---115行
+	
+注意问题：
+	1、位移可以转化为和方向有关的。你可把位移看做向量和基点(或者位移的起点、终点)，这样，一个位移的矩阵变换相当于两个三维向量的矩阵变换。
+	
+动态模型：(见代码注释)
+	/*   总体流程   */
+		1、初始化需要的各PC
+		2、绑定键盘事件和鼠标事件(函数)
+		3、根据绑定发送消息事件
+		4、接收事件
+	/*   具体实现   */
+		1、利用MultVector()计算出方向向量
+		2、创建CreateSequence、CreateParameterESM、CreateTrigger
+		3、用AddOperationMoveDuration()添加移动及AddOperationCheckTrigger()添加时间延迟
+		4、执行Sequence

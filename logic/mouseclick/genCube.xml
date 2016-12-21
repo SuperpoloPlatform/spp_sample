@@ -1,0 +1,19 @@
+<library>
+	<textures>
+		<texture name='no.png'>
+			<file>textures/no.png</file>
+		</texture>
+	</textures>
+	<materials>
+		<material name="no">
+			<texture>no.png</texture>
+		</material>
+	</materials>
+	<!-- 创建盒子的工厂 -->
+	<meshfact name='genCube'>
+		<plugin>genmeshfact</plugin>
+		<zuse/>
+		<params>
+		</params>
+	</meshfact>
+</library>

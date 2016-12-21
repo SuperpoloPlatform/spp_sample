@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Imageset Name="map" Imagefile="map1.png">
+<Image Name="map" XPos="0" YPos="0" Width="780" Height="460"/>
+</Imageset>

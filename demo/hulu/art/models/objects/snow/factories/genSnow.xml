@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<!-- 下雪工厂-->
+	<meshfact name="particlesFactory">
+		<plugin>particlesfact</plugin>
+		<params />
+	</meshfact>
+</library>

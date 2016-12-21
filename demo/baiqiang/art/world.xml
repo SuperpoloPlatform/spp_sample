@@ -1,0 +1,2073 @@
+<?xml version="1.0" encoding="utf-8"?><world>
+  <plugins>
+    <plugin name="null">crystalspace.mesh.loader.null</plugin>
+    <plugin name="genmesh">crystalspace.mesh.loader.genmesh</plugin>
+    <plugin name="genmeshfact">crystalspace.mesh.loader.factory.genmesh</plugin>
+    <plugin name="cal3d">crystalspace.mesh.loader.sprite.cal3d</plugin>
+    <plugin name="cal3dfact">crystalspace.mesh.loader.factory.sprite.cal3d</plugin>
+  </plugins>
+  <shaders>
+    <shader>
+      <file>/shader/ambient.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/light.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/light_bumpmap.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/parallax/parallax.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/specular/light_spec_bumpmap.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/parallaxAtt/parallaxAtt.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/std_lighting_2.xml</file>
+    </shader>
+	<shader>
+		<file>/shader/reflect/reflectsphere.xml</file>
+	</shader>
+	<shader>
+		<file>/shader/reflect/glass.xml</file>
+	</shader>
+  </shaders>
+  <library>/art/lightmaps.cslib</library>
+  <library>/art/factorylib.xml</library>
+  <library>/art/materials.xml</library>
+  <start name="Camera">
+    <sector>Scene</sector>
+    <position x="8.6592" y="5.1716" z="-4.595"/>
+    <up x="-0.3307" y="0.8953" z="0.2984"/>
+    <forward x="-0.6549" y="-0.4452" z="0.6107"/>
+  </start>
+  <sector name="Scene">
+    <ambient blue="0.117647" green="0.117647" red="0.117647"/>
+    <cullerp plugin="crystalspace.culling.frustvis"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <light name="Omni27">
+		<center x="-3.42177" y="1.67937" z="4.24234"/>
+		<color blue="0.972549" green="0.956863" red="0.94902"/>
+		<radius brightness="2.0">4.0</radius>
+		<dynamic>false</dynamic>
+		<influenceradius>5.0</influenceradius>
+		<specular blue="0.972549" green="0.956863" red="0.94902"/>
+		<attenuation c="0" l="1" q="0">realistic</attenuation>
+		<type>pointlight</type>
+	</light>
+	<light name="Omni28">
+		<center x="4.92793" y="1.67916" z="3.98749"/>
+		<color blue="0.972549" green="0.956863" red="0.94902"/>
+		<radius brightness="4.0">10.0</radius>
+		<dynamic>false</dynamic>
+		<influenceradius>8.0</influenceradius>
+		<specular blue="0.972549" green="0.956863" red="0.94902"/>
+		<attenuation c="0" l="1" q="0">realistic</attenuation>
+		<type>pointlight</type>
+	</light>
+	<light name="Omni26">
+		<center x="-0.255273" y="1.66489" z="-3.80483"/>
+		<color blue="0.972549" green="0.956863" red="0.94902"/>
+		<radius brightness="2.0">4.0</radius>
+		<dynamic>false</dynamic>
+		<influenceradius>5.0</influenceradius>
+		<specular blue="0.972549" green="0.956863" red="0.94902"/>
+		<attenuation c="0" l="1" q="0">realistic</attenuation>
+		<type>pointlight</type>
+	</light>
+	<light name="Omni29">
+		<center x="-0.255336" y="1.65891" z="-0.629456"/>
+		<color blue="0.972549" green="0.956863" red="0.94902"/>
+		<radius>1.0</radius>
+		<dynamic>false</dynamic>
+		<influenceradius>3.06</influenceradius>
+		<specular blue="0.972549" green="0.956863" red="0.94902"/>
+		<attenuation c="0" l="1" q="0">realistic</attenuation>
+		<type>pointlight</type>
+	</light>
+	<meshobj name="cc_01#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_01</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="">
+          <material>cm01</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_29_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>Standard_20</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_29_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/cc_01#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-1.913804054260254" y="-0.0033694691956043243" z="7.305756568908691"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+    </meshobj>
+    <meshobj name="cc_02#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_02</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="">
+          <material>cm01</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_24_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>Standard_20</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_24_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/cc_02#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-5.029077529907227" y="0.00002008676528930664" z="7.2874650955200195"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+    </meshobj>
+    <meshobj name="cc_03#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_03</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="">
+          <material>cm01</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_14_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>Standard_20</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_15_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/cc_03#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-1.7246510982513428" y="0" z="4.29412841796875"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+    </meshobj>
+    <meshobj name="cc_04#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_04</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="_0">
+          <material>cm01</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_9_png</shadervar>
+        </submesh>
+        <submesh name="">
+          <material>cm01</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_8_png</shadervar>
+        </submesh>
+        <submesh name="_1">
+          <material>Standard_20</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_9_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/cc_04#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-4.387022018432617" y="-0.00019438192248344421" z="1.1544654369354248"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+    </meshobj>
+    <meshobj name="cc_05#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_05</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm05</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/cc_05#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-3.372819185256958" y="0" z="5.263880729675293"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_1_png</shadervar>
+    </meshobj>
+    <meshobj name="cc_06#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_06</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm05</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/cc_06#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-3.9454946517944336" y="0.4196000099182129" z="4.786649703979492"/>
+        <matrix>
+          <scale x="0.9999999403953552" y="1" z="0.9999999403953552"/>
+          <rotx>0</rotx>
+          <roty>1.5708</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_28_png</shadervar>
+    </meshobj>
+    <meshobj name="cc_08#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_08</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm08</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/cc_08#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-1.711031198501587" y="0.8081200122833252" z="4.28857946395874"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_14_png</shadervar>
+    </meshobj>
+    <meshobj name="cc_09#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_09</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm09</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/cc_09#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-3.4004077911376953" y="2.020406484603882" z="4.355282783508301"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_1_png</shadervar>
+    </meshobj>
+    <meshobj name="cc_10#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_10</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm10</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/cc_10#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-3.378203868865967" y="0" z="4.3905110359191895"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_29_png</shadervar>
+    </meshobj>
+    <meshobj name="cc_11#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_11</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/cc_11#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-4.909773349761963" y="0" z="2.1498355865478516"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+    </meshobj>
+    <meshobj name="cc_12#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_12</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm12</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="">
+          <material>cm12</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_15_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>Material #1</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_15_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/cc_12#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-1.7562174797058105" y="0.45716074109077454" z="0.457655668258667"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+    </meshobj>
+    <meshobj name="cc_13#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_13</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm13</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/cc_13#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-1.754828691482544" y="0" z="3.0579357147216797"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_2_png</shadervar>
+    </meshobj>
+    <meshobj name="cc_14#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_14</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm14</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/cc_14#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-1.5295971632003784" y="1.3105379343032837" z="4.247953414916992"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_1_png</shadervar>
+    </meshobj>
+    <meshobj name="cc_15#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_15</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/cc_15#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-3.539233922958374" y="0.00037279725074768066" z="7.975865840911865"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_27_png</shadervar>
+    </meshobj>
+    <meshobj name="cc_05#002">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_05</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm05</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/cc_05#002_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-3.3786885738372803" y="0" z="3.50068998336792"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>-3.1416</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_1_png</shadervar>
+    </meshobj>
+    <meshobj name="cc_06#002">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_06</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm05</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/cc_06#002_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-3.9454946517944336" y="0.4196000099182129" z="4.057828903198242"/>
+        <matrix>
+          <scale x="0.9999999403953552" y="1" z="0.9999999403953552"/>
+          <rotx>0</rotx>
+          <roty>1.5708</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_28_png</shadervar>
+    </meshobj>
+    <meshobj name="cc_06#003">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_06</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm05</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/cc_06#003_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-2.735905170440674" y="0.4196000099182129" z="4.057828903198242"/>
+        <matrix>
+          <scale x="0.9999999403953552" y="1" z="0.9999999403953552"/>
+          <rotx>0</rotx>
+          <roty>-1.5708</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_27_png</shadervar>
+    </meshobj>
+    <meshobj name="cc_06#004">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>cc_06</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>cm05</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/cc_06#004_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-2.735905170440674" y="0.4196000099182129" z="4.7843780517578125"/>
+        <matrix>
+          <scale x="0.9999999403953552" y="1" z="0.9999999403953552"/>
+          <rotx>0</rotx>
+          <roty>-1.5708</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_29_png</shadervar>
+    </meshobj>
+    <meshobj name="kk_15#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_15</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>k_015</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/kk_15#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="1.29121732711792" y="0" z="-1.8466379642486572"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+    </meshobj>
+    <meshobj name="kk_02#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_02</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/kk_02#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-2.7714579105377197" y="1.4992300271987915" z="-3.51778507232666"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_1_png</shadervar>
+    </meshobj>
+    <meshobj name="kk_07#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_07</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/kk_07#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="0.1304631233215332" y="-0.000125885009765625" z="-3.9069910049438477"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_29_png</shadervar>
+    </meshobj>
+    <meshobj name="kk_08#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_08</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km08</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/kk_08#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="0.17630285024642944" y="0.45648112893104553" z="-3.865361452102661"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+    </meshobj>
+    <meshobj name="kk_09#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_09</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/kk_09#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="1.8399333953857422" y="-0.0011644624173641205" z="-2.40012788772583"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_15_png</shadervar>
+    </meshobj>
+    <meshobj name="kk_10#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_10</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km10</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/kk_10#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="0.6897902488708496" y="1.855024814605713" z="0.7567850351333618"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+    </meshobj>
+    <meshobj name="kk_11#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_11</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km11</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/kk_11#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="1.806671142578125" y="0" z="-5.877119064331055"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>-0.7854</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_2_png</shadervar>
+    </meshobj>
+    <meshobj name="kk_13#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_13</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km13</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/kk_13#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="0.2896236181259155" y="0" z="-3.6481285095214844"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_24_png</shadervar>
+    </meshobj>
+    <meshobj name="kk_14#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_14</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km14</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/kk_14#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="1.869523286819458" y="0.5770304203033447" z="-2.396498918533325"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_14_png</shadervar>
+    </meshobj>
+    <meshobj name="kk_06#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_06</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km04</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="">
+          <material>km04</material>
+          <!-- <shadervar name="tex lightmap" type="texture">lightmaps_art_5_png</shadervar> -->
+        </submesh>
+        <submesh name="_0">
+          <material>km041</material>
+          <!-- <shadervar name="tex lightmap" type="texture">lightmaps_art_5_png</shadervar> -->
+        </submesh>
+        <!-- <renderbuffer file="/art/bindata/kk_06#001_lm" name="texture coordinate lightmap"/> -->
+      </params>
+      <move>
+        <v x="1.7626210451126099" y="0" z="-3.968345880508423"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+    </meshobj>
+    <meshobj name="kk_16#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_16</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km16</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="">
+          <material>km16</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_1_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>Standard_5</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_1_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/kk_16#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-0.18706342577934265" y="2.673116683959961" z="-3.7959468364715576"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+    </meshobj>
+    <meshobj name="kk_17#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_17</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/kk_17#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-0.2000347375869751" y="-0.002959012985229492" z="-6.573912143707275"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_28_png</shadervar>
+    </meshobj>
+    <meshobj name="kk_03#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_03</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="">
+          <material>Standard_20</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_28_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>km01</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_27_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/kk_03#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-2.683875560760498" y="-2.2351741790771484e-8" z="-2.2532596588134766"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+    </meshobj>
+    <meshobj name="kk_05#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_05</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km04</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="">
+          <material>km04</material>
+          <!-- <shadervar name="tex lightmap" type="texture">lightmaps_art_14_png</shadervar> -->
+        </submesh>
+        <submesh name="_0">
+          <material>km041</material>
+          <!-- <shadervar name="tex lightmap" type="texture">lightmaps_art_14_png</shadervar> -->
+        </submesh>
+        <!-- <renderbuffer file="/art/bindata/kk_05#001_lm" name="texture coordinate lightmap"/> -->
+      </params>
+      <move>
+        <v x="0" y="0" z="-1.6897200345993042"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+    </meshobj>
+    <meshobj name="kk_12#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_12</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km12</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/kk_12#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-2.744753360748291" y="0.5004284977912903" z="-3.9322593212127686"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_27_png</shadervar>
+    </meshobj>
+    <meshobj name="kk_04#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_04</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km04</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="_0">
+          <material>km041</material>
+          <!-- <shadervar name="tex lightmap" type="texture">lightmaps_art_24_png</shadervar> -->
+        </submesh>
+        <submesh name="">
+          <material>km04</material>
+          <!-- <shadervar name="tex lightmap" type="texture">lightmaps_art_24_png</shadervar> -->
+        </submesh>
+        <!-- <renderbuffer file="/art/bindata/kk_04#001_lm" name="texture coordinate lightmap"/> -->
+      </params>
+      <move>
+        <v x="0.5492023229598999" y="0" z="-5.667567253112793"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+    </meshobj>
+    <meshobj name="kk_04#002">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_04</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km04</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="_0">
+          <material>km041</material>
+          <!-- <shadervar name="tex lightmap" type="texture">lightmaps_art_24_png</shadervar> -->
+        </submesh>
+        <submesh name="">
+          <material>km04</material>
+          <!-- <shadervar name="tex lightmap" type="texture">lightmaps_art_24_png</shadervar> -->
+        </submesh>
+        <!-- <renderbuffer file="/art/bindata/kk_04#002_lm" name="texture coordinate lightmap"/> -->
+      </params>
+      <move>
+        <v x="-0.45535361766815186" y="0" z="-5.667567253112793"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+    </meshobj>
+    <meshobj name="kk_01#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_01</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/kk_01#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-2.6258420944213867" y="0" z="-4.342811584472656"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_9_png</shadervar>
+    </meshobj>
+    <meshobj name="kk_18#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>kk_18</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>km01.</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="_1">
+          <material>km18</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_23_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>glass_reflect</material>
+			<mixmode>
+				<alpha>0.5</alpha>
+			</mixmode>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_23_png</shadervar>
+        </submesh>
+        <submesh name="">
+          <material>km01.</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_23_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/kk_18#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-0.7196083068847656" y="1.0271786451339722" z="1.7261908054351807"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+    </meshobj>
+    <meshobj name="rr_01#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>rr_01</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>Material #3675</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="_2">
+          <material>Material #3687</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_28_png</shadervar>
+        </submesh>
+        <submesh name="">
+          <material>Material #3675</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_25_png</shadervar>
+        </submesh>
+        <submesh name="_1">
+          <material>Material #3675</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_27_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>Material #3675</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_26_png</shadervar>
+        </submesh>
+        <submesh name="_3">
+          <material>Material #3687</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_28_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/rr_01#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-0.8306102752685547" y="9.685754776000977e-8" z="0.6570243835449219"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+    </meshobj>
+    <meshobj name="rr_03#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>rr_03</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>Material #3640</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="_0">
+          <material>Material #3617</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_11_png</shadervar>
+        </submesh>
+        <submesh name="">
+          <material>Material #3663</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+        </submesh>
+        <submesh name="_1">
+          <material>Material #3617</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_12_png</shadervar>
+        </submesh>
+        <submesh name="_2">
+          <material>Material #3640</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_13_png</shadervar>
+        </submesh>
+        <submesh name="_3">
+          <material>Material #3699</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_14_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/rr_03#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-0.8306131362915039" y="0.00047960132360458374" z="0.6580808162689209"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+    </meshobj>
+    <meshobj name="rr_02#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>rr_02</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>dm</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="_1">
+          <material>dm</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_18_png</shadervar>
+        </submesh>
+        <submesh name="_5">
+          <material>dm</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_22_png</shadervar>
+        </submesh>
+        <submesh name="_6">
+          <material>dm</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_11_png</shadervar>
+        </submesh>
+        <submesh name="_7">
+          <material>dm</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_23_png</shadervar>
+        </submesh>
+        <submesh name="_8">
+          <material>dm</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_23_png</shadervar>
+        </submesh>
+        <submesh name="_3">
+          <material>dm</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_20_png</shadervar>
+        </submesh>
+        <submesh name="_4">
+          <material>dm</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_21_png</shadervar>
+        </submesh>
+        <submesh name="_2">
+          <material>dm</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_19_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>dm</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_17_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/rr_02#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-0.8548827171325684" y="3.257833957672119" z="0.6539082527160645"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+    </meshobj>
+    <meshobj name="rr_04#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>rr_04</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>rm4</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="_1">
+          <material>rm4</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_1_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>rm4</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_1_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/rr_04#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-4.14682674407959" y="0" z="7.681872844696045"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>3.1416</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+    </meshobj>
+    <meshobj name="rr_04#002">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>rr_04</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>rm4</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="_1">
+          <material>rm4</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_5_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>rm4</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_5_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/rr_04#002_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-1.7380878925323486" y="0" z="-6.281801223754883"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+    </meshobj>
+    <meshobj name="rr_04#003">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>rr_04</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>rm4</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="_1">
+          <material>rm4</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>rm4</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/rr_04#003_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="1.1480834484100342" y="0" z="-6.281801223754883"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+    </meshobj>
+    <meshobj name="rr_04#004">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>rr_04</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>rm4</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="_1">
+          <material>rm4</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_9_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>rm4</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_9_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/rr_04#004_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="5.961047649383545" y="0" z="6.388975143432617"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>3.1416</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+    </meshobj>
+    <meshobj name="rr_06#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>rr_06</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>rm06</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="">
+          <material>rm06</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>Material #5449</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/rr_06#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="1.7908042669296265" y="-0.12112267315387726" z="1.0413368940353394"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+    </meshobj>
+    <meshobj name="rr_07#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>rr_07</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>rm6</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="">
+          <material>rm6</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_15_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>Material #5396</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_15_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/rr_07#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-8.853045463562012" y="-0.021938838064670563" z="-0.21331334114074707"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+    </meshobj>
+    <meshobj name="rr_06#002">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>rr_06</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>rm06</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="">
+          <material>rm06</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>Material #5449</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/rr_06#002_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="3.2808678150177" y="-0.12197670340538025" z="0.9910362362861633"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+    </meshobj>
+    <meshobj name="rr_05#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>rr_05</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>rm5</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/rr_05#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-0.24306455254554749" y="3.3753786087036133" z="-6.281463623046875"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_29_png</shadervar>
+    </meshobj>
+    <meshobj name="rr_07#0010">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>rr_07</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>rm6</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="">
+          <material>rm6</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>Material #5396</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/rr_07#0010_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-8.853045463562012" y="-0.021938838064670563" z="-0.21331334114074707"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+    </meshobj>
+    <meshobj name="rr_06#003">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>rr_06</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>rm06</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="">
+          <material>rm06</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>Material #5449</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/rr_06#003_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="3.187723398208618" y="-0.12212918698787689" z="-0.3463505506515503"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+    </meshobj>
+    <meshobj name="rr_06#004">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>rr_06</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>rm06</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="">
+          <material>rm06</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_28_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>Material #5449</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_28_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/rr_06#004_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-6.45952844619751" y="-0.12234087288379669" z="0.9978631138801575"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+    </meshobj>
+    <meshobj name="rr_08#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>rr_08</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>rm6</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="">
+          <material>Material #7839</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_9_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>rm6</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_9_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/rr_08#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-5.401742935180664" y="0.0007369965314865112" z="4.4319000244140625"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+    </meshobj>
+    <meshobj name="ww_01#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>ww_01</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>wm01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="_0">
+          <material>wm01</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_23_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/ww_01#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="6.094154357910156" y="-0.0025388970971107483" z="1.183276653289795"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+    </meshobj>
+    <meshobj name="ww_02#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>ww_02</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>wm01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/ww_02#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="6.823544502258301" y="0.0007082223892211914" z="2.6910622119903564"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_14_png</shadervar>
+    </meshobj>
+    <meshobj name="ww_03#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>ww_03</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>wm01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/ww_03#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="6.823485851287842" y="-0.0008860006928443909" z="5.900326251983643"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_1_png</shadervar>
+    </meshobj>
+    <meshobj name="ww_05#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>ww_05</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>wm01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/ww_05#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="6.159675598144531" y="0" z="6.121002197265625"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+    </meshobj>
+    <meshobj name="ww_06#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>ww_06</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>wm06</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="_0">
+          <material>wm06</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_15_png</shadervar>
+        </submesh>
+        <submesh name="">
+          <material>wm01</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_15_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/ww_06#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="3.859311103820801" y="0" z="3.9462320804595947"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+    </meshobj>
+    <meshobj name="ww_07#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>ww_07</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>wm01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/ww_07#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="5.874871253967285" y="0" z="3.941662073135376"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+    </meshobj>
+    <meshobj name="ww_08#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>ww_08</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>k_003</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <submesh name="_2">
+          <material>w_0081</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_2_png</shadervar>
+        </submesh>
+        <submesh name="_0">
+          <material>w_008</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_2_png</shadervar>
+        </submesh>
+        <submesh name="_1">
+          <material>w_0082</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_2_png</shadervar>
+        </submesh>
+        <submesh name="">
+          <material>k_003</material>
+          <shadervar name="tex lightmap" type="texture">lightmaps_art_2_png</shadervar>
+        </submesh>
+        <renderbuffer file="/art/bindata/ww_08#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="5.891539573669434" y="0" z="4.005298614501953"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+    </meshobj>
+    <meshobj name="ww_12#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>ww_12</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>wm12</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/ww_12#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="4.941388130187988" y="3.4490597248077393" z="3.992164134979248"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_5_png</shadervar>
+    </meshobj>
+    <meshobj name="ww_13#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>ww_13</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>wm01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/ww_13#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="5.003340721130371" y="0.0006286352872848511" z="6.5268402099609375"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_1_png</shadervar>
+    </meshobj>
+    <meshobj name="ww_02#002">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>ww_02</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>wm01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/ww_02#002_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="6.823544502258301" y="0.0007082223892211914" z="5.199058532714844"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_14_png</shadervar>
+    </meshobj>
+    <meshobj name="ww_10#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>ww_10</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>wm10</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/ww_10#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="2.6434366703033447" y="1.2773864269256592" z="3.8101329803466797"/>
+        <matrix>
+          <scale x="0.9999999403953552" y="1" z="0.9999999403953552"/>
+          <rotx>0</rotx>
+          <roty>-1.5708</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_24_png</shadervar>
+    </meshobj>
+    <meshobj name="ww_11#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>ww_11</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>wm11</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/ww_11#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="6.8289313316345215" y="0.398287832736969" z="2.675353765487671"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_14_png</shadervar>
+    </meshobj>
+    <meshobj name="ww_11#002">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>ww_11</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>wm11</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/ww_11#002_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="6.8289313316345215" y="0.398287832736969" z="5.200875282287598"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_15_png</shadervar>
+    </meshobj>
+    <meshobj name="ww_09#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>ww_09</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>wm09</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/ww_09#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="4.152359962463379" y="0.007827520370483398" z="4.081148147583008"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_27_png</shadervar>
+    </meshobj>
+    <meshobj name="xx_01#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>xx_01</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>xm01</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/xx_01#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-8.035567283630371" y="0" z="1.0860542058944702"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_29_png</shadervar>
+    </meshobj>
+    <meshobj name="xx_02#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>xx_02</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>xm02</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/xx_02#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-8.012484550476074" y="1.0909278392791748" z="1.1012316942214966"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_7_png</shadervar>
+    </meshobj>
+    <meshobj name="xx_04#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>xx_04</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>xm04</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/xx_04#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-8.035801887512207" y="2.5893218517303467" z="1.0651614665985107"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      <staticlit/>
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_2_png</shadervar>
+    </meshobj>
+    <meshobj name="xx_03#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>xx_03</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>xm03</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/xx_03#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="2.2424910068511963" y="1.2116451263427734" z="-3.9697937965393066"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_15_png</shadervar>
+    </meshobj>
+    <meshobj name="xx_05#001">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>xx_05</factory>
+        <color blue="0" green="0" red="0"/>
+        <manualcolors/>
+        <material>xm05</material>
+        <mixmode>
+          <copy/>
+        </mixmode>
+        <renderbuffer file="/art/bindata/xx_05#001_lm" name="texture coordinate lightmap"/>
+      </params>
+      <move>
+        <v x="-8.586404800415039" y="0.014520883560180664" z="-0.36710837483406067"/>
+        <matrix>
+          <scale x="1" y="1" z="1"/>
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+      
+      <shadervar name="tex lightmap" type="texture">lightmaps_art_1_png</shadervar>
+    </meshobj>
+  </sector>
+</world>

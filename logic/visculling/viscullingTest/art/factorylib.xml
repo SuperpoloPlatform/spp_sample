@@ -1,0 +1,5 @@
+<library>
+  <library>/art/factories/Plane01.xml</library>
+  <library>/art/factories/Line01.xml</library>
+  <library>/art/factories/Box02.xml</library>
+</library>

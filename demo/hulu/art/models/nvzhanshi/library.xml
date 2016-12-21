@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<plugins>
+		<plugin name='null'>crystalspace.mesh.loader.null</plugin>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+		<plugin name="cal3d">crystalspace.mesh.loader.sprite.cal3d</plugin>
+		<plugin name="cal3dfact">crystalspace.mesh.loader.factory.sprite.cal3d</plugin>
+	</plugins>
+	<!-- 这里添加shader
+	<shaders>
+		<shader>
+			<file>/shader/character/character_bump2.xml</file>
+		</shader>
+		<shader>
+			<file>/shader/character/character2.xml</file>
+		</shader>
+	</shaders>
+	-->
+	<textures>
+		<texture name="chui_gaoji"><file>/art/models/nvzhanshi/textures/chui_gaoji.jpg</file></texture>
+		<texture name="hujian_chuji"><file>/art/models/nvzhanshi/textures/hujian_chuji.jpg</file></texture>
+		<texture name="hujian_gaoji"><file>/art/models/nvzhanshi/textures/hujian_gaoji.jpg</file></texture>
+		<texture name="tou"><file>/art/models/nvzhanshi/textures/tou.jpg</file></texture>
+		<texture name="toufa"><file>/art/models/nvzhanshi/textures/toufa.jpg</file></texture>
+		<texture name="zhanshi_chujishenti"><file>/art/models/nvzhanshi/textures/zhanshi_chujishenti.jpg</file></texture>
+		<texture name="zhanshi_chujishou"><file>/art/models/nvzhanshi/textures/zhanshi_chujishou.jpg</file></texture>
+		<texture name="zhanshi_chujitui"><file>/art/models/nvzhanshi/textures/zhanshi_chujitui.jpg</file></texture>
+		<texture name="zhanshi_chujixie"><file>/art/models/nvzhanshi/textures/zhanshi_chujixie.jpg</file></texture>
+		<texture name="zhanshi_chujiyaodai"><file>/art/models/nvzhanshi/textures/zhanshi_chujiyaodai.jpg</file></texture>
+		<texture name="zhanshi_gaojishentti"><file>/art/models/nvzhanshi/textures/zhanshi_gaojishentti.jpg</file></texture>
+		<texture name="zhanshi_gaojishou"><file>/art/models/nvzhanshi/textures/zhanshi_gaojishou.jpg</file></texture>
+		<texture name="zhanshi_gaojitui"><file>/art/models/nvzhanshi/textures/zhanshi_gaojitui.jpg</file></texture>
+		<texture name="zhanshi_gaojixie"><file>/art/models/nvzhanshi/textures/zhanshi_gaojixie.jpg</file></texture>
+		<texture name="zhanshi_gaojiyaodai"><file>/art/models/nvzhanshi/textures/zhanshi_gaojiyaodai.jpg</file></texture>
+		<texture name="zhanshi_shenti"><file>/art/models/nvzhanshi/textures/zhanshi_shenti.jpg</file></texture>
+	</textures>
+	<!-- nvzhanshi的material -->
+	<materials>
+		<material name="nvzhanshi_chui_gaoji.jpg">
+			<texture>chui_gaoji</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="nvzhanshi_hujian_chuji.jpg">
+			<texture>hujian_chuji</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="nvzhanshi_hujian_gaoji.jpg">
+			<texture>hujian_gaoji</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="nvzhanshi_tou.jpg">
+			<texture>tou</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="nvzhanshi_toufa.jpg">
+			<texture>toufa</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="nvzhanshi_zhanshi_chujishenti.jpg">
+			<texture>zhanshi_chujishenti</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="nvzhanshi_zhanshi_chujishou.jpg">
+			<texture>zhanshi_chujishou</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="nvzhanshi_zhanshi_chujitui.jpg">
+			<texture>zhanshi_chujitui</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="nvzhanshi_zhanshi_chujixie.jpg">
+			<texture>zhanshi_chujixie</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="nvzhanshi_zhanshi_chujiyaodai.jpg">
+			<texture>zhanshi_chujiyaodai</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="nvzhanshi_zhanshi_gaojishentti.jpg">
+			<texture>zhanshi_gaojishentti</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="nvzhanshi_zhanshi_gaojishou.jpg">
+			<texture>zhanshi_gaojishou</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="nvzhanshi_zhanshi_gaojitui.jpg">
+			<texture>zhanshi_gaojitui</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="nvzhanshi_zhanshi_gaojixie.jpg">
+			<texture>zhanshi_gaojixie</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="nvzhanshi_zhanshi_gaojiyaodai.jpg">
+			<texture>zhanshi_gaojiyaodai</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="nvzhanshi_zhanshi_shenti.jpg">
+			<texture>zhanshi_shenti</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+	</materials>
+	<library>factories/genNvzhanshi.xml</library>
+</library>

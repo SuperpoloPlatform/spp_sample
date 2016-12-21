@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<world>
+  <plugins>
+  	<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+  	<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+  </plugins>
+  <addon>
+  	<plugin>crystalspace.renderloop.loop.loader</plugin>
+  </addon>
+	
+  <library>/art/shaderlib.xml</library>
+  <library>/art/factorylib.xml</library>
+  <library>/art/materials.xml</library>
+  
+  <library>art/models/cube/cube.xml</library>
+
+  <start name="Camera">
+    <sector>Scene</sector>
+    <position x="8.6592" y="5.1716" z="-4.595" />
+    <up x="-0.3307" y="0.8953" z="0.2984" />
+    <forward x="-0.6549" y="-0.4452" z="0.6107" />
+  </start>
+  <sector name="Scene">
+    <ambient blue="0.54" green="0.54" red="0.54" />
+    <cullerp plugin="crystalspace.culling.frustvis" />
+    <meshobj name="gnd7#1">
+      <plugin>crystalspace.mesh.loader.genmesh</plugin>
+      <params>
+        <factory>gnd7</factory>
+      </params>
+      <move>
+        <v x="-50.57075500488281" y="0" z="-30.460540771484375" />
+        <matrix>
+          <scale x="1" y="1" z="1" />
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+    </meshobj>
+	<meshobj name='Cube'>
+		<plugin>genmesh</plugin>
+		<params>
+			<factory>genCube</factory>
+			<material>no</material>
+		</params>
+		<zuse/>
+		<move>
+			<v y='0' x='3' z='3'/>
+		</move>
+	</meshobj>
+    <meshobj name="o159#1">
+      <plugin>crystalspace.mesh.loader.genmesh</plugin>
+      <params>
+        <factory>o159</factory>
+      </params>
+      <move>
+        <v x="20.161376953125" y="0" z="14.146713256835938" />
+        <matrix>
+          <scale x="1" y="1" z="1" />
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+    </meshobj>
+    <meshobj name="nolod#1">
+      <plugin>crystalspace.mesh.loader.genmesh</plugin>
+      <params>
+        <factory>nolod</factory>
+      </params>
+      <move>
+        <v x="-89.75352478027344" y="-1.825408935546875" z="-195.83364868164062" />
+        <matrix>
+          <scale x="1" y="1" z="1" />
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+    </meshobj>
+    <!--meshobj name="lod#1">
+      <plugin>crystalspace.mesh.loader.genmesh</plugin>
+      <params>
+        <factory>lod</factory>
+      </params>
+      <move>
+        <!--v x="0.16004900634288788" y="-0.6523280143737793" z="-195.83364868164062" />
+		<v x="-89.75352478027344" y="-1.825408935546875" z="-195.83364868164062" />
+        <matrix>
+          <scale x="1" y="1" z="1" />
+          <rotx>0</rotx>
+          <roty>0</roty>
+          <rotz>0</rotz>
+        </matrix>
+      </move>
+    </meshobj-->
+    <meshobj name="skydome_frankieisland_SkyDome">
+      <plugin>crystalspace.mesh.loader.genmesh</plugin>
+      <params>
+        <factory>skydome_frankieisland_SkyDome</factory>
+      </params>
+      <trimesh>
+        <id>shadows</id>
+      </trimesh>
+      <zuse />
+      <noshadows />
+      <move>
+        <v x="5000" y="0" z="5000" />
+      </move>
+      <priority>sky</priority>
+    </meshobj>
+  </sector>
+</world>

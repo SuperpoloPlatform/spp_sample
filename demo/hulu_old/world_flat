@@ -1,0 +1,1952 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<world>
+    <plugins>
+        <plugin name="genmesh">crystalspace.mesh.loader.genmesh</plugin>
+        <plugin name="genmeshfact">crystalspace.mesh.loader.factory.genmesh</plugin>
+	<plugin name="spr3d">crystalspace.mesh.loader.sprite.cal3d</plugin>
+	<plugin name="facspr3d">crystalspace.mesh.loader.factory.sprite.cal3d</plugin>
+    </plugins>
+    <shaders />
+    <textures>
+        <texture name="HD_02_T.TGA">
+            <file>textures/HD_02_T.TGA</file>
+            <alpha>
+                <binary />
+            </alpha>
+        </texture>
+        <texture name="HDZW_02.TGA">
+            <file>textures/HDZW_02.TGA</file>
+            <alpha>
+                <binary />
+            </alpha>
+        </texture>
+        <texture name="HDZW_01.TGA">
+            <file>textures/HDZW_01.TGA</file>
+            <alpha>
+                <binary />
+            </alpha>
+        </texture>
+        <texture name="ZBG_T01T.TGA">
+            <file>textures/ZBG_T01T.TGA</file>
+            <alpha>
+                <binary />
+            </alpha>
+        </texture>
+        <texture name="ZBG_T02T.TGA">
+            <file>textures/ZBG_T02T.TGA</file>
+            <alpha>
+                <binary />
+            </alpha>
+        </texture>
+        <texture name="ZZBANG.TGA">
+            <file>textures/ZZBANG.TGA</file>
+        </texture>
+        <texture name="BL_03_T.TGA">
+            <file>textures/BL_03_T.TGA</file>
+        </texture>
+        <texture name="BL_01_T.TGA">
+            <file>textures/BL_01_T.TGA</file>
+        </texture>
+        <texture name="BL_05_T.TGA">
+            <file>textures/BL_05_T.TGA</file>
+        </texture>
+        <texture name="BL_04_T.TGA">
+            <file>textures/BL_04_T.TGA</file>
+        </texture>
+        <texture name="18SJS_T.TGA">
+            <file>textures/18SJS_T.TGA</file>
+        </texture>
+        <texture name="BL_02_T.TGA">
+            <file>textures/BL_02_T.TGA</file>
+        </texture>
+        <texture name="ZZCHONG.TGA">
+            <file>textures/ZZCHONG.TGA</file>
+        </texture>
+        <texture name="HAIDIHUA.TGA">
+            <file>textures/HAIDIHUA.TGA</file>
+        </texture>
+        <texture name="DSP_S01T.TGA">
+            <file>textures/DSP_S01T.TGA</file>
+        </texture>
+        <texture name="ZBGST01T.TGA">
+            <file>textures/ZBGST01T.TGA</file>
+        </texture>
+        <texture name="HD_ZB04T.TGA">
+            <file>textures/HD_ZB04T.TGA</file>
+            <alpha>
+                <binary />
+            </alpha>
+        </texture>
+        <texture name="HD_ZB02T.TGA">
+            <file>textures/HD_ZB02T.TGA</file>
+        </texture>
+        <texture name="HD_ZB05T.TGA">
+            <file>textures/HD_ZB05T.TGA</file>
+            <alpha>
+                <binary />
+            </alpha>
+        </texture>
+        <texture name="HD_ZB01T.TGA">
+            <file>textures/HD_ZB01T.TGA</file>
+        </texture>
+        <texture name="HD_ZB03T.TGA">
+            <file>textures/HD_ZB03T.TGA</file>
+        </texture>
+        <texture name="HD_ZB06T.TGA">
+            <file>textures/HD_ZB06T.TGA</file>
+        </texture>
+        <texture name="DLPZ_T.TGA">
+            <file>textures/DLPZ_T.TGA</file>
+        </texture>
+        <texture name="BL_DW02T.TGA">
+            <file>textures/BL_DW02T.TGA</file>
+        </texture>
+        <texture name="BL_DW01T.TGA">
+            <file>textures/BL_DW01T.TGA</file>
+        </texture>
+        <texture name="BL_DW03T.TGA">
+            <file>textures/BL_DW03T.TGA</file>
+        </texture>
+    </textures>
+    <library>lightmaps.cslib</library>
+    <materials>
+        <material name="Material #3">
+            <texture>HD_02_T.TGA</texture>
+        </material>
+        <material name="Material #1746">
+            <texture>HDZW_02.TGA</texture>
+        </material>
+        <material name="Material #1745">
+            <texture>HDZW_01.TGA</texture>
+        </material>
+        <material name="Material #5">
+            <texture>ZBG_T01T.TGA</texture>
+        </material>
+        <material name="Material #6">
+            <texture>ZBG_T02T.TGA</texture>
+        </material>
+        <material name="Standard_1">
+            <texture>ZZBANG.TGA</texture>
+        </material>
+        <material name="Material #2391">
+            <texture>BL_03_T.TGA</texture>
+        </material>
+        <material name="Material #258">
+            <texture>BL_01_T.TGA</texture>
+        </material>
+        <material name="Material #262">
+            <texture>BL_01_T.TGA</texture>
+        </material>
+        <material name="Material #130">
+            <texture>BL_05_T.TGA</texture>
+        </material>
+        <material name="Material #240">
+            <texture>BL_04_T.TGA</texture>
+        </material>
+        <material name="18CDDYC2_shuijin">
+            <texture>18SJS_T.TGA</texture>
+        </material>
+        <material name="Material #411">
+            <texture>BL_02_T.TGA</texture>
+        </material>
+        <material name="Material #261">
+            <texture>ZZCHONG.TGA</texture>
+        </material>
+        <material name="Material #16">
+            <texture>HAIDIHUA.TGA</texture>
+        </material>
+        <material name="Material #41">
+            <texture>DSP_S01T.TGA</texture>
+        </material>
+        <material name="Material #21">
+            <texture>ZBGST01T.TGA</texture>
+        </material>
+        <material name="14 - Default">
+            <texture>HD_ZB04T.TGA</texture>
+        </material>
+        <material name="13 - Default">
+            <texture>HD_ZB02T.TGA</texture>
+        </material>
+        <material name="02 - Default">
+            <texture>HD_ZB05T.TGA</texture>
+        </material>
+        <material name="19 - Default">
+            <texture>HD_ZB01T.TGA</texture>
+        </material>
+        <material name="07 - Default1">
+            <texture>HD_ZB03T.TGA</texture>
+        </material>
+        <material name="20 - Default">
+            <texture>HD_ZB06T.TGA</texture>
+        </material>
+        <material name="07 - Default">
+            <texture>DLPZ_T.TGA</texture>
+        </material>
+        <material name="Material #27">
+            <texture>BL_DW02T.TGA</texture>
+        </material>
+        <material name="Material #26">
+            <texture>BL_DW01T.TGA</texture>
+        </material>
+        <material name="Material #39">
+            <texture>BL_DW03T.TGA</texture>
+        </material>
+
+
+	<material name="toufa5">
+            <texture>woman/toufa5.png</texture>
+        </material>
+
+	<material name="xie2">
+            <texture>woman/xie2.png</texture>
+        </material>
+    </materials>
+    <sounds />
+    <settings>
+        <clearscreen>yes</clearscreen>
+        <clearzbuf>yes</clearzbuf>
+    </settings>
+    <library>factories/genhaidai12_Material #3</library>
+    <library>factories/genhaidai11</library>
+    <library>factories/genhaidai10_Material #3</library>
+    <library>factories/genhaidai09_Material #3</library>
+    <library>factories/genhaidai08_Material #3</library>
+    <library>factories/genhaidai07_Material #3</library>
+    <library>factories/genhaidizhi13_Material #</library>
+    <library>factories/genhaidizhi12_Material #</library>
+    <library>factories/genhaidizhi11_Material #</library>
+    <library>factories/genhaidizhi10_Material #</library>
+    <library>factories/genhaidizhiw9_Material #</library>
+    <library>factories/genObject24_Material #5</library>
+    <library>factories/genObject24_Material #6</library>
+    <library>factories/genObject23_Material #5</library>
+    <library>factories/genObject23_Material #6</library>
+    <library>factories/genhaidai06_Material #3</library>
+    <library>factories/genhaidai05_Material #3</library>
+    <library>factories/genhaidai04_Material #3</library>
+    <library>factories/genhaidai03_Material #3</library>
+    <library>factories/genhaidai01_Material #3</library>
+    <library>factories/genzhenzhuba0_Standard_1</library>
+    <library>factories/genObject22_Material #5</library>
+    <library>factories/genObject22_Material #6</library>
+    <library>factories/genObject21_Material #6</library>
+    <library>factories/genwall_01_Material #239</library>
+    <library>factories/genwall_01_Material #258</library>
+    <library>factories/genfloor_01_Material #26</library>
+    <library>factories/genfloor_01_Material #13</library>
+    <library>factories/genfloor_01_Material #24</library>
+    <library>factories/genfloor_01_18CDDYC2_shu</library>
+    <library>factories/genfloor_01</library>
+    <library>factories/genhaidizhiw8_Material #</library>
+    <library>factories/genhaidizhiw7_Material #</library>
+    <library>factories/genzhenzhuch2_Material #</library>
+    <library>factories/genzhenzhuch1_Material #</library>
+    <library>factories/genzhenzhuch0_Material #</library>
+    <library>factories/genhaidihua02_Material #</library>
+    <library>factories/genhaidihua01_Material #</library>
+    <library>factories/genhaidizhiw6_Material #</library>
+    <library>factories/genhaidizhiw5_Material #</library>
+    <library>factories/genhaidizhiw4_Material #</library>
+    <library>factories/genhaidizhiw3_Material #</library>
+    <library>factories/genzhenzhucho_Material #</library>
+    <library>factories/genzhenzhuban_Standard_1</library>
+    <library>factories/genObject15_Material #41</library>
+    <library>factories/genObject12_Material #21</library>
+    <library>factories/genObject11_Material #5</library>
+    <library>factories/genObject11_Material #6</library>
+    <library>factories/genObject08_14 - Default</library>
+    <library>factories/genObject08_13 - Default</library>
+    <library>factories/genObject08_02 - Default</library>
+    <library>factories/genObject08_19 - Default</library>
+    <library>factories/genObject08_07 - Default</library>
+    <library>factories/genObject08_20 - Default</library>
+    <library>factories/genhaidizhiw2_Material #</library>
+    <library>factories/genhaidizhiw1_Material #</library>
+    <library>factories/genhaidizhiw0_Material #</library>
+    <library>factories/genhaidizhiwu_Material #</library>
+    <library>factories/genhaidihua_Material #16</library>
+    <library>factories/genhaidai_Material #3</library>
+    <library>factories/gendilao_07 - Default</library>
+    <library>factories/genBox03_Material #27</library>
+    <library>factories/genBox03_Material #26</library>
+    <library>factories/genBox03_Material #39</library>
+    <library>factories/genhaidizhi14_Material #</library>
+    <library>factories/genhaidai02_Material #3</library>
+    <library>factories/genObject21_Material #5</library>
+    <triggers>
+        <trigger name="LaIpoLamp.002_t">
+            <sectorvis sector="Scene" />
+            <fire sequence="LaIpoLamp.002" />
+        </trigger>
+        <trigger name="LaIpoLamp.001_t">
+            <sectorvis sector="Scene" />
+            <fire sequence="LaIpoLamp.001" />
+        </trigger>
+        <trigger name="ObIpohaidai11_t">
+            <sectorvis sector="Scene" />
+            <fire sequence="ObIpohaidai11" />
+        </trigger>
+        <trigger name="LaIpoLamp_t">
+            <sectorvis sector="Scene" />
+            <fire sequence="LaIpoLamp" />
+        </trigger>
+    </triggers>
+
+
+
+
+    	<meshfact name="woman">
+		<plugin>crystalspace.mesh.loader.factory.sprite.cal3d</plugin>
+		<params>
+		  <options rotate_x_axis="yes" flip_textures="no" />
+
+		   <animation
+		    file="woman/stand.caf"
+		    name="stand"
+		    type="travel"
+		    base_vel="0"
+		    min_vel="1"
+		    max_vel="0"
+		    min_random="10"
+		    max_random="30" />
+
+
+		  <animation
+		    file="woman/run.caf"
+		    name="run"
+		    type="travel"
+		    base_vel="0"
+		    min_vel="1"
+		    max_vel="0"
+		    min_random="10"
+		    max_random="30" />
+
+
+
+		  <scale value="0.01" />
+		  <skeleton file="woman/woman.csf" />
+
+		  <material file="woman/yifu1.jpg" name="lg_shenti" />
+
+		  <mesh file="woman/yifu2.cmf" name="yifu2" material="lg_shenti" />
+		  <mesh file="woman/toufa1.cmf" name="toufa1" material="toufa5" />
+		  <mesh file="woman/xie.cmf" name="xie" material="xie2" />
+
+		  <hardtransform
+			rot_axis_x="1"
+			rot_axis_y="0"
+			rot_axis_z="0"
+			rot_angle="90" />
+		  <hardtransform
+			rot_axis_x="0"
+			rot_axis_y="1"
+			rot_axis_z="0"
+			rot_angle="180" />
+		</params>
+	</meshfact>
+
+
+
+    <sector name="Scene">
+        <ambient blue="0.5" green="0.5" red="0.5" />
+        <cullerp plugin="crystalspace.culling.frustvis" />
+        <light name="Lamp.002">
+            <center y="24.6085" x="35.6073" z="-56.7039" />
+            <color blue="0.813752412796" green="0.0" red="0.186718270183" />
+            <radius brightness="0.102018550038">29.9999828339</radius>
+            <dynamic>yes</dynamic>
+        </light>
+        <light name="Lamp.001">
+            <center y="43.7594" x="-46.275" z="-2.1195" />
+            <color blue="0.813752412796" green="0.0" red="0.186718270183" />
+            <radius brightness="0.102018550038">29.9999828339</radius>
+            <dynamic>yes</dynamic>
+        </light>
+
+
+
+
+		<meshobj name="person1">
+		    <priority>portal</priority>
+		    <plugin>spr3d</plugin>
+		    <params>
+			<factory>woman</factory>
+		    </params>
+		    <zuse />
+		    <move>
+			 <v y="7.2944" x="-15.7239" z="-13.2428" />
+		    </move>
+		</meshobj>
+
+		<meshobj name="person2">
+		    <priority>portal</priority>
+		    <plugin>spr3d</plugin>
+		    <params>
+			<factory>woman</factory>
+		    </params>
+		    <zuse />
+		    <move>
+			 <v y="-0.5" x="-20.7239" z="-13.2428" />
+		    </move>
+		</meshobj>
+
+
+
+
+
+
+        <meshobj name="haidai12_Material #3">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidai12_Material #3</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #3</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidai12_Material_#3_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="3.0825" x="12.829" z="-3.0741" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidai11">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidai11</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #3</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidai11_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="-2.4274" x="9.7561" z="-3.0906" />
+                <matrix>
+                    <rotx>-0.0132</rotx>
+                </matrix>
+            </move>
+            <key name="maxdist" value="50.0" />
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidai10_Material #3">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidai10_Material #3</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #3</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidai10_Material_#3_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="2.6431" x="-17.9377" z="-9.5988" />
+            </move>
+            <key name="maxdist" value="20.0" />
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidai09_Material #3">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidai09_Material #3</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #3</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidai09_Material_#3_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="0.9734" x="13.913" z="-24.4591" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidai08_Material #3">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidai08_Material #3</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #3</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidai08_Material_#3_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="5.1329" x="-7.2139" z="-29.5901" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidai07_Material #3">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidai07_Material #3</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #3</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidai07_Material_#3_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="0.9734" x="8.6769" z="5.6445" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidizhi13_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidizhi13_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #1746</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidizhi13_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="7.2944" x="16.5639" z="-15.1914" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidizhi12_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidizhi12_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #1745</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidizhi12_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="10.4297" x="-21.6261" z="-15.097" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidizhi11_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidizhi11_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #1746</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidizhi11_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="7.2944" x="-21.7239" z="-13.2428" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidizhi10_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidizhi10_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #1745</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidizhi10_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="10.4297" x="-8.5416" z="-20.7825" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidizhiw9_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidizhiw9_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #1746</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidizhiw9_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="7.2944" x="-8.6393" z="-23.0904" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Object24_Material #5">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genObject24_Material #5</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #5</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Object24_Material_#5_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-0.9957" x="-5.4908" z="-19.6941" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Object24_Material #6">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genObject24_Material #6</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #6</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Object24_Material_#6_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="-0.7945" x="-0.671" z="-20.175" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Object23_Material #5">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genObject23_Material #5</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #5</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Object23_Material_#5_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="-0.9957" x="3.2581" z="-26.8905" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Object23_Material #6">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genObject23_Material #6</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #6</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Object23_Material_#6_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="-0.7945" x="4.4066" z="-23.3236" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidai06_Material #3">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidai06_Material #3</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #3</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidai06_Material_#3_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="-0.1028" x="-9.505" z="-23.623" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidai05_Material #3">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidai05_Material #3</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #3</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidai05_Material_#3_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="0.9734" x="0.2685" z="-29.435" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidai04_Material #3">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidai04_Material #3</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #3</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidai04_Material_#3_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="0.9734" x="7.6731" z="-23.1213" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidai03_Material #3">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidai03_Material #3</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #3</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidai03_Material_#3_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="3.1703" x="-3.5673" z="-0.3453" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidai01_Material #3">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidai01_Material #3</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #3</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidai01_Material_#3_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="0.9734" x="-5.1152" z="-7.1855" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="zhenzhuba0_Standard_1">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genzhenzhuba0_Standard_1</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Standard_1</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/zhenzhuba0_Standard_1_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="-0.0339" x="11.1487" z="2.0143" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Object22_Material #5">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genObject22_Material #5</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #5</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Object22_Material_#5_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-2.0542" x="-2.0618" z="68.0883" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Object22_Material #6">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genObject22_Material #6</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #6</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Object22_Material_#6_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="1.3641" x="-8.8788" z="3.5557" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Object21_Material #6">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genObject21_Material #6</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #6</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Object21_Material_#6_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="-0.7636" x="3.2149" z="-5.8653" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="wall_01_Material #239">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genwall_01_Material #239</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #2391</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/wall_01_Material_#239_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="102.694" x="-5.4313" z="3.4987" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_6_png</shadervar>
+        </meshobj>
+        <meshobj name="wall_01_Material #258">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genwall_01_Material #258</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #258</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <submesh name="_0">
+                    <material>Material #258</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_1_png</shadervar>
+                </submesh>
+                <submesh name="_1">
+                    <material>Material #258</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_2_png</shadervar>
+                </submesh>
+                <submesh name="_2">
+                    <material>Material #258</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_0_png</shadervar>
+                </submesh>
+                <submesh name="_3">
+                    <material>Material #258</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_5_png</shadervar>
+                </submesh>
+                <submesh name="_4">
+                    <material>Material #258</material>
+                    <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+                </submesh>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/wall_01_Material_#258_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="69.4796" x="5.9039" z="-5.0868" />
+            </move>
+            <staticlit />
+        </meshobj>
+        <meshobj name="floor_01_Material #26">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genfloor_01_Material #26</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #262</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/floor_01_Material_#26_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="2.1385" x="4.348" z="-13.8093" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="floor_01_Material #13">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genfloor_01_Material #13</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #130</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/floor_01_Material_#13_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-1.8791" x="-1.3808" z="67.935" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_4_png</shadervar>
+        </meshobj>
+        <meshobj name="floor_01_Material #24">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genfloor_01_Material #24</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #240</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/floor_01_Material_#24_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="12.9361" x="4.5354" z="-8.1217" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_6_png</shadervar>
+        </meshobj>
+        <meshobj name="floor_01_18CDDYC2_shu">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genfloor_01_18CDDYC2_shu</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>18CDDYC2_shuijin</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/floor_01_18CDDYC2_shu_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="5.2219" x="3.7415" z="-6.0685" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_6_png</shadervar>
+        </meshobj>
+        <meshobj name="floor_01">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genfloor_01</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #411</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/floor_01_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-1.9354" x="5.9039" z="-4.6481" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_4_png</shadervar>
+        </meshobj>
+        <meshobj name="haidizhiw8_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidizhiw8_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #1746</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidizhiw8_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-2.365" x="1.9426" z="44.4407" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidizhiw7_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidizhiw7_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #1746</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidizhiw7_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="14.8056" x="-2.2253" z="14.2944" />
+            </move>
+            <key name="maxdist" value="50.0" />
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="zhenzhuch2_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genzhenzhuch2_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #261</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/zhenzhuch2_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-1.1706" x="-5.4146" z="-7.2056" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="zhenzhuch1_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genzhenzhuch1_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #261</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/zhenzhuch1_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-1.4388" x="11.0671" z="-5.2024" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="zhenzhuch0_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genzhenzhuch0_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #261</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/zhenzhuch0_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-1.3454" x="-5.2279" z="-14.1913" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidihua02_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidihua02_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #16</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidihua02_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-1.2057" x="-2.9249" z="-12.0052" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidihua01_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidihua01_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #16</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidihua01_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-1.1704" x="8.0472" z="-9.5558" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidizhiw6_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidizhiw6_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #1746</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidizhiw6_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="0.1337" x="0.4816" z="-1.1419" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidizhiw5_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidizhiw5_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #1746</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidizhiw5_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="6.8964" x="14.7713" z="-6.0038" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidizhiw4_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidizhiw4_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #1745</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidizhiw4_Material_#_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="10.4297" x="5.1123" z="4.2009" />
+            </move>
+            <key name="maxdist" value="50.0" />
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidizhiw3_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidizhiw3_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #1746</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidizhiw3_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="7.2944" x="5.0145" z="6.0551" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="zhenzhucho_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genzhenzhucho_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #261</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/zhenzhucho_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-1.6525" x="-4.5125" z="-16.9296" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="zhenzhuban_Standard_1">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genzhenzhuban_Standard_1</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Standard_1</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/zhenzhuban_Standard_1_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-0.0339" x="-7.146" z="-11.085" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Object15_Material #41">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genObject15_Material #41</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #41</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Object15_Material_#41_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-0.8823" x="3.1541" z="-10.1666" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Object12_Material #21">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genObject12_Material #21</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #21</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Object12_Material_#21_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-0.9264" x="1.1832" z="-10.9167" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Object11_Material #5">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genObject11_Material #5</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #5</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Object11_Material_#5_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="-1.5362" x="1.9516" z="-15.2015" />
+            </move>
+            <key name="maxdist" value="50.0" />
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Object11_Material #6">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genObject11_Material #6</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #6</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Object11_Material_#6_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="-1.4377" x="2.5137" z="-13.4558" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Object08_14 - Default">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genObject08_14 - Default</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>14 - Default</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Object08_14_-_Default_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="3.3198" x="1.5357" z="-5.5456" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Object08_13 - Default">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genObject08_13 - Default</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>13 - Default</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Object08_13_-_Default_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="2.758" x="1.48" z="-6.0287" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Object08_02 - Default">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genObject08_02 - Default</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>02 - Default</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Object08_02_-_Default_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="4.3378" x="1.4578" z="-5.7043" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Object08_19 - Default">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genObject08_19 - Default</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>19 - Default</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Object08_19_-_Default_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="1.5873" x="1.4082" z="-5.7168" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Object08_07 - Default">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genObject08_07 - Default</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>07 - Default1</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Object08_07_-_Default_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="3.0338" x="1.4796" z="-5.7122" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Object08_20 - Default">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genObject08_20 - Default</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>20 - Default</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Object08_20_-_Default_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="3.7312" x="1.6435" z="-4.2548" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidizhiw2_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidizhiw2_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #1746</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidizhiw2_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="6.8964" x="-10.866" z="-9.911" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidizhiw1_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidizhiw1_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #1746</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidizhiw1_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="0.1337" x="-0.3687" z="-1.2715" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidizhiw0_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidizhiw0_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #1746</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidizhiw0_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="4.3863" x="-9.5712" z="-0.8715" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidizhiwu_Material #">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidizhiwu_Material #</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #1745</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidizhiwu_Material_#_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="6.534" x="-9.5042" z="-2.6688" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidihua_Material #16">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidihua_Material #16</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #16</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidihua_Material_#16_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-0.2042" x="9.4381" z="-15.1244" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="haidai_Material #3">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genhaidai_Material #3</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #3</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/haidai_Material_#3_lm" />
+            </params>
+            <trimesh>
+                <id>colldet</id>
+            </trimesh>
+            <zuse />
+            <move>
+                <v y="0.9734" x="10.9696" z="-9.8533" />
+            </move>
+            <key name="maxdist" value="30.0" />
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="dilao_07 - Default">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>gendilao_07 - Default</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>07 - Default</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/dilao_07_-_Default_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-1.0151" x="-8.6298" z="-17.6195" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Box03_Material #27">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genBox03_Material #27</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #27</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Box03_Material_#27_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-2.1337" x="6.5711" z="56.6471" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Box03_Material #26">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genBox03_Material #26</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #26</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Box03_Material_#26_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-2.1337" x="6.5711" z="56.6471" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <meshobj name="Box03_Material #39">
+            <plugin>genmesh</plugin>
+            <params>
+                <factory>genBox03_Material #39</factory>
+                <lighting>no</lighting>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>Material #39</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <renderbuffer name="texture coordinate lightmap" file="bindata/Box03_Material_#39_lm" />
+            </params>
+            <zuse />
+            <move>
+                <v y="-2.1337" x="6.5711" z="56.6471" />
+            </move>
+            <staticlit />
+            <shadervar name="tex lightmap" type="texture">lightmaps_world_7_png</shadervar>
+        </meshobj>
+        <light name="Lamp">
+            <center y="21.4541" x="0.2513" z="-7.1418" />
+            <color blue="0.813752412796" green="0.0" red="0.186718270183" />
+            <radius brightness="0.102018550038">29.9999828339</radius>
+            <dynamic>yes</dynamic>
+        </light>
+        <meshgen name="meshgenfloor_01">
+            <alphascale maxdist="20.0" mindist="12.0" />
+            <samplebox>
+                <min y="-200" x="-256" z="-256" />
+                <max y="200" x="256" z="256" />
+            </samplebox>
+            <meshobj>floor_01</meshobj>
+            <geometry>
+                <factory maxdist="50.0" name="genhaidizhi14_Material #" />
+                <radius>1.0</radius>
+                <density>0.00999999977648</density>
+            </geometry>
+            <geometry>
+                <factory maxdist="50.0" name="genhaidai02_Material #3" />
+                <radius>1.0</radius>
+                <density>0.00999999977648</density>
+            </geometry>
+            <geometry>
+                <factory maxdist="20.0" name="genObject21_Material #5" />
+                <radius>1.0</radius>
+                <density>0.00999999977648</density>
+            </geometry>
+        </meshgen>
+    </sector>
+    <sequences>
+        <sequence name="LaIpoLamp.002">
+            <fadelight duration="194.827799996" light="Lamp.002" red="0.072422966361" />
+            <delay time="194.827799996" />
+            <fadelight blue="1.00022768974" light="Lamp.002" duration="200.328826904" green="0.120215237141" />
+            <delay time="200.328826904" />
+            <fadelight duration="194.827874502" light="Lamp.002" red="0.664904177189" />
+            <delay time="194.827874502" />
+            <fadelight blue="0.891461491585" light="Lamp.002" duration="129.008372625" green="0.0114490091801" />
+            <delay time="129.008372625" />
+            <fadelight duration="194.827795029" light="Lamp.002" red="0.336952894926" />
+            <delay time="194.827795029" />
+            <fadelight blue="0.950027942657" light="Lamp.002" duration="221.838871638" green="0.0700154304504" />
+            <delay time="221.838871638" />
+            <fadelight duration="194.827795029" light="Lamp.002" red="0.513542056084" />
+            <delay time="194.827795029" />
+            <fadelight blue="0.905267238617" light="Lamp.002" duration="243.348757426" green="0.0252547562122" />
+            <delay time="243.348757426" />
+            <fadelight duration="194.827874502" light="Lamp.002" red="0.378579884768" />
+            <delay time="194.827874502" />
+            <fadelight duration="221.838792165" light="Lamp.002" green="0.0252547562122" />
+            <delay time="221.838792165" />
+            <fadelight blue="0.950621724129" light="Lamp.002" duration="10.0644429525" />
+            <delay time="10.0644429525" />
+            <fadelight duration="184.763431549" light="Lamp.002" red="0.378579884768" />
+            <delay time="184.763431549" />
+            <fadelight blue="0.950027942657" light="Lamp.002" duration="200.328826904" green="0.0700154304504" />
+            <delay time="200.328826904" />
+            <fadelight duration="194.827874502" light="Lamp.002" red="0.513542056084" />
+            <delay time="194.827874502" />
+            <fadelight blue="0.950027942657" light="Lamp.002" duration="221.838951111" green="0.0700154304504" />
+            <delay time="221.838951111" />
+            <fadelight duration="194.827715556" light="Lamp.002" red="0.513542056084" />
+            <delay time="194.827715556" />
+            <fadelight blue="0.891461491585" light="Lamp.002" duration="221.838951111" green="0.0114490091801" />
+            <delay time="221.838951111" />
+            <fadelight duration="287.658055623" light="Lamp.002" red="0.664904177189" />
+            <delay time="287.658055623" />
+            <fadelight blue="1.00022768974" light="Lamp.002" duration="221.838951111" green="0.120215237141" />
+            <delay time="221.838951111" />
+            <fadelight duration="194.827715556" light="Lamp.002" red="0.664904177189" />
+            <delay time="194.827715556" />
+            <fadelight blue="0.736508846283" light="Lamp.002" duration="243.349075317" green="-0.143503576517" />
+            <delay time="243.349075317" />
+            <fadelight duration="194.827715556" light="Lamp.002" red="-0.130259022117" />
+            <delay time="194.827715556" />
+            <enable trigger="LaIpoLamp.002_t" />
+        </sequence>
+        <sequence name="LaIpoLamp.001">
+            <fadelight duration="194.827799996" light="Lamp.001" red="0.072422966361" />
+            <delay time="194.827799996" />
+            <fadelight blue="1.00022768974" light="Lamp.001" duration="200.328826904" green="0.120215237141" />
+            <delay time="200.328826904" />
+            <fadelight duration="194.827874502" light="Lamp.001" red="0.664904177189" />
+            <delay time="194.827874502" />
+            <fadelight blue="0.891461491585" light="Lamp.001" duration="129.008372625" green="0.0114490091801" />
+            <delay time="129.008372625" />
+            <fadelight duration="194.827795029" light="Lamp.001" red="0.336952894926" />
+            <delay time="194.827795029" />
+            <fadelight blue="0.950027942657" light="Lamp.001" duration="221.838871638" green="0.0700154304504" />
+            <delay time="221.838871638" />
+            <fadelight duration="194.827795029" light="Lamp.001" red="0.513542056084" />
+            <delay time="194.827795029" />
+            <fadelight blue="0.905267238617" light="Lamp.001" duration="243.348757426" green="0.0252547562122" />
+            <delay time="243.348757426" />
+            <fadelight duration="194.827874502" light="Lamp.001" red="0.378579884768" />
+            <delay time="194.827874502" />
+            <fadelight duration="221.838792165" light="Lamp.001" green="0.0252547562122" />
+            <delay time="221.838792165" />
+            <fadelight blue="0.950621724129" light="Lamp.001" duration="10.0644429525" />
+            <delay time="10.0644429525" />
+            <fadelight duration="184.763431549" light="Lamp.001" red="0.378579884768" />
+            <delay time="184.763431549" />
+            <fadelight blue="0.950027942657" light="Lamp.001" duration="200.328826904" green="0.0700154304504" />
+            <delay time="200.328826904" />
+            <fadelight duration="194.827874502" light="Lamp.001" red="0.513542056084" />
+            <delay time="194.827874502" />
+            <fadelight blue="0.950027942657" light="Lamp.001" duration="221.838951111" green="0.0700154304504" />
+            <delay time="221.838951111" />
+            <fadelight duration="194.827715556" light="Lamp.001" red="0.513542056084" />
+            <delay time="194.827715556" />
+            <fadelight blue="0.891461491585" light="Lamp.001" duration="221.838951111" green="0.0114490091801" />
+            <delay time="221.838951111" />
+            <fadelight duration="287.658055623" light="Lamp.001" red="0.664904177189" />
+            <delay time="287.658055623" />
+            <fadelight blue="1.00022768974" light="Lamp.001" duration="221.838951111" green="0.120215237141" />
+            <delay time="221.838951111" />
+            <fadelight duration="194.827715556" light="Lamp.001" red="0.664904177189" />
+            <delay time="194.827715556" />
+            <fadelight blue="0.736508846283" light="Lamp.001" duration="243.349075317" green="-0.143503576517" />
+            <delay time="243.349075317" />
+            <fadelight duration="194.827715556" light="Lamp.001" red="-0.130259022117" />
+            <delay time="194.827715556" />
+            <enable trigger="LaIpoLamp.001_t" />
+        </sequence>
+        <sequence name="ObIpohaidai11">
+            <rotate duration="424.057086309" mesh="haidai11">
+                <rotx>0.134416335701</rotx>
+                <v y="-2.42739796638" x="9.75608921051" z="-3.0906496048" />
+            </rotate>
+            <delay time="424.057086309" />
+            <rotate duration="409.276247025" mesh="haidai11">
+                <rotx>-0.134416335701</rotx>
+                <v y="-2.42739796638" x="9.75608921051" z="-3.0906496048" />
+            </rotate>
+            <delay time="409.276247025" />
+            <enable trigger="ObIpohaidai11_t" />
+        </sequence>
+        <sequence name="LaIpoLamp">
+            <fadelight duration="194.827799996" light="Lamp" red="0.072422966361" />
+            <delay time="194.827799996" />
+            <fadelight blue="1.00022768974" light="Lamp" duration="200.328826904" green="0.120215237141" />
+            <delay time="200.328826904" />
+            <fadelight duration="194.827874502" light="Lamp" red="0.664904177189" />
+            <delay time="194.827874502" />
+            <fadelight blue="0.891461491585" light="Lamp" duration="129.008372625" green="0.0114490091801" />
+            <delay time="129.008372625" />
+            <fadelight duration="194.827795029" light="Lamp" red="0.336952894926" />
+            <delay time="194.827795029" />
+            <fadelight blue="0.950027942657" light="Lamp" duration="221.838871638" green="0.0700154304504" />
+            <delay time="221.838871638" />
+            <fadelight duration="194.827795029" light="Lamp" red="0.513542056084" />
+            <delay time="194.827795029" />
+            <fadelight blue="0.905267238617" light="Lamp" duration="243.348757426" green="0.0252547562122" />
+            <delay time="243.348757426" />
+            <fadelight duration="194.827874502" light="Lamp" red="0.378579884768" />
+            <delay time="194.827874502" />
+            <fadelight duration="221.838792165" light="Lamp" green="0.0252547562122" />
+            <delay time="221.838792165" />
+            <fadelight blue="0.950621724129" light="Lamp" duration="10.0644429525" />
+            <delay time="10.0644429525" />
+            <fadelight duration="184.763431549" light="Lamp" red="0.378579884768" />
+            <delay time="184.763431549" />
+            <fadelight blue="0.950027942657" light="Lamp" duration="200.328826904" green="0.0700154304504" />
+            <delay time="200.328826904" />
+            <fadelight duration="194.827874502" light="Lamp" red="0.513542056084" />
+            <delay time="194.827874502" />
+            <fadelight blue="0.950027942657" light="Lamp" duration="221.838951111" green="0.0700154304504" />
+            <delay time="221.838951111" />
+            <fadelight duration="194.827715556" light="Lamp" red="0.513542056084" />
+            <delay time="194.827715556" />
+            <fadelight blue="0.891461491585" light="Lamp" duration="221.838951111" green="0.0114490091801" />
+            <delay time="221.838951111" />
+            <fadelight duration="287.658055623" light="Lamp" red="0.664904177189" />
+            <delay time="287.658055623" />
+            <fadelight blue="1.00022768974" light="Lamp" duration="221.838951111" green="0.120215237141" />
+            <delay time="221.838951111" />
+            <fadelight duration="194.827715556" light="Lamp" red="0.664904177189" />
+            <delay time="194.827715556" />
+            <fadelight blue="0.736508846283" light="Lamp" duration="243.349075317" green="-0.143503576517" />
+            <delay time="243.349075317" />
+            <fadelight duration="194.827715556" light="Lamp" red="-0.130259022117" />
+            <delay time="194.827715556" />
+            <enable trigger="LaIpoLamp_t" />
+        </sequence>
+    </sequences>
+    <start name="Camera">
+        <sector>Scene</sector>
+        <position y="23.3702" x="5.0206" z="-22.9237" />
+        <up y="0.7371" x="-0.1895" z="0.6487" />
+        <forward y="-0.6742" x="-0.213" z="0.7072" />
+    </start>
+</world>

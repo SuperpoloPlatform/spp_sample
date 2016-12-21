@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by nAcer (Stu) -->
+<Imageset Name="3dSchool" Imagefile="3dSchool.png">
+	<Image Name="overlookClicked" XPos="3" YPos="3" Width="66" Height="24"/>
+	<Image Name="overlookNormal" XPos="76" YPos="3" Width="66" Height="24"/>
+	<Image Name="schlNavClicked" XPos="3" YPos="32" Width="66" Height="24"/>
+	<Image Name="schlNavNormal" XPos="76" YPos="32" Width="66" Height="24"/>
+	<Image Name="viewCtrlClicked" XPos="3" YPos="61" Width="66" Height="24"/>
+	<Image Name="viewCtrlNormal" XPos="76" YPos="61" Width="66" Height="24"/>
+	<Image Name="schlHelpClicked" XPos="3" YPos="90" Width="66" Height="24"/>
+	<Image Name="schlHelpNormal" XPos="76" YPos="90" Width="66" Height="24"/>
+
+   	<Image Name="titleleft" XPos="157" YPos="4" Width="24" Height="25"/>
+	<Image Name="titlemiddle" XPos="216" YPos="4" Width="46" Height="25"/>
+	<Image Name="titleright" XPos="295" YPos="4" Width="25" Height="25"/>
+
+	<Image Name="wintopleft" XPos="157" YPos="40" Width="24" Height="35"/>
+	<Image Name="wintopmiddle" XPos="216" YPos="40" Width="46" Height="35"/>
+	<Image Name="wintopright" XPos="295" YPos="40" Width="25" Height="35"/>
+
+	<Image Name="winmiddleleft" XPos="157" YPos="83" Width="24" Height="34"/>
+	<Image Name="winmiddlemiddle" XPos="216" YPos="83" Width="46" Height="34"/>
+	<Image Name="winmiddleright" XPos="295" YPos="83" Width="25" Height="34"/>
+
+	<Image Name="winfootleft" XPos="157" YPos="143" Width="24" Height="20"/>
+	<Image Name="winfootmiddle" XPos="216" YPos="143" Width="46" Height="20"/>
+	<Image Name="winfootright" XPos="295" YPos="143" Width="25" Height="20"/>
+
+
+	<Image Name="ctrlUpNormal" XPos="344" YPos="4" Width="22" Height="22"/>
+	<Image Name="ctrlDownNormal" XPos="370" YPos="4" Width="22" Height="22"/>
+	<Image Name="ctrlLeftNormal" XPos="395" YPos="4" Width="22" Height="22"/>
+	<Image Name="ctrlRightNormal" XPos="420" YPos="4" Width="22" Height="22"/>
+	<Image Name="ctrlUpOver" XPos="343" YPos="30" Width="22" Height="22"/>
+	<Image Name="ctrlDownOver" XPos="370" YPos="30" Width="22" Height="22"/>
+	<Image Name="ctrlLeftOver" XPos="396" YPos="30" Width="22" Height="22"/>
+	<Image Name="ctrlRightOver" XPos="420" YPos="30" Width="22" Height="22"/>
+	<Image Name="cameraRotation" XPos="450" YPos="4" Width="25" Height="25"/>
+	<Image Name="cameraMove" XPos="481" YPos="4" Width="25" Height="25"/>
+	<Image Name="soundOpen" XPos="450" YPos="36" Width="25" Height="15"/>
+	<Image Name="soundClose" XPos="481" YPos="36" Width="25" Height="15"/>
+	<Image Name="labelbrowse" XPos="329" YPos="65" Width="93" Height="24"/>
+	<Image Name="aboutus" XPos="329" YPos="94" Width="93" Height="24"/>
+	<Image Name="labelhelp" XPos="329" YPos="123" Width="93" Height="24"/>
+	<Image Name="labelschlSight" XPos="328" YPos="153" Width="93" Height="24"/>
+	<Image Name="moveWay" XPos="429" YPos="65" Width="78" Height="23"/>
+	<Image Name="labelViewPerson" XPos="429" YPos="96" Width="78" Height="23"/>
+	<Image Name="labelFirstPerson" XPos="429" YPos="123" Width="74" Height="23"/>
+	<Image Name="labelThirdPerson" XPos="429" YPos="154" Width="74" Height="23"/>
+	<Image Name="gymnasiums" XPos="330" YPos="186" Width="56" Height="23"/>
+	<Image Name="labelRun" XPos="475" YPos="186" Width="21" Height="23"/>
+	<Image Name="labelGo" XPos="443" YPos="185" Width="21" Height="23"/>
+	<Image Name="labelWalk" XPos="397" YPos="185" Width="39" Height="23"/>
+	<Image Name="pageUpOver" XPos="164" YPos="167" Width="50" Height="13"/>
+	<Image Name="pageDownOver" XPos="164" YPos="185" Width="50" Height="13"/>
+	<Image Name="pageUpNormal" XPos="221" YPos="167" Width="50" Height="13"/>
+	<Image Name="pageDownNormal" XPos="221" YPos="185" Width="50" Height="13"/>
+	<Image Name="devideLine" XPos="168" YPos="203" Width="102" Height="3"/>
+	<Image Name="inputFrame" XPos="165" YPos="211" Width="150" Height="23"/>
+	<Image Name="cursorBlack" XPos="279" YPos="167" Width="1" Height="25"/>
+	<Image Name="cursorWhite" XPos="290" YPos="167" Width="1" Height="25"/>
+	<Image Name="radioNormal" XPos="325" YPos="30" Width="14" Height="14"/>
+	<Image Name="radioClicked" XPos="325" YPos="8" Width="14" Height="14"/>
+	<Image Name="SimpleBg" XPos="177" YPos="348" Width="326" Height="98"/>
+	<Image Name="chatNormal" XPos="255" YPos="241" Width="29" Height="22"/>
+	<Image Name="chatOver" XPos="289" YPos="241" Width="29" Height="22"/>
+	<Image Name="chatbg" XPos="323" YPos="213" Width="180" Height="129"/>
+	<Image Name="footBgLeft" XPos="175" YPos="267" Width="47" Height="71"/>
+	<Image Name="footBgMiddle" XPos="235" YPos="267" Width="45" Height="71"/>
+	<Image Name="footBgRight" XPos="291" YPos="267" Width="26" Height="71"/>
+	<Image Name="titleClose" XPos="300" YPos="170" Width="20" Height="20"/>
+	<Image Name="setBrowseWay" XPos="162" YPos="241" Width="74" Height="20"/>
+	<Image Name="schlBrowseNormal" XPos="2" YPos="484" Width="76" Height="26"/>
+	<Image Name="EastAreaNormal" XPos="2" YPos="455" Width="76" Height="26"/>
+	<Image Name="WestAreaNormal" XPos="2" YPos="426" Width="76" Height="26"/>
+	<Image Name="browseLineNormal" XPos="3" YPos="397" Width="76" Height="26"/>
+	<Image Name="fastLocateNormal" XPos="3" YPos="368" Width="76" Height="26"/>
+	<Image Name="schlSightNormal" XPos="3" YPos="338" Width="76" Height="26"/>
+	<Image Name="liangxiangOver" XPos="3" YPos="119" Width="66" Height="24"/>
+	<Image Name="schlCelebrateOver" XPos="3" YPos="149" Width="66" Height="24"/>
+	<Image Name="liangxiangNormal" XPos="76" YPos="119" Width="66" Height="24"/>
+	<Image Name="schlCelebrateNormal" XPos="76" YPos="149" Width="66" Height="24"/>
+	<Image Name="celeNavNormal" XPos="3" YPos="309" Width="76" Height="26"/>
+	<Image Name="confirmNormal" XPos="4" YPos="177" Width="60" Height="20"/>
+	<Image Name="confirmOver" XPos="4" YPos="202" Width="60" Height="20"/>
+	<Image Name="confirmClicked" XPos="4" YPos="226" Width="60" Height="20"/>
+	<Image Name="cancelNormal" XPos="78" YPos="177" Width="60" Height="20"/>
+	<Image Name="cancelOver" XPos="78" YPos="202" Width="60" Height="20"/>
+	<Image Name="cancelClicked" XPos="78" YPos="226" Width="60" Height="20"/>
+	<Image Name="footLeft" XPos="394" YPos="452" Width="29" Height="22"/>
+	<Image Name="footMiddle" XPos="429" YPos="452" Width="29" Height="22"/>
+	<Image Name="footRight" XPos="464" YPos="452" Width="31" Height="22"/>
+	<Image Name="schlBrowseOver" XPos="82" YPos="484" Width="76" Height="26"/>
+	<Image Name="EastAreaOver" XPos="82" YPos="455" Width="76" Height="26"/>
+	<Image Name="WestAreaOver" XPos="83" YPos="426" Width="76" Height="26"/>
+	<Image Name="browseLineOver" XPos="83" YPos="397" Width="76" Height="26"/>
+	<Image Name="celeNavOver" XPos="84" YPos="309" Width="76" Height="26"/>
+	<Image Name="schlSightOver" XPos="83" YPos="338" Width="76" Height="26"/>
+	<Image Name="fastLocateOver" XPos="83" YPos="368" Width="76" Height="26"/>
+	<Image Name="stopNormal" XPos="3" YPos="280" Width="76" Height="26"/>
+	<Image Name="stopOver" XPos="84" YPos="280" Width="76" Height="26"/>
+	<Image Name="pauseNormal" XPos="4" YPos="250" Width="76" Height="26"/>
+	<Image Name="pauseOver" XPos="83" YPos="250" Width="76" Height="26"/>
+	<Image Name="goonNormal" XPos="166" YPos="455" Width="76" Height="26"/>
+	<Image Name="goonOver" XPos="248" YPos="455" Width="76" Height="26"/>
+	<Image Name="aboutUsNormal" XPos="165" YPos="486" Width="76" Height="23"/>
+	<Image Name="aboutUsOver" XPos="247" YPos="486" Width="76" Height="23"/>
+	<Image Name="labelText" XPos="331" YPos="493" Width="179" Height="17"/>
+</Imageset>

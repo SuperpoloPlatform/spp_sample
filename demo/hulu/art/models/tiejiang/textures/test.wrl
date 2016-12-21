@@ -1,0 +1,38 @@
+#VRML V2.0 utf8
+
+DEF	bone Bone {
+	skeleton "bone.csf"
+	animation ["stand2.caf"]
+	mesh ["huwan.cmf","huzi1.cmf","huzi2.cmf","kuzi.cmf","toufa.cmf","wuqi1.cmf","wuqi2.cmf","xie.cmf","yifu.cmf","bei.cmf"]
+	material ["huwan.crf","huzi1.crf","huzi2.crf","kuzi.crf","toufa.crf","wuqi1.crf","wuqi2.crf","xie.crf","yifu.crf","bei.crf"]
+	meshSet	[
+		"default",
+		"huwan.cmf","huwan.crf"
+		"huzi1.cmf","huzi1.crf"
+		"huzi2.cmf","huzi2.crf"
+		"kuzi.cmf","kuzi.crf"
+		"toufa.cmf","toufa.crf"
+		"wuqi1.cmf","wuqi1.crf"
+		"wuqi2.cmf","wuqi2.crf"
+		"xie.cmf","xie.crf"
+		"yifu.cmf","yifu.crf"
+		"bei.cmf","bei.crf"
+	]
+}		
+
+DEF	tf_bone Transform {
+	children [
+#		Rotation { rotation 0 1 0 1.57 }
+		DEF	jolidan	BoneInstance {
+			classname "bone"
+			meshSet	"default"
+			animCycle ["say.caf","0.5","0.5"]
+			refreshTime	0.01
+			lod	 1
+		}	
+	]
+}
+
+
+Box{}
+					              

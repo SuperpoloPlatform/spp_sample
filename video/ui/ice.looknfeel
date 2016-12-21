@@ -1,0 +1,940 @@
+<?xml version="1.0"?>
+<Falagard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="E:\source\sample\gui\xml_schemas\Falagard.xsd">
+	<!--
+    ***************************************************
+        ice/StaticShared
+        (Shared imagery components for static widgets)
+    ***************************************************
+    -->
+	<WidgetLook name="ice/StaticShared">
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ice" image="StaticTopLeft"/>
+				<Image type="TopRightCorner" imageset="ice" image="StaticTopRight"/>
+				<Image type="BottomLeftCorner" imageset="ice" image="StaticBottomLeft"/>
+				<Image type="BottomRightCorner" imageset="ice" image="StaticBottomRight"/>
+				<Image type="LeftEdge" imageset="ice" image="StaticLeft"/>
+				<Image type="RightEdge" imageset="ice" image="StaticRight"/>
+				<Image type="TopEdge" imageset="ice" image="StaticTop"/>
+				<Image type="BottomEdge" imageset="ice" image="StaticBottom"/>
+				<ColourRectProperty name="FrameColours"/>
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="background">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim imageset="ice" image="StaticLeft" dimension="Width"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<ImageDim imageset="ice" image="StaticTop" dimension="Height"/>
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge">
+							<DimOperator op="Subtract">
+								<ImageDim imageset="ice" image="StaticRight" dimension="Width"/>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge">
+							<DimOperator op="Subtract">
+								<ImageDim imageset="ice" image="StaticBottom" dimension="Height"/>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+				</Area>
+				<Image imageset="ice" image="StaticBackdrop"/>
+				<!--<ColourRectProperty name="BackgroundColours" />-->
+				<Colours topLeft="FFFFFFFF" topRight="FFFFFFFF" bottomLeft="FFFFFFFF" bottomRight="FFFFFFFF"/>
+				<VertFormat type="Stretched"/>
+				<HorzFormat type="Stretched"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="background_noframe">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge"/>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge"/>
+					</Dim>
+				</Area>
+				<Image imageset="ice" image="StaticBackdrop"/>
+				<!--<ColourRectProperty name="BackgroundColours" />-->
+				<Colours topLeft="FFFFFFFF" topRight="FFFFFFFF" bottomLeft="FFFFFFFF" bottomRight="FFFFFFFF"/>
+				<VertFormat type="Stretched"/>
+				<HorzFormat type="Stretched"/>
+			</ImageryComponent>
+		</ImagerySection>
+	</WidgetLook>
+	<!--
+    ***************************************************
+        ice/Button
+    ***************************************************
+    -->
+	<WidgetLook name="ice/Button">
+		<PropertyDefinition name="NormalTextColour" initialValue="FF000000" redrawOnWrite="true"/>
+		<PropertyDefinition name="HoverTextColour" initialValue="FF000000" redrawOnWrite="true"/>
+		<PropertyDefinition name="PushedTextColour" initialValue="FFFFFFFF" redrawOnWrite="true"/>
+		<PropertyDefinition name="DisabledTextColour" initialValue="FF888888" redrawOnWrite="true"/>
+		<PropertyDefinition name="VertLabelFormatting" initialValue="CentreAligned"/>
+		<PropertyDefinition name="HorzLabelFormatting" initialValue="CentreAligned"/>
+		<PropertyDefinition name="NormalImage" initialValue="" redrawOnWrite="true"/>
+		<PropertyDefinition name="HoverImage" initialValue="" redrawOnWrite="true"/>
+		<PropertyDefinition name="PushedImage" initialValue="" redrawOnWrite="true"/>
+		<PropertyDefinition name="DisabledImage" initialValue="" redrawOnWrite="true"/>
+		<PropertyDefinition name="VertImageFormatting" initialValue="Stretched" redrawOnWrite="true"/>
+		<PropertyDefinition name="HorzImageFormatting" initialValue="Stretched" redrawOnWrite="true"/>
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<VertFormatProperty name="VertLabelFormatting"/>
+				<HorzFormatProperty name="HorzLabelFormatting"/>
+			</TextComponent>
+		</ImagerySection>
+		<ImagerySection name="normal">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<Image type="LeftEdge" imageset="ice" image="ButtonLeftNormal"/>
+				<Image type="RightEdge" imageset="ice" image="ButtonRightNormal"/>
+				<Image type="Background" imageset="ice" image="ButtonMiddleNormal"/>
+			</FrameComponent>
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<ImageProperty name="NormalImage"/>
+				<VertFormatProperty name="VertImageFormatting"/>
+				<HorzFormatProperty name="HorzImageFormatting"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="hover">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<Image type="LeftEdge" imageset="ice" image="ButtonLeftHighlight"/>
+				<Image type="RightEdge" imageset="ice" image="ButtonRightHighlight"/>
+				<Image type="Background" imageset="ice" image="ButtonMiddleHighlight"/>
+			</FrameComponent>
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<ImageProperty name="HoverImage"/>
+				<VertFormatProperty name="VertImageFormatting"/>
+				<HorzFormatProperty name="HorzImageFormatting"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="pushed">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<Image type="LeftEdge" imageset="ice" image="ButtonLeftPushed"/>
+				<Image type="RightEdge" imageset="ice" image="ButtonRightPushed"/>
+				<Image type="Background" imageset="ice" image="ButtonMiddlePushed"/>
+			</FrameComponent>
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<ImageProperty name="PushedImage"/>
+				<VertFormatProperty name="VertImageFormatting"/>
+				<HorzFormatProperty name="HorzImageFormatting"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal"/>
+				<Section section="label">
+					<ColourProperty name="NormalTextColour"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover"/>
+				<Section section="label">
+					<ColourProperty name="HoverTextColour"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="pushed"/>
+				<Section section="label">
+					<ColourProperty name="PushedTextColour"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="PushedOff">
+			<Layer>
+				<Section section="hover"/>
+				<Section section="label">
+					<ColourProperty name="HoverTextColour"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="normal">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F"/>
+				</Section>
+				<Section section="label">
+					<ColourProperty name="DisabledTextColour"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+	<!--
+    ***************************************************
+        ice/Titlebar
+    ***************************************************
+    -->
+	<WidgetLook name="ice/Titlebar">
+		<PropertyDefinition name="CaptionColour" initialValue="FFFFFFFF" redrawOnWrite="true"/>
+		<ImagerySection name="main">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1.0" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1.0" type="Height"/>
+					</Dim>
+				</Area>
+				<Image imageset="ice" image="NewTitlebarLeft"/>
+				<VertFormat type="Stretched"/>
+			</ImageryComponent>
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge">
+							<DimOperator op="Subtract">
+								<ImageDim imageset="ice" image="SysAreaRight" dimension="Width">
+									<DimOperator op="Add">
+										<ImageDim imageset="ice" image="SysAreaMiddle" dimension="Width"/>
+									</DimOperator>
+								</ImageDim>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1.0" type="Height"/>
+					</Dim>
+				</Area>
+				<Image imageset="ice" image="NewTitlebarRight"/>
+				<VertFormat type="Stretched"/>
+				<HorzFormat type="RightAligned"/>
+			</ImageryComponent>
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge">
+							<DimOperator op="Subtract">
+								<ImageDim imageset="ice" image="SysAreaRight" dimension="Width"/>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1.0" type="Height"/>
+					</Dim>
+				</Area>
+				<Image imageset="ice" image="SysAreaMiddle"/>
+				<VertFormat type="Stretched"/>
+				<HorzFormat type="RightAligned"/>
+			</ImageryComponent>
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1.0" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1.0" type="Height"/>
+					</Dim>
+				</Area>
+				<Image imageset="ice" image="SysAreaRight"/>
+				<VertFormat type="Stretched"/>
+				<HorzFormat type="RightAligned"/>
+			</ImageryComponent>
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim imageset="ice" image="NewTitlebarLeft" dimension="Width"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim scale="1" type="RightEdge">
+							<DimOperator op="Subtract">
+								<ImageDim imageset="ice" image="SysAreaRight" dimension="Width">
+									<DimOperator op="Add">
+										<ImageDim imageset="ice" image="SysAreaMiddle" dimension="Width">
+											<DimOperator op="Add">
+												<ImageDim imageset="ice" image="NewTitlebarRight" dimension="Width"/>
+											</DimOperator>
+										</ImageDim>
+									</DimOperator>
+								</ImageDim>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1.0" type="Height"/>
+					</Dim>
+				</Area>
+				<Image imageset="ice" image="NewTitlebarMiddle"/>
+				<VertFormat type="Stretched"/>
+				<HorzFormat type="Stretched"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="caption">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim imageset="ice" image="NewTitlebarLeft" dimension="Width"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" offset="-75" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<ColourProperty name="CaptionColour"/>
+				<VertFormat type="CentreAligned"/>
+			</TextComponent>
+		</ImagerySection>
+		<StateImagery name="Active">
+			<Layer>
+				<Section section="main"/>
+				<Section section="caption"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Inactive">
+			<Layer>
+				<Section section="main"/>
+				<Section section="caption"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="main">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F"/>
+				</Section>
+				<Section section="caption">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+	<!--
+    ***************************************************
+        ice/FrameWindow
+    ***************************************************
+    -->
+	<WidgetLook name="ice/FrameWindow">
+		<PropertyDefinition name="with_title_frame_img" initialValue="" redrawOnWrite="true"/>
+		<PropertyDefinition name="frame_text" initialValue="" redrawOnWrite="true"/>
+		<PropertyLinkDefinition name="CaptionColour" widget="__auto_titlebar__" targetProperty="CaptionColour" initialValue="FFFFFFFF"/>
+		<PropertyLinkDefinition name="TitlebarFont" widget="__auto_titlebar__" targetProperty="Font"/>
+		<Property name="NSSizingCursorImage" value="set:ice image:MouseNoSoCursor"/>
+		<Property name="EWSizingCursorImage" value="set:ice image:MouseEsWeCursor"/>
+		<Property name="NWSESizingCursorImage" value="set:ice image:MouseNwSeCursor"/>
+		<Property name="NESWSizingCursorImage" value="set:ice image:MouseNeSwCursor"/>
+		<NamedArea name="ClientWithTitleWithFrame">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim imageset="ice" image="WindowTopLeft" dimension="Width"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<WidgetDim widget="__auto_titlebar__" dimension="BottomEdge"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<ImageDim imageset="ice" image="WindowTopRight" dimension="Width"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<ImageDim imageset="ice" image="WindowBottomEdge" dimension="Height"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ClientWithTitleNoFrame">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<WidgetDim widget="__auto_titlebar__" dimension="BottomEdge"/>
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width"/>
+				</Dim>
+				<Dim type="BottomEdge">
+					<WidgetDim dimension="BottomEdge"/>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ClientNoTitleWithFrame">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim imageset="ice" image="WindowTopLeft" dimension="Width"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim imageset="ice" image="WindowTopEdge" dimension="Height"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim scale="1" type="RightEdge">
+						<DimOperator op="Subtract">
+							<ImageDim imageset="ice" image="WindowTopRight" dimension="Width"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim scale="1" type="BottomEdge">
+						<DimOperator op="Subtract">
+							<ImageDim imageset="ice" image="WindowBottomEdge" dimension="Height"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ClientNoTitleNoFrame">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width"/>
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height"/>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child type="ice/Titlebar" nameSuffix="__auto_titlebar__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width"/>
+				</Dim>
+				<Dim type="Height">
+					<FontDim type="LineSpacing" padding="8"/>
+				</Dim>
+			</Area>
+			<Property name="AlwaysOnTop" value="False"/>
+			<Property name="NonClient" value="True"/>
+		</Child>
+		<Child type="ice/SystemButton" nameSuffix="__auto_closebutton__">
+			<Area>
+				<Dim type="LeftEdge">
+					<UnifiedDim scale="1" type="LeftEdge">
+						<DimOperator op="Subtract">
+							<ImageDim imageset="ice" image="SysAreaRight" dimension="Width">
+								<DimOperator op="Add">
+									<ImageDim imageset="ice" image="SysAreaMiddle" dimension="Width"/>
+								</DimOperator>
+							</ImageDim>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0.5">
+						<DimOperator op="Multiply">
+							<WidgetDim widget="__auto_titlebar__" dimension="Height">
+								<DimOperator op="Subtract">
+									<ImageDim imageset="ice" image="NewCloseButtonNormal" dimension="Width"/>
+								</DimOperator>
+							</WidgetDim>
+						</DimOperator>
+					</AbsoluteDim>
+				</Dim>
+				<Dim type="Width">
+					<ImageDim imageset="ice" image="NewCloseButtonNormal" dimension="Width"/>
+				</Dim>
+				<Dim type="Height">
+					<ImageDim imageset="ice" image="NewCloseButtonNormal" dimension="Width"/>
+				</Dim>
+			</Area>
+			<Property name="AlwaysOnTop" value="True"/>
+			<Property name="NormalImage" value="set:ice image:NewCloseButtonNormal"/>
+			<Property name="HoverImage" value="set:ice image:NewCloseButtonHover"/>
+			<Property name="PushedImage" value="set:ice image:NewCloseButtonPressed"/>
+			<Property name="NonClient" value="True"/>
+		</Child>
+		<ImagerySection name="withtitle_frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<WidgetDim widget="__auto_titlebar__" dimension="BottomEdge"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge"/>
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ice" image="WindowTopLeft"/>
+				<Image type="TopRightCorner" imageset="ice" image="WindowTopRight"/>
+				<Image type="BottomLeftCorner" imageset="ice" image="WindowBottomLeft"/>
+				<Image type="BottomRightCorner" imageset="ice" image="WindowBottomRight"/>
+				<Image type="LeftEdge" imageset="ice" image="WindowLeftEdge"/>
+				<Image type="RightEdge" imageset="ice" image="WindowRightEdge"/>
+				<Image type="BottomEdge" imageset="ice" image="WindowBottomEdge"/>
+				<Image type="TopEdge" imageset="ice" image="WindowTopEdge"/>
+				<Image type="Background" imageset="ice" image="ClientBrush"/>
+				<VertFormat type="Tiled"/>
+				<HorzFormat type="Tiled"/>
+			</FrameComponent>
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<WidgetDim widget="__auto_titlebar__" dimension="BottomEdge"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge"/>
+					</Dim>
+				</Area>
+				<ImageProperty name="with_title_frame_img"/>
+				<VertFormat type="Stretched"/>
+				<HorzFormat type="Stretched"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="notitle_frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="ice" image="WindowTopLeft"/>
+				<Image type="TopRightCorner" imageset="ice" image="WindowTopRight"/>
+				<Image type="BottomLeftCorner" imageset="ice" image="WindowBottomLeft"/>
+				<Image type="BottomRightCorner" imageset="ice" image="WindowBottomRight"/>
+				<Image type="LeftEdge" imageset="ice" image="WindowLeftEdge"/>
+				<Image type="RightEdge" imageset="ice" image="WindowRightEdge"/>
+				<Image type="BottomEdge" imageset="ice" image="WindowBottomEdge"/>
+				<Image type="Background" imageset="ice" image="ClientBrush"/>
+				<VertFormat type="Tiled"/>
+				<HorzFormat type="Tiled"/>
+			</FrameComponent>
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<TextProperty name="frame_text"/>
+				<VertFormat type="CentreAligned"/>
+				<HorzFormat type="WordWrapLeftAligned"/>
+			</TextComponent>
+		</ImagerySection>
+		<ImagerySection name="withtitle_noframe_client_area">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<WidgetDim widget="__auto_titlebar__" dimension="Height"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim scale="1" type="BottomEdge"/>
+					</Dim>
+				</Area>
+				<Image imageset="ice" image="ClientBrush"/>
+				<VertFormat type="Tiled"/>
+				<HorzFormat type="Tiled"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="notitle_noframe_client_area">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<Image imageset="ice" image="ClientBrush"/>
+				<VertFormat type="Tiled"/>
+				<HorzFormat type="Tiled"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="ActiveWithTitleWithFrame">
+			<Layer>
+				<Section section="withtitle_frame"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveWithTitleWithFrame">
+			<Layer>
+				<Section section="withtitle_frame"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledWithTitleWithFrame">
+			<Layer>
+				<Section section="withtitle_frame">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ActiveWithTitleNoFrame">
+			<Layer>
+				<Section section="withtitle_noframe_client_area"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveWithTitleNoFrame">
+			<Layer>
+				<Section section="withtitle_noframe_client_area"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledWithTitleNoFrame">
+			<Layer>
+				<Section section="withtitle_noframe_client_area">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ActiveNoTitleWithFrame">
+			<Layer>
+				<Section section="notitle_frame"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveNoTitleWithFrame">
+			<Layer>
+				<Section section="notitle_frame"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledNoTitleWithFrame">
+			<Layer>
+				<Section section="notitle_frame">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ActiveNoTitleNoFrame">
+			<Layer>
+				<Section section="notitle_noframe_client_area"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveNoTitleNoFrame">
+			<Layer>
+				<Section section="notitle_noframe_client_area"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledNoTitleNoFrame">
+			<Layer>
+				<Section section="notitle_noframe_client_area">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+	<!--
+    ***************************************************
+        ice/ImageButton
+    ***************************************************
+    -->
+	<WidgetLook name="ice/ImageButton">
+		<PropertyDefinition name="NormalImage" initialValue="" redrawOnWrite="true"/>
+		<PropertyDefinition name="HoverImage" initialValue="" redrawOnWrite="true"/>
+		<PropertyDefinition name="PushedImage" initialValue="" redrawOnWrite="true"/>
+		<PropertyDefinition name="DisabledImage" initialValue="" redrawOnWrite="true"/>
+		<PropertyDefinition name="VertImageFormatting" initialValue="Stretched" redrawOnWrite="true"/>
+		<PropertyDefinition name="HorzImageFormatting" initialValue="Stretched" redrawOnWrite="true"/>
+		<ImagerySection name="normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<ImageProperty name="NormalImage"/>
+				<VertFormatProperty name="VertImageFormatting"/>
+				<HorzFormatProperty name="HorzImageFormatting"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<ImageProperty name="HoverImage"/>
+				<VertFormatProperty name="VertImageFormatting"/>
+				<HorzFormatProperty name="HorzImageFormatting"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="pushed">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<ImageProperty name="PushedImage"/>
+				<VertFormatProperty name="VertImageFormatting"/>
+				<HorzFormatProperty name="HorzImageFormatting"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="disabled">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<ImageProperty name="DisabledImage"/>
+				<VertFormatProperty name="VertImageFormatting"/>
+				<HorzFormatProperty name="HorzImageFormatting"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="pushed"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="PushedOff">
+			<Layer>
+				<Section section="hover"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="disabled"/>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+</Falagard>

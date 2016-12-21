@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+	<!-- 本world文件来源：`$(CRYSTAL)/scripts/jamtemplate/world` -->
+	<addon/>
+
+	<plugins>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+	</plugins>
+	
+	<shaders/>
+
+	<textures>
+		<texture name="red">
+			<color red="1" green="0" blue="0" />
+		</texture>
+		<texture name="green">
+			<color red="0" green="1" blue="0" />
+		</texture>
+		<texture name="blue">
+			<color red="0" green="0" blue="1" />
+		</texture>
+		<texture name="yellow">
+			<color red="1" green="1" blue="0" />
+		</texture>
+		<texture name="white">
+			<color red="1" green="1" blue="1" />
+		</texture>
+		<texture name="black">
+			<color red="0" green="0" blue="0" />
+		</texture>
+		<texture name="trees_leaves_003_col.">
+            <file>/textures/trees_leaves_003_col.dds</file>
+            <alpha>
+                <binary />
+            </alpha>
+        </texture>
+	</textures>
+	
+	<shaders>
+	    <shader>
+			<file>shader/lighting/lighting_default_instance_binalpha.xml</file>
+        </shader>
+	</shaders>
+	
+	<materials>
+		<material name="red">
+			<texture>red</texture>
+		</material>
+		<material name="green">
+			<texture>green</texture>
+		</material>
+		<material name="blue">
+			<texture>blue</texture>
+		</material>
+		<material name="yellow">
+			<texture>yellow</texture>
+		</material>
+		<material name="white">
+			<texture>white</texture>
+		</material>
+		<material name="black">
+			<texture>black</texture>
+		</material>
+		<material name="tree_brown">
+            <texture>trees_bark_002_col.pn</texture>
+            <shader type="oc_depthwrite">*null</shader>
+            <shader type="oc_depthtest">z_only_instanced</shader>
+            <shader type="base">lighting_default_instance</shader>
+            <shader type="diffuse">lighting_default_instance</shader>
+            <!--shader type="base">lighting_default_binalpha</shader>
+            <shader type="diffuse">lighting_default_binalpha</shader>
+            <shadervar name="tex normal compressed" type="texture">BUMPtrees_bark_002_nor.pn</shadervar>
+            <shadervar name="tex specular" type="texture">trees_bark_002_spec.p</shadervar-->
+        </material>
+		<material name="browntreeleaves">
+            <texture>trees_leaves_003_col.</texture>
+            <shader type="oc_depthwrite">*null</shader>
+            <shader type="oc_depthtest">z_only_instanced</shader>
+            <shader type="base">lighting_default_instance_binalpha</shader>
+            <!-- <shader type="diffuse">lighting_default_instance_binalpha</shader> -->
+            <!--shader type="base">lighting_default_binalpha</shader>
+            <shader type="diffuse">lighting_default_binalpha</shader-->
+        </material>
+	</materials>
+
+	<sounds/>
+
+	<library>factories/genCube.xml</library>
+	<library>factories/genPlane.xml</library>
+	<library>factories/tree.cslib</library>
+	
+	<triggers/>
+	
+	<sector name='Scene'>
+		<!-- <cullerp plugin='crystalspace.culling.frustvis'/> -->
+		<!-- 给场景添加灯光 -->
+		<light name='Lamp'>
+			<center y='10' x='0' z='0'/>
+			<color blue='1' green='1' red='1'/>
+			<radius brightness='1.0'>20000.0</radius>
+		</light>
+		<!-- 创建出一个地面 -->
+		<meshobj name='Plane'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genPlane</factory>
+				<material>green</material>
+			<mixmode>
+				<alpha>0.498039</alpha>
+			</mixmode>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<!-- 摄像机跟随这个盒子 -->
+		<meshobj name='Cube'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>white</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='10' x='0' z='0'/>
+			</move>
+		</meshobj>
+		
+		<!-- 生成树 -->
+		<meshgen name="tree">
+             <densityfactormap name="fertile">
+                <image>meshmaps/00000_00000.PNG</image>
+                <world2image>
+                    <m11>0.001953125</m11>
+                    <m12>0</m12>
+                    <m13>0</m13>
+                    <m14>0</m14>
+                    <m21>0</m21>
+                    <m22>0</m22>
+                    <m23>0.001953125</m23>
+                    <m24>0</m24>
+                    <m31>0</m31>
+                    <m32>0</m32>
+                    <m33>0</m33>
+                    <m34>0</m34>
+                    <m41>0</m41>
+                    <m42>0</m42>
+                    <m43>0</m43>
+                    <m44>0</m44>
+                </world2image>
+            </densityfactormap> 
+			<geometry>
+                <factory maxdist="40" name="tree" />
+                <radius>.4</radius>
+                <density>.05</density>
+                <densityfactormap factor="1">fertile</densityfactormap>
+            </geometry>
+
+            <alphascale mindist="22" maxdist="30" />
+            <samplebox>
+                <min x="0" y="-200" z="0" />
+                <max x="512" y="300" z="512" />
+            </samplebox>
+			<!-- 这里为mushroom -->
+			 <meshobj>Plane</meshobj> 
+        </meshgen>
+		
+	</sector>
+
+	<sequences/>
+
+	<!-- Start position are usually created in Blender by adding a 'Camera' -->
+	<start name='Camera'>
+		<sector>Scene</sector>
+		<position y='1' x='0' z='0'/>
+		<up y='1' x='0' z='0'/>
+		<forward y='0' x='-1' z='0'/>
+	</start>
+
+</world>

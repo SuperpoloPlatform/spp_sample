@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="F:\enviroment\depends\CEGUI-0.7.5\datafiles\xml_schemas\Animation.xsd">
+	<AnimationDefinition duration="2.0" name="test" replayMode="once">
+		<Affector property="UnifiedAreaRect" interpolator="URect">
+			<KeyFrame position="0.0" value="{{0.02,0},{0.1,0},{0.27,0},{0.2,0}}" progression="quadratic accelerating"/>
+			<KeyFrame position="0.5" value="{{0.0,0},{0.0,0},{0.37,0},{0.26,0}}" progression="quadratic accelerating"/>
+			<KeyFrame position="0.8" value="{{0.02,0},{0.1,0},{0.27,0},{0.2,0}}" progression="quadratic accelerating"/>
+			<KeyFrame position="0.9" value="{{0.005,0},{0.05,0},{0.31,0},{0.22,0}}" progression="quadratic accelerating"/>
+			<KeyFrame position="1.0" value="{{0.02,0},{0.1,0},{0.27,0},{0.2,0}}" progression="quadratic accelerating"/>
+			<KeyFrame position="1.5" value="{{0.1,0},{0.1,0},{0.35,0},{0.2,0}}" progression="quadratic accelerating"/>
+			<KeyFrame position="1.8" value="{{0.02,0},{0.1,0},{0.27,0},{0.2,0}}" progression="quadratic accelerating"/>
+			<KeyFrame position="1.9" value="{{0.04,0},{0.1,0},{0.29,0},{0.2,0}}" progression="quadratic accelerating"/>
+			<KeyFrame position="2.0" value="{{0.02,0},{0.1,0},{0.27,0},{0.2,0}}" progression="quadratic accelerating"/>
+		</Affector>
+	</AnimationDefinition>
+</Animations>

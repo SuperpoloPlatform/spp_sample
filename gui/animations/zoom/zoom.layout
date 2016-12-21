@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="root">
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+		<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}"/>
+		<Property Name="MousePassThroughEnabled" Value="True"/>
+		<Window Type="zoom/Button" Name="Demo7/Window1/test2">
+			<Property Name="Text" Value="Parent Window"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.1,0},{0.56,0},{0.43,0}}"/>
+			<Window Type="zoom/Button" Name="Demo7/Window1/Quit">
+				<Property Name="Text" Value="Animation Sample"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.22,0},{0.36,0},{0.67,0},{0.67,0}}"/>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+    
+	<library>factories/genCube.xml</library>
+	<library>factories/shaderlib.xml</library>
+	<library>factories/materiallib.xml</library>
+	<library>factories/genSky.xml</library>
+	
+    <start name='Camera'>
+        <sector>Scene</sector>
+        <position x="0" y="30" z="0" />
+        <forward x="0" y="0" z="1" />
+        <up x="0" y="1" z="0" />
+    </start>
+    
+    <sector name="Scene">
+        <light name="sun">
+            <center x="-50000" y="86030" z="0" />
+            <color red="1.25903" green="1.20995" blue="1.10420" />
+            <radius>1000000</radius>
+        </light>
+		
+        <meshobj name="sky">
+            <plugin>crystalspace.mesh.loader.genmesh</plugin>
+            <params>
+                <factory>sky</factory>
+                <material>sky</material>
+            </params>
+			<zuse/>
+			<move>
+				<v y='100000' x='0' z='30'/>
+			</move>
+        </meshobj>
+		
+		<meshobj name='Cube'>
+			<plugin>crystalspace.mesh.loader.genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>white</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='1' x='0' z='30'/>
+			</move>
+		</meshobj>
+    </sector>
+</world>

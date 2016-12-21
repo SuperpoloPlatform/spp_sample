@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<!-- tuzi的模型工厂 -->
+	<meshfact name="tuzi">
+		<plugin>cal3dfact</plugin>
+		<params>
+			<options rotate_x_axis="yes" flip_textures="no" />
+			<animation file="/art/models/tuzi/textures/attack.caf" name="attack" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/tuzi/textures/dead.caf" name="dead" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/tuzi/textures/run.caf" name="run" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<animation file="/art/models/tuzi/textures/stand.caf" name="stand" type="travel"
+				base_vel="0" min_vel="1" max_vel="0" min_random="10" max_random="30" />
+			<scale value="0.005" />
+			<skeleton file="/art/models/tuzi/textures/bone.csf" />
+			<mesh file="/art/models/tuzi/textures/tuzi.cmf" name="tuzi" material="tuzi_tuziUV.jpg" />
+			
+			<socket name="socketR" tri="90" mesh="0" submesh="0" />
+			
+			<hardtransform
+				rot_axis_x="1"
+				rot_axis_y="0"
+				rot_axis_z="0"
+				rot_angle="90" />
+			<hardtransform
+				rot_axis_x="0"
+				rot_axis_y="1"
+				rot_axis_z="0"
+				rot_angle="180" />
+		</params>
+	</meshfact>
+</library>

@@ -1,0 +1,2575 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Falagard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Falagard.xsd">
+<!--
+*********************************************************************
+3dSchool/FrameWindow
+*********************************************************************
+-->
+	<WidgetLook name="3dSchool/FrameWindow">
+		<PropertyDefinition name="frameColour" initialValue="FFFFFFFF" redrawOnWrite="true"/>
+		<PropertyLinkDefinition name="CaptionColour" widget="__auto_titlebar__" targetProperty="CaptionColour" initialValue="FFFFFFFF"/>
+		<PropertyLinkDefinition name="TitlebarFont" widget="__auto_titlebar__" targetProperty="Font"/>
+		<NamedArea name="ClientWithTitleWithFrame">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim image="winmiddleleft" dimension="Width" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<WidgetDim dimension="BottomEdge" widget="__auto_titlebar__"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1">
+						<DimOperator op="Subtract">
+							<ImageDim image="winmiddleright" dimension="Width" imageset="3dSchool"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1">
+						<DimOperator op="Subtract">
+							<ImageDim image="winfootmiddle" dimension="Height" imageset="3dSchool"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ClientWithTitleNoFrame">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<WidgetDim dimension="BottomEdge" widget="__auto_titlebar__"/>
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim type="Width" scale="1"></UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<WidgetDim dimension="BottomEdge"/>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ClientNoTitleWithFrame">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim image="wintopleft" dimension="Width" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim imageset="3dSchool" image="wintopmiddle" dimension="Height"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1">
+						<DimOperator op="Subtract">
+							<ImageDim image="wintopright" dimension="Width" imageset="3dSchool"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1">
+						<DimOperator op="Subtract">
+							<ImageDim image="winfootmiddle" dimension="Height" imageset="3dSchool"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ClientNoTitleNoFrame">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim image="wintopleft" dimension="Width" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim imageset="3dSchool" image="winmiddlemiddle" dimension="Height"/>
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim type="Width" scale="1"></UnifiedDim>
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim type="Height" scale="1"></UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child type="3dSchool/Titlebar" nameSuffix="__auto_titlebar__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim type="Width" scale="1"></UnifiedDim>
+				</Dim>
+				<Dim type="Height">
+					<FontDim type="LineSpacing" padding="8"/>
+				</Dim>
+			</Area>
+			<Property name="AlwaysOnTop" value="False"/>
+		</Child>
+		<Child type="3dSchool/SystemButton" nameSuffix="__auto_closebutton__">
+            <Area>
+                <Dim type="LeftEdge" >
+                    <UnifiedDim scale="1" type="LeftEdge">
+                        <DimOperator op="Subtract">
+                            <ImageDim imageset="3dSchool" image="titleright" dimension="Width">
+                                <DimOperator op="Add">
+                                    <AbsoluteDim value="10"/>
+                                </DimOperator>
+                            </ImageDim>
+                        </DimOperator>
+                    </UnifiedDim>
+                </Dim>
+                <Dim type="TopEdge" >
+                    <AbsoluteDim value="0">
+                        <DimOperator op="Multiply">
+                            <WidgetDim widget="__auto_titlebar__" dimension="Height">
+                                <DimOperator op="Subtract">
+                                    <ImageDim imageset="Bit" image="titleClosed" dimension="Width" />
+                                </DimOperator>
+                            </WidgetDim>
+                        </DimOperator>
+                    </AbsoluteDim>
+                </Dim>
+                <Dim type="Width" ><ImageDim imageset="Bit" image="titleClosed" dimension="Width" /></Dim>
+                <Dim type="Height" ><ImageDim imageset="Bit" image="titleClosed" dimension="Width" /></Dim>
+            </Area>
+            <Property name="AlwaysOnTop" value="True" />
+            <Property name="NormalImage" value="set:Bit image:titleClosed" />
+            <Property name="HoverImage" value="set:Bit image:titleClosed" />
+            <Property name="PushedImage" value="set:Bit image:titleClosed" />
+        </Child>
+		<ImagerySection name="withtitle_withframe">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<WidgetDim dimension="BottomEdge" widget="__auto_titlebar__"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim type="BottomEdge" scale="1"/>
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="3dSchool" image="wintopleft"/>
+				<Image type="TopEdge" imageset="3dSchool" image="wintopmiddle"/>
+				<Image type="TopRightCorner" imageset="3dSchool" image="wintopright"/>
+				<Image type="LeftEdge" imageset="3dSchool" image="winmiddleleft"/>
+				<Image type="RightEdge" imageset="3dSchool" image="winmiddleright"/>
+				<Image type="BottomLeftCorner" imageset="3dSchool" image="winfootleft"/>
+				<Image type="BottomEdge" imageset="3dSchool" image="winfootmiddle"/>
+				<Image type="BottomRightCorner" imageset="3dSchool" image="winfootright"/>
+			</FrameComponent>
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim image="winmiddleleft" dimension="LeftEdge" imageset="3dSchool"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<WidgetDim dimension="BottomEdge" widget="__auto_titlebar__"/>
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim type="RightEdge" scale="1">
+							<DimOperator op="Subtract">
+								<ImageDim image="winmiddleright" dimension="Width" imageset="3dSchool"/>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim type="BottomEdge" scale="1">
+							<DimOperator op="Subtract">
+								<ImageDim image="winfootmiddle" dimension="Height" imageset="3dSchool"/>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="" imageset="3dSchool"></Image>
+				<ColourProperty name="frameColour" />
+				<VertFormat type="Stretched"/>
+				<HorzFormat type="Stretched"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="withtitle_noframe">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<WidgetDim dimension="BottomEdge" widget="__auto_titlebar__"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim type="BottomEdge" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="" imageset="3dSchool"></Image>
+				<ColourProperty name="frameColour"/>
+				<VertFormat type="Stretched"></VertFormat>
+				<HorzFormat type="Stretched"></HorzFormat>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="notitle_withframe">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" imageset="3dSchool" image="titleleft"/>
+				<Image type="TopEdge" imageset="3dSchool" image="titlemiddle"/>
+				<Image type="TopRightCorner" imageset="3dSchool" image="titleright"/>
+				<Image type="LeftEdge" imageset="3dSchool" image="winmiddleleft"/>
+				<Image type="RightEdge" imageset="3dSchool" image="winmiddleright"/>
+				<Image type="BottomLeftCorner" imageset="3dSchool" image="winfootleft"/>
+				<Image type="BottomEdge" imageset="3dSchool" image="winfootmiddle"/>
+				<Image type="BottomRightCorner" imageset="3dSchool" image="winfootright"/>
+				<VertFormat type="Stretched" />
+                <HorzFormat type="Stretched" />
+			</FrameComponent>
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim image="wintopleft" dimension="Width" imageset="3dSchool"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<ImageDim image="titlemiddle" dimension="Width" imageset="3dSchool"/>
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim type="RightEdge" scale="1">
+							<DimOperator op="Subtract">
+								<ImageDim image="wintopright" dimension="Width" imageset="3dSchool"/>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim type="BottomEdge" scale="1">
+							<DimOperator op="Subtract">
+								<ImageDim image="winfootmiddle" dimension="Height" imageset="3dSchool"/>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="" imageset="3dSchool"></Image>
+				<ColourProperty name="frameColour"/>
+				<VertFormat type="Stretched"></VertFormat>
+				<HorzFormat type="Stretched"></HorzFormat>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="notitle_noframe">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="" imageset="3dSchool"></Image>
+				<ColourProperty name="frameColour"/>
+				<VertFormat type="Stretched"></VertFormat>
+				<HorzFormat type="Stretched"></HorzFormat>
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="ActiveWithTitleWithFrame">
+			<Layer>
+				<Section section="withtitle_withframe"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveWithTitleWithFrame">
+			<Layer>
+				<Section section="withtitle_withframe"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DiaabledWithTitleWithFrame">
+			<Layer>
+				<Section section="withtitle_withframe">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"></Colours>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ActiveWithTitleNoFrame">
+			<Layer>
+				<Section section="withtitle_noframe"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveWithTitleNoFrame">
+			<Layer>
+				<Section section="withtitle_noframe"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledWithTitleNoFrame">
+			<Layer>
+				<Section section="withtitle_noframe">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"></Colours>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ActiveNoTitleWithFrame">
+			<Layer>
+				<Section section="notitle_withframe"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveNoTitleWithFrame">
+			<Layer>
+				<Section section="notitle_withframe"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledNoTitleWithFrame">
+			<Layer>
+				<Section section="notitle_withframe">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"></Colours>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ActiveNoTitleNoFrame">
+			<Layer>
+				<Section section="notitle_noframe"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveNoTitleNoFrame">
+			<Layer>
+				<Section section="notitle_noframe"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledNoTitleNoFrame">
+		<Layer>
+				<Section section="notitle_noframe">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"></Colours>
+				</Section>
+			</Layer>
+		</StateImagery>	
+	</WidgetLook>
+<!--
+*********************************************************************
+3dSchool/Button
+*********************************************************************
+-->
+	<WidgetLook name="3dSchool/Button">
+		<PropertyDefinition name="NormalTextColour" initialValue="FFFFFF00" redrawOnWrite="true"/>
+		<PropertyDefinition name="HoverTextColour" initialValue="FF000000" redrawOnWrite="true"/>
+		<PropertyDefinition name="PushedTextColour" initialValue="FFFFFFFF" redrawOnWrite="true"/>
+		<PropertyDefinition name="DisabledTextColour" initialValue="FF888888" redrawOnWrite="true"/>
+		<PropertyDefinition name="font" initialValue="FangSong" redrawOnWrite="true"/>
+		<PropertyDefinition name="VertLabelFormatting" initialValue="CentreAligned" redrawOnWrite="true"/>
+		<PropertyDefinition name="HorzLabelFormatting" initialValue="CentreAligned" redrawOnWrite="true"/>
+		<PropertyDefinition name="NormalImage" initialValue="" redrawOnWrite="true"/>
+		<PropertyDefinition name="HoverImage" initialValue="" redrawOnWrite="true"/>
+		<PropertyDefinition name="PushedImage" initialValue="" redrawOnWrite="true"/>
+		<PropertyDefinition name="DisabledImage" initialValue="" redrawOnWrite="true"/>
+		<PropertyDefinition name="ButtonImage" initialValue="" redrawOnWrite="true"/>
+		<PropertyDefinition name="ButtonBg" initialValue="" redrawOnWrite="true"/>
+		<PropertyDefinition name="VertImageCentreAligned" initialValue="CentreAligned" layoutOnWrite="true"/>
+		<PropertyDefinition name="HorzImageCentreAligned" initialValue="CentreAligned" layoutOnWrite="true"/>
+		<PropertyDefinition name="VertImageStretched" initialValue="Stretched" layoutOnWrite="true"/>
+		<PropertyDefinition name="HorzImageStretched" initialValue="Stretched" layoutOnWrite="true"/>
+		<PropertyDefinition name="BgImageWidth" initialValue="" layoutOnWrite="true"/>
+		<PropertyDefinition name="BgImageHeight" initialValue="" layoutOnWrite="true"/>
+		<PropertyDefinition name="ButtonImageWidth" initialValue="" layoutOnWrite="true"/>
+		<PropertyDefinition name="ButtonImageHeight" initialValue="" layoutOnWrite="true"/>
+		<PropertyDefinition name="ButtonWidth" initialValue="" layoutOnWrite="true"/>
+		<PropertyDefinition name="ButtonHeight" initialValue="" layoutOnWrite="true"/>
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<WidgetDim dimension="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<WidgetDim dimension="Height"/>
+					</Dim>
+				</Area>
+				<FontProperty name="font"/>
+				<VertFormatProperty name="VertLabelFormatting"/>
+				<HorzFormatProperty name="HorzLabelFormatting"/>
+			</TextComponent>
+		</ImagerySection>
+		<ImagerySection name="normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<ImageProperty name="NormalImage"/>
+				<VertFormatProperty name="VertImageStretched"/>
+				<HorzFormatProperty name="HorzImageStretched"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<ImageProperty name="HoverImage"/>
+				<VertFormatProperty name="VertImageStretched"/>
+				<HorzFormatProperty name="HorzImageStretched"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="pushed">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim scale="1" type="Width"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim scale="1" type="Height"/>
+					</Dim>
+				</Area>
+				<ImageProperty name="PushedImage"/>
+				<VertFormatProperty name="VertImageStretched"/>
+				<HorzFormatProperty name="HorzImageStretched"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="buton_bg">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0.3">
+							<DimOperator op="Multiply">
+								<WidgetDim dimension="Width">
+									<DimOperator op="Subtract">
+										<WidgetDim dimension="Width">
+											<DimOperator op="Multiply">
+												<PropertyDim name="BgImageWidth">
+													<DimOperator op="Divide">
+														<PropertyDim name="ButtonWidth"/>
+													</DimOperator>
+												</PropertyDim>
+											</DimOperator>
+										</WidgetDim>
+									</DimOperator>
+								</WidgetDim>
+							</DimOperator>
+						</AbsoluteDim>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0.3">
+							<DimOperator op="Multiply">
+								<WidgetDim dimension="Height">
+									<DimOperator op="Subtract">
+										<WidgetDim dimension="Height">
+											<DimOperator op="Multiply">
+												<PropertyDim name="BgImageHeight">
+													<DimOperator op="Divide">
+														<PropertyDim name="ButtonHeight"/>
+													</DimOperator>
+												</PropertyDim>
+											</DimOperator>
+										</WidgetDim>
+									</DimOperator>
+								</WidgetDim>
+							</DimOperator>
+						</AbsoluteDim>
+					</Dim>
+					<Dim type="Width">
+						<WidgetDim dimension="Width">
+							<DimOperator op="Multiply">
+								<PropertyDim name="BgImageWidth">
+									<DimOperator op="Divide">
+										<PropertyDim name="ButtonWidth"/>
+									</DimOperator>
+								</PropertyDim>
+							</DimOperator>
+						</WidgetDim>
+					</Dim>
+					<Dim type="Height">
+						<WidgetDim dimension="Height">
+							<DimOperator op="Multiply">
+								<PropertyDim name="BgImageHeight">
+									<DimOperator op="Divide">
+										<PropertyDim name="ButtonHeight"/>
+									</DimOperator>
+								</PropertyDim>
+							</DimOperator>
+						</WidgetDim>
+					</Dim>
+				</Area>
+				<ImageProperty name="ButtonBg"/>
+				<VertFormatProperty name="VertImageStretched"/>
+				<HorzFormatProperty name="HorzImageStretched"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="button_img">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0">
+							<DimOperator op="Multiply">
+								<WidgetDim dimension="Width">
+									<DimOperator op="Subtract">
+										<WidgetDim dimension="Width">
+											<DimOperator op="Multiply">
+												<PropertyDim name="ButtonImageWidth">
+													<DimOperator op="Divide">
+														<PropertyDim name="ButtonWidth"/>
+													</DimOperator>
+												</PropertyDim>
+											</DimOperator>
+										</WidgetDim>
+									</DimOperator>
+								</WidgetDim>
+							</DimOperator>
+						</AbsoluteDim>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0">
+							<DimOperator op="Multiply">
+								<WidgetDim dimension="Height">
+									<DimOperator op="Subtract">
+										<WidgetDim dimension="Height">
+											<DimOperator op="Multiply">
+												<PropertyDim name="ButtonImageHeight">
+													<DimOperator op="Divide">
+														<PropertyDim name="ButtonHeight"/>
+													</DimOperator>
+												</PropertyDim>
+											</DimOperator>
+										</WidgetDim>
+									</DimOperator>
+								</WidgetDim>
+							</DimOperator>
+						</AbsoluteDim>
+					</Dim>
+					<Dim type="Width">
+						<WidgetDim dimension="Width">
+							<DimOperator op="Multiply">
+								<PropertyDim name="ButtonImageWidth">
+									<DimOperator op="Divide">
+										<PropertyDim name="ButtonWidth"/>
+									</DimOperator>
+								</PropertyDim>
+							</DimOperator>
+						</WidgetDim>
+					</Dim>
+					<Dim type="Height">
+						<WidgetDim dimension="Height">
+							<DimOperator op="Multiply">
+								<PropertyDim name="ButtonImageHeight">
+									<DimOperator op="Divide">
+										<PropertyDim name="ButtonHeight"/>
+									</DimOperator>
+								</PropertyDim>
+							</DimOperator>
+						</WidgetDim>
+					</Dim>
+				</Area>
+				<ImageProperty name="ButtonImage"/>
+				<VertFormatProperty name="VertImageStretched"/>
+				<HorzFormatProperty name="HorzImageStretched"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal"/>
+				<Section section="buton_bg"/>
+				<Section section="button_img"/>
+				<Section section="label">
+					<ColourProperty name="NormalTextColour"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover"/>
+				<Section section="buton_bg"/>
+				<Section section="button_img"/>
+				<Section section="label">
+					<ColourProperty name="HoverTextColour"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="pushed"/>
+				<Section section="buton_bg"/>
+				<Section section="button_img"/>
+				<Section section="label">
+					<ColourProperty name="PushedTextColour"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="PushedOff">
+			<Layer>
+				<Section section="hover"/>
+				<Section section="buton_bg"/>
+				<Section section="button_img"/>
+				<Section section="label">
+					<ColourProperty name="HoverTextColour"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="normal">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F"/>
+				</Section>
+				<Section section="buton_bg">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F"/>
+				</Section>
+				<Section section="button_img">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F"/>
+				</Section>
+				<Section section="label">
+					<ColourProperty name="DisabledTextColour"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+<!--
+*********************************************************************
+3dSchool/Titlebar
+*********************************************************************
+-->
+	<WidgetLook name="3dSchool/Titlebar">
+		<PropertyDefinition name="CaptionColour" initialValue="FFFFFFFF" redrawOnWrite="true"/>
+		<ImagerySection name="title_main">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="titleleft" imageset="3dSchool"></Image>
+				<VertFormat type="Stretched"/>
+			</ImageryComponent>
+			
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim image="titleleft" dimension="Width" imageset="3dSchool"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim type="RightEdge" scale="1">
+							<DimOperator op="Subtract">
+								<ImageDim image="titleright" dimension="Width" imageset="3dSchool"/>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="titlemiddle" imageset="3dSchool"></Image>
+				<VertFormat type="Stretched"/>
+				<HorzFormat type="Stretched"/>
+			</ImageryComponent>
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1">
+							
+						</UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="titleright" imageset="3dSchool"></Image>
+				<VertFormat type="Stretched"/>
+				<HorzFormat type="RightAligned"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="title_text">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="10"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width"  scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Colour colour="FFE7E7E7"/>
+				<VertFormat type="CentreAligned"/>
+			</TextComponent>
+		</ImagerySection>
+		<StateImagery name="Active">
+			<Layer>
+				<Section section="title_main"/>
+				<Section section="title_text"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Inactive">
+			<Layer>
+				<Section section="title_main"/>
+				<Section section="title_text"/>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="title_main">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"/>
+				</Section>
+				<Section section="title_text">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+<!--
+*********************************************************************
+3dSchool/DenfaultWindow
+*********************************************************************
+-->
+	<WidgetLook name="3dSchool/DenfaultWindow">
+		<PropertyDefinition name="bg_image" initialValue="" redrawOnWrite="true"/>
+		<PropertyDefinition name="text_vert_format" initialValue="CentreAligned" redrawOnWrite="true"/>
+		<PropertyDefinition name="text_horz_format" initialValue="CentreAligned" redrawOnWrite="true"/>
+		<PropertyDefinition name="font" initialValue="FangSong" redrawOnWrite="true"/>
+		<PropertyDefinition name="font_theme" initialValue="" redrawOnWrite="true"/>
+		<PropertyDefinition name="font_colour" initialValue="FFFFFF00" redrawOnWrite="true"/>
+		<ImagerySection name="sectionBackground">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"></AbsoluteDim>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1">
+						</UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1">
+						</UnifiedDim>
+					</Dim>
+				</Area>
+				<ImageProperty name="bg_image"></ImageProperty>				
+				<VertFormat type="Stretched"></VertFormat>
+				<HorzFormat type="Stretched"></HorzFormat>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="sectionText">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<FontProperty name="font"/>
+				<ColourProperty name="font_colour"/>
+				<VertFormatProperty name="text_vert_format"/>
+				<HorzFormatProperty name="text_horz_format"/>
+			</TextComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="sectionBackground"></Section>
+				<Section section="sectionText"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="sectionBackground">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"></Colours>
+				</Section>
+				<Section section="sectionText">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"></Colours>
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+<!--
+*********************************************************************
+3dSchool/StaticImage
+*********************************************************************
+-->	
+	<WidgetLook name="3dSchool/StaticImage">
+		<PropertyDefinition name="ImageColours" initialValue="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" redrawOnWrite="true" />
+		<PropertyDefinition name="FrameColours" initialValue="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" redrawOnWrite="true" />
+		<PropertyDefinition name="BackgroundColours" initialValue="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" redrawOnWrite="true" />
+        <PropertyDefinition name="VertFormatting" initialValue="Stretched" redrawOnWrite="true" />
+        <PropertyDefinition name="HorzFormatting" initialValue="Stretched" redrawOnWrite="true" />
+        
+		<ImagerySection name="image_noframe">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<ImageProperty name="Image" />
+				<VertFormatProperty name="VertFormatting"></VertFormatProperty>
+				<HorzFormatProperty name="HorzFormatting"></HorzFormatProperty>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="image_withframe">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim image="" dimension="Width" imageset="3dSchool"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<ImageDim image="" dimension="Height" imageset="3dSchool"/>
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim type="RightEdge" scale="1">
+							<DimOperator op="Subtract">
+								<ImageDim image="" dimension="Width" imageset="3dSchool"/>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim type="BottomEdge" scale="1">
+							<DimOperator op="Subtract">
+								<ImageDim image="" dimension="Height" imageset="3dSchool"/>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+				</Area>
+				<ImageProperty name="Image"/>
+				<VertFormatProperty name="VertFormatting"></VertFormatProperty>
+				<HorzFormatProperty name="HorzFormatting"></HorzFormatProperty>
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="image_noframe">
+					<Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="EnabledFrame">
+			<Layer>
+				<Section section="frame" look="3dSchool/StaticShara"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledFrame">
+			<Layer>
+				<Section section="frame" look="3dSchool/StaticShara"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameEnabledBackground">
+			<Layer>
+				<Section section="background" look="3dSchool/StaticShara"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="withFrameDisabledBackground">
+			<Layer>
+				<Section section="background" look="3dSchool/StaticShara"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameDisabledBackground">
+			<Layer>
+				<Section section="background_noframe" look="3dSchool/StaticShara"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameEnabledBackground">
+			<Layer>
+				<Section section="background_noframe" look="3dSchool/StaticShara"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameImage">
+		</StateImagery>
+		<StateImagery name="NoFrameImage">
+			<Layer>
+				<Section section="image_noframe"></Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+<!--
+*********************************************************************
+3dSchool/StaticText
+*********************************************************************
+-->
+	<WidgetLook name="3dSchool/StaticText">
+		<NamedArea name="WithFrameTextRenderArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim image="winmiddleleft" dimension="Width" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim image="titlemiddle" dimension="Height" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1">
+						<DimOperator op="Subtract">
+							<ImageDim image="winmiddleright" dimension="Width" imageset="3dSchool"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1">
+						<DimOperator op="Subtract">
+							<ImageDim image="winfootmiddle" dimension="Height" imageset="3dSchool"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="WithFrameTextRenderAreaHScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim image="winmiddleleft" dimension="Width" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim image="titlemiddle" dimension="Height" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1">
+						<DimOperator op="Subtract">
+							<ImageDim image="winmiddleright" dimension="Width" imageset="3dSchool"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1">
+						<DimOperator op="Subtract">
+							<WidgetDim dimension="Height" widget="__auto_hscrollbar__"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="WithFrameTextRenderAreaVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim image="winmiddleleft" dimension="Width" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim image="titlemiddle" dimension="Height" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1">
+						<DimOperator op="Subtract">
+							<WidgetDim dimension="Width" widget="__auto_vscrollbar__"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1"></UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="WithFramTextRenderAreaHVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim image="winmiddleleft" dimension="Width" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim image="titlemiddle" dimension="Height" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1">
+						<DimOperator op="Subtract">
+							<WidgetDim dimension="Width" widget="__auto_vscrollbar__"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1">
+						<DimOperator op="Subtract">
+							<WidgetDim dimension="Height" widget="__auto_hscrollbar__"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="NoFrameTextRenderArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1"></UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1"></UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="NoFrameTextRenderAreaVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1">
+						<DimOperator op="Subtract">
+							<WidgetDim dimension="Width" widget="__auto_vscrollbar__"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1"></UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="NoFrameTextRenderAreaHScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1"></UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1">
+						<DimOperator op="Subtract">
+							<WidgetDim dimension="Height" widget="__auto_hscrollbar__"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="NoFrameTextRenderAreaHVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1">
+						<DimOperator op="Subtract">
+							<WidgetDim dimension="Width" widget="__auto_vscrollbar__"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1">
+						<DimOperator op="Subtract">
+							<WidgetDim dimension="Height" widget="__auto_hscrollbar__"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child type="3dSchool/HorizontalScrollbar" nameSuffix="__auto_hscrollbar__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim type="Width" scale="1" offset="-10"></UnifiedDim>
+				</Dim>
+				<Dim type="Height">
+					<AbsoluteDim value="10"/>
+				</Dim>
+			</Area>
+			<VertAlignment type="BottomAligned"/>
+		</Child>
+		<Child type="3dSchool/VerticalScroolbar" nameSuffix="__auto_vscrollbar__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="Width">
+					<AbsoluteDim value="10"></AbsoluteDim>
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim type="Height" scale="1" offset="-10"></UnifiedDim>
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned"/>
+		</Child>
+		<StateImagery name="Enabled"></StateImagery>
+		<StateImagery name="Disabled"></StateImagery>
+		<StateImagery name="EnabledFrame">
+			<Layer>
+				<Section section="frame" look="3dSchool/StaticShara"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledFrame">
+			<Layer>
+				<Section section="frame" look="3dSchool/StaticShara"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameEnabledBackground">
+			<Layer>
+				<Section section="background" look="3dSchool/StaticShara"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="WithFrameDisabledBackground">
+			<Layer>
+				<Section section="background" look="3dSchool/StaticShara"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameEnabledBackground">
+			<Layer>
+				<Section section="background_noframe" look="3dSchool/StaticShara"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="NoFrameDisabledBackground">
+			<Layer>
+				<Section section="background_noframe" look="3dSchool/StaticShara"></Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+<!--
+*********************************************************************
+3dSchool/HorizontalScrollbar
+*********************************************************************
+-->	
+	<WidgetLook name="3dSchool/HorizontalScrollbar">
+		<NamedArea name="ThumbTrackArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim image="MiniHorzScrollLeftNormal" dimension="Width" imageset="ice"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1">
+						<DimOperator op="Subtract">
+							<ImageDim image="MiniHorzScrollRightNormal" dimension="Width" imageset="ice"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1"></UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child type="3dSchool/Button" nameSuffix="__auto_incbtn__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="Width">
+					<ImageDim image="MiniHorzScrollRightNormal" dimension="Width" imageset="ice"/>
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim type="Height" scale="1"></UnifiedDim>
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned"></HorzAlignment>
+			<Property name="NormalImage" value="set:ice image:MiniHorzScrollRightNormal"></Property>
+			<Property name="HoverImage" value="set:ice image:MiniHorzScrollRightHover"></Property>
+			<Property name="PushedImage" value="set:ice image:MiniHorzScrollRightHover"></Property>
+		</Child>
+		<Child type="3dSchool/Button" nameSuffix="__auto_decbtn__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="Width">
+					<ImageDim image="MiniHorzScrollLeftNormal" dimension="Width" imageset="ice"></ImageDim>
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim type="Height" scale="1"></UnifiedDim>
+				</Dim>
+			</Area>
+			<Property name="NormalImage" value="set:ice image:MiniHorzScrollLeftNormal"></Property>
+			<Property name="HoverImage" value="set:ice image:MiniHorzScrollLeftHover"></Property>
+			<Property name="PushedImage" value="set:ice image:MiniHorzScrollLeftHover"></Property>
+		</Child>
+		<Child type="3dSchool/HorizontalScrollbarThumb" nameSuffix="__auto_thumb__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim type="Width" scale="1"></UnifiedDim>
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim type="Height" scale="1"></UnifiedDim>
+				</Dim>
+			</Area>
+			<Property name="UnifiedMinSize" value="{{0,25},{0,0}}"></Property>
+		</Child>
+		<ImagerySection name="main">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim image="MiniHorzScrollThumbNormal" dimension="Width" imageset="ice"></ImageDim>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"></AbsoluteDim>
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim type="RightEdge" scale="1">
+							<DimOperator op="Subtract">
+								<ImageDim image="MiniHorzScrollRightNormal" dimension="Width" imageset="ice"></ImageDim>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim type="BottomEdge" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="MiniHorzScrollBarSegment" imageset="ice"></Image>
+				<VertFormat type="CentreAligned"></VertFormat>
+				<HorzFormat type="Stretched"></HorzFormat>
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="main"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="main">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"></Colours>
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+	<!--
+*********************************************************************
+3dSchool/HorizontalScrollbarThumb
+*********************************************************************
+-->	
+	<WidgetLook name="3dSchool/HorizontalScrollbarThumb">
+		<Property name="HorzFree" value="True"/>
+		<ImagerySection name="normal">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"></AbsoluteDim>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"></AbsoluteDim>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="MiniHorzScrollThumbLeftNormal" imageset="ice" type="LeftEdge"></Image>
+				<Image type="RightEdge" image="MiniHorzScrollThumbRightNormal" imageset="ice"></Image>
+				<Image type="Background" image="MiniHorzScrollThumbMiddleNormal" imageset="ice"></Image>
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="hover">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"></AbsoluteDim>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"></AbsoluteDim>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image type="LeftEdge" image="MiniHorzScrollThumbLeftHover" imageset="ice"></Image>
+				<Image type="Background" image="MiniHorzScrollThumbMiddleHover" imageset="ice"></Image>
+				<Image type="RightEdge" image="MiniHorzScrollThumbRightHover" imageset="ice"></Image>
+			</FrameComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="hover"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="PushedOff">
+			<Layer>
+				<Section section="hover"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="normal">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"></Colours>
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+<!--
+*********************************************************************
+3dSchool/VerticalScroolbar
+*********************************************************************
+-->	
+	<WidgetLook name="3dSchool/VerticalScroolbar">
+		<NamedArea name="ThumbTrackArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim image="MiniVertScrollUpNormal" dimension="Height" imageset="ice"></ImageDim>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1"></UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1">
+						<DimOperator op="Subtract">
+							<ImageDim image="MiniVertScrollDownNormal" dimension="Height" imageset="ice"></ImageDim>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child type="3dSchool/Button" nameSuffix="__auto_incbtn__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim type="Width" scale="1"></UnifiedDim>
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim type="Height" scale="1">
+						<DimOperator op="Subtract">
+							<ImageDim image="MiniVertScrollDownNormal" dimension="Height" imageset="ice"></ImageDim>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+			<VertAlignment type="BottomAligned"></VertAlignment>
+			<Property name="NormalImage" value="set:ice image:MiniVertScrollDownNormal"></Property>
+			<Property name="HoverImage" value="set:ice image:MiniVertScrollThumbHover"></Property>
+			<Property name="PushedImage" value="set:ice image:MiniVertScrollThumbHover"></Property>
+		</Child>
+		<Child type="3dSchool/Button" nameSuffix="__auto_decbtn__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim type="Width" scale="1"></UnifiedDim>
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim type="Height" scale="1">
+						<DimOperator op="Subtract">
+							<ImageDim image="MiniVertScrollUpNormal" dimension="Height" imageset="ice"></ImageDim>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+			<VertAlignment type="TopAligned"></VertAlignment>
+			<Property name="NormalImage" value="set:ice image:MiniVertScrollUpNormal"></Property>
+			<Property name="HoverImage" value="set:ice image:MiniVertScrollUpHover"></Property>
+			<Property name="PushedImage" value="set:ice image:MiniVertScrollUpHover"></Property>
+		</Child>
+		<Child type="3dSchool/VerticalScrollbarThumb" nameSuffix="__auto_thumb__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim type="Width" scale="1"></UnifiedDim>
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim type="Height" scale="1"></UnifiedDim>
+				</Dim>
+			</Area>
+			<Property name="UnifiedMinSize" value="{{0,0},{0,25}}"></Property>
+		</Child>
+		<ImagerySection name="main">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"></AbsoluteDim>
+					</Dim>
+					<Dim type="TopEdge">
+						<ImageDim image="MiniVertScrollUpNormal" dimension="Height" imageset="ice"></ImageDim>
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim type="RightEdge" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim type="BottomEdge" scale="1">
+							<DimOperator op="Subtract">
+								<ImageDim image="MiniVertScrollDownNormal" dimension="Height" imageset="ice"></ImageDim>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="MiniVertScrollBarSegment" imageset="ice"></Image>
+				<VertFormat type="Stretched"></VertFormat>
+				<HorzFormat type="CentreAligned"></HorzFormat>
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="main"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="main">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"></Colours>
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+<!--
+*********************************************************************
+3dSchool/VerticalScrollbarThumb
+*********************************************************************
+-->
+	<WidgetLook name="3dSchool/VerticalScrollbarThumb">
+		<Property name="VertFree" value="True" />
+		<ImagerySection name="normal">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"></AbsoluteDim>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"></AbsoluteDim>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image type="TopEdge" image="MiniVertScrollThumbTopNormal" imageset="ice"></Image>
+				<Image type="Background" image="MiniVertScrollThumbMiddleNormal" imageset="ice"></Image>
+				<Image type="BottomEdge" image="MiniVertScrollThumbBottomNormal" imageset="ice"></Image>
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="hover">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"></AbsoluteDim>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"></AbsoluteDim>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image type="TopEdge" image="MiniVertScrollThumbTopHover" imageset="ice"></Image>
+				<Image type="Background" image="MiniVertScrollThumbMiddleHover" imageset="ice"></Image>
+				<Image type="BottomEdge" image="MiniVertScrollThumbBottomHover" imageset="ice"></Image>
+			</FrameComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="hover"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="PushedOff">
+			<Layer>
+				<Section section="hover"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="normal">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"></Colours>
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+<!--
+*********************************************************************
+3dSchool/StaticShara
+*********************************************************************
+-->	
+	<WidgetLook name="3dSchool/StaticShara">
+		<ImagerySection name="frame">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"></AbsoluteDim>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"></AbsoluteDim>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image type="TopLeftCorner" image="titleleft" imageset="3dSchool"/>
+				<Image type="TopEdge" image="titlemiddle" imageset="3dSchool"/>
+				<Image type="TopRightCorner" image="titleright" imageset="3dSchool"/>
+				<Image type="LeftEdge" image="wintopleft" imageset="3dSchool"/>
+				<Image type="RightEdge" image="wintopright" imageset="3dSchool"/>
+				<Image type="BottomLeftCorner" image="winfootleft" imageset="3dSchool"/>
+				<Image type="BottomEdge" image="winfootmiddle" imageset="3dSchool"/>
+				<Image type="BottomRightCorner" image="winfootright" imageset="3dSchool"/>
+				<Colours topRight="FFFFFFFF" topLeft="FFFFFFFF" bottomLeft="FFFFFFFF" bottomRight="FFFFFFFF"/>
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="background">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim image="wintopleft" dimension="Width" imageset="3dSchool"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<ImageDim image="titlemiddle" dimension="Height" imageset="3dSchool"/>
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim type="RightEdge" scale="1">
+							<DimOperator op="Subtract">
+								<ImageDim image="wintopright" dimension="Width" imageset="3dSchool"/>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim type="BottomEdge" scale="1">
+							<DimOperator op="Subtract">
+								<ImageDim image="winfootmiddle" dimension="Height" imageset="3dSchool"/>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="wintopmiddle" imageset="3dSchool"></Image>
+				<Colours topRight="FFFFFFFF" topLeft="FFFFFFFF" bottomLeft="FFFFFFFF" bottomRight="FFFFFFFF"/>
+				<VertFormat type="Stretched"/>
+				<HorzFormat type="Stretched"/>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="background_noframe">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="wintopmiddle" imageset="3dSchool"></Image>
+				<Colours topRight="FFFFFFFF" topLeft="FFFFFFFF" bottomLeft="FFFFFFFF" bottomRight="FFFFFFFF"/>
+				<VertFormat type="Stretched"/>
+				<HorzFormat type="Stretched"/>
+			</ImageryComponent>
+		</ImagerySection>
+	</WidgetLook>
+<!--
+*********************************************************************
+*3dSchool/Combobox
+*********************************************************************
+-->
+	<WidgetLook name="3dSchool/Combobox">
+		<PropertyLinkDefinition name="NormalEditTextColour" widget="__auto_editbox__" targetProperty="NormalTextColour" initialValue="FF336600" />
+        <PropertyLinkDefinition name="SelectedEditTextColour" widget="__auto_editbox__" targetProperty="SelectedTextColour" initialValue="FFFFFFFF" />
+        <PropertyLinkDefinition name="ActiveEditSelectionColour" widget="__auto_editbox__" targetProperty="ActiveSelectionColour" initialValue="FFFFFFFF" />
+        <PropertyLinkDefinition name="InactiveEditSelectionColour" widget="__auto_editbox__" targetProperty="InactiveSelectionColour" initialValue="FF999999" />
+		
+		<Child type="3dSchool/ComboDragList" nameSuffix="__auto_droplist__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<WidgetDim dimension="BottomEdge" widget="__auto_editbox__"/>
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim type="Width" scale="1"></UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1"></UnifiedDim>
+				</Dim>
+			</Area>
+		</Child>
+		<Child type="3dSchool/ComboEditbox" nameSuffix="__auto_editbox__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="RightEdge" >
+                    <UnifiedDim scale="1" type="RightEdge">
+                        <DimOperator op="Subtract">
+                            <FontDim type="LineSpacing">
+                                <DimOperator op="Multiply">
+                                    <AbsoluteDim value="1.5" />
+                                </DimOperator>
+                            </FontDim>
+                        </DimOperator>
+                    </UnifiedDim>
+                </Dim>
+                <Dim type="Height" >
+                    <FontDim type="LineSpacing">
+                        <DimOperator op="Multiply">
+                            <AbsoluteDim value="1.5" />
+                        </DimOperator>
+                    </FontDim>
+                </Dim>
+			</Area>
+		</Child>
+		<Child type="3dSchool/Button" nameSuffix="__auto_button__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="Width">
+					<WidgetDim dimension="Height" widget="__auto_editbox__"></WidgetDim>
+				</Dim>
+				<Dim type="Height">
+					<WidgetDim dimension="Height" widget="__auto_editbox__"></WidgetDim>
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned" />
+            <Property name="NormalImage" value="set:ice image:ComboboxListButtonNormal" />
+            <Property name="HoverImage" value="set:ice image:ComboboxListButtonHover" />
+            <Property name="PushedImage" value="set:ice image:ComboboxListButtonNormal" />
+		</Child>
+		<StateImagery name="Enabled">
+		</StateImagery>
+		<StateImagery name="Disabled"></StateImagery>
+	</WidgetLook>
+<!--
+*********************************************************************
+*3dSchool/ComboDragList
+*********************************************************************
+-->
+	<WidgetLook name="3dSchool/ComboDragList">
+		<NamedArea name="ItemRenderingArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim image="wintopleft" dimension="Width" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim image="titlemiddle" dimension="Height" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1">
+						<DimOperator op="Subtract">
+							<ImageDim image="wintopright" dimension="Width" imageset="3dSchool"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1">
+						<DimOperator op="Subtract">
+							<ImageDim image="winfootmiddle" dimension="Height" imageset="3dSchool"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ItemRenderingAreaHScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim image="wintopleft" dimension="Width" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim image="titlemiddle" dimension="Height" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1">
+						<DimOperator op="Subtract">
+							<ImageDim image="wintopright" dimension="Width" imageset="3dSchool"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1">
+						<DimOperator op="Subtract">
+							<WidgetDim dimension="Height" widget="__auto_hscrollbar__"></WidgetDim>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ItemRenderingAreaVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim image="wintopleft" dimension="Width" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim image="titlemiddle" dimension="Height" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1">
+						<DimOperator op="Subtract">
+							<WidgetDim dimension="Width" widget="__auto_vscrollbar__"></WidgetDim>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1">
+						<DimOperator op="Subtract">
+							<ImageDim image="winfootmiddle" dimension="Height" imageset="3dSchool"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<NamedArea name="ItemRenderingAreaHVScroll">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim image="wintopleft" dimension="Width" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim image="titlemiddle" dimension="Height" imageset="3dSchool"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1">
+						<DimOperator op="Subtract">
+							<WidgetDim dimension="Width" widget="__auto_vscrollbar__"></WidgetDim>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1">
+						<DimOperator op="Subtract">
+							<WidgetDim dimension="Height" widget="__auto_hscrollbar__"></WidgetDim>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<Child type="3dSchool/VerticalScroolbar" nameSuffix="__auto_vscrollbar__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="1"/>
+				</Dim>
+				<Dim type="Width">
+					<AbsoluteDim value="10"/>
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim type="Height" scale="1" offset="-10"></UnifiedDim>
+				</Dim>
+			</Area>
+			<HorzAlignment type="RightAligned"/>
+		</Child>
+		<Child type="3dSchool/HorizontalScrollbar" nameSuffix="__auto_hscrollbar__">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim type="Width" scale="1" offset="-10"></UnifiedDim>
+				</Dim>
+				<Dim type="Height">
+					<AbsoluteDim value="10"/>
+				</Dim>
+			</Area>
+		</Child>
+		<ImagerySection name="main">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image type="Background" image="wintopmiddle" imageset="3dSchool"/>
+				<Image type="BottomEdge" image="winfootmiddle" imageset="3dSchool"/>
+				<Image type="BottomLeftCorner" image="winfootleft" imageset="3dSchool"/>
+				<Image type="BottomRightCorner" image="winfootright" imageset="3dSchool"/>
+				<Image type="RightEdge" image="wintopright" imageset="3dSchool"/>
+				<Image type="LeftEdge" image="wintopleft" imageset="3dSchool"/>
+				<Image type="TopEdge" image="titlemiddle" imageset="3dSchool"/>
+				<Image type="TopLeftCorner" image="titleleft" imageset="3dSchool"/>
+				<Image type="TopRightCorner" image="titleright" imageset="3dSchool"/>
+			</FrameComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="main"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="main">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+<!--
+*********************************************************************
+*3dSchool/ComboEditbox
+*********************************************************************
+-->
+	<WidgetLook name="3dSchool/ComboEditbox">
+		<PropertyDefinition name="NormalTextColour" initialValue="FFFF9900" redrawOnWrite="true"/>
+		<PropertyDefinition name="SelectedTextColour" initialValue="FF336600" redrawOnWrite="true"/>
+		<PropertyDefinition name="InactiveSelectionColour" initialValue="FFFFFFFF" redrawOnWrite="true" />
+        <PropertyDefinition name="ActiveSelectionColour" initialValue="FFFFFFFF" redrawOnWrite="true" />
+        <Property name="MouseCursorImage" value="set:ice image:MouseTextBar" />
+		<NamedArea name="TextArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="5"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="5"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1" offset="-5"></UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1" offset="-5"></UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<ImagerySection name="container_normal">
+			<FrameComponent>
+                <Area>
+                    <Dim type="LeftEdge" ><AbsoluteDim value="0" /></Dim>
+                    <Dim type="TopEdge" ><AbsoluteDim value="0" /></Dim>
+                    <Dim type="Width" ><UnifiedDim scale="1.0" type="Width" /></Dim>
+                    <Dim type="Height" ><UnifiedDim scale="1.0" type="Height" /></Dim>
+                </Area>
+                <Image type="LeftEdge" imageset="ice" image="ComboboxEditLeft" />
+                <Image type="Background" imageset="ice" image="ComboboxEditMiddle" />
+            </FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="selection">
+			<ImageryComponent>
+                <Area>
+                    <Dim type="LeftEdge" ><AbsoluteDim value="0" /></Dim>
+                    <Dim type="TopEdge" ><AbsoluteDim value="0" /></Dim>
+                    <Dim type="RightEdge" ><UnifiedDim scale="1.0" type="RightEdge" /></Dim>
+                    <Dim type="BottomEdge" ><UnifiedDim scale="1.0" type="BottomEdge" /></Dim>
+                </Area>
+                <Image imageset="ice" image="TextSelectionBrush" />
+                <VertFormat type="Stretched" />
+                <HorzFormat type="Stretched" />
+            </ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="Carat">
+			<ImageryComponent>
+                <Area>
+                    <Dim type="LeftEdge" ><AbsoluteDim value="0" /></Dim>
+                    <Dim type="TopEdge" ><AbsoluteDim value="0" /></Dim>
+                    <Dim type="Width" ><ImageDim imageset="ice" image="EditBoxCarat" dimension="Width" /></Dim>
+                    <Dim type="BottomEdge" ><UnifiedDim scale="1.0" type="BottomEdge" /></Dim>
+                </Area>
+                <Image imageset="ice" image="EditBoxCarat" />
+                <VertFormat type="Stretched" />
+                <HorzFormat type="Stretched" />
+            </ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="container_normal"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="container_normal">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ReadOnly">
+			<Layer>
+				<Section section="container_normal"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ActiveSelection">
+			<Layer>
+				<Section section="selection">
+					<ColourProperty name="ActiveSelectionColour"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveSelection">
+			<Layer>
+				<Section section="selection">
+					<ColourProperty name="InactiveSelectionColour"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+<!--
+*********************************************************************
+*3dSchool/Tooltip
+*********************************************************************
+-->
+	<WidgetLook name="3dSchool/Tooltip">
+		<PropertyDefinition name="ColourLabel" initialValue="FF336600" redrawOnWrite="true"/>
+		<PropertyDefinition name="VertFamtting" initialValue="Stretched" redrawOnWrite="true"/>
+		<PropertyDefinition name="horzFamtting" initialValue="Stretched" redrawOnWrite="true"/>
+		<NamedArea name="TextArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<ImageDim image="TooltipLeftEdge" dimension="Width" imageset="ice"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<ImageDim image="TooltipTopRight" dimension="Height" imageset="ice"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1">
+						<DimOperator op="Subtract">
+							<ImageDim image="TooltipRightEdge" dimension="Width" imageset="ice"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1">
+						<DimOperator op="Subtract">
+							<ImageDim image="TooltipBottomEdge" dimension="Height" imageset="ice"/>
+						</DimOperator>
+					</UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<ImagerySection name="main">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image type="TopEdge" image="TooltipTopEdge" imageset="ice"/>
+				<Image type="TopLeftCorner" image="TooltipTopLeft" imageset="ice"/>
+				<Image type="TopRightCorner" image="TooltipTopRight" imageset="ice"/>
+				<Image type="LeftEdge" image="TooltipLeftEdge" imageset="ice"/>
+				<Image type="RightEdge" image="TooltipRightEdge" imageset="ice"/>
+				<Image type="Background" image="TooltipMiddle" imageset="ice"/>
+				<Image type="BottomEdge" image="TooltipBottomEdge" imageset="ice"/>
+				<Image type="BottomLeftCorner" image="TooltipBottomLeft" imageset="ice"/>
+				<Image type="BottomRightCorner" image="TooltipBottomRight" imageset="ice"/>
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim image="TooltipLeftEdge" dimension="Width" imageset="ice"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<ImageDim image="TooltipTopEdge" dimension="Height" imageset="ice"></ImageDim>
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim type="RightEdge" scale="1">
+							<DimOperator op="Subtract">
+								<ImageDim image="TooltipRightEdge" dimension="Width" imageset="ice"></ImageDim>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim type="RightEdge" scale="1">
+							<DimOperator op="Subtract">
+								<ImageDim image="TooltipBottomEdge" dimension="Height" imageset="ice"/>
+							</DimOperator>
+						</UnifiedDim>
+					</Dim>
+				</Area>
+				<ColourProperty name="ColourLabel"></ColourProperty>
+				<VertFormatProperty name="VertFamtting"></VertFormatProperty>
+				<HorzFormatProperty name="horzFamtting"></HorzFormatProperty>
+			</TextComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="main"></Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="main"></Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+<!--
+*********************************************************************
+*3dSchool/Checkbox
+*********************************************************************
+-->
+	<WidgetLook name="3dSchool/Checkbox">
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim image="CheckboxNormal" dimension="Width" imageset="ice">
+							<DimOperator op="Add">
+								<AbsoluteDim value="4"/>
+							</DimOperator>
+						</ImageDim>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim type="RightEdge" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim type="BottomEdge" scale="1"></UnifiedDim>
+					</Dim> 
+				</Area>
+				<VertFormat type="CentreAligned"/>
+				<HorzFormat type="LeftAligned"/>
+			</TextComponent>
+		</ImagerySection>
+		<ImagerySection name="normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="TextComponent" imageset="ice"></Image>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<UnifiedDim type="TopEdge" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="CheckboxHover" imageset="ice"></Image>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="pushed">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="CheckboxMark" imageset="ice"></Image>
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal"></Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover"></Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="pushed"></Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="PushedOff">
+			<Layer>
+				<Section section="pushed"></Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="normal">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"/>
+				</Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedNormal">
+			<Layer>
+				<Section section="pushed"></Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedHover">
+			<Layer>
+				<Section section="pushed"></Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedPushed">
+			<Layer>
+				<Section section="normal"></Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedPushedOff">
+			<Layer>
+				<Section section="normal"></Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedDisabled">
+			<Layer>
+				<Section section="pushed">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"/>
+				</Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+<!--
+*********************************************************************
+*3dSchool/RadioButton
+*********************************************************************
+-->
+	<WidgetLook name="3dSchool/RadioButton">
+		<ImagerySection name="label">
+			<TextComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<ImageDim image="RadioButtonNormal" dimension="Width" imageset="ice"></ImageDim>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"></AbsoluteDim>
+					</Dim>
+					<Dim type="RightEdge">
+						<UnifiedDim type="RightEdge" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="BottomEdge">
+						<UnifiedDim type="BottomEdge" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<VertFormat type="CentreAligned"/>
+				<HorzFormat type="LeftAligned"/>
+			</TextComponent>
+		</ImagerySection>
+		<ImagerySection name="normal">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="RadioButtonNormal" imageset="ice"></Image>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="hover">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="RadioButtonHover" imageset="ice"></Image>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="pushed">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="RadioButtonMark" imageset="ice"></Image>
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Normal">
+			<Layer>
+				<Section section="normal"></Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Hover">
+			<Layer>
+				<Section section="hover"></Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Pushed">
+			<Layer>
+				<Section section="pushed"></Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="PushedOff">
+			<Layer>
+				<Section section="pushed"></Section>
+				<Section section="label"></Section>
+			</Layer>		
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="normal">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"/>
+				</Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedNormal">
+			<Layer>
+				<Section section="pushed"></Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedHover">
+			<Layer>
+				<Section section="pushed"></Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedPushed">
+			<Layer>
+				<Section section="normal"></Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedPushedOff">
+			<Layer>
+				<Section section="normal"></Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="SelectedDisabled">
+			<Layer>
+				<Section section="pushed">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"/>
+				</Section>
+				<Section section="label"></Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+<!--
+*********************************************************************
+*3dSchool/Editbox
+*********************************************************************
+-->
+	<WidgetLook name="3dSchool/Editbox">
+		<PropertyDefinition name="SelectedTextColour" initialValue="FF336600" redrawOnWrite="true"/>
+		<PropertyDefinition name="NormalTextColour" initialValue="FFFF9900" redrawOnWrite="true"/>
+		<PropertyDefinition name="InactiveSelectionColour" initialValue="FFFFFFFF" redrawOnWrite="true" />
+        <PropertyDefinition name="ActiveSelectionColour" initialValue="FFFFFFFF" redrawOnWrite="true" />
+        <Property name="MouseCursorImage" value="set:ice image:MouseTextBar" />
+		<NamedArea name="TextArea">
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="5"/>
+				</Dim>
+				<Dim type="TopEdge">
+					<AbsoluteDim value="5"/>
+				</Dim>
+				<Dim type="RightEdge">
+					<UnifiedDim type="RightEdge" scale="1" offset="-5"></UnifiedDim>
+				</Dim>
+				<Dim type="BottomEdge">
+					<UnifiedDim type="BottomEdge" scale="1" offset="-5"></UnifiedDim>
+				</Dim>
+			</Area>
+		</NamedArea>
+		<ImagerySection name="Carat">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"></AbsoluteDim>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<ImageDim image="EditBoxCarat" dimension="Width" imageset="ice"/>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="EditBoxCarat" imageset="ice"></Image>
+			</ImageryComponent>
+		</ImagerySection>
+		<ImagerySection name="container_normal">
+			<FrameComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"></AbsoluteDim>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"></AbsoluteDim>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image type="LeftEdge" image="EditBoxLeft" imageset="ice"/>
+				<Image type="Background" image="EditBoxMiddle" imageset="ice"/>
+				<Image type="RightEdge" image="EditBoxRight" imageset="ice"/>
+			</FrameComponent>
+		</ImagerySection>
+		<ImagerySection name="selected">
+			<ImageryComponent>
+				<Area>
+					<Dim type="LeftEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="TopEdge">
+						<AbsoluteDim value="0"/>
+					</Dim>
+					<Dim type="Width">
+						<UnifiedDim type="Width" scale="1"></UnifiedDim>
+					</Dim>
+					<Dim type="Height">
+						<UnifiedDim type="Height" scale="1"></UnifiedDim>
+					</Dim>
+				</Area>
+				<Image image="TextSelectionBrush" imageset="ice"></Image>
+			</ImageryComponent>
+		</ImagerySection>
+		<StateImagery name="Enabled">
+			<Layer>
+				<Section section="container_normal"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="Disabled">
+			<Layer>
+				<Section section="container_normal">
+					<Colours topRight="FFF7F7F7" topLeft="FFF7F7F7" bottomLeft="FFF7F7F7" bottomRight="FFF7F7F7"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ReadOnly">
+			<Layer>
+				<Section section="container_normal"></Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="ActiveSelection">
+			<Layer>
+				<Section section="selected">
+					<ColourProperty name="ActiveSelectionColour"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+		<StateImagery name="InactiveSelection">
+			<Layer>
+				<Section section="selected">
+					<ColourProperty name="InactiveSelectionColour"/>
+				</Section>
+			</Layer>
+		</StateImagery>
+	</WidgetLook>
+</Falagard>

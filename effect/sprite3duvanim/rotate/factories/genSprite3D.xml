@@ -1,0 +1,59 @@
+<library>
+	<plugins>
+		<plugin name="gensprite3d">crystalspace.mesh.loader.sprite.3d</plugin>
+		<plugin name="gensprite3dfact">crystalspace.mesh.loader.factory.sprite.3d</plugin>
+	</plugins>
+		<textures>
+			<texture name="superpolo_logo.png">
+				<file>/textures/superpolo_logo.png</file>
+			</texture>
+	</textures>
+	<materials>	
+		<material name="superpolo_logo.png">
+			<texture>superpolo_logo.png</texture>
+		</material>
+	</materials>
+	<meshfact name='sprite3d'>
+		<plugin>gensprite3dfact</plugin>
+		<zuse/>
+		<params>
+			<material>superpolo_logo.png</material>
+			<frame name="first">
+				<v x="0" y="1" z="1" u="0" v="0" />
+				<v x="1" y="2" z="1" u="0" v="-1" />
+				<v x="1" y="2" z="0" u="1" v="-1" />
+				<v x="0" y="1" z="0" u="1" v="0" />
+			</frame>
+			<frame name="second">
+				<v x="0" y="1" z="1" u="0" v="-1" />
+				<v x="1" y="2" z="1" u="1" v="-1" />
+				<v x="1" y="2" z="0" u="1" v="0" />
+				<v x="0" y="1" z="0" u="0" v="0" />
+			</frame>
+			<frame name="third">
+				<v x="0" y="1" z="1" u="1" v="-1" />
+				<v x="1" y="2" z="1" u="1" v="0" />
+				<v x="1" y="2" z="0" u="0" v="0" />
+				<v x="0" y="1" z="0" u="0" v="-1" />
+			</frame>
+			<frame name="fourth">
+				<v x="0" y="1" z="1" u="1" v="0" />
+				<v x="1" y="2" z="1" u="0" v="0" />
+				<v x="1" y="2" z="0" u="0" v="-1" />
+				<v x="0" y="1" z="0" u="1" v="-1" />
+			</frame>
+				<t v1="0" v2="3" v3="2"/>
+				<t v1="2" v2="1" v3="0"/>
+				<t v1="0" v2="1" v3="2"/>
+				<t v1="2" v2="3" v3="0"/>
+			<action name="uvanim">
+				<f name="first" delay="500"/>
+				<f name="second" delay="500" />
+				<f name="third"	delay="500"/>
+				<f name="fourth" delay="500"/>
+			</action>
+			<smooth>frame</smooth>
+			<tween>yes</tween>
+		</params>
+	</meshfact>
+</library>

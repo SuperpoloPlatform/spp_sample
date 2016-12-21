@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<GUIScheme Name="zoom" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Documents%20and%20Settings/Administrator/Desktop/xml_schemas/GUIScheme.xsd">
+	<Imageset Name="zoom" Filename="zoom.imageset"/>
+	<LookNFeel Filename="zoom.looknfeel"/>
+	 <Font Filename="Arial-10.font" />
+	<Font Filename="Arial-BoldItalic-10.font" />
+	<WindowRendererSet Filename="CEGUIFalagardWRBase"/>
+	<FalagardMapping WindowType="zoom/Button" TargetType="CEGUI/PushButton" Renderer="Falagard/Button" LookNFeel="zoom/Button"/>
+	<FalagardMapping WindowType="zoom/ImageButton" TargetType="CEGUI/PushButton" Renderer="Falagard/Button" LookNFeel="zoom/ImageButton"/>
+	<FalagardMapping WindowType="zoom/StaticText" TargetType="DefaultWindow" Renderer="Falagard/StaticText" LookNFeel="zoom/StaticText"/>
+	<FalagardMapping WindowType="zoom/VerticalScrollbar" TargetType="CEGUI/Scrollbar" Renderer="Falagard/Scrollbar" LookNFeel="zoom/VerticalScrollbar"/>
+	<FalagardMapping WindowType="zoom/HorizontalScrollbar" TargetType="CEGUI/Scrollbar" Renderer="Falagard/Scrollbar" LookNFeel="zoom/HorizontalScrollbar"/>
+	<FalagardMapping WindowType="zoom/VerticalScrollbarThumb" TargetType="CEGUI/Thumb" Renderer="Falagard/Button" LookNFeel="zoom/VerticalScrollbarThumb"/>
+    <FalagardMapping WindowType="zoom/HorizontalScrollbarThumb" TargetType="CEGUI/Thumb" Renderer="Falagard/Button" LookNFeel="zoom/HorizontalScrollbarThumb"/>
+	</GUIScheme>

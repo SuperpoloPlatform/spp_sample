@@ -1,0 +1,448 @@
+<?xml ?>
+<world>
+  <variables>
+    <variable name="LodM" value="-0.00666667" />
+    <variable name="LodA" value="1.33333" />
+  </variables>
+  <plugins>
+    <plugin name="genmeshFactory">crystalspace.mesh.loader.factory.genmesh</plugin>
+    <plugin name="genmesh">crystalspace.mesh.loader.genmesh</plugin>
+    <plugin name="terrainFact">crystalspace.mesh.loader.factory.terrain2</plugin>
+    <plugin name="terrain">crystalspace.mesh.loader.terrain2</plugin>
+    <plugin name="foliageFact">crystalspace.mesh.loader.factory.foliage</plugin>
+    <plugin name="foliage">crystalspace.mesh.loader.foliage</plugin>
+  </plugins>
+  <shaders>
+    <shader>
+      <file>/shader/terrain/basemap.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/terrain/splatbase.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/terrain/splat.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/terrain/splat-detail.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/lighting/fullbright.xml</file>
+    </shader>
+    <!-- 解决透明片的问题 -->
+    <shader>
+      <file>/shader/ambient.xml</file>
+    </shader>
+    <!-- 其他 -->
+    <shader>
+      <file>/shader/light.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/light_bumpmap.xml</file>
+    </shader>
+  </shaders>
+  <textures>
+    <texture name="andrew_marble4.jpg">
+      <file>/lib/stdtex/andrew_marble4.jpg</file>
+    </texture>
+    <texture name="marble-detail">
+      <file>/textures/terrain/marble-detail.png</file>
+    </texture>
+    <texture name="stone4.gif">
+      <file>/lib/std/stone4.gif</file>
+    </texture>
+    <texture name="stone4_n.png">
+      <file>/textures/stone4_n.png</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name="grass.png">
+      <file>/textures/terrain/grass.png</file>
+    </texture>
+    <texture name="materialmap_base.png">
+      <file>/textures/materialmap_base.png</file>
+      <clamp />
+      <class>nosharpen</class>
+    </texture>
+    <texture name="black">
+      <color red="0" green="0" blue="0" />
+    </texture>
+  </textures>
+  <materials>
+    <material name="ScatterSky">
+      <texture>black</texture>
+    </material>
+    <material name="Base">
+      <texture>materialmap_base.png</texture>
+      <shader type="base">terrain_basemap</shader>
+    </material>
+    <material name="splatbase">
+      <shader type="base">terrain_splatbase</shader>
+    </material>
+    <material name="Marble">
+      <texture>andrew_marble4.jpg</texture>
+      <shadervar name="texture scale" type="vector2">32,32</shadervar>
+      <shader type="terrain splat">terrain_splatting-detail</shader>
+      <shadervar name="tex detail" type="texture">marble-detail</shadervar>
+      <shadervar name="tex detail scale" type="vector2">5,5</shadervar>
+    </material>
+    <material name="Stone">
+      <texture>stone4.gif</texture>
+      <shader type="terrain splat">terrain_splatting</shader>
+      <shadervar name="tex normal" type="texture">stone4_n.png</shadervar>
+      <shadervar name="texture scale" type="vector2">256,256</shadervar>
+      <shadervar name="specular" type="vector3">0,0,0</shadervar>
+    </material>
+    <material name="Grass">
+      <texture>grass.png</texture>
+      <shadervar name="texture scale" type="vector2">256,256</shadervar>
+      <shader type="terrain splat">terrain_splatting</shader>
+    </material>
+    <material name="box1">
+      <texture>grass.png</texture>
+    </material>
+    <material name="box2">
+      <texture>andrew_marble4.jpg</texture>
+    </material>
+  </materials>
+  <start>
+    <sector>room</sector>
+    <position x="0" y="30" z="0" />
+    <forward x="0" y="0" z="1" />
+    <up x="0" y="1" z="0" />
+  </start>
+  <!-- 地形 -->
+  <meshfact name="TerrainFact">
+    <plugin>terrainFact</plugin>
+    <params>
+      <renderer>crystalspace.mesh.object.terrain2.bruteblockrenderer</renderer>
+      <collider>crystalspace.mesh.object.terrain2.collider</collider>
+      <feeder>crystalspace.mesh.object.terrain2.simpledatafeeder</feeder>
+      <maxloadedcells>-1</maxloadedcells>
+      <cells>
+        <celldefault>
+          <gridsize width="257" height="257" />
+          <materialmapsize width="512" height="512" />
+          <size x="2560" y="150" z="2560" />
+          <splatbasematerial>splatbase</splatbasematerial>
+          <renderproperties>
+            <param name="splat render priority">object2</param>
+          </renderproperties>
+        </celldefault>
+        <cell>
+          <name>0</name>
+          <position x="-1270" y="-1270" />
+          <basematerial>Base</basematerial>
+          <feederproperties>
+            <param name="heightmap source">/textures/terrain/heightmap.png</param>
+            <param name="materialmap source">/textures/terrain/materialmap.png</param>
+          </feederproperties>
+        </cell>
+      </cells>
+    </params>
+  </meshfact>
+  <library>/art/models/girl/girl.xml</library>
+  <library>/art/textures/textures_house.xml</library>
+  <library>/art/textures/textures_ship.xml</library>
+  <library>/art/textures/materials_house.xml</library>
+  <library>/art/textures/materials_ship.xml</library>
+  <library>/art/factories/factories_house.xml</library>
+  <library>/art/factories/factories_ship.xml</library>
+  <sector name="room">
+    <ambient blue="0.1" green="0.1" red="0.1" />
+    <cullerp plugin="crystalspace.culling.frustvis" />
+    <light name="sun">
+      <center x="50000" y="86030" z="0" />
+      <color red="0.6" green="0.6" blue="0.6" />
+      <radius>1000000</radius>
+    </light>
+    <light name="sun2">
+      <center x="-50000" y="86030" z="0" />
+      <color red="0.6" green="0.6" blue="0.6" />
+      <radius>1000000</radius>
+    </light>
+    <light name="ship_head_back">
+      <center x="2.62828" y="-2.73355e-006" z="5.74657" />
+      <color red="0.3" green="0.3" blue="0.4" />
+      <radius>20000</radius>
+      <type>directional</type>
+      <move>
+        <matrix>
+          <lookat>
+            <to x="-141.728" y="0" z="-66.103" />
+          </lookat>
+        </matrix>
+      </move>
+      <attenuation>none</attenuation>
+    </light>
+    <light name="ship_tail_back">
+      <center x="2.62828" y="-2.73355e-006" z="5.74657" />
+      <color red="0.1" green="0.1" blue="0.2" />
+      <radius>20000</radius>
+      <type>directional</type>
+      <move>
+        <matrix>
+          <lookat>
+            <to x="-141.728" y="0" z="66.103" />
+          </lookat>
+        </matrix>
+      </move>
+      <attenuation>none</attenuation>
+    </light>
+    <light name="ship_head_front">
+      <center x="2.62828" y="-2.73355e-006" z="5.74657" />
+      <color red="0.3" green="0.3" blue="0.3" />
+      <radius>20000</radius>
+      <type>directional</type>
+      <move>
+        <matrix>
+          <lookat>
+            <to x="47.682" y="0" z="-68.856" />
+          </lookat>
+        </matrix>
+      </move>
+      <attenuation>none</attenuation>
+    </light>
+    <light name="ship_tail_front">
+      <center x="2.62828" y="-2.73355e-006" z="5.74657" />
+      <color red="0.1" green="0.1" blue="0.2" />
+      <radius>20000</radius>
+      <type>directional</type>
+      <move>
+        <matrix>
+          <lookat>
+            <to x="47.682" y="0" z="68.856" />
+          </lookat>
+        </matrix>
+      </move>
+      <attenuation>none</attenuation>
+    </light>
+		
+    <!-- 地形 -->
+    <meshobj name="Terrain">
+      <plugin>terrain</plugin>
+      <params>
+        <factory>TerrainFact</factory>
+        <materialpalette>
+          <material>Grass</material>
+          <material>Marble</material>
+          <material>Stone</material>
+        </materialpalette>
+        <cells>
+          <cell>
+            <name>0</name>
+            <renderproperties>
+              <shadervar name="tex lightmap" type="texture">lightmaps_terrainf_0_png</shadervar>
+              <shadervar name="tex lightmap dir 1" type="texture">lightmaps_terrainf_0_d1_png</shadervar>
+              <shadervar name="tex lightmap dir 2" type="texture">lightmaps_terrainf_0_d2_png</shadervar>
+              <shadervar name="tex lightmap dir 3" type="texture">lightmaps_terrainf_0_d3_png</shadervar>
+              <!-- basemap scale is: (w-1)/w,(h-1)/h,0.5/w,0.5/h -->
+              <shadervar name="basemap scale" type="vector4">0.999023438,0.999023438,0.00048828125,0.00048828125</shadervar>
+            </renderproperties>
+          </cell>
+        </cells>
+      </params>
+      <move>
+        <v x="0" y="0" z="0" />
+      </move>
+      <priority>wall</priority>
+      <staticlit />
+    </meshobj>
+    <key name="cmd_AnimateSky" value="clouds,y,.005" />
+    <!-- 种草 -->
+    <meshgen name="grass">
+      <densityfactormap name="fertile">
+        <image>/textures/terrain/density_fertile.png</image>
+        <scale w="2560" h="2560" />
+      </densityfactormap>
+      <!-- 原本带的，草的模型 -->
+      <geometry>
+        <factory maxdist="10" name="Grass" />
+        <factory maxdist="30" name="GrassLow" />
+        <radius>0</radius>
+        <density>5</density>
+        <densityfactormap factor="1">fertile</densityfactormap>
+      </geometry>
+      <geometry>
+        <factory maxdist="10" name="TallGrass" />
+        <factory maxdist="30" name="TallGrassLow" />
+        <radius>0.1</radius>
+        <density>.1</density>
+        <densityfactormap factor="1">fertile</densityfactormap>
+      </geometry>
+      <!--<densityscale mindist="26" maxdist="30" maxfactor="0" />-->
+      <alphascale mindist="22" maxdist="30" />
+      <samplebox>
+        <min x="-2560" y="-2000" z="-2560" />
+        <max x="2560" y="2000" z="2560" />
+      </samplebox>
+      <meshobj>Terrain</meshobj>
+    </meshgen>
+    <!-- 高空的云彩 -->
+    <meshobj name="clouds">
+      <plugin>genmesh</plugin>
+      <priority>transp</priority>
+      <params>
+        <factory>genclouds</factory>
+        <color red="0" green="0" blue="0" />
+        <material>cloudsperlin0.png</material>
+        <mixmode>
+          <copy />
+        </mixmode>
+        <submesh name="0">
+          <material>cloudsperlin0.png</material>
+        </submesh>
+        <submesh name="0_0">
+          <material>cloudsperlin0.png</material>
+        </submesh>
+        <submesh name="0_1">
+          <material>cloudsperlin0.png</material>
+        </submesh>
+        <submesh name="0_2">
+          <material>cloudsperlin0.png</material>
+        </submesh>
+        <submesh name="0_3">
+          <material>cloudsperlin0.png</material>
+        </submesh>
+        <renderbuffer name="texture coordinate lightmap" file="/bindata/clouds_lm" />
+      </params>
+      <trimesh>
+        <id>shadows</id>
+      </trimesh>
+      <camera />
+      <ztest />
+      <noshadows />
+      <move>
+        <v y="-15.7" x="-47.9" z="-122.302" />
+      </move>
+      <staticlit />
+    </meshobj>
+    <!-- 蓝天 -->
+    <meshobj name="sky">
+      <plugin>genmesh</plugin>
+      <priority>sky</priority>
+      <params>
+        <factory>gensky</factory>
+        <color red="0" green="0" blue="0" />
+        <manualcolors />
+        <material>skyno</material>
+        <mixmode>
+          <copy />
+        </mixmode>
+        <submesh name="0">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_0">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_1">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_10">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_11">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_2">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_3">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_4">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_5">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_6">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_7">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_8">
+          <material>skyno</material>
+        </submesh>
+        <submesh name="0_9">
+          <material>skyno</material>
+        </submesh>
+        <renderbuffer name="texture coordinate lightmap" file="/bindata/sky_lm" />
+      </params>
+      <trimesh>
+        <id>shadows</id>
+      </trimesh>
+      <camera />
+      <zfill />
+      <noshadows />
+      <move>
+        <v y="-15.7" x="-47.9" z="-122.302" />
+      </move>
+      <staticlit />
+    </meshobj>
+    <!-- Uncomment for ...fog: -->
+    <!--fog red=".3" green=".27" blue=".27" density="0.002" /-->
+    <!--<fog red=".27" green=".27" blue=".27" density="0.0005" />-->
+    <!-- 这是小女孩 -->
+    <meshobj name="girl">
+      <priority>portal</priority>
+      <plugin>cal3d</plugin>
+      <params>
+        <factory>genGirl</factory>
+      </params>
+      <zuse />
+      <move>
+        <v x="-704" y="1" z="-370" />
+        <matrix><!--matrix为重点，绕轴转动-->
+          <roty>1.68</roty>
+          <rotz>0</rotz>
+          <rotx>0</rotx>
+        </matrix>
+      </move>
+    </meshobj>
+    <meshobj name="house_01_mesh_Object01.xml">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>house_01_mesh_Object01</factory>
+      </params>
+      <move>
+        <v x="-430" y="0" z="-380" />
+      </move>
+    </meshobj>
+    <meshobj name="house_02_mesh_Object02.xml">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>house_02_mesh_Object02</factory>
+      </params>
+      <move>
+        <v x="-430" y="0" z="-380" />
+      </move>
+    </meshobj>
+    <meshobj name="house_03_mesh_Object03.xml">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>house_03_mesh_Object03</factory>
+      </params>
+      <move>
+        <v x="-430" y="0" z="-380" />
+      </move>
+    </meshobj>
+    <meshobj name="house_04_mesh_Object04.xml">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>house_04_mesh_Object04</factory>
+      </params>
+      <move>
+        <v x="-430" y="0" z="-380" />
+      </move>
+    </meshobj>
+    <meshobj name="fangzhou_mesh_Box01.xml">
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>fangzhou_mesh_Box01</factory>
+      </params>
+      <move>
+        <v x="-430" y="0" z="-380" />
+      </move>
+    </meshobj>
+  </sector>
+</world>

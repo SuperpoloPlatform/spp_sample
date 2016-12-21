@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="root">
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+		<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}"/>
+		<Property Name="MousePassThroughEnabled" Value="True"/>
+		<Window Type="zoom/StaticText" Name="Demo7/Window1/Text1">
+			<Window Type="zoom/Button" Name="Demo7/Window1/Text1/EmbeddedButton">
+				<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0.2,0},{0.2,0}}"/>
+			</Window>
+			<Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF"/>
+			<Property Name="FrameEnabled" Value="True"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0.5,0},{0.5,0}}"/>
+			<Property Name="BackgroundEnabled" Value="True"/>
+			<Property Name="CustomText" Value="[colour='FFFF0000']
+			[font='FangSong']你好啊 你好啊 你好啊 你好啊 你好啊 你好啊 你好啊 你好啊 你好啊 你好啊
+ 	           啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊[colour='FFFF0000']
+				shows how[colour='FFFF0000']CEGUI can format[font='Arial-10'] strings[colour='FF00FF00'].	
+                font formatting [font='Arial-BoldItalic-10'] font formatting font formatting font formatting font formatting font formatting font formatting font formatting font formatting font formatting font formatting font formatting font formatting
+                embed images like this [image='set:zoom image:MouseArrow'] 
+             	enmbed images like this  pariatur [image-size='w:32 h:64'] [image='set:zoom image:MouseArrow']
+		
+                [padding='l:5 t:10 r:5 b:10']THIS IS PADDED
+       
+			   [vert-alignment='bottom']bottom add [vert-alignment='top']top [vert-alignment='stretch']stretch a window  [window='Demo7/Window1/Text1/EmbeddedButton'] 
+			   
+ 	           
+			  "/>
+		</Window>
+		<Window Type="zoom/StaticText" Name="Demo7/Window2/Text">
+			<Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF"/>
+			<Property Name="FrameEnabled" Value="True"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.5,0},{0.5,0},{1.0,0},{1.0,0}}"/>
+			<Property Name="BackgroundEnabled" Value="True"/>
+			<Property Name="HorzFormatting" Value="WordWrapCentred"/>
+			<Property Name="Text" Value="[colour='FFFF0000']
+			[font='FangSong']你好啊 你好啊 你好啊 你好啊 你好啊 你好啊 你好啊 你好啊 你好啊 你好啊
+ 	           啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊[colour='FFFF0000']
+				shows how[colour='FFFF0000']CEGUI can format[font='Arial-10'] strings[colour='FF00FF00'].	
+                font formatting [font='Arial-BoldItalic-10'] font formatting font formatting font formatting font formatting font formatting font formatting font formatting font formatting font formatting font formatting font formatting font formatting
+                embed images like this [image='set:zoom image:MouseArrow'] 
+             	enmbed images like this  pariatur [image-size='w:32 h:64'] [image='set:zoom image:MouseArrow']
+		
+                [padding='l:5 t:10 r:5 b:10']THIS IS PADDED
+       
+			   
+ 	           
+			  "/>
+		</Window>
+	</Window>
+</GUILayout>

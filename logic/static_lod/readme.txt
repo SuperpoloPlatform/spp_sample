@@ -1,0 +1,1 @@
+﻿用wsad控制Cube的左右移动，可以看到大Cube的贴图会和控制的Cube到大Cube的距离相关。

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+	<!-- 本world文件来源：`$(CRYSTAL)/scripts/jamtemplate/world` -->
+	  <addon>
+	    <plugin>crystalspace.renderloop.loop.loader</plugin>
+	  </addon>
+	<plugins>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+	</plugins>
+
+	<shaders>
+		
+	</shaders>
+	<textures>
+		<texture name="green">
+			<color red="0" green="1" blue="0" />
+		</texture>
+		<texture name="white">
+			<color red="1" green="1" blue="1" />
+		</texture>
+	</textures>
+	<materials>
+		<material name="green">
+			<texture>green</texture>
+		</material>
+		<material name="white">
+			<texture>white</texture>
+		</material>
+	</materials>
+	<library>factories/genPlane.xml</library>
+	<library>factories/genCube.xml</library>
+	<library>factories/genSprite3d.xml</library>
+	<sector name='Scene'>
+		<cullerp plugin='crystalspace.culling.frustvis'/>
+		<ambient blue='0.8' green='0.8' red='0.8' />
+		<!-- 给场景添加灯光 -->
+		<light name='Lamp'>
+			<center y='15' x='3' z='3'/>
+			<color blue='0.2' green='0.2' red='0.2'/>
+			<radius brightness='2.0'>20000.0</radius>
+		</light>
+		<!-- 创建出一个地面 -->
+		<meshobj name='Plane'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genPlane</factory>
+				<material>green</material>
+			<mixmode>
+				<alpha>0.498039</alpha>
+			</mixmode>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<!-- 摄像机跟随这个盒子 -->
+		<meshobj name='Cube'>
+		<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>white</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<meshobj name='isprite3d'>
+			<plugin>gensprite3d</plugin>
+			<params>
+				<factory>sprite3d</factory>
+				<lighting>yes</lighting>
+				<action>uvanim</action> 
+			</params>
+			<move>
+				<matrix>
+					<rotx>-1.5708</rotx>
+				</matrix>	
+				<v x="0" y="1" z="0.5" />
+			</move>
+		</meshobj>
+	</sector>
+
+
+		
+		
+		
+	<sequences/>
+
+	<!-- Start position are usually created in Blender by adding a 'Camera' -->
+	<start name='Camera'>
+		<sector>Scene</sector>
+		<position y='1' x='0' z='0'/>
+		<up y='1' x='0' z='0'/>
+		<forward y='0' x='-1' z='0'/>
+	</start>
+
+</world>

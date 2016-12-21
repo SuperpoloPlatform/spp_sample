@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="root" >
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Property Name="MousePassThroughEnabled" Value="True" />
+        <Window Type="ice/FrameWindow" Name="Demo7/Window1" >
+            <Property Name="Text" Value="Demo 7 - Window 1" />
+            <Property Name="UnifiedMaxSize" Value="{{0.8,0},{0.8,0}}" />
+            <Property Name="UnifiedMinSize" Value="{{0.2,0},{0.2,0}}" />
+            <Property Name="TitlebarEnabled" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0574007,0},{0.0888888,0},{0.5574,0},{0.815127,0}}" />
+            <Property Name="CloseButtonEnabled" Value="False" />
+            <Property Name="Visible" Value="False" />
+            <Window Type="ice/Editbox" Name="Demo7/Window1/EditPath" >
+                <Property Name="Text" Value="e:" />
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.170447,0},{0.0915225,0},{0.745709,0},{0.155019,0}}" />
+            </Window>
+            <Window Type="ice/Editbox" Name="Demo7/Window1/EditFile" >
+                <Property Name="Text" Value="" />
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.172031,0},{0.176057,0},{0.740073,0},{0.239553,0}}" />
+            </Window>
+            <Window Type="ice/StaticText" Name="Demo7/Window1/PathName" >
+                <Property Name="Text" Value="path" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.0228211,0},{0.0926033,0},{0.149208,0},{0.154323,0}}" />
+            </Window>
+            <Window Type="ice/StaticText" Name="Demo7/Window1/FileName" >
+                <Property Name="Text" Value="file" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.0245644,0},{0.177233,0},{0.147782,0},{0.242795,0}}" />
+            </Window>
+            <Window Type="ice/Listbox" Name="Demo7/Window1/DirList" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.0305344,0},{0.294931,0},{0.422957,0},{0.880414,0}}" />
+            </Window>
+            <Window Type="ice/Listbox" Name="Demo7/Window1/FileList" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.543321,0},{0.297235,0},{0.950361,0},{0.880876,0}}" />
+            </Window>
+            <Window Type="ice/Button" Name="Demo7/Window1/Save" >
+                <Property Name="Text" Value="Save" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.788448,0},{0.0912439,0},{0.96083,0},{0.153226,0}}" />
+            </Window>
+            <Window Type="ice/Button" Name="Demo7/Window1/Cancle" >
+                <Property Name="Text" Value="Cancle" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.78917,0},{0.172811,0},{0.961552,0},{0.236636,0}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<GUIScheme Name="progressbar" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Documents%20and%20Settings/Administrator/Desktop/xml_schemas/GUIScheme.xsd">
+	<Imageset Name="progressbar" Filename="progressbar.imageset"/>
+	<LookNFeel Filename="progressbar.looknfeel"/>
+	<WindowRendererSet Filename="CEGUIFalagardWRBase"/>
+	<FalagardMapping WindowType="progressbar/ProgBar" TargetType="CEGUI/ProgressBar" Renderer="Falagard/ProgressBar" LookNFeel="progressbar/ProgBar"/>
+</GUIScheme>

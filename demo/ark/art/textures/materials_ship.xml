@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library>
+  <materials>
+    <material name="Material_M1_fangzhou">
+      <texture>FZ_01.png</texture>
+      <shadervar name="tex normal" type="texture">nFZ_01.png</shadervar>
+    </material>
+    <material name="Material_M2_fangzhou">
+      <texture>FZ_02.png</texture>
+      <shadervar name="tex normal" type="texture">nFZ_02.png</shadervar>
+    </material>
+    <material name="Material_M3_fangzhou">
+      <texture>FZ_03.png</texture>
+      <shadervar name="tex normal" type="texture">nFZ_03.png</shadervar>
+    </material>
+    <material name="Material_Material #67_fangzhou">
+      <texture>FZ_04.png</texture>
+    </material>
+    <material name="Material_Material #72_fangzhou">
+      <texture>fz_9.jpg</texture>
+      <shadervar name="tex normal" type="texture">nfz_9.jpg</shadervar>
+      <shadervar name="tex specular" type="texture">sfz_9.jpg</shadervar>
+    </material>
+    <material name="Material_Material #73_fangzhou">
+      <texture>fz_10.jpg</texture>
+    </material>
+  </materials>
+</library>

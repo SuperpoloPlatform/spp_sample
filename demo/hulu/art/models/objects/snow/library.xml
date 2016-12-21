@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<plugins>
+		<plugin name="particles">crystalspace.mesh.loader.particles</plugin>
+		<plugin name="particlesfact">crystalspace.mesh.loader.factory.particles</plugin>
+	</plugins>
+	<!-- 这里添加shader
+	<shaders>
+		<shader>
+			<file>/shader/character/character_bump2.xml</file>
+		</shader>
+		<shader>
+			<file>/shader/character/character2.xml</file>
+		</shader>
+	</shaders>
+	-->
+	<textures>
+		<!-- 下雪的贴图 -->
+		<texture name="snow">
+			<file>/art/models/objects/snow/textures/snow.jpg</file>
+		</texture>
+	</textures>
+	<materials>
+		<!-- 下雪材质 -->
+		<material name="snow">
+			<texture>snow</texture>
+			<shader type="ambient">particles_soft-alpha</shader>
+		</material>
+	</materials>
+	<library>factories/genSnow.xml</library>
+</library>

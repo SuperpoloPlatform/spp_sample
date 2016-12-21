@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+	<!-- 本world文件来源：`$(CRYSTAL)/scripts/jamtemplate/world` -->
+	  <addon>
+	    <plugin>crystalspace.renderloop.loop.loader</plugin>
+	  </addon>
+
+	<plugins>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+	</plugins>
+	
+	<shaders>
+		<!-- 解决透明片的问题 -->
+		<shader>
+		  <file>/shader/ambient.xml</file>
+		</shader>
+	</shaders>
+
+	<textures>
+		<texture name="red">
+			<color red="1" green="0" blue="0" />
+		</texture>
+		<texture name="green">
+			<color red="0" green="1" blue="0" />
+		</texture>
+		<texture name="blue">
+			<color red="0" green="0" blue="1" />
+		</texture>
+		<texture name="yellow">
+			<color red="1" green="1" blue="0" />
+		</texture>
+		<texture name="white">
+			<color red="1" green="1" blue="1" />
+		</texture>
+		<texture name="black">
+			<color red="0" green="0" blue="0" />
+		</texture>
+				<texture name="fountain.png">
+			<file>/textures/fountain.png</file>
+		</texture>
+	</textures>
+	<materials>
+		<material name="red">
+			<texture>red</texture>
+		</material>
+		<material name="green">
+			<texture>green</texture>
+		</material>
+		<material name="blue">
+			<texture>blue</texture>
+		</material>
+		<material name="yellow">
+			<texture>yellow</texture>
+		</material>
+		<material name="white">
+			<texture>white</texture>
+		</material>
+		<material name="black">
+			<texture>black</texture>
+		</material>
+		<material name="fountain.png">
+			<texture>fountain.png</texture>
+		</material>
+	</materials>
+	
+	<sounds/>
+
+
+	<library>factories/genPlane.xml</library>
+	<library>factories/genCube.xml</library>
+	<library>factories/genSprite2D.xml</library>
+	<triggers/>
+	
+	<sector name='Scene'>
+		<cullerp plugin='crystalspace.culling.frustvis'/>
+		
+		<ambient blue='0.8' green='0.8' red='0.8' />
+		<!-- 给场景添加灯光 -->
+		 
+		<light name='Lamp'>
+			<center y='20' x='0' z='0'/>
+			<color blue='0.2' green='0' red='0'/>
+			<radius brightness='10.0'>20000.0</radius>
+		</light>
+		<!-- 创建出一个地面 -->
+		<meshobj name='Plane'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genPlane</factory>
+				<material>green</material>
+			<mixmode>
+				<alpha>0.498039</alpha>
+			</mixmode>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+	
+		
+		<meshobj name='sprite2d'>
+		<plugin>gensprite2d</plugin>
+			<params>
+				<factory>Explosion</factory>
+				<lighting>no</lighting>
+				
+				<animate name="boom">
+					<timing>50</timing>
+					<loop>yes</loop>
+				</animate>
+				<mixmode>
+					<alpha>0</alpha>
+				</mixmode>
+			</params>
+			<move>
+				<v y="1.75" x="3" z="3"/>
+			</move>
+		
+		</meshobj>
+		
+		
+		
+		<!-- 摄像机跟随这个盒子 -->
+		<meshobj name='Cube'>
+		<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>red</material>
+			</params>
+
+			<zuse/>
+			<move>
+				<v y='0' x='4' z='4'/>
+			</move>
+		</meshobj>
+	</sector>
+
+	<sequences/>
+
+	<!-- Start position are usually created in Blender by adding a 'Camera' -->
+	<start name='Camera'>
+		<sector>Scene</sector>
+		<position y='1' x='0' z='0'/>
+		<up y='1' x='0' z='0'/>
+		<forward y='0' x='-1' z='0'/>
+	</start>
+
+</world>

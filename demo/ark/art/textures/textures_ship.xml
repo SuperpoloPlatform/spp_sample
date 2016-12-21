@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library>
+  <textures>
+    <texture name="FZ_01.png">
+      <file>/art/textures/ship/FZ_01.png</file>
+    </texture>
+    <texture name="FZ_02.png">
+      <file>/art/textures/ship/FZ_02.png</file>
+    </texture>
+    <texture name="FZ_03.png">
+      <file>/art/textures/ship/FZ_03.png</file>
+    </texture>
+    <texture name="FZ_04.png">
+      <file>/art/textures/ship/FZ_04.png</file>
+    </texture>
+    <texture name="fz_9.jpg">
+      <file>/art/textures/ship/fz_9.jpg</file>
+    </texture>
+    <texture name="fz_10.jpg">
+      <file>/art/textures/ship/fz_10.jpg</file>
+    </texture>
+    <texture name="nFZ_01.png">
+      <file>/art/textures/ship/nFZ_01.png</file>
+    </texture>
+    <texture name="nFZ_02.png">
+      <file>/art/textures/ship/nFZ_02.png</file>
+    </texture>
+    <texture name="nFZ_03.png">
+      <file>/art/textures/ship/nFZ_03.png</file>
+    </texture>
+    <texture name="nfz_9.jpg">
+      <file>/art/textures/ship/nfz_9.jpg</file>
+    </texture>
+    <texture name="sfz_9.jpg">
+      <file>/art/textures/ship/sfz_9.jpg</file>
+    </texture>
+  </textures>
+</library>

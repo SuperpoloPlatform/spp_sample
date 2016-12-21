@@ -1,0 +1,477 @@
+<root>
+  <meshfactory name="cc_01" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\canting\cc_01.3DS" numfaces="11906" numvertices="9155" numvsubmesh="2">
+    <submesh name="cc_01" meshindex="0" numfaces="10306" numvertices="7666">
+      <material name="cm01">
+        <diffusetexture>/art/textures/c_001.jpg</diffusetexture>
+        <normaltexture>/art/textures/nc_001.jpg</normaltexture>
+        <speculartexture>/art/textures/sc_001.jpg</speculartexture>
+        <heighttexture>/art/textures/hc_001.jpg</heighttexture>
+      </material>
+    </submesh>
+    <submesh name="cc_01" meshindex="1" numfaces="1600" numvertices="1489">
+      <material name="Standard_20">
+        <normaltexture>/art/textures/nc_001.jpg</normaltexture>
+        <speculartexture>/art/textures/sc_001.jpg</speculartexture>
+        <heighttexture>/art/textures/hc_001.jpg</heighttexture>
+      </material>
+    </submesh>
+  </meshfactory>
+  <meshfactory name="cc_02" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\canting\cc_02.3DS" numfaces="5912" numvertices="4698" numvsubmesh="2">
+    <submesh name="cc_02" meshindex="0" numfaces="5876" numvertices="4626">
+      <material />
+    </submesh>
+    <submesh name="cc_02" meshindex="1" numfaces="36" numvertices="72">
+      <material />
+    </submesh>
+  </meshfactory>
+  <meshfactory name="cc_03" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\canting\cc_03.3DS" numfaces="6849" numvertices="5837" numvsubmesh="2">
+    <submesh name="cc_03" meshindex="0" numfaces="6789" numvertices="5717">
+      <material />
+    </submesh>
+    <submesh name="cc_03" meshindex="1" numfaces="60" numvertices="120">
+      <material />
+    </submesh>
+  </meshfactory>
+  <meshfactory name="cc_04" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\canting\cc_04.3DS" numfaces="9790" numvertices="8438" numvsubmesh="2">
+    <submesh name="cc_04" meshindex="0" numfaces="9406" numvertices="7670">
+      <material />
+    </submesh>
+    <submesh name="cc_04" meshindex="1" numfaces="384" numvertices="768">
+      <material />
+    </submesh>
+  </meshfactory>
+  <meshfactory name="cc_05" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\canting\cc_05.3DS" numfaces="2680" numvertices="2563">
+    <material name="cm05">
+      <diffusetexture>/art/textures/c_005.jpg</diffusetexture>
+      <normaltexture>/art/textures/nc_005.jpg</normaltexture>
+      <speculartexture>/art/textures/sc_005.jpg</speculartexture>
+      <heighttexture>/art/textures/hc_005.jpg</heighttexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="cc_06" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\canting\cc_06.3DS" numfaces="1908" numvertices="1834">
+    <material />
+  </meshfactory>
+  <meshfactory name="cc_08" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\canting\cc_08.3DS" numfaces="937" numvertices="1065">
+    <material name="cm08">
+      <diffusetexture>/art/textures/c_008.jpg</diffusetexture>
+      <normaltexture>/art/textures/nc_008.jpg</normaltexture>
+      <speculartexture>/art/textures/sc_008.jpg</speculartexture>
+      <heighttexture>/art/textures/hc_008.jpg</heighttexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="cc_09" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\canting\cc_09.3DS" numfaces="1720" numvertices="2524">
+    <material name="cm09">
+      <diffusetexture>/art/textures/c_009.jpg</diffusetexture>
+      <normaltexture>/art/textures/nc_009.jpg</normaltexture>
+      <speculartexture>/art/textures/sc_009.jpg</speculartexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="cc_10" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\canting\cc_10.3DS" numfaces="978" numvertices="1078">
+    <material name="cm10">
+      <diffusetexture>/art/textures/c_010.jpg</diffusetexture>
+      <normaltexture>/art/textures/nc_010.jpg</normaltexture>
+      <speculartexture>/art/textures/sc_010.jpg</speculartexture>
+      <heighttexture>/art/textures/hc_010.jpg</heighttexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="cc_11" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\canting\cc_11.3DS" numfaces="7488" numvertices="6922">
+    <material />
+  </meshfactory>
+  <meshfactory name="cc_12" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\canting\cc_12.3DS" numfaces="4880" numvertices="3716" numvsubmesh="2">
+    <submesh name="cc_12" meshindex="0" numfaces="2820" numvertices="2015">
+      <material name="cm12">
+        <diffusetexture>/art/textures/c_012.jpg</diffusetexture>
+      </material>
+    </submesh>
+    <submesh name="cc_12" meshindex="1" numfaces="2060" numvertices="1701">
+      <material name="Material #1" />
+    </submesh>
+  </meshfactory>
+  <meshfactory name="cc_13" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\canting\cc_13.3DS" numfaces="2200" numvertices="3244">
+    <material name="cm13">
+      <diffusetexture>/art/textures/c_013.png</diffusetexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="cc_14" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\canting\cc_14.3DS" numfaces="30" numvertices="60">
+    <material name="cm14">
+      <diffusetexture>/art/textures/c_014.jpg</diffusetexture>
+      <normaltexture>/art/textures/nc_014.jpg</normaltexture>
+      <speculartexture>/art/textures/sc_014.jpg</speculartexture>
+      <heighttexture>/art/textures/hc_014.jpg</heighttexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="cc_15" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\canting\cc_15.3DS" numfaces="354" numvertices="612">
+    <material />
+  </meshfactory>
+  <meshfactory name="kk_01" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_01.3DS" numfaces="5998" numvertices="7780">
+    <material name="km01">
+      <diffusetexture>/art/textures/k_001.jpg</diffusetexture>
+      <normaltexture>/art/textures/nk_001.jpg</normaltexture>
+      <speculartexture>/art/textures/sk_001.jpg</speculartexture>
+      <heighttexture>/art/textures/hk_001.jpg</heighttexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="kk_02" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_02.3DS" numfaces="824" numvertices="592">
+    <material />
+  </meshfactory>
+  <meshfactory name="kk_03" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_03.3DS" numfaces="7242" numvertices="5687" numvsubmesh="2">
+    <submesh name="kk_03" meshindex="0" numfaces="6554" numvertices="5190">
+      <material />
+    </submesh>
+    <submesh name="kk_03" meshindex="1" numfaces="688" numvertices="497">
+      <material />
+    </submesh>
+  </meshfactory>
+  <meshfactory name="kk_04" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_04.3DS" numfaces="8864" numvertices="8708" numvsubmesh="2">
+    <submesh name="kk_04" meshindex="0" numfaces="4226" numvertices="4333">
+      <material name="km04">
+        <diffusetexture>/art/textures/k_001.jpg</diffusetexture>
+        <normaltexture>/art/textures/nk_001.jpg</normaltexture>
+        <speculartexture>/art/textures/sk_001.jpg</speculartexture>
+        <heighttexture>/art/textures/hk_001.jpg</heighttexture>
+      </material>
+    </submesh>
+    <submesh name="kk_04" meshindex="1" numfaces="4638" numvertices="4375">
+      <material name="km041">
+        <diffusetexture>/art/textures/k_003.jpg</diffusetexture>
+        <normaltexture>/art/textures/nk_003.jpg</normaltexture>
+        <speculartexture>/art/textures/sk_003.jpg</speculartexture>
+        <heighttexture>/art/textures/hk_003.jpg</heighttexture>
+      </material>
+    </submesh>
+  </meshfactory>
+  <meshfactory name="kk_05" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_05.3DS" numfaces="13502" numvertices="13089" numvsubmesh="2">
+    <submesh name="kk_05" meshindex="0" numfaces="4226" numvertices="4339">
+      <material />
+    </submesh>
+    <submesh name="kk_05" meshindex="1" numfaces="9276" numvertices="8750">
+      <material />
+    </submesh>
+  </meshfactory>
+  <meshfactory name="kk_06" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_06.3DS" numfaces="19294" numvertices="17762" numvsubmesh="2">
+    <submesh name="kk_06" meshindex="0" numfaces="3994" numvertices="4090">
+      <material />
+    </submesh>
+    <submesh name="kk_06" meshindex="1" numfaces="15300" numvertices="13672">
+      <material />
+    </submesh>
+  </meshfactory>
+  <meshfactory name="kk_07" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_07.3DS" numfaces="956" numvertices="1681">
+    <material />
+  </meshfactory>
+  <meshfactory name="kk_08" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_08.3DS" numfaces="1882" numvertices="2570">
+    <material name="km08">
+      <diffusetexture>/art/textures/k_008.jpg</diffusetexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="kk_09" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_09.3DS" numfaces="940" numvertices="1657">
+    <material />
+  </meshfactory>
+  <meshfactory name="kk_10" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_10.3DS" numfaces="1622" numvertices="2785">
+    <material name="km10">
+      <diffusetexture>/art/textures/k_010.png</diffusetexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="kk_11" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_11.3DS" numfaces="277" numvertices="400">
+    <material name="km11">
+      <diffusetexture>/art/textures/k_011.jpg</diffusetexture>
+      <normaltexture>/art/textures/nk_011.jpg</normaltexture>
+      <speculartexture>/art/textures/sk_011.jpg</speculartexture>
+      <heighttexture>/art/textures/hk_011.jpg</heighttexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="kk_12" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_12.3DS" numfaces="332" numvertices="519">
+    <material name="km12">
+      <diffusetexture>/art/textures/k_012.jpg</diffusetexture>
+      <normaltexture>/art/textures/nk_012.jpg</normaltexture>
+      <speculartexture>/art/textures/sk_012.jpg</speculartexture>
+      <heighttexture>/art/textures/hk_012.jpg</heighttexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="kk_13" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_13.3DS" numfaces="12" numvertices="24">
+    <material name="km13">
+      <diffusetexture>/art/textures/k_013.jpg</diffusetexture>
+      <normaltexture>/art/textures/nk_013.jpg</normaltexture>
+      <speculartexture>/art/textures/sk_013.jpg</speculartexture>
+      <heighttexture>/art/textures/hk_013.jpg</heighttexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="kk_14" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_14.3DS" numfaces="282" numvertices="509">
+    <material name="km14">
+      <diffusetexture>/art/textures/k_014.png</diffusetexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="kk_15" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_15.3DS" numfaces="2300" numvertices="5157">
+    <material name="k_015">
+      <diffusetexture>/art/textures/k_015.png</diffusetexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="kk_16" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_16.3DS" numfaces="11678" numvertices="23544" numvsubmesh="2">
+    <submesh name="kk_16" meshindex="0" numfaces="6788" numvertices="12354">
+      <material name="km16">
+        <diffusetexture>/art/textures/k_016.jpg</diffusetexture>
+        <normaltexture>/art/textures/nk_016.jpg</normaltexture>
+        <speculartexture>/art/textures/sk_016.jpg</speculartexture>
+        <heighttexture>/art/textures/hk_016.jpg</heighttexture>
+      </material>
+    </submesh>
+    <submesh name="kk_16" meshindex="1" numfaces="4890" numvertices="11190">
+      <material name="Standard_5">
+        <normaltexture>/art/textures/nk_016.jpg</normaltexture>
+        <speculartexture>/art/textures/sk_016.jpg</speculartexture>
+        <heighttexture>/art/textures/hk_016.jpg</heighttexture>
+      </material>
+    </submesh>
+  </meshfactory>
+  <meshfactory name="kk_17" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_17.3DS" numfaces="296" numvertices="564">
+    <material />
+  </meshfactory>
+  <meshfactory name="kk_18" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\keting\kk_18.3DS" numfaces="56" numvertices="104" numvsubmesh="3">
+    <submesh name="kk_18" meshindex="0" numfaces="48" numvertices="88">
+      <material name="km01.">
+        <diffusetexture>/art/textures/k_001.jpg</diffusetexture>
+        <normaltexture>/art/textures/nk_001.jpg</normaltexture>
+        <speculartexture>/art/textures/sk_001.jpg</speculartexture>
+        <heighttexture>/art/textures/hk_001.jpg</heighttexture>
+      </material>
+    </submesh>
+    <submesh name="kk_18" meshindex="1" numfaces="4" numvertices="8">
+      <material name="blinn1">
+        <normaltexture>/art/textures/nk_001.jpg</normaltexture>
+        <speculartexture>/art/textures/sk_001.jpg</speculartexture>
+        <heighttexture>/art/textures/hk_001.jpg</heighttexture>
+      </material>
+    </submesh>
+    <submesh name="kk_18" meshindex="2" numfaces="4" numvertices="8">
+      <material name="km18">
+        <diffusetexture>/art/textures/k_018.jpg</diffusetexture>
+      </material>
+    </submesh>
+  </meshfactory>
+  <meshfactory name="rr_01" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\room\rr_01.3DS" numfaces="550" numvertices="984" numvsubmesh="2">
+    <submesh name="rr_01" meshindex="0" numfaces="314" numvertices="547">
+      <material name="Material #3675">
+        <diffusetexture>/art/textures/q_001.jpg</diffusetexture>
+        <normaltexture>/art/textures/nq_001.jpg</normaltexture>
+        <speculartexture>/art/textures/sq_001.jpg</speculartexture>
+      </material>
+    </submesh>
+    <submesh name="rr_01" meshindex="1" numfaces="236" numvertices="437">
+      <material name="Material #3687">
+        <diffusetexture>/art/textures/q_002.jpg</diffusetexture>
+        <normaltexture>/art/textures/nq_002.jpg</normaltexture>
+        <speculartexture>/art/textures/sq_002.jpg</speculartexture>
+        <heighttexture>/art/textures/hq_002.jpg</heighttexture>
+      </material>
+    </submesh>
+  </meshfactory>
+  <meshfactory name="rr_02" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\room\rr_02.3DS" numfaces="3141" numvertices="3942">
+    <material name="dm">
+      <diffusetexture>/art/textures/d_001.jpg</diffusetexture>
+      <speculartexture>/art/textures/sd_001.jpg</speculartexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="rr_03" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\room\rr_03.3DS" numfaces="163" numvertices="192" numvsubmesh="4">
+    <submesh name="rr_03" meshindex="0" numfaces="60" numvertices="64">
+      <material name="Material #3640">
+        <diffusetexture>/art/textures/r2_002.jpg</diffusetexture>
+        <normaltexture>/art/textures/nr2_002.jpg</normaltexture>
+        <speculartexture>/art/textures/sr2_002.jpg</speculartexture>
+        <heighttexture>/art/textures/hr2_002.jpg</heighttexture>
+      </material>
+    </submesh>
+    <submesh name="rr_03" meshindex="1" numfaces="9" numvertices="11">
+      <material name="Material #3699">
+        <diffusetexture>/art/textures/r2_004.jpg</diffusetexture>
+        <normaltexture>/art/textures/nr2_004.jpg</normaltexture>
+        <speculartexture>/art/textures/sr2_004.jpg</speculartexture>
+        <heighttexture>/art/textures/hr2_004.jpg</heighttexture>
+      </material>
+    </submesh>
+    <submesh name="rr_03" meshindex="2" numfaces="2" numvertices="4">
+      <material name="Material #3663">
+        <diffusetexture>/art/textures/r2_003.jpg</diffusetexture>
+        <normaltexture>/art/textures/nr2_003.jpg</normaltexture>
+        <speculartexture>/art/textures/sr2_003.jpg</speculartexture>
+        <heighttexture>/art/textures/hr2_003.jpg</heighttexture>
+      </material>
+    </submesh>
+    <submesh name="rr_03" meshindex="3" numfaces="92" numvertices="113">
+      <material name="Material #3617">
+        <diffusetexture>/art/textures/r2_001.jpg</diffusetexture>
+        <normaltexture>/art/textures/nr2_001.jpg</normaltexture>
+        <speculartexture>/art/textures/sr2_001.jpg</speculartexture>
+        <heighttexture>/art/textures/hr2_001.jpg</heighttexture>
+      </material>
+    </submesh>
+  </meshfactory>
+  <meshfactory name="rr_04" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\room\rr_04.3DS" numfaces="3018" numvertices="3725">
+    <material name="rm4">
+      <diffusetexture>/art/textures/k_003.jpg</diffusetexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="rr_05" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\room\rr_05.3DS" numfaces="570" numvertices="819">
+    <material name="rm5">
+      <diffusetexture>/art/textures/r5_001.jpg</diffusetexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="rr_06" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\room\rr_06.3DS" numfaces="2600" numvertices="3999" numvsubmesh="2">
+    <submesh name="rr_06" meshindex="0" numfaces="2598" numvertices="3995">
+      <material name="rm06">
+        <diffusetexture>/art/textures/r6_001.jpg</diffusetexture>
+      </material>
+    </submesh>
+    <submesh name="rr_06" meshindex="1" numfaces="2" numvertices="4">
+      <material name="Material #5449" />
+    </submesh>
+  </meshfactory>
+  <meshfactory name="rr_07" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\room\rr_07.3DS" numfaces="2606" numvertices="2788" numvsubmesh="2">
+    <submesh name="rr_07" meshindex="0" numfaces="2604" numvertices="2784">
+      <material name="rm6">
+        <diffusetexture>/art/textures/r6_001.jpg</diffusetexture>
+      </material>
+    </submesh>
+    <submesh name="rr_07" meshindex="1" numfaces="2" numvertices="4">
+      <material name="Material #5396" />
+    </submesh>
+  </meshfactory>
+  <meshfactory name="rr_08" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\room\rr_08.3DS" numfaces="1270" numvertices="2224" numvsubmesh="2">
+    <submesh name="rr_08" meshindex="0" numfaces="1268" numvertices="2220">
+      <material />
+    </submesh>
+    <submesh name="rr_08" meshindex="1" numfaces="2" numvertices="4">
+      <material name="Material #7839" />
+    </submesh>
+  </meshfactory>
+  <meshfactory name="ww_01" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\woshi\ww_01.3DS" numfaces="13970" numvertices="12477">
+    <material name="wm01">
+      <diffusetexture>/art/textures/w_001.jpg</diffusetexture>
+      <normaltexture>/art/textures/nw_001.jpg</normaltexture>
+      <speculartexture>/art/textures/sw_001.jpg</speculartexture>
+      <heighttexture>/art/textures/hw_001.jpg</heighttexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="ww_02" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\woshi\ww_02.3DS" numfaces="4208" numvertices="3007">
+    <material />
+  </meshfactory>
+  <meshfactory name="ww_03" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\woshi\ww_03.3DS" numfaces="1412" numvertices="1438">
+    <material />
+  </meshfactory>
+  <meshfactory name="ww_05" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\woshi\ww_05.3DS" numfaces="348" numvertices="358">
+    <material />
+  </meshfactory>
+  <meshfactory name="ww_06" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\woshi\ww_06.3DS" numfaces="2478" numvertices="3280" numvsubmesh="2">
+    <submesh name="ww_06" meshindex="0" numfaces="532" numvertices="412">
+      <material name="wm06">
+        <diffusetexture>/art/textures/w_006.jpg</diffusetexture>
+        <normaltexture>/art/textures/nw_006.jpg</normaltexture>
+        <speculartexture>/art/textures/sw_006.jpg</speculartexture>
+        <heighttexture>/art/textures/hw_006.jpg</heighttexture>
+      </material>
+    </submesh>
+    <submesh name="ww_06" meshindex="1" numfaces="1946" numvertices="2868">
+      <material />
+    </submesh>
+  </meshfactory>
+  <meshfactory name="ww_07" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\woshi\ww_07.3DS" numfaces="7820" numvertices="6032">
+    <material />
+  </meshfactory>
+  <meshfactory name="ww_08" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\woshi\ww_08.3DS" numfaces="23800" numvertices="18309" numvsubmesh="4">
+    <submesh name="ww_08" meshindex="0" numfaces="4472" numvertices="4274">
+      <material name="k_003">
+        <diffusetexture>/art/textures/w_003.jpg</diffusetexture>
+        <normaltexture>/art/textures/nw_003.jpg</normaltexture>
+        <speculartexture>/art/textures/sw_003.jpg</speculartexture>
+        <heighttexture>/art/textures/hw_003.jpg</heighttexture>
+      </material>
+    </submesh>
+    <submesh name="ww_08" meshindex="1" numfaces="7636" numvertices="5596">
+      <material name="w_008">
+        <diffusetexture>/art/textures/w_008.jpg</diffusetexture>
+        <normaltexture>/art/textures/nw_008.jpg</normaltexture>
+        <speculartexture>/art/textures/sw_008.jpg</speculartexture>
+        <heighttexture>/art/textures/hw_008.jpg</heighttexture>
+      </material>
+    </submesh>
+    <submesh name="ww_08" meshindex="2" numfaces="4056" numvertices="2855">
+      <material name="w_0082">
+        <diffusetexture>/art/textures/w_008b.jpg</diffusetexture>
+        <normaltexture>/art/textures/nw_008b.jpg</normaltexture>
+        <speculartexture>/art/textures/sw_008b.jpg</speculartexture>
+        <heighttexture>/art/textures/hw_008b.jpg</heighttexture>
+      </material>
+    </submesh>
+    <submesh name="ww_08" meshindex="3" numfaces="7636" numvertices="5584">
+      <material name="w_0081">
+        <diffusetexture>/art/textures/w_008a.jpg</diffusetexture>
+        <normaltexture>/art/textures/nw_008a.jpg</normaltexture>
+        <speculartexture>/art/textures/sw_008a.jpg</speculartexture>
+        <heighttexture>/art/textures/hw_008a.jpg</heighttexture>
+      </material>
+    </submesh>
+  </meshfactory>
+  <meshfactory name="ww_09" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\woshi\ww_09.3DS" numfaces="2" numvertices="4">
+    <material name="wm09">
+      <diffusetexture>/art/textures/w_009.jpg</diffusetexture>
+      <normaltexture>/art/textures/nw_009.jpg</normaltexture>
+      <speculartexture>/art/textures/sw_009.jpg</speculartexture>
+      <heighttexture>/art/textures/hw_009.jpg</heighttexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="ww_10" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\woshi\ww_10.3DS" numfaces="30" numvertices="60">
+    <material name="wm10">
+      <diffusetexture>/art/textures/w_010.jpg</diffusetexture>
+      <normaltexture>/art/textures/nw_010.jpg</normaltexture>
+      <speculartexture>/art/textures/sw_010.jpg</speculartexture>
+      <heighttexture>/art/textures/hw_010.jpg</heighttexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="ww_11" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\woshi\ww_11.3DS" numfaces="404" numvertices="377">
+    <material name="wm11">
+      <diffusetexture>/art/textures/w_011.jpg</diffusetexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="ww_12" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\woshi\ww_12.3DS" numfaces="310" numvertices="284">
+    <material name="wm12">
+      <diffusetexture>/art/textures/w_012.jpg</diffusetexture>
+      <speculartexture>/art/textures/sw_012.jpg</speculartexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="ww_13" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\woshi\ww_13.3DS" numfaces="706" numvertices="1104">
+    <material />
+  </meshfactory>
+  <meshfactory name="xx_01" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\xuanguan\xx_01.3DS" numfaces="7485" numvertices="6007">
+    <material name="xm01">
+      <diffusetexture>/art/textures/x_001.jpg</diffusetexture>
+      <normaltexture>/art/textures/nx_001.jpg</normaltexture>
+      <speculartexture>/art/textures/sx_001.jpg</speculartexture>
+      <heighttexture>/art/textures/hx_001.jpg</heighttexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="xx_02" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\xuanguan\xx_02.3DS" numfaces="369" numvertices="495">
+    <material name="xm02">
+      <diffusetexture>/art/textures/x_002.png</diffusetexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="xx_03" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\xuanguan\xx_03.3DS" numfaces="30" numvertices="60">
+    <material name="xm03">
+      <diffusetexture>/art/textures/x_003.jpg</diffusetexture>
+      <normaltexture>/art/textures/nx_003.jpg</normaltexture>
+      <speculartexture>/art/textures/sx_003.jpg</speculartexture>
+      <heighttexture>/art/textures/hx_003.jpg</heighttexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="xx_04" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\xuanguan\xx_04.3DS" numfaces="3947" numvertices="2853">
+    <material name="xm04">
+      <diffusetexture>/art/textures/x_004.jpg</diffusetexture>
+    </material>
+  </meshfactory>
+  <meshfactory name="xx_05" fromfile="D:\UGE_SDK\project\baiqiang2\src\art\factory\xuanguan\xx_05.3DS" numfaces="2" numvertices="4">
+    <material name="xm05">
+      <diffusetexture>/art/textures/x_005.jpg</diffusetexture>
+      <normaltexture>/art/textures/nx_005.jpg</normaltexture>
+      <speculartexture>/art/textures/sx_005.jpg</speculartexture>
+      <heighttexture>/art/textures/hx_005.jpg</heighttexture>
+    </material>
+  </meshfactory>
+</root>

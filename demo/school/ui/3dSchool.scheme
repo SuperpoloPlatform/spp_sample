@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 U (http://www.xmlspy.com) by nAcer (Stu) -->
+<GUIScheme Name="3dSchool" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="GUIScheme.xsd">
+	<Imageset Filename="3dSchool.imageset" Name="3dSchool"></Imageset>
+	<Imageset Filename="bit.imageset" Name="Bit"></Imageset>
+	<Imageset Filename="Help.imageset" Name="Help"></Imageset>
+	<Imageset Filename="ice.imageset" Name="ice"></Imageset>
+	<Imageset Filename="ico.imageset" Name="ico"></Imageset>
+	<Imageset Filename="map.imageset" Name="map"></Imageset>
+	<Imageset Filename="weapon.imageset" Name="weapon"></Imageset>
+	<Imageset Filename="interface.imageset" Name="interface"></Imageset>
+	<LookNFeel Filename="3dSchool.looknfeel" ></LookNFeel>
+	<WindowRendererSet Filename="CEGUIFalagardWRBase"/>
+	<FalagardMapping WindowType="3dSchool/Titlebar" TargetType="CEGUI/Titlebar" Renderer="Falagard/Titlebar" LookNFeel="3dSchool/Titlebar"/>
+	<FalagardMapping WindowType="3dSchool/FrameWindow" TargetType="CEGUI/FrameWindow" Renderer="Falagard/FrameWindow" LookNFeel="3dSchool/FrameWindow"/>
+	<FalagardMapping WindowType="3dSchool/Button" TargetType="CEGUI/PushButton" Renderer="Falagard/Button" LookNFeel="3dSchool/Button"/>
+	<FalagardMapping WindowType="3dSchool/SystemButton" TargetType="CEGUI/PushButton" Renderer="Falagard/SystemButton" LookNFeel="3dSchool/Button"/>
+	<FalagardMapping WindowType="3dSchool/DenfaultWindow"  TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="3dSchool/DenfaultWindow"/>
+	<FalagardMapping WindowType="3dSchool/StaticImage" TargetType="DefaultWindow" Renderer="Falagard/StaticImage"  LookNFeel="3dSchool/StaticImage"/>
+	<FalagardMapping WindowType="3dSchool/StaticText" TargetType="DefaultWindow" Renderer="Falagard/StaticText"  LookNFeel="3dSchool/StaticText"/>
+	<FalagardMapping WindowType="3dSchool/HorizontalScrollbar" TargetType="CEGUI/Scrollbar" Renderer="Falagard/Scrollbar"  LookNFeel="3dSchool/HorizontalScrollbar"/>
+	<FalagardMapping WindowType="3dSchool/VerticalScroolbar" TargetType="CEGUI/Scrollbar" Renderer="Falagard/Scrollbar"  LookNFeel="3dSchool/VerticalScroolbar"/>
+	<FalagardMapping WindowType="3dSchool/VerticalScrollbarThumb" TargetType="CEGUI/Thumb" Renderer="Falagard/Button"  LookNFeel="3dSchool/VerticalScrollbarThumb"/>
+	<FalagardMapping WindowType="3dSchool/HorizontalScrollbarThumb" TargetType="CEGUI/Thumb" Renderer="Falagard/Button"  LookNFeel="3dSchool/HorizontalScrollbarThumb"/>
+	<FalagardMapping WindowType="3dSchool/Combobox" TargetType="CEGUI/Combobox" Renderer="Falagard/Default" LookNFeel="3dSchool/Combobox"/>
+	<FalagardMapping WindowType="3dSchool/ComboDragList" TargetType="CEGUI/ComboDropList" Renderer="Falagard/Listbox" LookNFeel="3dSchool/ComboDragList"/>
+	<FalagardMapping WindowType="3dSchool/ComboEditbox" TargetType="CEGUI/Editbox" Renderer="Falagard/Editbox" LookNFeel="3dSchool/ComboEditbox"/>
+	<FalagardMapping WindowType="3dSchool/Editbox" TargetType="CEGUI/Editbox" Renderer="Falagard/Editbox" LookNFeel="3dSchool/Editbox"/>
+</GUIScheme>

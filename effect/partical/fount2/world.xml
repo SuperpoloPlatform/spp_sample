@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+	<!-- 本world文件来源：`$(CRYSTAL)/scripts/jamtemplate/world` -->
+	<plugins>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+	</plugins>
+	<shaders>
+		<shader>
+			<file>/shader/particles/basic.xml</file>
+		</shader>
+	</shaders>
+	<textures>
+		<texture name="dot">
+			<file>/textures/dot.png</file>
+		</texture>
+		<texture name="red">
+			<color red="1" green="0" blue="0" />
+		</texture>
+		<texture name="green">
+			<color red="0" green="1" blue="0" />
+		</texture>
+		<texture name="blue">
+			<color red="0" green="0" blue="1" />
+		</texture>
+	</textures>
+	<materials>
+		<material name="dot">
+			<texture>dot</texture>
+			<shader type="diffuse">*null</shader>
+			<shader type="ambient">particles_basic</shader>
+		</material>
+		<!-- Simple materials based on colors, which don't need textures -->
+		<!-- <material name="green_color">
+			<color red="0" green="1" blue="0" />
+		</material> -->
+		<material name="red">
+			<texture>red</texture>
+		</material>
+		<material name="green">
+			<texture>green</texture>
+		</material>
+		<material name="blue">
+			<texture>blue</texture>
+		</material>
+	</materials>
+	<library>factories/genCube</library>
+	<library>factories/genPlane</library>
+	<library>factories/fountain.cslib</library>
+	<sector name='Scene'>
+		<cullerp plugin='crystalspace.culling.frustvis'/>
+		<ambient blue="0.5" green="0.5" red="0.5" />
+		<!-- 给场景添加灯光 -->
+		<light name='Lamp.001'>
+			<center y='3.91767' x='4.52981' z='5.71327'/>
+			<color blue='1.0' green='1.0' red='1.0'/>
+			<radius brightness='1.0'>20.0</radius>
+		</light>
+		<!-- 创建出一个地面 -->
+		<meshobj name='Plane'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genPlane</factory>
+			<mixmode>
+				<alpha>0.498039</alpha>
+			</mixmode>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<!-- 摄像机跟随这个盒子 -->
+		<meshobj name='Cube'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>red</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<!--喷泉-->
+		<meshobj name="fount2">
+			<plugin>crystalspace.mesh.loader.particles</plugin>
+			<params>
+				<factory>fountainFACT</factory>
+				<particlesize x="0.05" y="0.15" /><!-- 单个粒子的大小，可以认为是缩放。 -->
+				<emitter type="cone">
+					<extent x="0" y="1" z="0" /><!-- Extent vector : 广度矢量，可以认为是圆锥的喷射方向。 -->
+					<coneangle>0.03</coneangle><!-- 圆锥的开口角度。 -->
+					<placement>center</placement><!-- 从什么地方开始喷射 -->
+					<mass min="7.5" max="10" /><!-- 粒子的质量范围 -->
+					<initialttl min="10" max="10.5" />
+					<emissionrate>240</emissionrate><!-- 每秒喷出多少粒子。 -->
+					<!-- <uniformvelocity /> -->
+					<initialvelocity x="0" y="8" z="0" /><!-- 喷射的初始速度 -->
+				</emitter>
+				<effector type="force">
+					<acceleration x="0" y="-9" z="0" /><!-- 用于实现重力加速度，和initialvelocity抗衡 -->
+				</effector>
+			</params>
+			<move>
+				<v x="0" y="0" z="0" />
+			</move>
+		</meshobj>
+	</sector>
+	<!-- Start position are usually created in Blender by adding a 'Camera' -->
+	<start name='Camera'>
+		<sector>Scene</sector>
+		<position y='1' x='0' z='0'/>
+		<up y='1' x='0' z='0'/>
+		<forward y='0' x='-1' z='0'/>
+	</start>
+</world>

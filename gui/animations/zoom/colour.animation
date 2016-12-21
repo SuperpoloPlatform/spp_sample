@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="F:\enviroment\depends\CEGUI-0.7.5\datafiles\xml_schemas\Animation.xsd">
+	<AnimationDefinition duration="2.0" name="test" replayMode="loop">
+		<Affector property="NormalTextColour" interpolator="colour">
+			<KeyFrame position="0.0" value="FFFF0000" progression="quadratic accelerating"/>
+			<KeyFrame position="1.0" value="FF0000FF" progression="quadratic accelerating"/>
+			<KeyFrame position="2.0" value="FF00FFFF" progression="quadratic accelerating"/>
+		</Affector>
+	</AnimationDefinition>
+</Animations>

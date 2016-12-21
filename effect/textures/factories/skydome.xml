@@ -1,0 +1,10 @@
+<library>
+<meshfact name="skydome">
+    <plugin>genmeshfact</plugin>
+    <params>
+      <sphere rimvertices="64" reversed="true">
+        <radius x="50" y="20" z="50"/>
+      </sphere>
+    </params>
+  </meshfact>
+</library>

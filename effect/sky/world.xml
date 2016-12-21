@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<world>
+    <plugins>
+        <plugin name="genmesh">crystalspace.mesh.loader.genmesh</plugin>
+        <plugin name="genmeshfact">crystalspace.mesh.loader.factory.genmesh</plugin>
+    </plugins>
+    <shaders>
+        <shader>
+            <file>/shader/sky/sky.xml</file>
+        </shader>
+    </shaders>
+    <textures>
+		<texture name="yellow">
+			<color red="1" green="1" blue="0" />
+		</texture>
+    </textures>
+	<materials>
+		<material name="skyno">
+			<texture>no</texture>
+			<shader type="diffuse">*null</shader>
+			<shader type="ambient">sky</shader>
+			<shadervar type="vector3" name="skycol">0.11,0.11,0.11</shadervar>
+		</material>
+		<material name="yellow">
+			<texture>yellow</texture>
+		</material>
+	</materials>
+	<!-- 盒子的工厂 -->
+	<library>factories/genCube.xml</library>
+	<!-- 从cs中转移过来的 -->
+	<library>factories/gensky.xml</library>
+	<sector name="outside">
+		<ambient blue="1" green="1" red="1" />
+		<!-- 摄像机跟随这个盒子 -->
+		<meshobj name='Cube'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>yellow</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<!-- 蓝天 -->
+        <meshobj name="sky">
+            <plugin>genmesh</plugin>
+            <priority>sky</priority>
+            <params>
+                <factory>gensky</factory>
+                <color red="0" green="0" blue="0" />
+                <manualcolors />
+                <material>skyno</material>
+                <mixmode>
+                    <copy />
+                </mixmode>
+                <submesh name="0">
+                    <material>skyno</material>
+                </submesh>
+                <submesh name="0_0">
+                    <material>skyno</material>
+                </submesh>
+                <submesh name="0_1">
+                    <material>skyno</material>
+                </submesh>
+                <submesh name="0_10">
+                    <material>skyno</material>
+                </submesh>
+                <submesh name="0_11">
+                    <material>skyno</material>
+                </submesh>
+                <submesh name="0_2">
+                    <material>skyno</material>
+                </submesh>
+                <submesh name="0_3">
+                    <material>skyno</material>
+                </submesh>
+                <submesh name="0_4">
+                    <material>skyno</material>
+                </submesh>
+                <submesh name="0_5">
+                    <material>skyno</material>
+                </submesh>
+                <submesh name="0_6">
+                    <material>skyno</material>
+                </submesh>
+                <submesh name="0_7">
+                    <material>skyno</material>
+                </submesh>
+                <submesh name="0_8">
+                    <material>skyno</material>
+                </submesh>
+                <submesh name="0_9">
+                    <material>skyno</material>
+                </submesh>
+            </params>
+            <trimesh>
+                <id>shadows</id>
+            </trimesh>
+            <camera />
+            <zfill />
+            <noshadows />
+            <move>
+                <v y="-15.7" x="-47.9" z="-122.302" />
+            </move>
+            <staticlit />
+        </meshobj>
+    </sector>
+</world>

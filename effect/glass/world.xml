@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+	<!-- 本world文件来源：`$(CRYSTAL)/scripts/jamtemplate/world` -->
+	<addon/>
+
+	<plugins>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+	</plugins>
+	
+	<shaders>
+		<shader>
+			<file>/shader/reflect/reflectsphere.xml</file>
+		</shader>
+	</shaders>
+
+	<textures>
+		<texture name="xygyw.tga">
+            <file>/textures/xygyw.png</file>
+            <class>nocompress</class>
+        </texture>	
+		<texture name="glass_reflect">
+			<file>/textures/gb_boli05.jpg</file>
+			<class>normalmap</class>
+        </texture>	
+		<texture name="glass_normal3">
+			<file>/textures/gb_boli03.jpg</file>
+			<class>normalmap</class>
+        </texture>	
+		<texture name="green">
+			<color red="0" green="1" blue="0" />
+		</texture>
+	</textures>
+	<materials>
+		<material name="green">
+			<texture>green</texture>
+		</material>
+	   <!-- 磨砂玻璃shader,添加反射,受影响的主要是以下几个贴图的选择,其中reflection采用鱼眼图贴图.-->
+		<material name="glass_reflect">
+			 <shader type="diffuse">reflectsphere</shader>
+            <shader type="base">reflectsphere</shader>
+			<!-- <shader type="oc_depthwrite">reflect_water_plane</shader> -->
+            <texture>xygyw.tga</texture>
+            <shadervar type="texture" name="tex normal">glass_normal3</shadervar>
+            <shadervar type="texture" name="tex reflection">glass_reflect</shadervar>
+            <shadervar type="float" name="reflection opacity">0.8</shadervar>
+            <shadervar type="vector4" name="specular">1,1,1,1</shadervar>
+        </material>
+	</materials>
+
+	<sounds/>
+
+	<library>factories/genCube.xml</library>
+	<library>factories/genPlane.xml</library>
+	
+	<triggers/>
+	
+	<sector name='Scene'>
+		<cullerp plugin='crystalspace.culling.frustvis'/>
+		<!-- 给场景添加灯光 -->
+		<light name='Lamp'>
+			<center y='10' x='0' z='0'/>
+			<color blue='1' green='1' red='1'/>
+			<radius brightness='1.0'>20000.0</radius>
+		</light>
+		<!-- 创建出一个地面 -->
+		<meshobj name='Plane'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genPlane</factory>
+				<material>green</material>
+			<mixmode>
+				<alpha>0.498039</alpha>
+			</mixmode>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<!-- 摄像机跟随这个盒子 -->
+		<meshobj name='Cube'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>glass_reflect</material>
+				<!-- 玻璃透明度 -->
+				<mixmode>
+				  <alpha>0.6</alpha>
+				</mixmode>
+			</params>
+			<!-- 渲染优先级 -->
+			<priority>final</priority> 
+			<!-- <zuse/> -->
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+	</sector>
+
+	<sequences/>
+
+	<!-- Start position are usually created in Blender by adding a 'Camera' -->
+	<start name='Camera'>
+		<sector>Scene</sector>
+		<position y='1' x='0' z='0'/>
+		<up y='1' x='0' z='0'/>
+		<forward y='0' x='-1' z='0'/>
+	</start>
+
+</world>

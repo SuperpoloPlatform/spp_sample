@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library>
+  <materials>
+    <material name="Material_Material #68_house_01">
+      <texture>fz_d_05.jpg</texture>
+      <shadervar name="tex normal" type="texture">nfz_d_05.jpg</shadervar>
+      <shadervar name="tex specular" type="texture">sfz_d_05.jpg</shadervar>
+    </material>
+    <material name="Material_Material #69_house_01">
+      <texture>fz_f.tga</texture>
+      <shader type="ambient">ambient</shader>
+      <shadervar name="tex normal" type="texture">nfz_f.jpg</shadervar>
+      <shadervar name="tex specular" type="texture">sfz_f.jpg</shadervar>
+    </material>
+    <material name="Material_Material #71_house_01">
+      <texture>fz_s_01.tga</texture>
+      <shader type="ambient">ambient</shader>
+      <shadervar name="tex normal" type="texture">nfz_s_01.tga</shadervar>
+      <shadervar name="tex specular" type="texture">sfz_s_01.tga</shadervar>
+    </material>
+    <material name="Material_Material #711_house_01">
+      <texture>fz_s_02.jpg</texture>
+    </material>
+    <material name="Material_Material #68_house_02">
+      <texture>fz_d_05.jpg</texture>
+      <shadervar name="tex normal" type="texture">nfz_d_05.jpg</shadervar>
+      <shadervar name="tex specular" type="texture">sfz_d_05.jpg</shadervar>
+    </material>
+    <material name="Material_Material #69_house_02">
+      <texture>fz_f.tga</texture>
+      <shader type="ambient">ambient</shader>
+      <shadervar name="tex normal" type="texture">nfz_f.jpg</shadervar>
+      <shadervar name="tex specular" type="texture">sfz_f.jpg</shadervar>
+    </material>
+    <material name="Material_Material #71_house_02">
+      <texture>fz_s_01.tga</texture>
+      <shader type="ambient">ambient</shader>
+      <shadervar name="tex normal" type="texture">nfz_s_01.tga</shadervar>
+      <shadervar name="tex specular" type="texture">sfz_s_01.tga</shadervar>
+    </material>
+    <material name="Material_Material #711_house_02">
+      <texture>fz_s_02.jpg</texture>
+    </material>
+    <material name="Material_Material #68_house_03">
+      <texture>fz_d_05.jpg</texture>
+      <shadervar name="tex normal" type="texture">nfz_d_05.jpg</shadervar>
+      <shadervar name="tex specular" type="texture">sfz_d_05.jpg</shadervar>
+    </material>
+    <material name="Material_Material #69_house_03">
+      <texture>fz_f.tga</texture>
+      <shader type="ambient">ambient</shader>
+      <shadervar name="tex normal" type="texture">nfz_f.jpg</shadervar>
+      <shadervar name="tex specular" type="texture">sfz_f.jpg</shadervar>
+    </material>
+    <material name="Material_Material #71_house_03">
+      <texture>fz_s_01.tga</texture>
+      <shader type="ambient">ambient</shader>
+      <shadervar name="tex normal" type="texture">nfz_s_01.tga</shadervar>
+      <shadervar name="tex specular" type="texture">sfz_s_01.tga</shadervar>
+    </material>
+    <material name="Material_Material #711_house_03">
+      <texture>fz_s_02.jpg</texture>
+    </material>
+    <material name="Material_Material #68_house_04">
+      <texture>fz_d_05.jpg</texture>
+      <shadervar name="tex normal" type="texture">nfz_d_05.jpg</shadervar>
+      <shadervar name="tex specular" type="texture">sfz_d_05.jpg</shadervar>
+    </material>
+    <material name="Material_Material #69_house_04">
+      <texture>fz_f.tga</texture>
+      <shader type="ambient">ambient</shader>
+      <shadervar name="tex normal" type="texture">nfz_f.jpg</shadervar>
+      <shadervar name="tex specular" type="texture">sfz_f.jpg</shadervar>
+    </material>
+    <material name="Material_Material #71_house_04">
+      <texture>fz_s_01.tga</texture>
+      <shader type="ambient">ambient</shader>
+      <shadervar name="tex normal" type="texture">nfz_s_01.tga</shadervar>
+      <shadervar name="tex specular" type="texture">sfz_s_01.tga</shadervar>
+    </material>
+    <material name="Material_Material #711_house_04">
+      <texture>fz_s_02.jpg</texture>
+    </material>
+  </materials>
+</library>

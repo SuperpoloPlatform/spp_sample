@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+	<Window Type="DefaultWindow" Name="root">
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+		<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}"/>
+		<Property Name="MousePassThroughEnabled" Value="True"/>
+		<Window Type="Demo/FrameWindow" Name="Demo/Window1/FrameWindow">
+			<Property Name="Text" Value="Window 1 FrameWindow"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.1,0},{0.45,0},{0.5,0}}"/>
+		</Window>
+		<Window Type="Demo/FrameWindow" Name="Demo/Window2/test">
+			<Property Name="Text" Value="Demo - Window 2：设置1窗口控件属性"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.57,0},{0.1,0},{0.95,0},{0.53,0}}"/>
+			<Window Type="Demo/Combobox" Name="Demo/Window2/Combobox">
+				<Property Name="ReadOnly" Value="True"/>
+				<Property Name="SingleClickMode" Value="False"/>
+				<Property Name="ForceHorzScrollbar" Value="True"/>
+				<Property Name="ForceVertScrollbar" Value="True"/>
+				<Property Name="SortList" Value="False"/>
+				<Property Name="MaxEditTextLength" Value="100000"/>
+				<Property Name="EditSelectionStart" Value="0"/>
+				<Property Name="EditSelectionLength" Value="0"/>
+				<Property Name="CaratIndex" Value="5"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.01,0},{0.25,0},{0.52,0},{0.7,0}}"/>
+			</Window>
+			<Window Type="Demo/FrameWindow" Name="Demo/Window2/FrameWindow2">
+				<Property Name="Visible" Value="False"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.01,0},{0.72,0},{0.52,0},{0.92,0}}"/>
+				<Window Type="checkbox/ToggleButton" Name="Demo/Window2/FrameWindow2/checkbox1">
+					<Property Name="Text" Value="True"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,0},{0.0,0},{0.45,0},{1,0}}"/>
+				</Window>
+				<Window Type="checkbox/ToggleButton" Name="Demo/Window2/FrameWindow2/checkbox2">
+					<Property Name="Text" Value="False"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.55,0},{0.0,0},{1,0},{1,0}}"/>
+				</Window>
+			</Window>
+			<Window Type="Demo/FrameWindow" Name="Demo/Window2/FrameWindow3">
+				<Property Name="Visible" Value="False"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.01,0},{0.62,0},{0.9,0},{0.92,0}}"/>
+				<Window Type="Demo/ComboEditbox" Name="Demo/Window2/FrameWindow3/Editbox">
+					<Property Name="Text" Value=""/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,0},{0.0,0},{0.8,0},{1,0}}"/>
+				</Window>
+				<Window Type="Demo/OKButton" Name="Demo/Window2/FrameWindow3/OKButton">
+					<Property Name="Text" Value="确认修改"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.8,0},{0.0,0},{1,0},{1,0}}"/>
+				</Window>
+			</Window>
+			<Window Type="Demo/FrameWindow" Name="Demo/Window2/FrameWindow1">
+				<Property Name="Visible" Value="False"/>
+				<Property Name="Text" Value="左侧选择imagesetname，右侧选择imagename"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.01,0},{0.45,0},{1,0},{1,0}}"/>
+				<Window Type="Demo/Combobox" Name="Demo/Window2/FrameWindow1/Combobox1">
+					<Property Name="ReadOnly" Value="True"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.01,0},{0,0},{0.50,0},{1,0}}"/>
+				</Window>
+				<Window Type="Demo/Combobox" Name="Demo/Window2/FrameWindow1/Combobox2">
+					<Property Name="ReadOnly" Value="True"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0.51,0},{0,0},{1.0,0},{1,0}}"/>
+				</Window>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

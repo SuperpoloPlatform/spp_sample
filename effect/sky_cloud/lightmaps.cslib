@@ -1,0 +1,552 @@
+<library>
+    <textures>
+        <texture name="lightmaps_world_0_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_0_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_1_png">
+            <class>lightmap</class>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <file>/lightmaps/world_1.png</file>
+            <mipmap>no</mipmap>
+            <params>
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_1_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_2_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_3_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_4_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_5_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_6_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_7_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_8_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_8_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_9_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_10_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_10_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_11_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_12_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_12_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_13_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_13_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_14_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_14_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_15_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_15_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_16_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_16_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_17_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_17_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_18_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_18_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_19_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_19_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_20_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_20_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_21_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_21_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_22_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_22_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_23_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_23_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_24_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_24_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_25_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_25_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_26_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_27_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_27_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_28_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_28_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_29_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_29_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_30_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_30_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_31_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_31_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_32_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_32_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_33_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_33_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_34_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_34_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_35_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_35_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_36_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_36_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_37_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_37_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_38_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_38_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_39_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_39_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_40_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_40_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_41_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_42_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_43_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_44_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_45_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_46_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_46_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_47_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_48_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_49_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_50_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_51_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_52_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_53_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_54_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_55_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_56_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_57_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_58_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_59_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_60_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_61_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_62_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_63_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_63_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_64_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_64_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_65_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_65_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_66_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_66_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_67_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_050505.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+        <texture name="lightmaps_world_68_png">
+            <class>lightmap</class>
+            <size width="1024" height="1024" />
+            <mipmap>no</mipmap>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <params>
+                <basecolor red="0.0196078" green="0.0196078" blue="0.0196078" />
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_68_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_69_png">
+            <class>lightmap</class>
+            <type>crystalspace.texture.loader.pdlight</type>
+            <file>/lightmaps/world_69.png</file>
+            <mipmap>no</mipmap>
+            <params>
+                <map lightsector="outside" lightname="Lamp.007">/lightmaps/world_69_0.png</map>
+            </params>
+        </texture>
+        <texture name="lightmaps_world_70_png">
+            <class>lightmap</class>
+            <file>/lightmaps/world_70.png</file>
+            <mipmap>no</mipmap>
+        </texture>
+    </textures>
+</library>

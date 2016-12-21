@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<Falagard xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Documents%20and%20Settings/Administrator/Desktop/xml_schemas/Falagard.xsd">
+	<!--
+    ***************************************************
+      progressbar
+    ***************************************************
+    -->
+	<WidgetLook name="progressbar/ProgBar">
+	<Property name="VerticalProgress" value="False"></Property>
+	<Property name="ReversedProgress" value="False"></Property>
+	<Property name="CurrentProgress" value="0.3"></Property>
+		<NamedArea name="ProgressArea">
+			<Area>
+				<Dim type="LeftEdge">
+				     <AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="TopEdge">
+					   <AbsoluteDim value="0"></AbsoluteDim>
+				</Dim>
+				<Dim type="Width" ><UnifiedDim scale="1" type="Width" /></Dim>
+                 <Dim type="Height" ><UnifiedDim scale="1" type="Height" /></Dim>
+			</Area>
+		</NamedArea>
+		<ImagerySection name="frame">
+		<FrameComponent>
+			<Area>
+				<Dim type="LeftEdge">
+					<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="TopEdge">
+				<AbsoluteDim value="0"/>
+				</Dim>
+				<Dim type="Width">
+					<UnifiedDim scale="1" type="Width"/>
+				</Dim>
+				<Dim type="Height">
+					<UnifiedDim scale="1" type="Height"></UnifiedDim>
+				</Dim>
+			</Area>
+			<Image type="LeftEdge" imageset="progressbar" image="pbleft"/>
+			<Image type="RightEdge" imageset="progressbar" image="pbright"/>
+			<Image type="Background" imageset="progressbar" image="pbmiddle"/>
+			</FrameComponent>
+		</ImagerySection>
+	    <ImagerySection name="tiled" >
+           <ImageryComponent>
+                <Area>
+                    <Dim type="LeftEdge" ><AbsoluteDim value="0" /></Dim>
+                    <Dim type="TopEdge" ><AbsoluteDim value="0" /></Dim>
+                    <Dim type="Width" ><UnifiedDim scale="1" type="Width" /></Dim>
+                    <Dim type="Height" ><UnifiedDim scale="1" type="Height" /></Dim>
+                </Area>
+                <Image imageset="progressbar" image="tiledrcet" />
+                <VertFormat type="Stretched" />
+                <HorzFormat type="Tiled" />
+            </ImageryComponent>
+        </ImagerySection>
+		<StateImagery name="Enabled">
+		<Layer><Section section="frame"/></Layer>
+		</StateImagery>
+	    <StateImagery name="Diabled">
+	    </StateImagery>
+		<StateImagery name="EnabledProgress">
+		<Layer>
+		  <Section section="tiled"></Section>
+		</Layer>
+		</StateImagery>
+		<StateImagery name="DisabledProgress">
+		 <Layer>
+		   <Section section="tile">
+		   <Colours topLeft="FF7F7F7F" topRight="FF7F7F7F" bottomLeft="FF7F7F7F" bottomRight="FF7F7F7F" />
+		   </Section>
+		 </Layer>
+		</StateImagery>
+</WidgetLook>
+</Falagard>

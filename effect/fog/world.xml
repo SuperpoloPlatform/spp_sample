@@ -1,0 +1,623 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+  <plugins>
+    <plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+    <plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+  </plugins>
+  
+	<addon>
+		<plugin>crystalspace.renderloop.loop.loader</plugin>
+		<paramsfile>/shader/std_rloop_diffuse.xml</paramsfile>
+		<paramsfile>/shader/std_rloop_shadowed.xml</paramsfile>
+		<paramsfile>/shader/std_rloop_standard.xml</paramsfile>
+		<paramsfile>/shader/std_rloop_shadowed2.xml</paramsfile>
+		<paramsfile>/shader/std_rloop_shadowmap.xml</paramsfile>
+		<paramsfile>/shader/std_rloop_ambient.xml</paramsfile>
+	</addon>
+  
+  <settings>
+    <clearscreen>yes</clearscreen>
+    <clearzbuf>yes</clearzbuf>
+	<lightmapcellsize>16</lightmapcellsize>
+	<renderloop>std_rloop_standard</renderloop>
+  </settings>
+  
+    <shaders>
+        <shader>
+            <file>/shader/light.xml</file>
+        </shader>
+        <shader>
+            <file>/shader/ambient.xml</file>
+        </shader>	
+		<shader>
+            <file>/shader/std_lighting.xml</file>
+        </shader>
+		<shader>
+		  <file>/shader/std_lighting_detail_add.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/std_lighting_detail_alpha.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/std_lighting_detail_alpha_scroll.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/std_lighting_detail_fixed.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/character/character_bump.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/character/character_bump2.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/extrudeGlow/extrudeGlow.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/fresnelWater/fresnelWater.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/light_bumpmap.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/light_bumpmap2.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/light_projection_bumpmap.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/specular/light_spec_bumpmap.xml</file>
+		</shader>
+		 <shader>
+            <file>/shader/parallax/parallax.xml</file>
+        </shader>
+		<shader>
+		  <file>/shader/parallaxAtt/parallaxAtt.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/reflect.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/reflectsphere.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/shadowmap/shadowmap.xml</file>
+		</shader>
+		 <shader>
+		  <file>/shader/stat_dyn_reflect.xml</file>
+		</shader>
+		<shader>
+		  <file>/shader/sky_scattering.xml</file>
+		</shader>
+		
+    </shaders>
+	
+	<textures>
+		<texture name="box.jpg">
+            <file>textures/box.jpg</file>
+        </texture>
+        <texture name="boxn.jpg">
+            <file>textures/boxn.png</file>
+            <class>normalmap</class>
+        </texture>
+        <texture name="boxh.jpg">
+            <file>textures/boxh.jpg</file>
+        </texture>
+		<texture name="kwarz_glow.jpg">
+            <file>textures/kd.jpg</file>
+        </texture>
+		
+		<texture name="white.gif">
+            <file>textures/white.gif</file>
+        </texture>
+		
+		 <texture name='reflect_01.jpg'>
+		  <file>textures/reflect_01.jpg</file>
+		</texture>
+		
+		 <texture name='floors_1_d1n__128.jpg'>
+		  <file>textures/floors_1_d1n__128.jpg</file>
+		</texture>
+		
+		<texture name='light1_d.png'>
+		  <file>textures/light1_d.png</file>
+		  <alpha>
+			<binary/>
+		  </alpha>
+		</texture>
+		
+		<texture name="mosaic-detail">
+            <file>textures/mosaic-detail.dds</file>
+        </texture>
+		
+		<texture name="reflection">
+			<type>crystalspace.texture.loader.cubemap</type>
+			<params>
+				<north>textures/box.jpg</north>
+				<south>textures/box.jpg</south>
+				<east>textures/box.jpg</east>
+				<west>textures/box.jpg</west>
+				<top>textures/box.jpg</top>
+				<bottom>textures/box.jpg</bottom>
+			</params>
+		</texture>
+		
+  </textures>
+  
+	<materials>
+		<material name='Material2'>
+			<texture>floors_1_d1n__128.jpg</texture>
+			<shader type="ambient">ambient</shader> 
+		</material>
+		
+		<!-- parallax_spec_glow -->
+		<!--<material name="Material3">
+            <texture>box.jpg</texture>
+            <shadervar name="tex normal" type="texture">boxn.jpg</shadervar>
+            <shadervar name="tex height" type="texture">boxh.jpg</shadervar>
+			<shadervar type='texture' name='tex glow'>kwarz_glow.jpg</shadervar>
+            <shadervar name="specular" type="vector4">0.6, 0.8, 1, 1</shadervar>
+			<shadervar name="glow pulse speed" type="float">1.0</shadervar>
+			<shadervar name="glow slide speed y" type="float">0.8</shadervar>
+			<shadervar name="glow slide speed x" type="float">0.8</shadervar>
+            <shader type="diffuse">parallaxAtt</shader>
+            <shader type="ambient">ambient</shader>
+        </material>-->
+		
+		<!-- bumpmap_spec_glow -->
+		<!--<material name="Material3">
+            <texture>box.jpg</texture>
+            <shadervar name="tex normal" type="texture">boxn.jpg</shadervar>
+			<shadervar type='texture' name='tex glow'>kwarz_glow.jpg</shadervar>
+            <shadervar name="specular" type="vector4">0.6, 0.8, 1, 1</shadervar>
+            <shader type="diffuse">light_spec_bumpmap</shader>
+            <shader type="ambient">ambient</shader>
+        </material>-->
+		
+		<!-- bumpmap_spec -->
+		<!--<material name="Material3">
+            <texture>box.jpg</texture>
+            <shadervar name="tex normal" type="texture">boxn.jpg</shadervar>
+            <shadervar name="specular" type="vector4">0.6, 0.8, 1, 1</shadervar>
+            <shader type="diffuse">light_spec_bumpmap</shader>
+            <shader type="ambient">ambient</shader>
+        </material>-->
+		
+		<!-- parallax_spec -->
+		<!--<material name="Material3">
+            <texture>box.jpg</texture>
+            <shadervar name="tex normal" type="texture">boxn.jpg</shadervar>
+            <shadervar name="tex height" type="texture">boxh.jpg</shadervar>
+            <shadervar name="specular" type="vector4">0.6, 0.8, 1, 1</shadervar>
+            <shader type="diffuse">parallax</shader>
+            <shader type="ambient">ambient</shader>
+        </material>-->
+		
+		
+		<!-- parallax -->
+		<!--<material name="Material3">
+		  <texture>box.jpg</texture>
+		  <shadervar name="tex normal" type="texture">boxn.jpg</shadervar>
+          <shadervar name="tex height" type="texture">boxh.jpg</shadervar>
+		  <shader type='diffuse'>parallaxAtt</shader>
+		  <shader type='ambient'>ambient</shader>
+		</material>-->
+		
+		<!-- parallax_glow -->
+		<!--<material name="Material3">
+		  <texture>box.jpg</texture>
+		  <shadervar name="tex normal" type="texture">boxn.jpg</shadervar>
+          <shadervar name="tex height" type="texture">boxh.jpg</shadervar>
+		  <shadervar type='texture' name='tex glow'>kwarz_glow.jpg</shadervar>
+		  <shader type='diffuse'>parallaxAtt</shader>
+		  <shader type='ambient'>ambient</shader>
+		</material>-->
+		
+		<!-- diffuse_glow -->
+		<!--<material name="Material3">
+		  <texture>box.jpg</texture>
+		  <shadervar type='texture' name='tex glow'>kwarz_glow.jpg</shadervar>
+		  <shader type='diffuse'>light</shader>
+		  <shader type='ambient'>ambient</shader>
+		</material>-->
+		
+		<!-- diffuse -->
+		<!--<material name="Material3">
+		  <texture>box.jpg</texture>
+		  <shader type='diffuse'>light</shader>
+		  <shader type='ambient'>ambient</shader>
+		</material>-->
+		
+		<!-- bumpmap -->
+		<!--<material name="Material3">
+		  <texture>box.jpg</texture>
+		  <shader type='diffuse'>light_spec_bumpmap</shader>
+		  <shader type='ambient'>ambient</shader>
+		  <shadervar name="tex normal" type="texture">boxn.jpg</shadervar>
+		</material>-->
+		
+		<!--<material name="Material3">
+            <texture>box.jpg</texture>
+			<shadervar type='texture' name='tex glow'>kwarz_glow.jpg</shadervar>
+			<shadervar name="glow pulse speed" type="float">1.0</shadervar>
+			<shadervar name="glow slide speed y" type="float">0.8</shadervar>
+			<shadervar name="glow slide speed x" type="float">0.8</shadervar>
+            <shader type="ambient">ambient</shader>
+        </material>-->
+		
+		<!--<material name="Material3">
+		  <texture>box.jpg</texture>
+		  <shader type='diffuse'>light_spec_bumpmap</shader>
+		  <shader type='ambient'>ambient</shader>
+		  <shadervar name="tex normal" type="texture">boxn.jpg</shadervar>
+		</material>-->
+		
+		
+		<!--<material name="Material3">
+            <texture>box.jpg</texture>
+            <shadervar name="tex normal" type="texture">boxn.jpg</shadervar>
+            <shadervar name="tex height" type="texture">boxh.jpg</shadervar>
+			<shadervar type='texture' name='tex glow'>kwarz_glow.jpg</shadervar>
+            <shadervar name="specular" type="vector4">0.6, 0.8, 1, 1</shadervar>
+            <shader type="diffuse">parallax</shader>
+        </material>-->
+		
+		
+		<!--<material name="Material3">
+		  <texture>box.jpg</texture>
+		  <shader type='diffuse'>light_spec_bumpmap</shader>
+		  <shadervar name="tex normal" type="texture">boxn.jpg</shadervar>
+		  <shadervar name="specular" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>-->
+		
+		<!--<material name="Material3">
+		  <texture>box.jpg</texture>
+		  <shader type='diffuse'>std_lighting</shader>
+		  <shadervar type='texture' name='tex glow'>kwarz_glow.jpg</shadervar>
+		</material>-->
+		
+		<!--<material name="Material3">
+		  <texture>box.jpg</texture>
+		  <shader type='diffuse'>std_lighting_detail_alpha</shader>
+		  <shadervar type='texture' name='tex detail'>floors_1_d1n__128.jpg</shadervar>
+		  <shadervar type='vector4' name='tex detail color'>1,1,1,0.5</shadervar>
+		  <shadervar type='vector2' name='tex detail scale'>1.0,1.0</shadervar>
+		</material>-->
+		
+		
+		<!--<material name="Material3">
+		   <texture>box.jpg</texture>
+		   <shader type='diffuse'>std_lighting_detail_alpha_scroll</shader>
+		   <shadervar type='texture' name='tex detail'>box.jpg</shadervar>
+		   <shadervar type='vector4' name='tex detail color'>0.5,0.5,0.5,0.5</shadervar>
+		   <shadervar type='vector2' name='tex detail scale'>1.0,1.0</shadervar>
+		</material>-->
+		
+		
+		<!--<material name="Material3">
+		   <texture>box.jpg</texture>
+		   <shader type='diffuse'>std_lighting_detail_fixed</shader>
+		   <shadervar type='texture' name='tex detail'>box.jpg</shadervar>
+		   <shadervar type='vector2' name='tex detail scale'>3.0,3.0</shadervar>
+		</material>-->
+		
+		
+		<!--<material name="Material3">
+		   <texture>box.jpg</texture>
+		   <shader type='diffuse'>character_bump</shader>
+		   <shadervar type='texture' name='tex normal'>boxn.jpg</shadervar>
+		   <shadervar name="specular" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>-->
+		
+		<!--<material name="Material3">
+		   <texture>box.jpg</texture>
+		   <shader type='diffuse'>character_bump2</shader>
+		   <shadervar type='texture' name='tex normal'>boxn.jpg</shadervar>
+		   <shadervar name="specular" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>-->
+		
+		
+		<!--<material name='Material3'>
+		  <texture>light1_d.png</texture>
+		  <shader type='diffuse'>extrudeGlow</shader>
+		  <shader type='ambient'>*null</shader>
+		  <shadervar type='texture' name='tex eGlow'>light1_d.png</shadervar>
+		  <shadervar type='float' name='amount'>10.0</shadervar>
+		  <shadervar type='float' name='scale'>1.5</shadervar>
+		  <shadervar type='float' name='detail'>1.0</shadervar>
+		  <shadervar type='float' name='intensity'>1.0</shadervar>
+		</material>-->
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- standard -->	
+		<!-- std_lighting -->
+		<!--<material name="Material3">
+		  <texture>box.jpg</texture>
+		  <shader type='standard'>std_lighting</shader>
+		  <shadervar type='texture' name='tex glow'>kwarz_glow.jpg</shadervar>
+		  <shadervar type='texture' name='tex height'>boxh.jpg</shadervar>
+		  <shadervar type='texture' name='tex lightmap'>white.gif</shadervar>
+		  <shadervar type='float' name='fog density'>0.9</shadervar>
+		  <shadervar type='float' name='fogplane'>0.9</shadervar>
+		</material>-->
+		
+		<!-- std_lighting_detail_add -->
+		<!--<material name="Material3">
+		  <texture>box.jpg</texture>
+		  <shader type='standard'>std_lighting_detail_add</shader>
+		  <shadervar type='texture' name='tex detail'>mosaic-detail</shadervar>
+		  <shadervar name="tex detail scale" type="vector2">1,1</shadervar>
+		</material>-->
+		
+		<!-- std_lighting_detail_alpha -->
+		<!--<material name="Material3">
+		  <texture>box.jpg</texture>
+		  <shader type='standard'>std_lighting_detail_alpha</shader>
+		  <shadervar type='texture' name='tex detail'>floors_1_d1n__128.jpg</shadervar>
+		  <shadervar type='vector4' name='tex detail color'>1,1,1,0.5</shadervar>
+		  <shadervar type='vector2' name='tex detail scale'>1.0,1.0</shadervar>
+		</material>-->
+		
+		<!-- std_lighting_detail_alpha_scroll -->
+		<!--<material name="Material3">
+		   <texture>box.jpg</texture>
+		   <shader type='standard'>std_lighting_detail_alpha_scroll</shader>
+		   <shadervar type='texture' name='tex detail'>box.jpg</shadervar>
+		   <shadervar type='vector4' name='tex detail color'>0.5,0.5,0.5,0.5</shadervar>
+		   <shadervar type='vector2' name='tex detail scale'>1.0,1.0</shadervar>
+		</material>-->
+		
+		<!-- std_lighting_detail_fixed -->
+		<!--<material name="Material3">
+		   <texture>box.jpg</texture>
+		   <shader type='standard'>std_lighting_detail_fixed</shader>
+		   <shadervar type='texture' name='tex detail'>box.jpg</shadervar>
+		   <shadervar type='vector2' name='tex detail scale'>3.0,3.0</shadervar>
+		</material>-->
+		
+		<!-- character_bump 消失出问题-->
+		<!--<material name="Material3">
+		   <texture>box.jpg</texture>
+		   <shader type='standard'>character_bump</shader>
+		   <shadervar type='texture' name='tex normal'>boxn.jpg</shadervar>
+		   <shadervar type='vector4' name='specular'>1.0,1.0,1.0,1.0</shadervar>
+		</material>-->
+		
+		<!-- ambient -->
+		<!--<material name="Material3">
+		   <texture>box.jpg</texture>
+		   <shader type='standard'>ambient</shader>
+		   <shadervar type='texture' name='tex glow'>box.jpg</shadervar>
+		   <shadervar type='string' name='glow alpha'>1</shadervar>
+		   <shadervar type='float' name='glow pulse speed'>2.0</shadervar>
+		</material>-->
+		
+		<!-- extrudeGlow 无效果消失-->
+		<!--<material name='Material3'>
+		  <texture>box.jpg</texture>
+		  <shader type='standard'>extrudeGlow</shader>
+		  <shadervar type='texture' name='tex eGlow'>box.jpg</shadervar>
+		  <shadervar type='float' name='amount'>0.5</shadervar>
+		  <shadervar type='float' name='scale'>1.0</shadervar>
+		  <shadervar type='float' name='intensity'>0.5</shadervar>
+		  <shadervar type='float' name='detail'>0.8</shadervar>
+		</material>-->
+		
+		<!-- fresnelWater 透明效果-->
+		<!--<material name='Material3'>
+		  <texture>box.jpg</texture>
+		  <shader type='standard'>fresnelWater</shader>
+		  <shadervar type='texture' name='tex normal'>boxn.jpg</shadervar>
+		  <shadervar type='texture' name='tex reflection'>floors_1_d1n__128.jpg</shadervar>
+		</material>-->
+		
+		
+		<!-- light_bumpmap 全黑无效果-->
+		<!--<material name='Material3'>
+		  <texture>box.jpg</texture>
+		  <shader type='standard'>light_bumpmap</shader>
+		  <shadervar type='texture' name='tex normal'>boxn.jpg</shadervar>
+		</material>-->
+		
+		
+		<!-- light_bumpmap2 无效果-->
+		<!--<material name='Material3'>
+		  <texture>box.jpg</texture>
+		  <shader type='standard'>light_bumpmap2</shader>
+		  <shadervar type='texture' name='tex normal'>boxn.jpg</shadervar>
+		</material>-->
+		
+		<!-- light_projection_bumpmap 无效果-->
+		<!--<material name='Material3'>
+		  <texture>box.jpg</texture>
+		  <shader type='standard'>light_projection_bumpmap</shader>
+		  <shadervar type='texture' name='tex projection'>box.jpg</shadervar>
+		</material>-->
+		
+		
+		<!-- light_spec_bumpmap 无效果-->
+		<!--<material name='Material3'>
+		  <texture>box.jpg</texture>
+		  <shader type='standard'>light_spec_bumpmap</shader>
+		  <shadervar type='texture' name='tex normal'>boxn.jpg</shadervar>
+		  <shadervar type='vector4' name='specular'>1.0,1.0,1.0,1.0</shadervar>
+		</material>-->
+		
+		<!-- parallax 无效果-->
+		<!--<material name='Material3'>
+		  <texture>box.jpg</texture>
+		  <shader type='standard'>parallax</shader>
+		  <shadervar type='texture' name='tex normal'>boxn.jpg</shadervar>
+		  <shadervar type='texture' name='tex height'>boxh.jpg</shadervar>
+		  <shadervar type='texture' name='tex specular'>box.jpg</shadervar>
+		  <shadervar type='texture' name='tex normal compressed'>box.jpg</shadervar>
+		  <shadervar type='texture' name='tex projection'>box.jpg</shadervar>
+		  <shadervar type='vector4' name='specular'>1.0,1.0,1.0,1.0</shadervar>
+		</material>-->
+		
+		
+		<!-- parallaxAtt 无效果-->
+		<!--<material name='Material3'>
+		  <texture>box.jpg</texture>
+		  <shader type='standard'>parallaxAtt</shader>
+		  <shadervar type='texture' name='tex normal'>boxn.jpg</shadervar>
+		  <shadervar type='texture' name='tex height'>boxh.jpg</shadervar>
+		  <shadervar type='texture' name='tex specular'>box.jpg</shadervar>
+		  <shadervar type='texture' name='tex normal compressed'>box.jpg</shadervar>
+		  <shadervar type='vector4' name='specular'>1.0,1.0,1.0,1.0</shadervar>
+		</material>-->
+		
+		<!-- reflect 镜面效果-->
+		<material name='Material3'>
+		  <texture>box.jpg</texture>
+		  <shader type='standard'>reflect</shader>
+		  <shadervar type='texture' name='tex reflection'>box.jpg</shadervar>
+		  <shadervar type='vector4' name='reflection opacity'>1.0,1.0,1.0,0.8</shadervar>
+		</material>
+		
+		<!-- reflectsphere 镜面效果-->
+		<!--<material name='Material3'>
+		  <texture>box.jpg</texture>
+		  <shader type='standard'>reflectsphere</shader>
+		  <shadervar type='texture' name='tex reflection'>box.jpg</shadervar>
+		  <shadervar type='vector4' name='reflection opacity'>1.0,1.0,1.0,0.7</shadervar>
+		</material>-->
+		
+		
+		<!-- shadowmap 无效果-->
+		<!--<material name='Material3'>
+		  <shader type='standard'>shadowmap</shader>
+		  <shadervar type='texture' name='tex normal'>boxn.jpg</shadervar>
+		  <shadervar type='texture' name='cubemap depth'>box.jpg</shadervar>
+		  <shadervar type='vector4' name='reflection opacity'>1.0,1.0,1.0,0.5</shadervar>
+		</material>-->
+		
+		<!-- stat_dyn_reflect 镜面效果-->
+		<!--<material name='Material3'>
+		  <texture>box.jpg</texture>
+		  <shader type='standard'>stat_dyn_reflect</shader>
+		  <shadervar type='texture' name='tex reflection'>reflection</shadervar>
+		  <shadervar type='texture' name='tex mask'>box.jpg</shadervar>
+		</material>-->
+		
+		
+		<!-- sky_scattering 无效果-->
+		<!--<material name="Material3">
+		  <shader type="standard">sky_scattering</shader>
+		  <color red="0" green="0" blue="0" /> 
+		  <shadervar type='vector3' name="sky base color">0.0,0.1,0.4</shadervar>
+		  <shadervar type='vector3' name="sky sun-glow color">0.9,0.3,0.01</shadervar>
+		  <shadervar type='float' name="sky sun size">0.004</shadervar>
+		</material>-->
+		
+		<!-- light -->
+		<!--<material name="Material3">
+	      <shader type="standard">light</shader>
+		</material>-->
+		
+		<material name="Material4">
+            <texture>box.jpg</texture>
+        </material>
+		
+	</materials>
+  
+  
+  <sounds/>
+  <library>factories/genPlane</library>
+  <library>factories/genCube</library>
+  <library>factories/genCube1</library>
+  <triggers/>
+  <sector name='Scene'>
+    <cullerp plugin='crystalspace.culling.frustvis'/>
+	
+	<fog blue='0.800881997496' end='80.0526428223' density='0.5263156891' start='0.5263166428' green='0.800881997496' mode='linear' red='0.7645829916'/>
+	
+    <meshobj name='Plane'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genPlane</factory>
+		<material>Material2</material>
+		<mixmode>
+			<alpha>0.498039</alpha>
+		</mixmode>
+      </params>
+      <zuse/>
+      <move>
+        <v y='0' x='0' z='0'/>
+      </move>
+    </meshobj>
+	
+	
+	<meshobj name='Cube'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genCube</factory>
+		<material>Material4</material>
+      </params>
+      <zuse/>
+      <move>
+        <v y='0.5' x='-2.9314' z='-0.3933'/>
+      </move>
+    </meshobj>
+
+	
+	<meshobj name='Cube1'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genCube1</factory>
+		<material>Material3</material>
+      </params>
+      <zuse/>
+      <move>
+        <v y='0.5' x='2' z='-2'/>
+      </move>
+    </meshobj>
+	
+	
+    <light>
+		<center x="2" y="3" z="0" />
+		<radius>50</radius>
+		<color red="1" green="1.2" blue="1.4" />
+		<halo>
+			<type>nova</type>
+			<seed>0</seed>
+			<numspokes>100</numspokes>
+			<roundness>0.5</roundness>
+		</halo>
+	</light>
+	
+  </sector>
+  <!--<sequences>
+		<sequence name="movemesh">
+			<rotate mesh="Cube1" duration="1000">
+				<roty>1</roty>
+				<v y='0.5' x='2' z='-2'/>
+			</rotate>
+			<delay time="1000" />
+			<enable trigger="rotmesh"/>
+		</sequence>
+	</sequences>
+	<triggers>
+        <trigger name="rotmesh">
+            <sectorvis sector="Scene" />
+            <fire delay="0" sequence="movemesh" />
+        </trigger>
+    </triggers>-->
+  <start name='Camera'>
+    <sector>Scene</sector>
+    <position y='2' x='0' z='-6'/>
+    <up y='1' x='-8.74228e-008' z='-1.19249e-008'/>
+    <forward y='-1.94707e-007' x='-1.74846e-007' z='1'/>
+  </start>
+</world>

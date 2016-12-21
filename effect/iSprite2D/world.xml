@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+	<!-- 本world文件来源：`$(CRYSTAL)/scripts/jamtemplate/world` -->
+	<addon/>
+
+	<plugins>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+	</plugins>
+
+	<shaders/>
+
+	<textures>
+		<texture name="red">
+			<color red="1" green="0" blue="0" />
+		</texture>
+		<texture name="green">
+			<color red="0" green="1" blue="0" />
+		</texture>
+		<texture name="blue">
+			<color red="0" green="0" blue="1" />
+		</texture>
+		<texture name="yellow">
+			<color red="1" green="1" blue="0" />
+		</texture>
+		<texture name="white">
+			<color red="1" green="1" blue="1" />
+		</texture>
+		<texture name="black">
+			<color red="0" green="0" blue="0" />
+		</texture>
+	</textures>
+	<materials>
+		<material name="red">
+			<texture>red</texture>
+		</material>
+		<material name="green">
+			<texture>green</texture>
+		</material>
+		<material name="blue">
+			<texture>blue</texture>
+		</material>
+		<material name="yellow">
+			<texture>yellow</texture>
+		</material>
+		<material name="white">
+			<texture>white</texture>
+		</material>
+		<material name="black">
+			<texture>black</texture>
+		</material>
+	</materials>
+
+	<sounds/>
+
+	<library>factories/genCube.xml</library>
+	<library>factories/genPlane.xml</library>
+	<library>factories/genLabel.xml</library>
+	
+	<triggers/>
+	
+	<sector name='Scene'>
+		<cullerp plugin='crystalspace.culling.frustvis'/>
+		<!-- 给场景添加灯光 -->
+		<light name='Lamp'>
+			<center y='10' x='0' z='0'/>
+			<color blue='1' green='1' red='1'/>
+			<radius brightness='1.0'>20000.0</radius>
+		</light>
+		<!-- 创建出一个地面 -->
+		<meshobj name='Plane'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genPlane</factory>
+				<material>green</material>
+			<mixmode>
+				<alpha>0.498039</alpha>
+			</mixmode>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<!-- 摄像机跟随这个盒子 -->
+		<meshobj name='Cube'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>red</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0' x='0' z='0'/>
+			</move>
+		</meshobj>
+		<!-- 树1 -->
+		<meshobj name='a'>
+			<plugin>spr2d</plugin>
+			<params>
+				<factory>Tree</factory>
+				<material>a.png</material>
+				<v y='-2' x='4'/>
+				<uv u='1' v='1'/>
+				<v y='-2' x='-4'/>
+				<uv u='0' v='1'/>
+				<v y='2' x='-4'/>
+				<uv u='0' v='0'/>
+				<v y='2' x='4'/>
+				<uv u='1' v='0'/>
+				<!--<v y='-0.0875000283122' x='0.962499976158'/>
+				<uv u='0.942544' v='0.776285'/>
+				<v y='-0.0874999985099' x='-0.962499976158'/>
+				<uv u='-0.0581065' v='0.776285'/>
+				<v y='0.0875000283122' x='-0.962499976158'/>
+				<uv u='-0.0581065' v='0.685317'/>
+				<v y='0.0874999538064' x='0.962499976158'/>
+				<uv u='0.942544' v='0.685317'/>-->
+				<color blue='0.5' green='1' red='1'/>
+				<color blue='0.5' green='1' red='1'/>
+				<color blue='0.6' green='1' red='1'/>
+				<color blue='0.6' green='1' red='1'/>
+				<mixmode>
+					<alpha/>
+				</mixmode>
+			</params>
+			<ztest/>
+			<move>
+				<v y="2" x="0" z="0" />
+			</move>
+		</meshobj>
+	</sector>
+
+	<sequences/>
+
+	<!-- Start position are usually created in Blender by adding a 'Camera' -->
+	<start name='Camera'>
+		<sector>Scene</sector>
+		<position y='1' x='0' z='0'/>
+		<up y='1' x='0' z='0'/>
+		<forward y='0' x='-1' z='0'/>
+	</start>
+
+</world>

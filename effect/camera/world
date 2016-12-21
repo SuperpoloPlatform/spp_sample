@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+  <plugins>
+    <plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+    <plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+  </plugins>
+  <shaders>
+    <shader>
+      <file>/shader/specular/light_spec_bumpmap.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/parallaxAtt/parallaxAtt.xml</file>
+    </shader>
+    <shader>
+      <file>/shader/std_lighting_2.xml</file>
+    </shader>
+  </shaders>
+  <textures>
+    <texture name='GUN_D.JPG'>
+      <file>textures/GUN_D.JPG</file>
+    </texture>
+    <texture name='BUMPGUN_N.JPG'>
+      <file>textures/GUN_N.JPG</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='BUMPGUN_H.JPG'>
+      <file>textures/GUN_H.JPG</file>
+      <class>normalmap</class>
+    </texture>
+    <texture name='GUN_G.JPG'>
+      <file>textures/GUN_G.JPG</file>
+      <class>normalmap</class>
+    </texture>
+   </textures>
+  <materials>
+    <material name='Material #23ee'>
+      <texture>GUN_D.JPG</texture>
+      <shader type='diffuse'>light_spec_bumpmap</shader>
+      <shadervar type='texture' name='tex normal'>BUMPGUN_N.JPG</shadervar>
+      <shadervar type='vector4' name='specular'>0.1,0.1,0.1,1</shadervar>
+    </material>
+    <material name='Material #23'>
+      <texture>GUN_D.JPG</texture>
+      <shader type='diffuse'>parallaxAtt</shader>
+      <shadervar type='texture' name='tex normal'>BUMPGUN_N.JPG</shadervar>
+      <shadervar type='vector4' name='specular'>0.69,0.69,0.69,1.0</shadervar>
+   	  <shadervar type="texture" name="tex height">BUMPGUN_H.JPG</shadervar>
+	  <shadervar type="float" name="glow pulse speed">5</shadervar>
+	  <shadervar type="texture" name="tex glow">GUN_G.JPG</shadervar>	  
+    </material>
+  </materials>
+  <sounds/>
+  <settings>
+    <clearscreen>yes</clearscreen>
+    <clearzbuf>yes</clearzbuf>
+  </settings>
+  <library>factories/genPlane</library>
+  <library>factories/gengun_01_Material #23ee</library>
+  <library>factories/gengun_Material #23</library>
+  <addon>
+    <plugin>crystalspace.renderloop.loop.loader</plugin>
+    <paramsfile>/shader/std_rloop_shadowmap.xml</paramsfile>
+  </addon>
+  <sector name='Scene'>
+    <renderloop>std_rloop_shadowmap</renderloop>
+    <ambient blue='0.1' green='0.1' red='0.1'/>
+    <cullerp plugin='crystalspace.culling.frustvis'/>
+    <meshobj name='Plane'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>genPlane</factory>
+      </params>
+      <zuse/>
+      <move>
+        <v y='-0.1224' x='0.2727' z='-0.1691'/>
+      </move>
+    </meshobj>
+    <light name='Lamp.001'>
+      <center y='-0.0408' x='0.4371' z='0.199'/>
+      <color blue='1.0' green='1.0' red='1.0'/>
+      <radius brightness='1.0'>20.0</radius>
+    </light>
+
+    <meshobj name='gun_Material #23'>
+      <plugin>genmesh</plugin>
+      <params>
+        <factory>gengun_Material #23</factory>
+      </params>
+      <zuse/>
+      <move>
+        <v y='0.4526' x='-0.0001' z='-0.0001'/>
+      </move>
+	      <meshobj name='gun_01_Material #23ee'>
+			  <plugin>genmesh</plugin>
+			  <params>
+				<factory>gengun_01_Material #23ee</factory>
+			  </params>
+			  <zuse/>
+			  <move>
+				<v y='0' x='0' z='0'/>
+			  </move>
+			</meshobj>
+    </meshobj>
+    <light name='Lamp'>
+      <center y='6.5425' x='4.0762' z='1.0055'/>
+      <color blue='1.0' green='1.0' red='1.0'/>
+      <radius brightness='1.0'>29.9999828339</radius>
+    </light>
+  </sector>
+  
+  <sequences>
+                <sequence name="movemesh">
+                        <rotate mesh="gun_Material #23" duration="1000">
+                                <roty>.3</roty>
+                                <v y='0.4526' x='-0.0001' z='-0.0001'/>
+                        </rotate>
+                        <delay time="1000" />
+                        <enable trigger="rotmesh"/>
+                </sequence>
+        </sequences>
+        <triggers>
+        <trigger name="rotmesh">
+            <sectorvis sector="Scene" />
+            <fire delay="0" sequence="movemesh" />
+        </trigger>
+    </triggers>
+  
+  <start name='Camera'>
+    <sector>Scene</sector>
+    <position y='5.3437' x='7.4811' z='-6.5076'/>
+    <up y='0.8953' x='-0.3307' z='0.2984'/>
+    <forward y='-0.4452' x='-0.6549' z='0.6107'/>
+  </start>
+</world>

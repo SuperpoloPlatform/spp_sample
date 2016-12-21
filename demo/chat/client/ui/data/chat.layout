@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="General/DefaultWindow" Name="root" >
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Property Name="MousePassThroughEnabled" Value="True" />
+        <Window Type="General/DefaultWindow" Name="chat_window1" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0585938,0},{0.096692,0},{0.430664,0},{0.810433,0}}" />
+            <Window Type="General/StaticImage" Name="chat_window1/image" >
+                <Property Name="image" Value="set:chat image:zhu_middlemiddle" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+            <Window Type="General/StaticText" Name="chat_window1/header" >
+                <Property Name="Font" Value="You10" />
+                <Property Name="text_theme" Value="聊天框一" />
+                <Property Name="text_colour" Value="FFFFFFFF" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{3,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.0619428,0},{0.00822234,0},{0.258602,0},{0.0704326,0}}" />
+            </Window>
+			<Window Type="General/Button" Name="chat_window1/enter_create" >
+                <Property Name="HoverImage" Value="set:chat image:ok_btn" />
+                <Property Name="text_theme" Value="创建群组" />
+                <Property Name="NormalImage" Value="set:chat image:ok_btn" />
+                <Property Name="PushedImage" Value="set:chat image:ok_btn" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HoverTextColour" Value="FF000000" />
+                <Property Name="UnifiedAreaRect" Value="{{0.7019428,0},{0.00822234,0},{0.958602,0},{0.0704326,0}}" />
+                <Property Name="NormalTextColour" Value="FFFFFFFF" />
+                <Property Name="PushedTextColour" Value="FF000000" />
+            </Window>
+            <Window Type="General/StaticText" Name="chat_window1/text" >
+                <Property Name="Font" Value="You8" />
+                <Property Name="Text" Value="" />
+                <Property Name="text_colour" Value="FFFFFFFF" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{3,0}}" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="UnifiedAreaRect" Value="{{-0.00104935,0},{0.131217,0},{0.941017,0},{0.733533,0}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Type="General/Editbox" Name="chat_window1/enter/word" >
+                <Property Name="Font" Value="You8" />
+                <Property Name="MaxTextLength" Value="25" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.026742,0},{0.791506,0},{0.686197,0},{0.847077,0}}" />
+            </Window>
+            <Window Type="General/Button" Name="chat_window1/enter_ok" >
+                <Property Name="HoverImage" Value="set:chat image:ok_btn" />
+                <Property Name="text_theme" Value="发送" />
+                <Property Name="NormalImage" Value="set:chat image:ok_btn" />
+                <Property Name="PushedImage" Value="set:chat image:ok_btn" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HoverTextColour" Value="FF000000" />
+                <Property Name="UnifiedAreaRect" Value="{{0.80723,0},{0.79103,0},{0.926277,0},{0.849725,0}}" />
+                <Property Name="NormalTextColour" Value="FFFFFFFF" />
+                <Property Name="PushedTextColour" Value="FF000000" />
+            </Window>
+        </Window>
+		<Window Type="General/DefaultWindow" Name="chat_window2" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.551758,0},{0.0954198,0},{0.924805,0},{0.811705,0}}" />
+            <Window Type="General/StaticImage" Name="chat_window2/image" >
+                <Property Name="image" Value="set:chat image:zhu_middlemiddle" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+            <Window Type="General/StaticText" Name="chat_window2/header" >
+                <Property Name="Font" Value="You10" />
+                <Property Name="text_theme" Value="群组列表" />
+                <Property Name="text_colour" Value="FFFFFFFF" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{3,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.0619428,0},{0.00822234,0},{0.258602,0},{0.0704326,0}}" />
+            </Window>
+            <Window Type="General/StaticText" Name="chat_window2/text" >
+                <Property Name="Font" Value="You8" />
+                <Property Name="Text" Value="" />
+                <Property Name="text_colour" Value="FFFFFFFF" />
+                <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{3,0}}" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="UnifiedAreaRect" Value="{{-0.00104935,0},{0.131217,0},{0.941017,0},{0.733533,0}}" />
+                <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+			<Window Type="General/Button" Name="chat_window2/enter_join" >
+                <Property Name="HoverImage" Value="set:chat image:ok_btn" />
+                <Property Name="text_theme" Value="邀请好友" />
+                <Property Name="NormalImage" Value="set:chat image:ok_btn" />
+                <Property Name="PushedImage" Value="set:chat image:ok_btn" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HoverTextColour" Value="FF000000" />
+                <Property Name="UnifiedAreaRect" Value="{{0.50723,0},{0.79103,0},{0.926277,0},{0.849725,0}}" />
+                <Property Name="NormalTextColour" Value="FFFFFFFF" />
+                <Property Name="PushedTextColour" Value="FF000000" />
+            </Window>
+        </Window>
+		<Window Type="General/DefaultWindow" Name="chat_window3" >
+			<Property Name="Visible" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.351758,0},{0.2554198,0},{0.624805,0},{0.511705,0}}" />
+            <Window Type="General/StaticImage" Name="chat_window3/image" >
+                <Property Name="image" Value="set:chat image:zhu_middlemiddle" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+            <Window Type="General/StaticText" Name="chat_window3/header" >
+                <Property Name="Font" Value="You10" />
+                <Property Name="text_theme" Value="创建群组" />
+                <Property Name="text_colour" Value="FFFFFFFF" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{3,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.3519428,0},{0.0122234,0},{0.602,0},{0.1604326,0}}" />
+            </Window>
+            <Window Type="General/Editbox" Name="chat_window3/enter/word" >
+                <Property Name="Font" Value="You8" />
+                <Property Name="MaxTextLength" Value="25" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.106742,0},{0.251506,0},{0.9197,0},{0.4,0}}" />
+            </Window>
+			<Window Type="General/Button" Name="chat_window3/enter_success" >
+                <Property Name="HoverImage" Value="set:chat image:ok_btn" />
+                <Property Name="text_theme" Value="Yes" />
+                <Property Name="NormalImage" Value="set:chat image:ok_btn" />
+                <Property Name="PushedImage" Value="set:chat image:ok_btn" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="HoverTextColour" Value="FF000000" />
+                <Property Name="UnifiedAreaRect" Value="{{0.30723,0},{0.49103,0},{0.626277,0},{0.69725,0}}" />
+                <Property Name="NormalTextColour" Value="FFFFFFFF" />
+                <Property Name="PushedTextColour" Value="FF000000" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

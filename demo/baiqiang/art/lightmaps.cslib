@@ -1,0 +1,162 @@
+<library>
+  <textures>
+    <texture name="lightmaps_art_0_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_050505.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_1_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_1.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_2_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_2.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_3_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_3.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_4_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_4.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_5_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_5.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_6_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_6.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_7_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_7.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_8_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_8.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_9_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_9.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_10_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_10.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_11_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_11.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_12_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_12.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_13_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_13.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_14_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_14.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_15_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_15.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_16_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_16.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_17_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_17.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_18_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_18.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_19_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_19.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_20_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_20.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_21_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_21.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_22_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_22.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_23_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_23.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_24_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_24.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_25_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_25.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_26_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_26.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_27_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_27.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_28_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_28.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+    <texture name="lightmaps_art_29_png">
+      <class>lightmap</class>
+      <file>/art/lightmaps/art_29.png</file>
+      <mipmap>no</mipmap>
+    </texture>
+	<texture name="xygyw.tga">
+		<file>/art/textures/xygyw.png</file>
+		<class>nocompress</class>
+	</texture>
+	<texture name="bricks_n.png">
+		<file>/art/textures/bricks_n.png</file>
+		<class>nocompress</class>
+	</texture>
+  </textures>
+</library>

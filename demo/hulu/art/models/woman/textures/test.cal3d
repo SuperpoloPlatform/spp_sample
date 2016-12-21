@@ -1,0 +1,26 @@
+<meshfact name="woman">
+	<plugin>cal3dfact</plugin>
+	<params>
+	  <options rotate_x_axis="yes" flip_textures="no" />
+
+	  <scale value="0.01" />
+	  <skeleton file="woman.csf" />
+
+
+
+	  <material file="yifu1.jpg" name="lg_shenti" />
+	  <material file="xie2.png" name="xie2" />
+	  <material file="toufa5.png" name="toufa5" />
+
+
+	  <mesh file="yifu2.cmf" name="yifu2" material="lg_shenti" />
+	  <mesh file="toufa1.cmf" name="toufa1" material="toufa5" />
+	  <mesh file="xie.cmf" name="xie" material="xie2" />
+
+	  <hardtransform
+	    rot_axis_x="0"
+	    rot_axis_y="1"
+	    rot_axis_z="0"
+	    rot_angle="180" />
+	</params>
+</meshfact>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+	<plugins>
+		<plugin name='null'>crystalspace.mesh.loader.null</plugin>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+	</plugins>
+	<textures>
+		<texture name='color_green'>
+			<color red="0" green="1" blue="0" />
+		</texture>
+	</textures>
+	<materials>
+		<material name="green">
+			<texture>color_green</texture>
+		</material>
+	</materials>
+	<library>/art/models/plane/factories/genPlane.xml</library>
+</library>

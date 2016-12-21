@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library>
+	<plugins>
+		<plugin name='null'>crystalspace.mesh.loader.null</plugin>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+		<plugin name="cal3d">crystalspace.mesh.loader.sprite.cal3d</plugin>
+		<plugin name="cal3dfact">crystalspace.mesh.loader.factory.sprite.cal3d</plugin>
+	</plugins>
+	<!-- 这里添加shader
+	<shaders>
+		<shader>
+			<file>/shader/character/character_bump2.xml</file>
+		</shader>
+		<shader>
+			<file>/shader/character/character2.xml</file>
+		</shader>
+	</shaders>
+	-->
+	<textures>
+		<texture name="katongnan">
+			<file>/art/models/player/textures/katongnan.png</file>      
+			<alpha>
+				<binary/>
+			</alpha>
+		</texture>
+		<texture name="katonglian">
+			<file>/art/models/player/textures/katonglian.jpg</file>      
+		</texture>
+		<texture name="jian">
+			<file>/art/models/player/textures/jian.jpg</file>      
+		</texture>
+		<texture name="jian2">
+			<file>/art/models/player/textures/jian2.jpg</file>      
+		</texture>
+	</textures>
+	<materials>
+		<material name="katonglian.jpg">
+			<texture>katonglian</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="jian.jpg">
+			<texture>jian</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="jian2.jpg">
+			<texture>jian2</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+		<material name="katongnan.png">
+			<texture>katongnan</texture>
+			<shader type="diffuse">light</shader>
+			<shadervar name="light 0 diffuse" type="vector4">0.6, 0.8, 1, 1</shadervar>
+		</material>
+	</materials>
+	<library>factories/genPlayer.xml</library>
+</library>

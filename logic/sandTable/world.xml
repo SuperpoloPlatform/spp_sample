@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<world>
+	<plugins>
+		<plugin name='genmesh'>crystalspace.mesh.loader.genmesh</plugin>
+		<plugin name='genmeshfact'>crystalspace.mesh.loader.factory.genmesh</plugin>
+	</plugins>
+	<addon>
+		<plugin>crystalspace.renderloop.loop.loader</plugin>
+		<paramsfile>/shader/std_rloop_shadowmap.xml</paramsfile>
+	</addon>
+	<settings>
+		<clearzbuf>yes</clearzbuf>
+		<clearscreen>yes</clearscreen>
+		<lightmapcellsize>8</lightmapcellsize>
+		<!-- 暂时去掉阴影，这样就能添加好多特效。 -->
+		<!--<renderloop>std_rloop_shadowmap</renderloop>-->
+	</settings>
+	<shaders>
+		<shader>
+			<file>/shader/ambient.xml</file>
+		</shader>
+		<shader>
+			<file>/shader/light.xml</file>
+		</shader>
+		<shader>
+			<file>/shader/light_bumpmap.xml</file>
+		</shader>
+		<shader>
+			<file>/shader/parallax/parallax.xml</file>
+		</shader>
+	</shaders>
+	<sounds/>
+	<triggers/>
+	<!-- 墙和地面的模型工厂 -->
+	<library>art/models/objects/scene/factories/genwall_01_Material #258</library>
+	<library>art/models/objects/scene/factories/genfloor_01_Material #41</library>
+	
+	<library>art/models/cube/cube.xml</library>	
+	
+	<sector name='Scene'>
+		<ambient blue='0.5' green='0.5' red='0.5'/>
+		<cullerp plugin='crystalspace.culling.frustvis'/>
+		<light name="Lamp">
+			<center y="2" x="2" z="0" />
+			<radius brightness="10000">24.9999828339</radius>
+			<attenuation>linear</attenuation>
+			<type>point</type>
+			<shadervar name="light 0 diffuse" type="vector4">1.6, 1.8, 2, 1</shadervar>
+		</light>
+		<meshobj name='box'>
+			<plugin>genmesh</plugin>
+			<params>
+				<factory>genCube</factory>
+				<material>red</material>
+			</params>
+			<zuse/>
+			<move>
+				<v y='0.2' x='6' z='-3'/>
+			</move>
+			<meshobj name='box1'>
+				<plugin>genmesh</plugin>
+				<params>
+					<factory>genCube</factory>
+					<material>blue</material>
+				</params>
+				<zuse/>
+				<move>
+					<v y='0.2' x='3' z='-4'/>
+				</move>
+			</meshobj>
+			<meshobj name='box2'>
+				<plugin>genmesh</plugin>
+				<params>
+					<factory>genCube</factory>
+					<material>green</material>
+				</params>
+				<zuse/>
+				<move>
+					<v y='0.2' x='0' z='-5'/>
+				</move>
+			</meshobj>
+		</meshobj>
+		<!-- 墙和地面 -->
+		<meshobj name='wall_01_Material #258'>
+			<plugin>genmesh</plugin>
+			<priority>sky</priority>
+			<params>
+				<factory>genwall_01_Material #258</factory>
+			</params>
+			<zuse/>
+			<move>
+				<v y='23.7259' x='1.8748' z='-11.6762'/>
+			</move>
+		</meshobj>
+		<meshobj name='floor_01_Material #41'>
+			<plugin>genmesh</plugin>
+			<priority>sky</priority>
+			<params>
+				<factory>genfloor_01_Material #41</factory>
+			</params>
+			<zuse/>
+			<move>
+				<v y='-0.1' x='1.875' z='-11.5305'/>
+			</move>
+		</meshobj>
+	</sector>
+	<sequences/>
+	<start name='Camera'>
+		<sector>Scene</sector>
+		<position y='1' x='0' z='0'/>
+		<up y='1' x='0' z='0'/>
+		<forward y='0' x='-1' z='0'/>
+	</start>
+</world>
